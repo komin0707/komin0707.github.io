@@ -33,7 +33,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: chrome-ux-report-monitoring
-          path: artifacts/manual-evidence/chrome-ux-report-monitoring.json
+          path: |
+            artifacts/manual-evidence/chrome-ux-report-monitoring.json
+            artifacts/manual-evidence/chrome-ux-report.json
           retention-days: 30
       - name: Summarize CrUX status
         run: |
