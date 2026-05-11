@@ -1,16 +1,27 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import process from 'node:process';
 import { clearTimeout, setTimeout } from 'node:timers';
+import { URL } from 'node:url';
 
-const origin = normalizeOrigin(process.env.CRUX_ORIGIN ?? 'https://komin0707.github.io');
+/* global AbortController, fetch */
+
+const defaultOrigin = 'https://komin0707.github.io';
+const origin = normalizeOrigin(process.env.CRUX_ORIGIN ?? defaultOrigin);
 const targetUrl = normalizeUrl(process.env.CRUX_URL ?? `${origin}/`);
-const artifactPath = 'artifacts/manual-evidence/chrome-ux-report-monitoring.json';
-const canonicalEvidencePath = 'artifacts/manual-evidence/chrome-ux-report.json';
+const artifactPath =
+  process.env.CRUX_MONITORING_ARTIFACT ?? 'artifacts/manual-evidence/chrome-ux-report-monitoring.json';
+const canonicalEvidencePath =
+  process.env.CRUX_CANONICAL_EVIDENCE_ARTIFACT ?? 'artifacts/manual-evidence/chrome-ux-report.json';
 const apiKey = process.env.CRUX_API_KEY ?? process.env.PAGESPEED_API_KEY ?? process.env.GOOGLE_API_KEY ?? '';
 const shouldScanCruxCache = process.env.CRUX_CACHE_SCAN === '1';
 const timeoutMs = Number(process.env.CRUX_REQUEST_TIMEOUT_MS ?? 20_000);
-const cruxCacheBaseUrl = 'https://raw.githubusercontent.com/lonetis/crux-cache/main/';
+const cruxApiEndpoint =
+  process.env.CRUX_API_ENDPOINT ?? 'https://chromeuxreport.googleapis.com/v1/records:queryRecord';
+const pageSpeedEndpoint =
+  process.env.PAGESPEED_API_ENDPOINT ?? 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
+const cruxCacheBaseUrl =
+  process.env.CRUX_CACHE_BASE_URL ?? 'https://raw.githubusercontent.com/lonetis/crux-cache/main/';
 
 const startedAt = new Date().toISOString();
 const discoverability = await queryDiscoverability(origin);
@@ -18,8 +29,15 @@ const cruxApi = await queryCruxApi(origin, apiKey);
 const pageSpeed = await queryPageSpeed(origin, apiKey);
 const cruxCache = await queryCruxCache(origin, shouldScanCruxCache);
 const hasFieldData = Boolean(
-  cruxApi.hasRecord || pageSpeed.hasLoadingExperience || pageSpeed.hasOriginLoadingExperience || cruxCache.foundOrigin,
+  cruxApi.hasRecord ||
+  pageSpeed.hasLoadingExperience ||
+  pageSpeed.hasOriginLoadingExperience ||
+  cruxCache.foundOrigin,
 );
+const staleCanonicalEvidenceRemoved = !hasFieldData && existsSync(canonicalEvidencePath);
+if (staleCanonicalEvidenceRemoved) {
+  unlinkSync(canonicalEvidencePath);
+}
 const fieldDataEvidence = {
   available: hasFieldData,
   cruxApiRecord: cruxApi.hasRecord,
@@ -31,7 +49,7 @@ const fieldDataEvidence = {
 
 const artifact = {
   verifiedAt: new Date().toISOString(),
-  verifier: 'GitHub Pages CrUX monitoring workflow',
+  verifier: 'Codex CrUX monitoring verifier',
   result: hasFieldData ? 'passed' : 'blocked',
   evidence: hasFieldData
     ? `Chrome UX Report monitoring found field-data evidence for ${targetUrl}.`
@@ -41,6 +59,7 @@ const artifact = {
   targetUrl,
   fieldDataAvailable: hasFieldData,
   fieldDataEvidence,
+  staleCanonicalEvidenceRemoved,
   checks: {
     discoverability,
     cruxApi,
@@ -80,29 +99,8 @@ if (!hasFieldData) {
   process.exitCode = 1;
 }
 
-async function queryDiscoverability(targetOrigin) {
-  const nonce = Date.now();
-  const [home, robots, sitemap] = await Promise.all([
-    getTextResponse(`${targetOrigin}/?crux-monitoring=${nonce}`),
-    getTextResponse(`${targetOrigin}/robots.txt?crux-monitoring=${nonce}`),
-    getTextResponse(`${targetOrigin}/sitemap.xml?crux-monitoring=${nonce}`),
-  ]);
-
-  return {
-    canonicalPresent: home.text.includes(`<link rel="canonical" href="${targetOrigin}/" />`),
-    homeStatus: home.status,
-    homeStatusText: home.statusText,
-    noIndexPresent: /noindex/i.test(home.text) || /x-robots-tag:\s*noindex/i.test(home.headers),
-    robotsAllowsAll: /User-agent:\s*\*/i.test(robots.text) && /Allow:\s*\//i.test(robots.text),
-    robotsSitemapPresent: robots.text.includes(`Sitemap: ${targetOrigin}/sitemap.xml`),
-    robotsStatus: robots.status,
-    sitemapHasOrigin: sitemap.text.includes(`<loc>${targetOrigin}/</loc>`),
-    sitemapStatus: sitemap.status,
-  };
-}
-
 async function queryCruxApi(targetOrigin, key) {
-  const url = appendApiKey('https://chromeuxreport.googleapis.com/v1/records:queryRecord', key);
+  const url = appendApiKey(cruxApiEndpoint, key);
   const [originResponse, urlResponse] = await Promise.all([
     postJson(url, { origin: targetOrigin }),
     postJson(url, { url: targetUrl }),
@@ -120,8 +118,31 @@ async function queryCruxApi(targetOrigin, key) {
   };
 }
 
+async function queryDiscoverability(targetOrigin) {
+  const homeUrl = `${targetOrigin}/?crux-monitoring=${Date.now()}`;
+  const robotsUrl = `${targetOrigin}/robots.txt?crux-monitoring=${Date.now()}`;
+  const sitemapUrl = `${targetOrigin}/sitemap.xml?crux-monitoring=${Date.now()}`;
+  const [home, robots, sitemap] = await Promise.all([
+    getTextResponse(homeUrl),
+    getTextResponse(robotsUrl),
+    getTextResponse(sitemapUrl),
+  ]);
+
+  return {
+    canonicalPresent: home.text.includes(`<link rel="canonical" href="${targetOrigin}/" />`),
+    homeStatus: home.status,
+    homeStatusText: home.statusText,
+    noIndexPresent: /noindex/i.test(home.text) || /x-robots-tag:\s*noindex/i.test(home.headers),
+    robotsAllowsAll: /User-agent:\s*\*/i.test(robots.text) && /Allow:\s*\//i.test(robots.text),
+    robotsSitemapPresent: robots.text.includes(`Sitemap: ${targetOrigin}/sitemap.xml`),
+    robotsStatus: robots.status,
+    sitemapHasOrigin: sitemap.text.includes(`<loc>${targetOrigin}/</loc>`),
+    sitemapStatus: sitemap.status,
+  };
+}
+
 async function queryPageSpeed(targetOrigin, key) {
-  const url = new URL('https://www.googleapis.com/pagespeedonline/v5/runPagespeed');
+  const url = new URL(pageSpeedEndpoint);
   url.searchParams.set('url', `${targetOrigin}/`);
   url.searchParams.set('strategy', 'mobile');
   url.searchParams.set('category', 'performance');
@@ -151,6 +172,7 @@ async function queryCruxCache(targetOrigin, scanChunks) {
   const manifestResponse = await getJson(`${cruxCacheBaseUrl}data/global/manifest.json`);
   const latestMonth = manifestResponse.body?.summary?.latest_month ?? null;
   const latestData = latestMonth ? manifestResponse.body?.months?.[latestMonth] : null;
+
   const summary = {
     dataset: 'global',
     datasetsStatus: datasetsResponse.status,
@@ -169,7 +191,8 @@ async function queryCruxCache(targetOrigin, scanChunks) {
 
   for (const chunk of latestData.chunks) {
     summary.scannedChunks += 1;
-    const text = await getText(`${cruxCacheBaseUrl}data/global/${chunk.filename}`);
+    const chunkUrl = `${cruxCacheBaseUrl}data/global/${chunk.filename}`;
+    const text = await getText(chunkUrl);
     if (containsOriginCsvLine(text, targetOrigin)) {
       summary.foundOrigin = true;
       summary.foundInChunk = chunk.filename;
@@ -197,8 +220,9 @@ async function requestJson(url, options) {
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
   try {
     const response = await fetch(url, { ...options, signal: controller.signal });
+    const text = await response.text();
     return {
-      body: parseJson(await response.text()),
+      body: parseJson(text),
       status: response.status,
       statusText: response.statusText,
     };
@@ -236,6 +260,14 @@ async function getTextResponse(url) {
       statusText: response.statusText,
       text: await response.text(),
     };
+  } catch (error) {
+    return {
+      error: error instanceof Error ? error.message : String(error),
+      headers: '',
+      status: 0,
+      statusText: 'request failed',
+      text: '',
+    };
   } finally {
     clearTimeout(timeout);
   }
@@ -252,9 +284,7 @@ function appendApiKey(url, key) {
 
 function containsOriginCsvLine(text, targetOrigin) {
   const normalized = targetOrigin.toLowerCase();
-  return text
-    .split('\n')
-    .some((line) => line.trim().toLowerCase().startsWith(`${normalized},`));
+  return text.split('\n').some((line) => line.trim().toLowerCase().startsWith(`${normalized},`));
 }
 
 function hasMetrics(value) {
