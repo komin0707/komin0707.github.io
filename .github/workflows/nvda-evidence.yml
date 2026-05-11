@@ -167,5 +167,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nvda-evidence
-          path: ${{ runner.temp }}\nvda-evidence
+          path: |
+            ${{ runner.temp }}\nvda-evidence\summary.json
+            ${{ runner.temp }}\nvda-evidence\nvda.log
+            ${{ runner.temp }}\nvda-evidence\nvda-session.log
+            ${{ runner.temp }}\nvda-evidence\windows-nvda-edge.png
+            ${{ runner.temp }}\nvda-evidence\screenshot-error.txt
+            ${{ runner.temp }}\nvda-evidence\processes.json
+            ${{ runner.temp }}\nvda-evidence\files.json
+            ${{ runner.temp }}\nvda-evidence\config\nvda.ini
+            ${{ runner.temp }}\nvda-evidence\config\updateCheckState.pickle
           if-no-files-found: error
