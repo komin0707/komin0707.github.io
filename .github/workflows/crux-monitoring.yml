@@ -26,6 +26,8 @@ jobs:
         continue-on-error: true
         env:
           CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           CRUX_CACHE_SCAN: '1'
         run: node .github/scripts/check-crux-monitoring.mjs
       - uses: actions/upload-artifact@v4
@@ -58,7 +60,7 @@ jobs:
               `PageSpeed API status: ${artifact.checks.pageSpeed.status}`,
               '',
               'Unblock conditions:',
-              '- Configure CRUX_API_KEY with Chrome UX Report API quota, and',
+              '- Configure CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY with Chrome UX Report/PageSpeed API quota, and',
               '- Wait until the production origin has enough real-user Chrome traffic to expose CrUX field data.',
               '',
               marker,
