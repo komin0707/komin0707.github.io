@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 concurrency:
   group: crux-monitoring
@@ -35,6 +36,53 @@ jobs:
       - name: Summarize CrUX status
         run: |
           node -e "const fs=require('node:fs'); const a=JSON.parse(fs.readFileSync('artifacts/manual-evidence/chrome-ux-report-monitoring.json','utf8')); const cache=a.checks.cruxCache; const d=a.checks.discoverability; console.log(JSON.stringify({result:a.result, origin:a.origin, discoverable:d.homeStatus===200 && !d.noIndexPresent && d.robotsAllowsAll && d.sitemapHasOrigin, latestMonth:cache.latestMonth, scannedChunks:cache.scannedChunks, foundOrigin:cache.foundOrigin}, null, 2));"
+      - name: Open or update CrUX blocker issue
+        if: steps.crux.outcome == 'failure'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const artifact = JSON.parse(fs.readFileSync('artifacts/manual-evidence/chrome-ux-report-monitoring.json', 'utf8'));
+            const marker = 'crux-monitoring-field-data-blocker';
+            const title = '[blocked] Chrome UX Report field data unavailable';
+            const body = [
+              'Chrome UX Report monitoring ran, but field data is not available yet.',
+              '',
+              `Origin: ${artifact.origin}`,
+              `Result: ${artifact.result}`,
+              `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `Latest public CrUX cache month: ${artifact.checks.cruxCache.latestMonth}`,
+              `Public CrUX cache chunks scanned: ${artifact.checks.cruxCache.scannedChunks}/${artifact.checks.cruxCache.totalChunks}`,
+              `Origin found in public CrUX cache: ${artifact.checks.cruxCache.foundOrigin}`,
+              `CrUX API status: ${artifact.checks.cruxApi.status}`,
+              `PageSpeed API status: ${artifact.checks.pageSpeed.status}`,
+              '',
+              'Unblock conditions:',
+              '- Configure CRUX_API_KEY with Chrome UX Report API quota, and',
+              '- Wait until the production origin has enough real-user Chrome traffic to expose CrUX field data.',
+              '',
+              marker,
+            ].join('\n');
+            const { data: existingIssues } = await github.rest.search.issuesAndPullRequests({
+              q: `repo:${context.repo.owner}/${context.repo.repo} is:issue is:open ${marker}`,
+            });
+            if (existingIssues.total_count > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssues.items[0].number,
+                body,
+                title,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['blocked', 'crux'],
+              });
+            }
       - name: Fail when field data is unavailable
         if: steps.crux.outcome == 'failure'
         run: |
