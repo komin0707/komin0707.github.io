@@ -18,6 +18,7 @@ const googleApplicationDefaultCredentials = checkGoogleApplicationDefaultCredent
 const gcloud = checkGcloud();
 const secrets = listGitHubNames('secret');
 const variables = listGitHubNames('variable');
+const environments = listGitHubEnvironments();
 
 const artifact = {
   verifiedAt: new Date().toISOString(),
@@ -38,7 +39,7 @@ const artifact = {
     source: apiKeyResolution.source,
   },
   informationalOnly: [
-    'Local env files are consumed by local monitor runs when they contain an accepted key name. macOS Keychain, Google ADC, gcloud, and GitHub repository variables are recorded for troubleshooting but are not consumed by the current CrUX monitor unless exported to an accepted environment variable or configured as a GitHub Actions secret.',
+    'Local env files are consumed by local monitor runs when they contain an accepted key name. macOS Keychain, Google ADC, gcloud, GitHub repository variables, and GitHub environment secrets/variables are recorded for troubleshooting but are not consumed by the current CrUX monitor unless exported to an accepted environment variable or configured as a GitHub Actions secret available to the workflow job.',
   ],
   localEnvironment: environment,
   localEnvFiles,
@@ -48,6 +49,7 @@ const artifact = {
   githubRepository: repo,
   githubSecrets: secrets,
   githubVariables: variables,
+  githubEnvironments: environments,
   requiredToComplete: [
     'Configure one of CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY with Chrome UX Report/PageSpeed quota.',
     'Rerun npm run check:crux-monitoring after the production origin has available field data.',
@@ -62,10 +64,15 @@ if (artifact.result !== 'present') {
   process.exitCode = 1;
 }
 
-function listGitHubNames(kind) {
+function listGitHubNames(kind, options = {}) {
   const command = kind === 'secret' ? 'secret' : 'variable';
+  const args = [command, 'list', '--repo', repo, '--json', 'name,updatedAt'];
+  if (options.environmentName) {
+    args.splice(4, 0, '--env', options.environmentName);
+  }
+
   try {
-    const output = execFileSync('gh', [command, 'list', '--repo', repo, '--json', 'name,updatedAt'], {
+    const output = execFileSync('gh', args, {
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'pipe'],
     });
@@ -88,6 +95,52 @@ function listGitHubNames(kind) {
       names: [],
     };
   }
+}
+
+function listGitHubEnvironments() {
+  try {
+    const output = execFileSync('gh', ['api', `repos/${repo}/environments`], {
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+    const parsed = JSON.parse(output);
+    const rows = Array.isArray(parsed.environments) ? parsed.environments : [];
+    const environments = rows
+      .map((row) => row.name)
+      .filter((name) => typeof name === 'string')
+      .map((name) => ({
+        name,
+        secrets: listGitHubNames('secret', { environmentName: name }),
+        variables: listGitHubNames('variable', { environmentName: name }),
+      }));
+
+    return {
+      acceptedPresent: {
+        secrets: uniqueNames(environments.flatMap((entry) => entry.secrets.acceptedPresent)),
+        variables: uniqueNames(environments.flatMap((entry) => entry.variables.acceptedPresent)),
+      },
+      checked: true,
+      count: environments.length,
+      environments,
+      names: environments.map((entry) => entry.name),
+    };
+  } catch (error) {
+    return {
+      acceptedPresent: {
+        secrets: [],
+        variables: [],
+      },
+      checked: false,
+      count: null,
+      environments: [],
+      error: error instanceof Error ? error.message : String(error),
+      names: [],
+    };
+  }
+}
+
+function uniqueNames(names) {
+  return [...new Set(names)];
 }
 
 function checkMacosKeychain() {
