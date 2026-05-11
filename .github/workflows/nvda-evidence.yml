@@ -111,7 +111,10 @@ jobs:
             (Join-Path $configPath 'nvda.log')
           ) | Where-Object { Test-Path $_ }
           foreach ($log in $logs) {
-            Copy-Item -Force -Path $log -Destination (Join-Path $evidence (Split-Path -Leaf $log))
+            $destination = Join-Path $evidence (Split-Path -Leaf $log)
+            if ((Resolve-Path $log).Path -ne (Resolve-Path $destination -ErrorAction SilentlyContinue).Path) {
+              Copy-Item -Force -Path $log -Destination $destination
+            }
           }
 
           $processes = Get-Process nvda, msedge -ErrorAction SilentlyContinue |
