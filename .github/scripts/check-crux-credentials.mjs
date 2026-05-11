@@ -1,9 +1,14 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
-import { dirname } from 'node:path';
+import { dirname, join } from 'node:path';
 import process from 'node:process';
-import { acceptedCruxKeyNames, resolveCruxApiKey, summarizeCruxEnvFiles } from './crux-env.mjs';
+import {
+  acceptedCruxKeyNames,
+  cruxEnvFilePaths,
+  resolveCruxApiKey,
+  summarizeCruxEnvFiles,
+} from './crux-env.mjs';
 
 const acceptedKeyNames = acceptedCruxKeyNames;
 const repo = process.env.CRUX_GITHUB_REPO ?? 'komin0707/komin0707.github.io';
@@ -14,6 +19,7 @@ const environment = Object.fromEntries(acceptedKeyNames.map((name) => [name, Boo
 const localEnvFiles = summarizeCruxEnvFiles();
 const apiKeyResolution = resolveCruxApiKey();
 const keychain = checkMacosKeychain();
+const nonAcceptedCredentialNames = scanNonAcceptedCredentialNames();
 const googleApplicationDefaultCredentials = checkGoogleApplicationDefaultCredentials();
 const gcloud = checkGcloud();
 const secrets = listGitHubNames('secret');
@@ -44,6 +50,7 @@ const artifact = {
   ],
   localEnvironment: environment,
   localEnvFiles,
+  nonAcceptedCredentialNames,
   macosKeychain: keychain,
   googleApplicationDefaultCredentials,
   gcloud,
@@ -142,6 +149,44 @@ function listGitHubEnvironments() {
 
 function uniqueNames(names) {
   return [...new Set(names)];
+}
+
+function scanNonAcceptedCredentialNames() {
+  return {
+    checked: true,
+    envFileNames: cruxEnvFilePaths
+      .map((path) => {
+        if (!existsSync(join(process.cwd(), path))) {
+          return {
+            exists: false,
+            names: [],
+            path,
+          };
+        }
+
+        return {
+          exists: true,
+          names: relevantNonAcceptedNames(parseEnvNames(readFileSync(join(process.cwd(), path), 'utf8'))),
+          path,
+        };
+      })
+      .filter((entry) => entry.exists || entry.names.length > 0),
+    localEnvironmentNames: relevantNonAcceptedNames(Object.keys(process.env)),
+  };
+}
+
+function relevantNonAcceptedNames(names) {
+  return names
+    .filter((name) => !acceptedKeyNames.includes(name))
+    .filter((name) => /(?:CRUX|PAGESPEED|PAGE_SPEED|GOOGLE)/i.test(name))
+    .sort();
+}
+
+function parseEnvNames(source) {
+  return source
+    .split('\n')
+    .map((line) => line.match(/^\s*(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=/)?.[1])
+    .filter((name) => typeof name === 'string');
 }
 
 function checkMacosKeychain() {
