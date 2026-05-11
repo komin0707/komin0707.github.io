@@ -1,0 +1,149 @@
+name: JAWS Evidence
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  jaws:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - name: Capture JAWS evidence
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $targetUrl = 'https://komin0707.github.io/'
+          $jawsInstallerUrl = 'https://software.vfo.digital/JAWS/2026/2026.2603.86.400/4C358832-E709-4832-9C4B-47357E07F729/J2026.2603.86.400-any.exe'
+          $evidence = Join-Path $env:RUNNER_TEMP 'jaws-evidence'
+          New-Item -ItemType Directory -Force -Path $evidence | Out-Null
+
+          $installerPath = Join-Path $evidence 'J2026.2603.86.400-any.exe'
+          Invoke-WebRequest -Headers @{ 'User-Agent' = 'codex-jaws-evidence' } `
+            -Uri $jawsInstallerUrl `
+            -OutFile $installerPath
+
+          $installLog = Join-Path $evidence 'jaws-install.log'
+          $install = Start-Process -FilePath $installerPath `
+            -ArgumentList @('/Type', 'Silent', '/Language', 'enu', '/Log', $installLog) `
+            -Wait `
+            -PassThru
+
+          $programRoots = @($env:ProgramFiles, ${env:ProgramFiles(x86)}) | Where-Object { $_ }
+          $jawsExecutables = foreach ($root in $programRoots) {
+            Get-ChildItem -Path (Join-Path $root 'Freedom Scientific') `
+              -Filter 'jfw.exe' `
+              -Recurse `
+              -ErrorAction SilentlyContinue
+          }
+          $jawsPath = $jawsExecutables | Select-Object -ExpandProperty FullName -First 1
+          if (-not $jawsPath) {
+            throw 'JAWS executable jfw.exe was not found after installation.'
+          }
+
+          Add-Type -AssemblyName System.Windows.Forms
+          $edgePath = Join-Path ${env:ProgramFiles(x86)} 'Microsoft\Edge\Application\msedge.exe'
+          if (-not (Test-Path $edgePath)) {
+            $edgePath = Join-Path $env:ProgramFiles 'Microsoft\Edge\Application\msedge.exe'
+          }
+          if (-not (Test-Path $edgePath)) {
+            throw 'Microsoft Edge executable was not found on the Windows runner.'
+          }
+
+          $edgeProfile = Join-Path $evidence 'edge-profile'
+          New-Item -ItemType Directory -Force -Path $edgeProfile | Out-Null
+          $edgeProcess = Start-Process -FilePath $edgePath `
+            -ArgumentList @(
+              '--new-window',
+              '--no-first-run',
+              '--no-default-browser-check',
+              '--disable-search-engine-choice-screen',
+              "--user-data-dir=$edgeProfile",
+              $targetUrl
+            ) `
+            -PassThru
+          Start-Sleep -Seconds 22
+
+          $wshell = New-Object -ComObject WScript.Shell
+          [void]$wshell.AppActivate($edgeProcess.Id)
+          Start-Sleep -Seconds 2
+          [System.Windows.Forms.SendKeys]::SendWait('{ESC}')
+
+          $jawsProcess = Start-Process -FilePath $jawsPath -PassThru
+          Start-Sleep -Seconds 25
+
+          [void]$wshell.AppActivate($edgeProcess.Id)
+          Start-Sleep -Seconds 2
+          [System.Windows.Forms.SendKeys]::SendWait('{TAB}')
+          Start-Sleep -Seconds 2
+          [System.Windows.Forms.SendKeys]::SendWait('{TAB}')
+          Start-Sleep -Seconds 2
+          [System.Windows.Forms.SendKeys]::SendWait('{DOWN}')
+          Start-Sleep -Seconds 10
+
+          try {
+            Add-Type -AssemblyName System.Drawing
+            $bounds = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+            $bitmap = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height
+            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+            $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size)
+            $screenshotPath = Join-Path $evidence 'windows-jaws-edge.png'
+            $bitmap.Save($screenshotPath, [System.Drawing.Imaging.ImageFormat]::Png)
+            $graphics.Dispose()
+            $bitmap.Dispose()
+          } catch {
+            $_ | Out-String | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'screenshot-error.txt')
+          }
+
+          $processes = Get-Process jfw, fs*, msedge -ErrorAction SilentlyContinue |
+            Select-Object ProcessName, Id, StartTime, Path
+          $processes | ConvertTo-Json -Depth 4 | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'processes.json')
+
+          $installedFiles = $jawsExecutables |
+            Select-Object FullName, Length, LastWriteTimeUtc
+          $installedFiles | ConvertTo-Json -Depth 4 | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'installed-files.json')
+
+          $summary = [ordered]@{
+            verifiedAt = (Get-Date).ToUniversalTime().ToString('o')
+            verifier = 'GitHub Actions windows-latest runner with JAWS 2026 installed and launched'
+            targetUrl = $targetUrl
+            runner = [ordered]@{
+              os = $env:ImageOS
+              version = $env:ImageVersion
+              runnerName = $env:RUNNER_NAME
+            }
+            jaws = [ordered]@{
+              installer = 'J2026.2603.86.400-any.exe'
+              installerUrl = $jawsInstallerUrl
+              installExitCode = $install.ExitCode
+              executable = $jawsPath
+              processId = $jawsProcess.Id
+            }
+            browser = [ordered]@{
+              executable = $edgePath
+              processId = $edgeProcess.Id
+            }
+          }
+          $summary | ConvertTo-Json -Depth 6 | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'summary.json')
+
+          Get-ChildItem -Path $evidence -Recurse |
+            Where-Object { $_.FullName -notmatch '\\edge-profile\\' -and $_.Name -ne 'J2026.2603.86.400-any.exe' } |
+            Select-Object FullName, Length, LastWriteTimeUtc |
+            ConvertTo-Json -Depth 4 |
+            Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'files.json')
+
+      - name: Upload JAWS evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: jaws-evidence
+          path: |
+            ${{ runner.temp }}\jaws-evidence\summary.json
+            ${{ runner.temp }}\jaws-evidence\jaws-install.log
+            ${{ runner.temp }}\jaws-evidence\windows-jaws-edge.png
+            ${{ runner.temp }}\jaws-evidence\screenshot-error.txt
+            ${{ runner.temp }}\jaws-evidence\processes.json
+            ${{ runner.temp }}\jaws-evidence\installed-files.json
+            ${{ runner.temp }}\jaws-evidence\files.json
+          if-no-files-found: error
