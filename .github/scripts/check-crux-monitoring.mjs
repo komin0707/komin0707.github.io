@@ -4,6 +4,7 @@ import process from 'node:process';
 import { clearTimeout, setTimeout } from 'node:timers';
 
 const origin = normalizeOrigin(process.env.CRUX_ORIGIN ?? 'https://komin0707.github.io');
+const targetUrl = normalizeUrl(process.env.CRUX_URL ?? `${origin}/`);
 const artifactPath = 'artifacts/manual-evidence/chrome-ux-report-monitoring.json';
 const canonicalEvidencePath = 'artifacts/manual-evidence/chrome-ux-report.json';
 const apiKey = process.env.CRUX_API_KEY ?? process.env.PAGESPEED_API_KEY ?? process.env.GOOGLE_API_KEY ?? '';
@@ -22,6 +23,7 @@ const hasFieldData = Boolean(
 const fieldDataEvidence = {
   available: hasFieldData,
   cruxApiRecord: cruxApi.hasRecord,
+  cruxApiUrlRecord: cruxApi.urlRecord.hasRecord,
   pageSpeedLoadingExperience: pageSpeed.hasLoadingExperience,
   pageSpeedOriginLoadingExperience: pageSpeed.hasOriginLoadingExperience,
   publicCruxCacheOrigin: cruxCache.foundOrigin,
@@ -32,10 +34,11 @@ const artifact = {
   verifier: 'GitHub Pages CrUX monitoring workflow',
   result: hasFieldData ? 'passed' : 'blocked',
   evidence: hasFieldData
-    ? `Chrome UX Report monitoring found field-data evidence for ${origin}.`
-    : `Chrome UX Report monitoring is configured for ${origin}, but no CrUX field-data evidence is currently available to verify the production origin.`,
+    ? `Chrome UX Report monitoring found field-data evidence for ${targetUrl}.`
+    : `Chrome UX Report monitoring is configured for ${targetUrl}, but no CrUX field-data evidence is currently available to verify the production origin.`,
   origin,
   startedAt,
+  targetUrl,
   fieldDataAvailable: hasFieldData,
   fieldDataEvidence,
   checks: {
@@ -93,14 +96,20 @@ async function queryDiscoverability(targetOrigin) {
 
 async function queryCruxApi(targetOrigin, key) {
   const url = appendApiKey('https://chromeuxreport.googleapis.com/v1/records:queryRecord', key);
-  const response = await postJson(url, { origin: targetOrigin });
+  const [originResponse, urlResponse] = await Promise.all([
+    postJson(url, { origin: targetOrigin }),
+    postJson(url, { url: targetUrl }),
+  ]);
+  const originRecord = summarizeCruxRecordResponse(originResponse);
+  const urlRecord = summarizeCruxRecordResponse(urlResponse);
   return {
     endpoint: 'records:queryRecord',
     hasApiKey: key.length > 0,
-    hasRecord: Boolean(response.body?.record),
-    status: response.status,
-    statusText: response.statusText,
-    error: simplifyGoogleError(response.body),
+    hasRecord: originRecord.hasRecord || urlRecord.hasRecord,
+    originRecord,
+    status: originRecord.status,
+    statusText: originRecord.statusText,
+    urlRecord,
   };
 }
 
@@ -245,9 +254,22 @@ function hasMetrics(value) {
   return typeof value === 'object' && value !== null && Object.keys(value.metrics ?? {}).length > 0;
 }
 
+function summarizeCruxRecordResponse(response) {
+  return {
+    error: simplifyGoogleError(response.body),
+    hasRecord: Boolean(response.body?.record),
+    status: response.status,
+    statusText: response.statusText,
+  };
+}
+
 function normalizeOrigin(value) {
   const url = new URL(value);
   return url.origin.toLowerCase();
+}
+
+function normalizeUrl(value) {
+  return new URL(value).toString();
 }
 
 function parseJson(text) {
