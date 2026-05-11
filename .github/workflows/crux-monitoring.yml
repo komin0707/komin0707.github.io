@@ -43,6 +43,14 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           CRUX_CACHE_SCAN: '1'
         run: node .github/scripts/check-crux-monitoring.mjs
+      - name: Check direct CrUX/PageSpeed live probes
+        id: crux_live_probes
+        continue-on-error: true
+        env:
+          CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: node .github/scripts/check-crux-live-probes.mjs
       - uses: actions/upload-artifact@v7
         with:
           name: chrome-ux-report-monitoring
@@ -50,6 +58,8 @@ jobs:
             artifacts/manual-evidence/github-pages-domain.json
             artifacts/manual-evidence/chrome-ux-report-credentials.json
             artifacts/manual-evidence/chrome-ux-report-monitoring.json
+            artifacts/manual-evidence/crux-live-probe.json
+            artifacts/manual-evidence/pagespeed-live-probe.json
             artifacts/manual-evidence/chrome-ux-report.json
           retention-days: 30
       - name: Summarize CrUX status
@@ -86,6 +96,20 @@ jobs:
             const pagesDomain = fs.existsSync('artifacts/manual-evidence/github-pages-domain.json')
               ? JSON.parse(fs.readFileSync('artifacts/manual-evidence/github-pages-domain.json', 'utf8'))
               : null;
+            const liveCruxProbe = fs.existsSync('artifacts/manual-evidence/crux-live-probe.json')
+              ? JSON.parse(fs.readFileSync('artifacts/manual-evidence/crux-live-probe.json', 'utf8'))
+              : null;
+            const livePageSpeedProbe = fs.existsSync('artifacts/manual-evidence/pagespeed-live-probe.json')
+              ? JSON.parse(fs.readFileSync('artifacts/manual-evidence/pagespeed-live-probe.json', 'utf8'))
+              : null;
+            const liveProbeStatus = (name) => {
+              const probe = liveCruxProbe?.probes?.find((entry) => entry.name === name);
+              return probe?.status ?? 'unavailable';
+            };
+            const liveProbeRecord = (name) => {
+              const probe = liveCruxProbe?.probes?.find((entry) => entry.name === name);
+              return probe?.recordPresent === true ? 'present' : 'absent';
+            };
             const marker = 'crux-monitoring-field-data-blocker';
             const title = '[blocked] Chrome UX Report field data unavailable';
             const body = [
@@ -103,6 +127,12 @@ jobs:
               `CrUX API URL status: ${artifact.checks.cruxApi.urlRecord.status}`,
               `PageSpeed API key configured: ${artifact.checks.pageSpeed.hasApiKey}`,
               `PageSpeed API status: ${artifact.checks.pageSpeed.status}`,
+              `Direct CrUX live probe origin status: ${liveProbeStatus('origin')}`,
+              `Direct CrUX live probe URL status: ${liveProbeStatus('url')}`,
+              `Direct CrUX live probe records: ${liveProbeRecord('origin')}/${liveProbeRecord('url')}`,
+              `Direct PageSpeed live probe status: ${livePageSpeedProbe?.status ?? 'unavailable'}`,
+              `Direct PageSpeed loadingExperience: ${livePageSpeedProbe?.hasLoadingExperience === true ? 'present' : 'absent'}`,
+              `Direct PageSpeed originLoadingExperience: ${livePageSpeedProbe?.hasOriginLoadingExperience === true ? 'present' : 'absent'}`,
               `Pages domain result: ${pagesDomain?.result ?? 'unavailable'}`,
               `Pages connected origins: ${(pagesDomain?.connectedOrigins ?? []).join(', ') || 'none'}`,
               `Pages CNAME: ${pagesDomain?.cnameFile?.exists ? pagesDomain.cnameFile.value : 'absent'}`,
