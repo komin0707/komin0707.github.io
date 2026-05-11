@@ -153,9 +153,7 @@ jobs:
               '- gh secret set PAGESPEED_API_KEY --repo komin0707/komin0707.github.io',
               '- gh secret set PAGESPEED_API_KEY --repo komin0707/komin0707.github.io --env github-pages',
               '- gh workflow run "CrUX Monitoring" --repo komin0707/komin0707.github.io',
-              '- npm run sync:remote-crux-evidence',
-              '- npm run refresh:completion-evidence',
-              '- npm run check:completion-evidence',
+              '- npm run refresh:crux-blocker-evidence',
               '',
               marker,
             ].join('\n');
