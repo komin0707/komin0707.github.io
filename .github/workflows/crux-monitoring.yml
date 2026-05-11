@@ -21,6 +21,14 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
+      - name: Check CrUX credential preflight
+        id: crux_credentials
+        continue-on-error: true
+        env:
+          CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: node .github/scripts/check-crux-credentials.mjs
       - name: Check Chrome UX Report monitoring
         id: crux
         continue-on-error: true
@@ -34,6 +42,7 @@ jobs:
         with:
           name: chrome-ux-report-monitoring
           path: |
+            artifacts/manual-evidence/chrome-ux-report-credentials.json
             artifacts/manual-evidence/chrome-ux-report-monitoring.json
             artifacts/manual-evidence/chrome-ux-report.json
           retention-days: 30
@@ -65,6 +74,9 @@ jobs:
           script: |
             const fs = require('node:fs');
             const artifact = JSON.parse(fs.readFileSync('artifacts/manual-evidence/chrome-ux-report-monitoring.json', 'utf8'));
+            const credentials = fs.existsSync('artifacts/manual-evidence/chrome-ux-report-credentials.json')
+              ? JSON.parse(fs.readFileSync('artifacts/manual-evidence/chrome-ux-report-credentials.json', 'utf8'))
+              : null;
             const marker = 'crux-monitoring-field-data-blocker';
             const title = '[blocked] Chrome UX Report field data unavailable';
             const body = [
@@ -82,6 +94,9 @@ jobs:
               `CrUX API URL status: ${artifact.checks.cruxApi.urlRecord.status}`,
               `PageSpeed API key configured: ${artifact.checks.pageSpeed.hasApiKey}`,
               `PageSpeed API status: ${artifact.checks.pageSpeed.status}`,
+              `Credential preflight result: ${credentials?.result ?? 'unavailable'}`,
+              `Credential preflight usable local env names: ${(credentials?.usableByCurrentMonitor?.localEnvironmentNames ?? []).join(', ') || 'none'}`,
+              `Credential preflight usable GitHub secret names: ${(credentials?.usableByCurrentMonitor?.githubSecretNames ?? []).join(', ') || 'none'}`,
               '',
               'Unblock conditions:',
               '- Configure CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY with Chrome UX Report/PageSpeed API quota, and',
