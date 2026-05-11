@@ -149,6 +149,14 @@ jobs:
               '- Configure CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY with Chrome UX Report/PageSpeed API quota, and',
               '- Wait until the production origin has enough real-user Chrome traffic to expose CrUX field data.',
               '',
+              'Operator next steps:',
+              '- gh secret set PAGESPEED_API_KEY --repo komin0707/komin0707.github.io',
+              '- gh secret set PAGESPEED_API_KEY --repo komin0707/komin0707.github.io --env github-pages',
+              '- gh workflow run "CrUX Monitoring" --repo komin0707/komin0707.github.io',
+              '- npm run sync:remote-crux-evidence',
+              '- npm run refresh:completion-evidence',
+              '- npm run check:completion-evidence',
+              '',
               marker,
             ].join('\n');
             const { data: existingIssues } = await github.rest.search.issuesAndPullRequests({
