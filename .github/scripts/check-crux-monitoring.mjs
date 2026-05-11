@@ -5,7 +5,7 @@ import { clearTimeout, setTimeout } from 'node:timers';
 
 const origin = normalizeOrigin(process.env.CRUX_ORIGIN ?? 'https://komin0707.github.io');
 const artifactPath = 'artifacts/manual-evidence/chrome-ux-report-monitoring.json';
-const apiKey = process.env.CRUX_API_KEY ?? process.env.PAGESPEED_API_KEY ?? '';
+const apiKey = process.env.CRUX_API_KEY ?? process.env.PAGESPEED_API_KEY ?? process.env.GOOGLE_API_KEY ?? '';
 const shouldScanCruxCache = process.env.CRUX_CACHE_SCAN === '1';
 const timeoutMs = Number(process.env.CRUX_REQUEST_TIMEOUT_MS ?? 20_000);
 const cruxCacheBaseUrl = 'https://raw.githubusercontent.com/lonetis/crux-cache/main/';
