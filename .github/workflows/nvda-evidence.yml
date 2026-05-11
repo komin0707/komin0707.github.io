@@ -50,11 +50,6 @@ jobs:
 
           $configPath = Join-Path $evidence 'config'
           New-Item -ItemType Directory -Force -Path $configPath | Out-Null
-          $nvdaProcess = Start-Process -FilePath $nvdaPath `
-            -ArgumentList @('-r', '--disable-addons', '--log-level', 'debug', '--config-path', $configPath) `
-            -PassThru
-          Start-Sleep -Seconds 12
-
           $edgePath = Join-Path ${env:ProgramFiles(x86)} 'Microsoft\Edge\Application\msedge.exe'
           if (-not (Test-Path $edgePath)) {
             $edgePath = Join-Path $env:ProgramFiles 'Microsoft\Edge\Application\msedge.exe'
@@ -66,7 +61,24 @@ jobs:
           $edgeProcess = Start-Process -FilePath $edgePath `
             -ArgumentList @('--new-window', $targetUrl) `
             -PassThru
-          Start-Sleep -Seconds 15
+          Start-Sleep -Seconds 18
+
+          $wshell = New-Object -ComObject WScript.Shell
+          [void]$wshell.AppActivate($edgeProcess.Id)
+          Start-Sleep -Seconds 2
+
+          $nvdaLogPath = Join-Path $evidence 'nvda-session.log'
+          $existingNvda = Start-Process -FilePath $nvdaPath `
+            -ArgumentList @('--quit') `
+            -Wait `
+            -PassThru
+          $nvdaProcess = Start-Process -FilePath $nvdaPath `
+            -ArgumentList @('--disable-addons', '--log-level=12', "--log-file=$nvdaLogPath", "--config-path=$configPath") `
+            -PassThru
+          Start-Sleep -Seconds 12
+
+          [void]$wshell.AppActivate($edgeProcess.Id)
+          Start-Sleep -Seconds 2
 
           Add-Type -AssemblyName System.Windows.Forms
           [System.Windows.Forms.SendKeys]::SendWait('{TAB}')
@@ -76,8 +88,26 @@ jobs:
           [System.Windows.Forms.SendKeys]::SendWait('{INSERT}{DOWN}')
           Start-Sleep -Seconds 10
 
+          try {
+            Add-Type -AssemblyName System.Drawing
+            $bounds = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+            $bitmap = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height
+            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+            $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size)
+            $screenshotPath = Join-Path $evidence 'windows-nvda-edge.png'
+            $bitmap.Save($screenshotPath, [System.Drawing.Imaging.ImageFormat]::Png)
+            $graphics.Dispose()
+            $bitmap.Dispose()
+          } catch {
+            $_ | Out-String | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'screenshot-error.txt')
+          }
+
+          Start-Process -FilePath $nvdaPath -ArgumentList @('--quit') -Wait | Out-Null
+          Start-Sleep -Seconds 2
+
           $logs = @(
             (Join-Path $env:TEMP 'nvda.log'),
+            $nvdaLogPath,
             (Join-Path $configPath 'nvda.log')
           ) | Where-Object { Test-Path $_ }
           foreach ($log in $logs) {
@@ -104,6 +134,7 @@ jobs:
               installExitCode = $install.ExitCode
               executable = $nvdaPath
               processId = $nvdaProcess.Id
+              quitExitCode = $existingNvda.ExitCode
             }
             browser = [ordered]@{
               executable = $edgePath
