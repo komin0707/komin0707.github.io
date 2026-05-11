@@ -201,7 +201,6 @@ function checkGcloud() {
 function hasUsableCredential(apiKeyResolution, secretNames) {
   const workflowSecretNames = [...secretNames, ...environments.acceptedPresent.secrets];
   return (
-    apiKeyResolution.source !== 'none' ||
-    acceptedKeyNames.some((name) => workflowSecretNames.includes(name))
+    apiKeyResolution.source !== 'none' || acceptedKeyNames.some((name) => workflowSecretNames.includes(name))
   );
 }
