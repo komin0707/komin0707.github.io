@@ -40,6 +40,24 @@ jobs:
       - name: Summarize CrUX status
         run: |
           node -e "const fs=require('node:fs'); const a=JSON.parse(fs.readFileSync('artifacts/manual-evidence/chrome-ux-report-monitoring.json','utf8')); const cache=a.checks.cruxCache; const d=a.checks.discoverability; console.log(JSON.stringify({result:a.result, origin:a.origin, discoverable:d.homeStatus===200 && !d.noIndexPresent && d.robotsAllowsAll && d.sitemapHasOrigin, latestMonth:cache.latestMonth, scannedChunks:cache.scannedChunks, foundOrigin:cache.foundOrigin}, null, 2));"
+      - name: Close CrUX blocker issue when field data is available
+        if: steps.crux.outcome == 'success'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const marker = 'crux-monitoring-field-data-blocker';
+            const { data: existingIssues } = await github.rest.search.issuesAndPullRequests({
+              q: `repo:${context.repo.owner}/${context.repo.repo} is:issue is:open ${marker}`,
+            });
+            if (existingIssues.total_count > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssues.items[0].number,
+                state: 'closed',
+                state_reason: 'completed',
+              });
+            }
       - name: Open or update CrUX blocker issue
         if: steps.crux.outcome == 'failure'
         uses: actions/github-script@v9
