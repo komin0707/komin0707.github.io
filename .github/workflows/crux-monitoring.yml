@@ -17,8 +17,8 @@ jobs:
   check-crux-field-data:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - name: Check Chrome UX Report monitoring
@@ -30,7 +30,7 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           CRUX_CACHE_SCAN: '1'
         run: node .github/scripts/check-crux-monitoring.mjs
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: chrome-ux-report-monitoring
           path: |
@@ -42,7 +42,7 @@ jobs:
           node -e "const fs=require('node:fs'); const a=JSON.parse(fs.readFileSync('artifacts/manual-evidence/chrome-ux-report-monitoring.json','utf8')); const cache=a.checks.cruxCache; const d=a.checks.discoverability; console.log(JSON.stringify({result:a.result, origin:a.origin, discoverable:d.homeStatus===200 && !d.noIndexPresent && d.robotsAllowsAll && d.sitemapHasOrigin, latestMonth:cache.latestMonth, scannedChunks:cache.scannedChunks, foundOrigin:cache.foundOrigin}, null, 2));"
       - name: Open or update CrUX blocker issue
         if: steps.crux.outcome == 'failure'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('node:fs');
