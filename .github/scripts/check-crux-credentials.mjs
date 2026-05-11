@@ -30,6 +30,7 @@ const artifact = {
   usableByCurrentMonitor: {
     envFileNames:
       apiKeyResolution.source === 'env-file' && apiKeyResolution.name ? [apiKeyResolution.name] : [],
+    githubEnvironmentSecretNames: environments.acceptedPresent.secrets,
     localEnvironmentNames: acceptedKeyNames.filter((name) => environment[name]),
     githubSecretNames: acceptedKeyNames.filter((name) => secrets.names.includes(name)),
   },
@@ -39,7 +40,7 @@ const artifact = {
     source: apiKeyResolution.source,
   },
   informationalOnly: [
-    'Local env files are consumed by local monitor runs when they contain an accepted key name. macOS Keychain, Google ADC, gcloud, GitHub repository variables, and GitHub environment secrets/variables are recorded for troubleshooting but are not consumed by the current CrUX monitor unless exported to an accepted environment variable or configured as a GitHub Actions secret available to the workflow job.',
+    'Local env files are consumed by local monitor runs when they contain an accepted key name. GitHub repository secrets and github-pages environment secrets are consumed by the remote CrUX workflow. macOS Keychain, Google ADC, gcloud, GitHub repository variables, and GitHub environment variables are recorded for troubleshooting but are not consumed unless exported to an accepted environment variable or configured as a GitHub Actions secret available to the workflow job.',
   ],
   localEnvironment: environment,
   localEnvFiles,
@@ -198,5 +199,9 @@ function checkGcloud() {
 }
 
 function hasUsableCredential(apiKeyResolution, secretNames) {
-  return apiKeyResolution.source !== 'none' || acceptedKeyNames.some((name) => secretNames.includes(name));
+  const workflowSecretNames = [...secretNames, ...environments.acceptedPresent.secrets];
+  return (
+    apiKeyResolution.source !== 'none' ||
+    acceptedKeyNames.some((name) => workflowSecretNames.includes(name))
+  );
 }
