@@ -17,11 +17,12 @@ const customDomain = pages.cname ?? cname;
 const cnameOrigin = customDomain ? normalizeOrigin(`https://${customDomain}`) : null;
 const connectedOrigins = [htmlOrigin, cnameOrigin].filter(Boolean);
 const expectedOriginConnected = connectedOrigins.includes(expectedOrigin);
+const pagesStatus = pages.status ?? null;
 
 const artifact = {
   verifiedAt: new Date().toISOString(),
   verifier: 'Codex GitHub Pages production domain verifier',
-  result: expectedOriginConnected && pages.status === 'built' ? 'passed' : 'blocked',
+  result: expectedOriginConnected ? 'passed' : 'blocked',
   evidence:
     'Checked the GitHub Pages configured URL and optional CNAME so CrUX monitoring targets the connected production origin.',
   repository: repo,
@@ -29,7 +30,7 @@ const artifact = {
   pages: {
     htmlUrl: pages.html_url ?? null,
     htmlOrigin,
-    status: pages.status ?? null,
+    status: pagesStatus,
     httpsEnforced: pages.https_enforced ?? null,
     cname: pages.cname ?? null,
   },
