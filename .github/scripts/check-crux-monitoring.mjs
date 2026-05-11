@@ -47,6 +47,13 @@ const artifact = {
     pageSpeed,
     cruxCache,
   },
+  requiredToComplete: hasFieldData
+    ? []
+    : [
+        'Set CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY to a Google API key with Chrome UX Report/PageSpeed quota and rerun this verifier.',
+        'Use a production origin that is publicly discoverable and sufficiently popular for CrUX inclusion.',
+        'Optionally run CRUX_CACHE_SCAN=1 npm run check:crux-monitoring to stream-search the latest public CrUX cache origin list.',
+      ],
 };
 
 mkdirSync(dirname(artifactPath), { recursive: true });
