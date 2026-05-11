@@ -3,6 +3,7 @@ import { dirname } from 'node:path';
 import process from 'node:process';
 import { clearTimeout, setTimeout } from 'node:timers';
 import { URL } from 'node:url';
+import { resolveCruxApiKey } from './crux-env.mjs';
 
 /* global AbortController, fetch */
 
@@ -13,7 +14,8 @@ const artifactPath =
   process.env.CRUX_MONITORING_ARTIFACT ?? 'artifacts/manual-evidence/chrome-ux-report-monitoring.json';
 const canonicalEvidencePath =
   process.env.CRUX_CANONICAL_EVIDENCE_ARTIFACT ?? 'artifacts/manual-evidence/chrome-ux-report.json';
-const apiKey = process.env.CRUX_API_KEY ?? process.env.PAGESPEED_API_KEY ?? process.env.GOOGLE_API_KEY ?? '';
+const apiKeyResolution = resolveCruxApiKey();
+const apiKey = apiKeyResolution.key;
 const shouldScanCruxCache = process.env.CRUX_CACHE_SCAN === '1';
 const timeoutMs = Number(process.env.CRUX_REQUEST_TIMEOUT_MS ?? 20_000);
 const cruxApiEndpoint =
@@ -59,6 +61,11 @@ const artifact = {
   targetUrl,
   fieldDataAvailable: hasFieldData,
   fieldDataEvidence,
+  apiKeySource: {
+    name: apiKeyResolution.name,
+    path: apiKeyResolution.path ?? null,
+    source: apiKeyResolution.source,
+  },
   staleCanonicalEvidenceRemoved,
   checks: {
     discoverability,
