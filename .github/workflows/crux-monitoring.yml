@@ -1,0 +1,42 @@
+name: CrUX Monitoring
+
+on:
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: crux-monitoring
+  cancel-in-progress: false
+
+jobs:
+  check-crux-field-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check Chrome UX Report monitoring
+        id: crux
+        continue-on-error: true
+        env:
+          CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+          CRUX_CACHE_SCAN: '1'
+        run: node .github/scripts/check-crux-monitoring.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chrome-ux-report-monitoring
+          path: artifacts/manual-evidence/chrome-ux-report-monitoring.json
+          retention-days: 30
+      - name: Summarize CrUX status
+        run: |
+          node -e "const fs=require('node:fs'); const a=JSON.parse(fs.readFileSync('artifacts/manual-evidence/chrome-ux-report-monitoring.json','utf8')); const cache=a.checks.cruxCache; const d=a.checks.discoverability; console.log(JSON.stringify({result:a.result, origin:a.origin, discoverable:d.homeStatus===200 && !d.noIndexPresent && d.robotsAllowsAll && d.sitemapHasOrigin, latestMonth:cache.latestMonth, scannedChunks:cache.scannedChunks, foundOrigin:cache.foundOrigin}, null, 2));"
+      - name: Fail when field data is unavailable
+        if: steps.crux.outcome == 'failure'
+        run: |
+          echo "Chrome UX Report field data is not available yet. Check the uploaded chrome-ux-report-monitoring artifact."
+          exit 1
