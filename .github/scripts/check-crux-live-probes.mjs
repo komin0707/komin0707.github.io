@@ -22,7 +22,9 @@ if (isMain()) {
     origin: normalizeOrigin(process.env.CRUX_ORIGIN ?? defaultOrigin),
     pageSpeedArtifactPath: process.env.PAGESPEED_LIVE_PROBE_ARTIFACT ?? defaultPageSpeedLiveProbePath,
     pageSpeedEndpoint: process.env.PAGESPEED_API_ENDPOINT ?? defaultPageSpeedEndpoint,
-    targetUrl: normalizeUrl(process.env.CRUX_URL ?? `${normalizeOrigin(process.env.CRUX_ORIGIN ?? defaultOrigin)}/`),
+    targetUrl: normalizeUrl(
+      process.env.CRUX_URL ?? `${normalizeOrigin(process.env.CRUX_ORIGIN ?? defaultOrigin)}/`,
+    ),
   };
 
   const result = await runLiveProbes(config);
@@ -81,8 +83,8 @@ export async function buildLiveProbeArtifacts({
   ]);
   const hasFieldData = Boolean(
     cruxArtifact.probes.some((probe) => probe.recordPresent) ||
-      pageSpeedArtifact.hasLoadingExperience ||
-      pageSpeedArtifact.hasOriginLoadingExperience,
+    pageSpeedArtifact.hasLoadingExperience ||
+    pageSpeedArtifact.hasOriginLoadingExperience,
   );
 
   return {
@@ -122,10 +124,7 @@ async function probeCruxApi({ apiKey, endpoint, fetchFn, origin, targetUrl, veri
     targetOrigin: origin,
     targetUrl,
     hasApiKey: apiKey.length > 0,
-    probes: [
-      summarizeCruxProbe('origin', originProbe),
-      summarizeCruxProbe('url', urlProbe),
-    ],
+    probes: [summarizeCruxProbe('origin', originProbe), summarizeCruxProbe('url', urlProbe)],
   };
 }
 
