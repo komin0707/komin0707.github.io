@@ -111,6 +111,17 @@ jobs:
               const probe = liveCruxProbe?.probes?.find((entry) => entry.name === name);
               return probe?.recordPresent === true ? 'present' : 'absent';
             };
+            const nonAcceptedCredentialNames = (value) => {
+              if (!value?.checked) return 'unchecked';
+              const envFileNames = Array.isArray(value.envFileNames)
+                ? value.envFileNames.flatMap((entry) => Array.isArray(entry.names) ? entry.names : [])
+                : [];
+              const localEnvironmentNames = Array.isArray(value.localEnvironmentNames)
+                ? value.localEnvironmentNames
+                : [];
+              const names = [...new Set([...envFileNames, ...localEnvironmentNames])].sort();
+              return names.length > 0 ? names.join(', ') : 'none';
+            };
             const marker = 'crux-monitoring-field-data-blocker';
             const title = '[blocked] Chrome UX Report field data unavailable';
             const body = [
@@ -144,6 +155,7 @@ jobs:
               `Credential preflight usable GitHub secret names: ${(credentials?.usableByCurrentMonitor?.githubSecretNames ?? []).join(', ') || 'none'}`,
               `Credential preflight usable GitHub environment secret names: ${(credentials?.githubEnvironments?.acceptedPresent?.secrets ?? []).join(', ') || 'none'}`,
               `Credential preflight usable GitHub environment variable names: ${(credentials?.githubEnvironments?.acceptedPresent?.variables ?? []).join(', ') || 'none'}`,
+              `Credential preflight non-accepted local credential names: ${nonAcceptedCredentialNames(credentials?.nonAcceptedCredentialNames)}`,
               '',
               'Unblock conditions:',
               '- Configure CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY with Chrome UX Report/PageSpeed API quota, and',
