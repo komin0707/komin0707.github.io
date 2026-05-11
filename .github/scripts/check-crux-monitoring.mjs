@@ -5,6 +5,7 @@ import { clearTimeout, setTimeout } from 'node:timers';
 
 const origin = normalizeOrigin(process.env.CRUX_ORIGIN ?? 'https://komin0707.github.io');
 const artifactPath = 'artifacts/manual-evidence/chrome-ux-report-monitoring.json';
+const canonicalEvidencePath = 'artifacts/manual-evidence/chrome-ux-report.json';
 const apiKey = process.env.CRUX_API_KEY ?? process.env.PAGESPEED_API_KEY ?? process.env.GOOGLE_API_KEY ?? '';
 const shouldScanCruxCache = process.env.CRUX_CACHE_SCAN === '1';
 const timeoutMs = Number(process.env.CRUX_REQUEST_TIMEOUT_MS ?? 20_000);
@@ -18,6 +19,13 @@ const cruxCache = await queryCruxCache(origin, shouldScanCruxCache);
 const hasFieldData = Boolean(
   cruxApi.hasRecord || pageSpeed.hasLoadingExperience || pageSpeed.hasOriginLoadingExperience || cruxCache.foundOrigin,
 );
+const fieldDataEvidence = {
+  available: hasFieldData,
+  cruxApiRecord: cruxApi.hasRecord,
+  pageSpeedLoadingExperience: pageSpeed.hasLoadingExperience,
+  pageSpeedOriginLoadingExperience: pageSpeed.hasOriginLoadingExperience,
+  publicCruxCacheOrigin: cruxCache.foundOrigin,
+};
 
 const artifact = {
   verifiedAt: new Date().toISOString(),
@@ -28,6 +36,8 @@ const artifact = {
     : `Chrome UX Report monitoring is configured for ${origin}, but no CrUX field-data evidence is currently available to verify the production origin.`,
   origin,
   startedAt,
+  fieldDataAvailable: hasFieldData,
+  fieldDataEvidence,
   checks: {
     discoverability,
     cruxApi,
@@ -38,7 +48,23 @@ const artifact = {
 
 mkdirSync(dirname(artifactPath), { recursive: true });
 writeFileSync(artifactPath, `${JSON.stringify(artifact, null, 2)}\n`);
-process.stdout.write(`${JSON.stringify({ artifactPath, hasFieldData, origin, result: artifact.result }, null, 2)}\n`);
+if (hasFieldData) {
+  mkdirSync(dirname(canonicalEvidencePath), { recursive: true });
+  writeFileSync(canonicalEvidencePath, `${JSON.stringify(artifact, null, 2)}\n`);
+}
+process.stdout.write(
+  `${JSON.stringify(
+    {
+      artifactPath,
+      canonicalEvidencePath: hasFieldData ? canonicalEvidencePath : null,
+      hasFieldData,
+      origin,
+      result: artifact.result,
+    },
+    null,
+    2,
+  )}\n`,
+);
 
 if (!hasFieldData) {
   process.exitCode = 1;
