@@ -20,13 +20,11 @@ jobs:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
-          node-version-file: .nvmrc
-          cache: npm
-      - run: npm ci
+          node-version: '22'
       - name: Check GitHub Pages production domain
-        run: npm run check:pages-domain
         env:
           GH_TOKEN: ${{ github.token }}
+        run: node .github/scripts/check-pages-domain.mjs
       - name: Check CrUX credential preflight
         id: crux_credentials
         continue-on-error: true
@@ -35,7 +33,7 @@ jobs:
           CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: npm run check:crux-credentials
+        run: node .github/scripts/check-crux-credentials.mjs
       - name: Check Chrome UX Report monitoring
         id: crux
         continue-on-error: true
@@ -44,7 +42,7 @@ jobs:
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           CRUX_CACHE_SCAN: '1'
-        run: npm run check:crux-monitoring
+        run: node .github/scripts/check-crux-monitoring.mjs
       - uses: actions/upload-artifact@v7
         with:
           name: chrome-ux-report-monitoring
