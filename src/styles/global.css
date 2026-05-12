@@ -1,0 +1,345 @@
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --bg-main: #07111f;
+  --panel-bg: #0b1b2d;
+  --panel-bg-2: #10263d;
+  --panel-border: rgba(80, 160, 220, 0.25);
+  --active-blue: #1689ff;
+  --control-border: #8fa9c4;
+  --control-border-strong: #c6dcf2;
+  --control-disabled-bg: #132337;
+  --control-disabled-border: #8fa9c4;
+  --control-disabled-text: #c6dcf2;
+  --control-hover-border: #c6dcf2;
+  --clinical-danger: #ff4545;
+  --clinical-danger-text: #ff8a80;
+  --clinical-emergency: #ff3030;
+  --clinical-normal: #35d27f;
+  --clinical-warning: #ffd84a;
+  --clinical-danger-oklch: oklch(64% 0.24 29deg);
+  --clinical-emergency-oklch: oklch(65% 0.25 28deg);
+  --clinical-normal-oklch: oklch(76% 0.18 153deg);
+  --clinical-warning-oklch: oklch(88% 0.18 90deg);
+  --danger-red: var(--clinical-danger-text);
+  --normal-green: var(--clinical-normal);
+  --warning-yellow: var(--clinical-warning);
+  --patient-cyanosis-overlay: #5b8dff;
+  --patient-lip-normal: #b96f67;
+  --patient-lip-blue: #4d62bc;
+  --patient-lip-deep-blue: #273a8f;
+  --patient-lung-healthy: #de8384;
+  --patient-lung-inflamed: #c94c4f;
+  --patient-lung-stiff: #793749;
+  --patient-lung-collapsed: #2f343d;
+  --patient-lung-collapsed-stroke: #111827;
+  --patient-outline: #f3c7b6;
+  --patient-outline-high-contrast: #ffe1d4;
+  --pathology-bleeding: #c1121f;
+  --pathology-emesis: #7a4d21;
+  --patient-secretion-low: #f4df8a;
+  --patient-secretion-medium: #ffd352;
+  --patient-secretion-high: #b8c63d;
+  --ecg-lead-ra: #f8fcff;
+  --ecg-lead-la: #1f2937;
+  --ecg-lead-ll: #e53935;
+  --ecg-lead-rl: #35d27f;
+  --ecg-lead-v1: #8b5a2b;
+  --ecg-lead-v2: #7c3aed;
+  --ecg-lead-v3: #2563eb;
+  --ecg-lead-v4: #0ea5e9;
+  --ecg-lead-v5: #14b8a6;
+  --ecg-lead-v6: #f97316;
+  --text-main: #eaf3ff;
+  --text-muted: #c6dcf2;
+  --wave-pressure: #ffd84a;
+  --wave-flow: #35d27f;
+  --wave-volume: #f8fcff;
+  --wave-co2: #56b8ff;
+  --wave-ecg: #35d27f;
+  --wave-spo2: #2dd4bf;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: dark;
+    --bg-main: #07111f;
+    --panel-bg: #0b1b2d;
+    --panel-bg-2: #10263d;
+    --panel-border: rgba(80, 160, 220, 0.25);
+    --clinical-danger-text: #ff8a80;
+    --control-border: #8fa9c4;
+    --control-border-strong: #c6dcf2;
+    --control-disabled-bg: #132337;
+    --control-disabled-border: #8fa9c4;
+    --control-disabled-text: #c6dcf2;
+    --control-hover-border: #c6dcf2;
+    --text-main: #eaf3ff;
+    --text-muted: #c6dcf2;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --clinical-danger: #ff1f1f;
+    --clinical-danger-text: #ffb4a8;
+    --clinical-emergency: #d90000;
+    --clinical-normal: #00a85a;
+    --clinical-warning: #ffd000;
+    --text-main: #fff;
+    --text-muted: #d7e6f6;
+  }
+}
+
+@media (forced-colors: active) {
+  :root {
+    --active-blue: Highlight;
+    --clinical-danger: Mark;
+    --clinical-danger-text: Mark;
+    --clinical-emergency: Mark;
+    --clinical-normal: LinkText;
+    --clinical-warning: Highlight;
+    --danger-red: Mark;
+    --normal-green: LinkText;
+    --panel-border: CanvasText;
+    --text-main: CanvasText;
+    --text-muted: GrayText;
+    --warning-yellow: Highlight;
+  }
+}
+
+@media (monochrome) {
+  :root {
+    --active-blue: #fff;
+    --clinical-danger: #fff;
+    --clinical-normal: #fff;
+    --clinical-warning: #fff;
+    --control-border: #b8c7d6;
+    --control-border-strong: #fff;
+    --control-hover-border: #fff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #07111f;
+  color: var(--text-main);
+}
+
+[data-palette='colorblind'] {
+  --active-blue: #0072b2;
+  --clinical-danger: #d55e00;
+  --clinical-danger-text: #ff8f3d;
+  --clinical-emergency: #c31;
+  --clinical-normal: #009e73;
+  --clinical-warning: #e69f00;
+  --clinical-danger-oklch: oklch(60% 0.17 46deg);
+  --clinical-emergency-oklch: oklch(56% 0.2 38deg);
+  --clinical-normal-oklch: oklch(62% 0.15 164deg);
+  --clinical-warning-oklch: oklch(73% 0.16 72deg);
+  --patient-cyanosis-overlay: #7b62d3;
+  --wave-pressure: #e69f00;
+  --wave-flow: #009e73;
+  --wave-volume: #f8fcff;
+  --wave-co2: #0072b2;
+  --wave-ecg: #009e73;
+  --wave-spo2: #56b4e9;
+}
+
+[data-color-vision='protanopia'] {
+  --clinical-danger: #b35806;
+  --clinical-danger-text: #ffbf80;
+  --clinical-normal: #0072b2;
+  --clinical-warning: #f0e442;
+}
+
+[data-color-vision='deuteranopia'] {
+  --clinical-danger: #d55e00;
+  --clinical-danger-text: #ffbf80;
+  --clinical-normal: #0072b2;
+  --clinical-warning: #f0e442;
+}
+
+[data-color-vision='tritanopia'] {
+  --clinical-danger: #d55e00;
+  --clinical-danger-text: #ffb4a8;
+  --clinical-normal: #009e73;
+  --clinical-warning: #cc79a7;
+}
+
+[data-color-vision='achromatopsia'] {
+  --active-blue: #fff;
+  --clinical-danger: #f5f5f5;
+  --clinical-danger-text: #fff;
+  --clinical-normal: #dcdcdc;
+  --clinical-warning: #bdbdbd;
+  --wave-pressure: #fff;
+  --wave-flow: #dcdcdc;
+  --wave-volume: #f8fcff;
+  --wave-co2: #a8a8a8;
+}
+
+[data-accessibility-high-contrast='true'] {
+  --bg-main: #000;
+  --panel-bg: #050505;
+  --panel-bg-2: #111;
+  --panel-border: #fff;
+  --text-main: #fff;
+  --text-muted: #f2f2f2;
+  --control-border: #fff;
+  --control-hover-border: #fff;
+}
+
+[data-accessibility-inverted='true'] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+[data-accessibility-easy-read='true'],
+[data-accessibility-plain-language='true'] {
+  font-family: 'Atkinson Hyperlegible', Arial, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  word-spacing: 0.16em;
+}
+
+[data-accessibility-focus='true'] .left-column,
+[data-accessibility-focus='true'] .right-column,
+[data-accessibility-distraction-free='true'] .interaction-toolbar,
+[data-accessibility-distraction-free='true'] .debug-panel {
+  display: none;
+}
+
+[data-accessibility-reading-guide='true']::after {
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  z-index: 80;
+  right: 0;
+  left: 0;
+  top: 42vh;
+  height: 3px;
+  background: var(--clinical-warning);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.34);
+}
+
+[data-accessibility-calm='true'],
+[data-accessibility-calm='true'] * {
+  scroll-behavior: auto !important;
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  color: inherit;
+}
+
+button:hover:not(:disabled, [aria-disabled='true']) {
+  border-color: var(--control-hover-border);
+}
+
+button:disabled,
+button[aria-disabled='true'] {
+  border-color: var(--control-disabled-border);
+  background: var(--control-disabled-bg);
+  color: var(--control-disabled-text);
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.skip-link {
+  z-index: 40;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  transform: translateY(-140%);
+  border-radius: 6px;
+  background: #061827;
+  color: #f8fcff;
+  font-weight: 800;
+  padding: 8px 12px;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid var(--active-blue);
+  outline-offset: 3px;
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+    --bg-main: #fff;
+    --panel-bg: #fff;
+    --panel-bg-2: #f6f8fa;
+    --panel-border: #57606a;
+    --text-main: #111;
+    --text-muted: #3f4d5a;
+  }
+
+  body {
+    background: #fff;
+    color: #111;
+  }
+
+  .simulator-shell {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    transform: none;
+  }
+
+  .interaction-toolbar,
+  .bottom-bar,
+  .skip-link,
+  .context-menu,
+  .shortcut-help,
+  .tutorial-panel {
+    display: none;
+  }
+
+  .panel,
+  .mode-safety-panel,
+  .scenario-intervention-panel {
+    break-inside: avoid;
+    border-color: #57606a;
+    box-shadow: none;
+  }
+}

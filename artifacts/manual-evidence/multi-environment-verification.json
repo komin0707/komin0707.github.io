@@ -1,0 +1,134 @@
+{
+  "artifactPath": "artifacts/manual-evidence/multi-environment-verification.json",
+  "baseUrl": "http://127.0.0.1:4178",
+  "checkedAt": "2026-05-12T04:40:08.107Z",
+  "localEnvironment": {
+    "applications": {
+      "chromeAppInstalled": true,
+      "edgeAppInstalled": false,
+      "firefoxAppInstalled": false,
+      "safariAppInstalled": true
+    },
+    "platform": "darwin",
+    "release": "24.6.0",
+    "safariDriverNote": "System Safari is present, but this Playwright-based verification requires WebKit browser files or separately enabled Safari remote automation."
+  },
+  "requiredEnvironments": [
+    "Chrome desktop",
+    "Firefox desktop",
+    "Safari macOS",
+    "Edge desktop",
+    "Linux Chromium",
+    "Android Chrome",
+    "iOS Safari",
+    "tablet",
+    "4K",
+    "ultra-wide",
+    "portrait",
+    "landscape"
+  ],
+  "result": "partial",
+  "results": [
+    {
+      "consoleErrorCount": 0,
+      "label": "Chrome desktop",
+      "patientBox": { "x": 317, "y": 198, "width": 696, "height": 391.703125 },
+      "result": "passed",
+      "titleVisible": true
+    },
+    {
+      "error": "browserType.launch: Executable doesn't exist at /Users/komin/Library/Caches/ms-playwright/firefox-1511/firefox/Nightly.app/Contents/MacOS/firefox\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+      "label": "Firefox desktop",
+      "result": "blocked"
+    },
+    {
+      "browserName": "Safari",
+      "evidenceMethod": "Computer Use accessibility tree plus macOS screencapture against local Vite preview",
+      "evidencePath": "artifacts/manual-evidence/system-safari-macos-verification.json",
+      "label": "Safari macOS",
+      "observedAccessibility": {
+        "documentTitle": "Vent Simulator 2D",
+        "patientAvatarAccessibleName": "상태 기반 삽관 환자 이미지, worsening, 산소포화도 86%",
+        "patientAvatarVisible": true,
+        "simulatorHeadingVisible": true,
+        "url": "127.0.0.1:4180/?lang=ko"
+      },
+      "result": "passed",
+      "screenshot": {
+        "height": 1800,
+        "path": "artifacts/manual-evidence/system-safari-macos-current.png",
+        "sha256": "eaf303cd85a1023564e7e5e71750291d811ad7e2eaef02c67ff89dddb57c41fb",
+        "width": 2880
+      },
+      "validation": "System Safari evidence validated against accessibility and screenshot fields.",
+      "automatedResult": {
+        "error": "browserType.launch: Executable doesn't exist at /Users/komin/Library/Caches/ms-playwright/webkit-2272/pw_run.sh\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+        "label": "Safari macOS",
+        "result": "blocked"
+      }
+    },
+    {
+      "consoleErrorCount": 0,
+      "label": "Android Chrome",
+      "patientBox": { "x": 17, "y": 1987, "width": 378, "height": 212.734375 },
+      "result": "passed",
+      "titleVisible": true
+    },
+    {
+      "error": "browserType.launch: Executable doesn't exist at /Users/komin/Library/Caches/ms-playwright/webkit-2272/pw_run.sh\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+      "label": "iOS Safari",
+      "result": "blocked"
+    },
+    {
+      "consoleErrorCount": 0,
+      "label": "tablet",
+      "patientBox": { "x": 19, "y": 1852, "width": 796, "height": 447.984375 },
+      "result": "passed",
+      "titleVisible": true
+    },
+    {
+      "consoleErrorCount": 0,
+      "label": "4K",
+      "patientBox": { "x": 1405, "y": 198, "width": 920, "height": 517.765625 },
+      "result": "passed",
+      "titleVisible": true
+    },
+    {
+      "consoleErrorCount": 0,
+      "label": "ultra-wide",
+      "patientBox": { "x": 1205, "y": 198, "width": 920, "height": 517.765625 },
+      "result": "passed",
+      "titleVisible": true
+    },
+    {
+      "consoleErrorCount": 0,
+      "label": "portrait",
+      "patientBox": { "x": 23, "y": 1858, "width": 774, "height": 435.59375 },
+      "result": "passed",
+      "titleVisible": true
+    },
+    {
+      "consoleErrorCount": 0,
+      "label": "landscape",
+      "patientBox": { "x": 489.796875, "y": 384, "width": 667.203125, "height": 375.5 },
+      "result": "passed",
+      "titleVisible": true
+    },
+    {
+      "evidence": {
+        "applications": { "edgeAppInstalled": false },
+        "pathLookupAttempted": ["msedge", "microsoft-edge"]
+      },
+      "error": "Microsoft Edge is not installed in /Applications and no Edge CLI was found on PATH.",
+      "label": "Edge desktop",
+      "result": "blocked"
+    },
+    {
+      "evidence": { "platform": "darwin", "release": "24.6.0" },
+      "error": "Linux Chromium requires a Linux runtime; this verification host is not Linux.",
+      "label": "Linux Chromium",
+      "result": "blocked"
+    }
+  ],
+  "unavailable": ["Firefox desktop", "Edge desktop", "Linux Chromium", "iOS Safari"]
+}

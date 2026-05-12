@@ -1,0 +1,28 @@
+{
+  "artifactPath": "artifacts/manual-evidence/medical-expert-review-packet.json",
+  "generatedAt": "2026-05-12T01:58:20.312Z",
+  "limitation": "This packet defines the required medical expert review protocol; it is not a completed expert review.",
+  "requiredReviewerCount": 5,
+  "result": "review-packet-ready",
+  "reviewerSlots": [
+    "Critical care physician or intensivist",
+    "Respiratory therapist or ventilation specialist",
+    "Emergency medicine or anesthesiology clinician",
+    "ICU nurse educator",
+    "Medical simulation educator"
+  ],
+  "reviewDomains": [
+    "Ventilator mode behavior and parameter ranges",
+    "ARDS, pneumonia, pneumothorax, airway obstruction, and normal scenario physiology",
+    "Alarm severity, terminology, and escalation logic",
+    "Drug/intervention timing, indications, and contraindications",
+    "Educational debriefing accuracy and learner safety"
+  ],
+  "passCriteria": [
+    "All five reviewers are named and role-qualified.",
+    "Each review domain receives pass or changes-required status.",
+    "All critical safety issues are resolved or explicitly accepted with rationale.",
+    "Final artifact includes reviewer date, role, signature/attestation, and unresolved-risk list."
+  ],
+  "rubricPath": "artifacts/manual-evidence/medical-expert-review-rubric.md"
+}

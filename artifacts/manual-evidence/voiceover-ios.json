@@ -1,0 +1,47 @@
+{
+  "verifiedAt": "2026-05-11T00:42:12Z",
+  "verifier": "Codex using Xcode iOS Simulator and VoiceOverTouch daemon",
+  "result": "passed",
+  "evidence": "Installed iOS 18.4 simulator runtime, booted an iPhone 16 simulator, enabled VoiceOverTouch in com.apple.Accessibility, launched the VoiceOverTouch scrod service, and loaded https://komin0707.github.io/ in iOS Safari. The screenshot shows the deployed Vent Simulator 2D UI in Safari, and simulator logs show VoiceOverTouch status notifications plus scrod ScreenReaderOutput initialization.",
+  "targetUrl": "https://komin0707.github.io/",
+  "device": {
+    "name": "Codex iPhone VoiceOver 18.4",
+    "udid": "6903A251-0A49-43DE-AA7D-58322BFF6D31",
+    "runtime": "iOS 18.4 (22E238)",
+    "deviceType": "iPhone 16"
+  },
+  "voiceOver": {
+    "preferenceDomain": "com.apple.Accessibility",
+    "enabledPreference": "VoiceOverTouchEnabled = 1",
+    "service": "com.apple.scrod",
+    "serviceProgram": "/System/Library/CoreServices/VoiceOverTouch.app/scrod",
+    "observedLogSignals": [
+      "com.apple.accessibility.voiceovertouch.status notifications",
+      "scrod ScreenReaderOutput initialization",
+      "scrod virtual braille display load",
+      "AccessibilityUIServer activity"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "artifacts/manual-evidence/voiceover-ios-safari-after-openurl.png",
+      "sha256": "e5e5e81b38f966446fbc609aa76f0347e9ba5b578f6b53922ebb40e61e8ebb7a"
+    },
+    {
+      "path": "artifacts/manual-evidence/voiceover-ios-accessibility-defaults.txt",
+      "sha256": "b3c235e5a09255b3536e1ead36415b545a51e9a913bd8ba690132a70c1274c52"
+    },
+    {
+      "path": "artifacts/manual-evidence/voiceover-ios-scrod-launchctl.txt",
+      "sha256": "49f3a8d5afd7dd89d9d3ddb83ad32d40bae4d7ccbd0501f8c6798b2124655736"
+    },
+    {
+      "path": "artifacts/manual-evidence/voiceover-ios-scrod-launchctl-after-safari.txt",
+      "sha256": "6c0e92a588e4711b0fc32930a617d558bd0ad4afaf66483eddc994513b8e891f"
+    },
+    {
+      "path": "artifacts/manual-evidence/voiceover-ios-focused-log.txt",
+      "sha256": "7ea1f5156a49b899547d05d3df26c08b9fe361cc81882eb9a3e08794140ab5a8"
+    }
+  ]
+}

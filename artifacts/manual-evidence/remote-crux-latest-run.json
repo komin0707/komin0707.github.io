@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-05-12T05:50:57.154Z",
+  "verifier": "Codex latest remote CrUX run verifier",
+  "result": "passed",
+  "repository": "komin0707/komin0707.github.io",
+  "workflow": "CrUX Monitoring",
+  "latestRemoteRun": {
+    "conclusion": "failure",
+    "createdAt": "2026-05-11T16:12:40Z",
+    "databaseId": 25682216707,
+    "headSha": "41b98e10419e7f32bf0d600ac68e07bf37fbd4fe",
+    "status": "completed",
+    "url": "https://github.com/komin0707/komin0707.github.io/actions/runs/25682216707"
+  },
+  "indexedRun": {
+    "artifact": "artifacts/manual-evidence/crux-monitoring-run-25682216707/chrome-ux-report-monitoring.json",
+    "artifactExists": true,
+    "artifactMatchesRun": true,
+    "conclusion": "failure",
+    "headSha": "41b98e10419e7f32bf0d600ac68e07bf37fbd4fe",
+    "headShaMatchesLatest": true,
+    "runId": 25682216707,
+    "url": "https://github.com/komin0707/komin0707.github.io/actions/runs/25682216707"
+  },
+  "requiredToComplete": []
+}

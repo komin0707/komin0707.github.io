@@ -1,0 +1,91 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:79a6bdfc-c283-4c2e-8356-8c35b863ef34",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-05-12T05:50:47.303Z",
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "tools": [
+      {
+        "vendor": "npm",
+        "name": "cli",
+        "version": "11.11.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "vent-simulator-2d@0.1.0",
+      "type": "application",
+      "name": "vent 2d",
+      "version": "0.1.0",
+      "scope": "required",
+      "purl": "pkg:npm/vent-simulator-2d@0.1.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:private",
+          "value": "true"
+        }
+      ],
+      "externalReferences": [],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "preact@10.29.1",
+      "type": "library",
+      "name": "preact",
+      "version": "10.29.1",
+      "scope": "required",
+      "description": "Fast 3kb React-compatible Virtual DOM library.",
+      "purl": "pkg:npm/preact@10.29.1",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/preact/-/preact-10.29.1.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://preactjs.com"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "81008b73fbd6ae813c948a65797b5d2614c50e88137591bd023314a559037f689308dc1835603ebb5e9d2f8d53a940c93b8826d8882b70cbf7b93a637783f09a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "vent-simulator-2d@0.1.0",
+      "dependsOn": [
+        "preact@10.29.1"
+      ]
+    },
+    {
+      "ref": "preact@10.29.1",
+      "dependsOn": []
+    }
+  ]
+}

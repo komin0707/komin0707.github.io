@@ -1,0 +1,231 @@
+.alarm-panel {
+  color: var(--danger-red);
+}
+
+.alarm-actions,
+.alarm-status-row,
+.alarm-thresholds {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  padding: 8px 10px 0;
+}
+
+.alarm-actions button,
+.alarm-status-row button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 26px;
+  gap: 5px;
+  border: 1px solid rgba(255, 191, 71, 0.32);
+  border-radius: 6px;
+  background: rgba(255, 191, 71, 0.08);
+  color: var(--warning-yellow);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.alarm-status-row {
+  grid-template-columns: 1fr 1fr 1.4fr;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.alarm-panel ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 14px 16px;
+  list-style: none;
+}
+
+.alarm-panel li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 6px;
+  min-height: 43px;
+  padding: 7px;
+  border-left: 3px solid var(--warning-yellow);
+  border-radius: 7px;
+  background: rgba(255, 191, 71, 0.08);
+  font-size: 13px;
+}
+
+.alarm-panel li span {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  line-height: 1.15;
+}
+
+.alarm-panel li span small {
+  display: block;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.alarm-panel li strong {
+  font-size: 12px;
+}
+
+.alarm-panel li small {
+  font-size: 10px;
+}
+
+.alarm-panel li em {
+  grid-column: 2 / 5;
+  color: var(--text-muted);
+  font-size: 9px;
+  font-style: normal;
+}
+
+.alarm-panel li.critical {
+  animation: alarm-pulse 0.95s infinite;
+}
+
+.alarm-panel li.priority-high.critical {
+  animation-duration: 0.72s;
+}
+
+.alarm-panel li.priority-high {
+  border-left-color: var(--danger-red);
+  background: rgba(255, 73, 73, 0.14);
+}
+
+.alarm-panel li.priority-medium {
+  animation-duration: 1.12s;
+  border-left-color: var(--warning-yellow);
+}
+
+.alarm-panel li.priority-low {
+  border-left-color: var(--active-blue);
+  background: rgba(70, 210, 255, 0.08);
+}
+
+.alarm-panel li.category-circuit {
+  box-shadow: inset 0 0 0 1px rgba(180, 119, 255, 0.24);
+}
+
+.alarm-panel li.category-hemodynamics {
+  box-shadow: inset 0 0 0 1px rgba(255, 111, 145, 0.24);
+}
+
+.alarm-panel li.category-temperature {
+  box-shadow: inset 0 0 0 1px rgba(255, 173, 84, 0.24);
+}
+
+.alarm-panel li.category-system {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.alarm-panel li.snoozed {
+  opacity: 0.62;
+}
+
+.alarm-thresholds {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 0;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.alarm-thresholds legend {
+  grid-column: 1 / -1;
+  padding: 0;
+  color: var(--text-muted);
+}
+
+.alarm-thresholds label {
+  display: grid;
+  gap: 3px;
+}
+
+.alarm-thresholds input {
+  width: 100%;
+  min-height: 25px;
+  border: 1px solid var(--control-border);
+  border-radius: 5px;
+  background: rgba(0, 10, 18, 0.66);
+  color: var(--text-main);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.alarm-history {
+  display: grid;
+  gap: 4px;
+  max-height: 96px;
+  margin: 8px 10px 10px;
+  padding: 8px;
+  overflow: auto;
+  border: 1px solid var(--control-border);
+  border-radius: 7px;
+  background: rgba(2, 14, 25, 0.48);
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+.alarm-history strong {
+  color: var(--text-main);
+}
+
+.alarm-history .priority-high {
+  color: var(--danger-red);
+}
+
+.alarm-history .priority-medium {
+  color: var(--warning-yellow);
+}
+
+.alarm-history .priority-low {
+  color: var(--active-blue);
+}
+
+.no-alarms {
+  margin: 18px;
+  color: var(--normal-green);
+}
+
+.critical-alarm-dialog {
+  z-index: 35;
+  position: fixed;
+  top: 72px;
+  right: 18px;
+  display: grid;
+  width: min(300px, calc(100vw - 36px));
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(255, 96, 96, 0.72);
+  border-radius: 7px;
+  background: #24070b;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.38);
+  color: #fff;
+}
+
+.critical-alarm-dialog p {
+  margin: 0;
+  color: rgba(255, 239, 239, 0.88);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.critical-alarm-dialog button {
+  justify-self: start;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 170, 170, 0.65);
+  border-radius: 5px;
+  background: rgba(130, 20, 30, 0.82);
+  color: #fff;
+}

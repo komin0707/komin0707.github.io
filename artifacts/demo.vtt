@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:02.000
+Vent Simulator 2D demo opens on the simulator dashboard.
+
+00:02.000 --> 00:04.000
+The user changes ventilator mode and exports a JSON snapshot.
+
+00:04.000 --> 00:06.000
+The scenario changes to ARDS and the patient avatar shows worsening respiratory status.
+
+00:06.000 --> 00:08.000
+The scenario changes to pneumothorax with asymmetric lung findings.

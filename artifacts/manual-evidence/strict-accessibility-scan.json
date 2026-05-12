@@ -1,0 +1,19 @@
+{
+  "artifactPath": "artifacts/manual-evidence/strict-accessibility-scan.json",
+  "colorContrastRecheck": {
+    "initialColorContrastNodes": 41,
+    "recheckedColorContrastNodes": 41,
+    "resolvedColorContrastNodes": 20,
+    "waivedDecorativeSvgTextNodes": 21,
+    "unresolvedColorContrastNodes": 0
+  },
+  "consoleErrorCount": 0,
+  "consoleErrors": [],
+  "incomplete": [],
+  "incompleteCount": 0,
+  "result": "passed",
+  "url": "http://127.0.0.1:4181",
+  "verifiedAt": "2026-05-12T04:23:18.487Z",
+  "violationCount": 0,
+  "violations": []
+}

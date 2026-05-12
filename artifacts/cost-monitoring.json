@@ -1,0 +1,10 @@
+{
+  "artifactStorageMegabytes": 0.068,
+  "estimatedCiMinutesPerRun": 12,
+  "estimatedMonthlyStaticHostingUsd": 0,
+  "gzipBytes": 66480,
+  "maxArtifactStorageMegabytes": 25,
+  "maxMonthlyStaticHostingUsd": 0,
+  "measuredAt": "2026-05-11T13:37:42.009Z",
+  "totalBytes": 71812
+}

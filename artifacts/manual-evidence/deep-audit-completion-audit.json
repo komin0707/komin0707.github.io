@@ -1,0 +1,1172 @@
+{
+  "artifactPath": "artifacts/manual-evidence/deep-audit-completion-audit.json",
+  "checkedAt": "2026-05-12T06:49:53.800Z",
+  "objective": "Complete all 1,180 DEEP_AUDIT_REQUIREMENTS_V2.md items and satisfy the true completion definition, including previous COMPLETE checklist, command gates, visual/clinical confirmation, medical expert review, and user testing.",
+  "checklist": {
+    "checked": 1180,
+    "duplicateNumbers": [],
+    "highestNumber": 1180,
+    "missingNumbers": [],
+    "sections": [
+      {
+        "checked": 200,
+        "claimedCount": 200,
+        "first": 1,
+        "last": 200,
+        "title": "🩺 SECTION A: 의학적 정확성 (200개)",
+        "total": 200
+      },
+      {
+        "checked": 220,
+        "claimedCount": 220,
+        "first": 201,
+        "last": 420,
+        "title": "🎨 SECTION B: UI 시각적 디테일 (220개)",
+        "total": 220
+      },
+      {
+        "checked": 150,
+        "claimedCount": 150,
+        "first": 421,
+        "last": 570,
+        "title": "🔌 SECTION C: 인터랙션 디테일 (150개)",
+        "total": 150
+      },
+      {
+        "checked": 150,
+        "claimedCount": 150,
+        "first": 571,
+        "last": 720,
+        "title": "🎯 SECTION D: 시뮬레이션 정확성 (150개)",
+        "total": 150
+      },
+      {
+        "checked": 100,
+        "claimedCount": 100,
+        "first": 721,
+        "last": 820,
+        "title": "♿ SECTION E: 접근성 세부 (100개)",
+        "total": 100
+      },
+      {
+        "checked": 100,
+        "claimedCount": 100,
+        "first": 821,
+        "last": 920,
+        "title": "🌐 SECTION F: 국제화/현지화 (100개)",
+        "total": 100
+      },
+      {
+        "checked": 110,
+        "claimedCount": 110,
+        "first": 921,
+        "last": 1030,
+        "title": "🚀 SECTION G: 성능 미세 최적화 (110개)",
+        "total": 110
+      },
+      {
+        "checked": 50,
+        "claimedCount": 50,
+        "first": 1031,
+        "last": 1080,
+        "title": "🔒 SECTION H: 보안 강화 (50개)",
+        "total": 50
+      },
+      {
+        "checked": 50,
+        "claimedCount": 50,
+        "first": 1081,
+        "last": 1130,
+        "title": "📊 SECTION I: 분석/모니터링 (50개)",
+        "total": 50
+      },
+      {
+        "checked": 50,
+        "claimedCount": 50,
+        "first": 1131,
+        "last": 1180,
+        "title": "🎓 SECTION J: 교육적 가치 (50개)",
+        "total": 50
+      }
+    ],
+    "total": 1180,
+    "unchecked": 0
+  },
+  "commandManifest": [
+    {
+      "command": "npm run clean",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm install",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run type-check",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run lint",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run lint:css",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run format:check",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm test",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run test:coverage",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run test:e2e",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run build",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:bundle-size",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:contrast",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:performance",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:lighthouse",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:memory",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:memory:10min",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/memory-profile-10min.json",
+        "actualDurationMs": 600031,
+        "minDurationMs": 600000,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:memory:30min",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/memory-profile-1hour.json",
+        "actualDurationMs": 3600033,
+        "minDurationMs": 1800000,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:memory:1hour",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/memory-profile-1hour.json",
+        "actualDurationMs": 3600033,
+        "minDurationMs": 3600000,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:no-raster",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:jsdoc-exports",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:test-realism",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/test-realism.json",
+        "result": "passed",
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:licenses",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run check:forbidden-patterns",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run docs:codemap",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run docs:api",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run docs:storybook",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run docs:pdf",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      }
+    },
+    {
+      "command": "npm run dev",
+      "packageScriptExists": true,
+      "durableEvidence": {
+        "artifact": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      }
+    }
+  ],
+  "explicitCriteria": [
+    {
+      "evidence": ["DEEP_AUDIT_REQUIREMENTS_V2.md: numbered checklist rows"],
+      "id": "deep-checklist-count",
+      "requirement": "DEEP_AUDIT_REQUIREMENTS_V2.md has 1,180 numbered checklist rows.",
+      "status": "verified",
+      "finding": "1180 rows observed."
+    },
+    {
+      "evidence": ["DEEP_AUDIT_REQUIREMENTS_V2.md: checked rows"],
+      "id": "deep-checklist-all-checked",
+      "requirement": "All 1,180 DEEP checklist rows are checked.",
+      "status": "verified",
+      "finding": "1180/1180 checked; unchecked=0; missing=none; duplicates=none."
+    },
+    {
+      "evidence": ["DEEP_AUDIT_REQUIREMENTS_V2.md", "COMPLETE_FIX_REQUIREMENTS.md"],
+      "id": "deep-items-non-overlap",
+      "requirement": "The 1,180 DEEP checklist rows are not exact duplicates of previous checklist rows.",
+      "status": "verified",
+      "finding": "0 exact duplicate DEEP rows found against 1150 previous rows.",
+      "duplicates": []
+    },
+    {
+      "evidence": ["DEEP_AUDIT_REQUIREMENTS_V2.md"],
+      "id": "deep-section-counts",
+      "requirement": "DEEP section headings reconcile with the actual checked row ranges.",
+      "status": "verified",
+      "finding": "10 sections reconcile with their heading counts.",
+      "sections": [
+        {
+          "checked": 200,
+          "claimedCount": 200,
+          "first": 1,
+          "last": 200,
+          "title": "🩺 SECTION A: 의학적 정확성 (200개)",
+          "total": 200
+        },
+        {
+          "checked": 220,
+          "claimedCount": 220,
+          "first": 201,
+          "last": 420,
+          "title": "🎨 SECTION B: UI 시각적 디테일 (220개)",
+          "total": 220
+        },
+        {
+          "checked": 150,
+          "claimedCount": 150,
+          "first": 421,
+          "last": 570,
+          "title": "🔌 SECTION C: 인터랙션 디테일 (150개)",
+          "total": 150
+        },
+        {
+          "checked": 150,
+          "claimedCount": 150,
+          "first": 571,
+          "last": 720,
+          "title": "🎯 SECTION D: 시뮬레이션 정확성 (150개)",
+          "total": 150
+        },
+        {
+          "checked": 100,
+          "claimedCount": 100,
+          "first": 721,
+          "last": 820,
+          "title": "♿ SECTION E: 접근성 세부 (100개)",
+          "total": 100
+        },
+        {
+          "checked": 100,
+          "claimedCount": 100,
+          "first": 821,
+          "last": 920,
+          "title": "🌐 SECTION F: 국제화/현지화 (100개)",
+          "total": 100
+        },
+        {
+          "checked": 110,
+          "claimedCount": 110,
+          "first": 921,
+          "last": 1030,
+          "title": "🚀 SECTION G: 성능 미세 최적화 (110개)",
+          "total": 110
+        },
+        {
+          "checked": 50,
+          "claimedCount": 50,
+          "first": 1031,
+          "last": 1080,
+          "title": "🔒 SECTION H: 보안 강화 (50개)",
+          "total": 50
+        },
+        {
+          "checked": 50,
+          "claimedCount": 50,
+          "first": 1081,
+          "last": 1130,
+          "title": "📊 SECTION I: 분석/모니터링 (50개)",
+          "total": 50
+        },
+        {
+          "checked": 50,
+          "claimedCount": 50,
+          "first": 1131,
+          "last": 1180,
+          "title": "🎓 SECTION J: 교육적 가치 (50개)",
+          "total": 50
+        }
+      ]
+    },
+    {
+      "evidence": ["DEEP_AUDIT_REQUIREMENTS_V2.md"],
+      "id": "deep-phase-plan-map",
+      "requirement": "Phase 8-16 plan maps to the DEEP checklist sections and totals 1,180 canonical rows.",
+      "status": "verified",
+      "finding": "9 phases map to 10 DEEP sections; canonical rows=1180; prompt plan rows=1150; expanded rows=30.",
+      "phases": [
+        {
+          "phase": "Phase 8",
+          "promptPlanRows": 200,
+          "sectionTitleIncludes": ["의학적 정확성"],
+          "topic": "의학적 정확성",
+          "actualRows": 200,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 1, "last": 200, "title": "🩺 SECTION A: 의학적 정확성 (200개)", "total": 200 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 9",
+          "promptPlanRows": 200,
+          "sectionTitleIncludes": ["UI 시각적 디테일"],
+          "topic": "UI 시각적 디테일",
+          "actualRows": 220,
+          "rowDeltaFromPromptPlan": 20,
+          "sections": [
+            { "first": 201, "last": 420, "title": "🎨 SECTION B: UI 시각적 디테일 (220개)", "total": 220 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 10",
+          "promptPlanRows": 150,
+          "sectionTitleIncludes": ["인터랙션 디테일"],
+          "topic": "인터랙션 디테일",
+          "actualRows": 150,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 421, "last": 570, "title": "🔌 SECTION C: 인터랙션 디테일 (150개)", "total": 150 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 11",
+          "promptPlanRows": 150,
+          "sectionTitleIncludes": ["시뮬레이션 정확성"],
+          "topic": "시뮬레이션 정확성",
+          "actualRows": 150,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 571, "last": 720, "title": "🎯 SECTION D: 시뮬레이션 정확성 (150개)", "total": 150 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 12",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["접근성 세부"],
+          "topic": "접근성 세부",
+          "actualRows": 100,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 721, "last": 820, "title": "♿ SECTION E: 접근성 세부 (100개)", "total": 100 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 13",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["국제화/현지화"],
+          "topic": "국제화",
+          "actualRows": 100,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 821, "last": 920, "title": "🌐 SECTION F: 국제화/현지화 (100개)", "total": 100 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 14",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["성능 미세 최적화"],
+          "topic": "성능 미세",
+          "actualRows": 110,
+          "rowDeltaFromPromptPlan": 10,
+          "sections": [
+            { "first": 921, "last": 1030, "title": "🚀 SECTION G: 성능 미세 최적화 (110개)", "total": 110 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 15",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["보안 강화", "분석/모니터링"],
+          "topic": "보안 + 분석",
+          "actualRows": 100,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 1031, "last": 1080, "title": "🔒 SECTION H: 보안 강화 (50개)", "total": 50 },
+            { "first": 1081, "last": 1130, "title": "📊 SECTION I: 분석/모니터링 (50개)", "total": 50 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 16",
+          "promptPlanRows": 50,
+          "sectionTitleIncludes": ["교육적 가치"],
+          "topic": "교육 가치 + 최종 검증",
+          "actualRows": 50,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 1131, "last": 1180, "title": "🎓 SECTION J: 교육적 가치 (50개)", "total": 50 }
+          ],
+          "status": "mapped"
+        }
+      ]
+    },
+    {
+      "evidence": ["artifacts/completion-audit.json"],
+      "id": "previous-complete-fix-requirements",
+      "requirement": "Previous COMPLETE_FIX_REQUIREMENTS.md objective is also complete.",
+      "status": "blocked",
+      "finding": "completion audit status=incomplete; blockers=chrome-ux-report"
+    },
+    {
+      "evidence": ["latest terminal runs", "artifacts/manual-evidence/phase-gate-command-results.json"],
+      "id": "final-command-gates",
+      "requirement": "All final build, test, documentation, performance, memory, and policy commands pass.",
+      "status": "verified",
+      "finding": "28/28 listed final commands have durable pass evidence in this audit."
+    },
+    {
+      "evidence": [
+        "artifacts/manual-evidence/visual-screenshot-review.json",
+        "artifacts/patient-avatar-current.png",
+        "artifacts/manual-evidence/patient-visual-review-results.json"
+      ],
+      "id": "human-like-patient-visual-review",
+      "requirement": "Patient looks like a real patient, not a schematic, with natural breathing animations.",
+      "status": "blocked",
+      "finding": "Visual screenshot review artifact exists, but the objective asks for subjective visual and clinical confirmation; this still needs human reviewer sign-off. Scenario visual review packet is ready with 5 captures at artifacts/manual-evidence/patient-visual-review-packet.json."
+    },
+    {
+      "evidence": ["artifacts/manual-evidence/multi-environment-verification.json"],
+      "id": "multi-environment-verification",
+      "requirement": "Chrome, Firefox, Safari macOS/iOS, Edge, Linux Chromium, Android Chrome, iOS Safari, tablet, 4K, ultra-wide, portrait, and landscape are verified.",
+      "status": "blocked",
+      "finding": "8/12 environments passed; missing or unavailable: Firefox desktop, Edge desktop, Linux Chromium, iOS Safari. Multi-environment evidence incomplete; missing passed labels=Firefox desktop, Edge desktop, Linux Chromium, iOS Safari; invalid evidence labels=Safari macOS."
+    },
+    {
+      "evidence": [
+        "artifacts/manual-evidence/deep-audit-completion-audit.json",
+        "artifacts/manual-evidence/medical-expert-review-results.json"
+      ],
+      "id": "medical-expert-review",
+      "requirement": "At least 5 medical experts certify simulation accuracy, terminology, scenarios, alarms, drugs, and education value.",
+      "status": "blocked",
+      "finding": "Medical expert review packet is ready, but completed reviewer attestations are still missing. Artifact: artifacts/manual-evidence/medical-expert-review-packet.json."
+    },
+    {
+      "evidence": [
+        "artifacts/manual-evidence/deep-audit-completion-audit.json",
+        "artifacts/manual-evidence/user-testing-results.json"
+      ],
+      "id": "user-testing",
+      "requirement": "At least 10 medical students and listed clinician/teacher roles complete user testing with favorable feedback.",
+      "status": "blocked",
+      "finding": "User testing packet is ready, but completed participant results are still missing. Artifact: artifacts/manual-evidence/user-testing-packet.json."
+    },
+    {
+      "evidence": ["artifacts/completion-audit.json:dist", "latest terminal run: npm run check:bundle-size"],
+      "id": "bundle-under-100kb",
+      "requirement": "Brotli-compressed JS/CSS transfer remains below 100 KB.",
+      "status": "verified",
+      "finding": "Brotli JS/CSS transfer=92273 bytes; budget=100000 bytes; raw primary JS/CSS=345123 bytes."
+    },
+    {
+      "evidence": [
+        "artifacts/completion-audit.json",
+        "artifacts/manual-evidence/strict-accessibility-scan.json",
+        "latest terminal runs"
+      ],
+      "id": "zero-errors-and-accessibility",
+      "requirement": "0 console errors, 0 type errors, 0 lint errors, 0 a11y errors, no memory leak, WCAG AAA/100% accessibility.",
+      "status": "verified",
+      "finding": "Strict accessibility scan result=passed; violations=0; consoleErrors=0; incomplete=0. local gates verified=true; lighthouse accessibility=1; one-hour memory=verified."
+    }
+  ],
+  "promptToArtifactChecklist": {
+    "objectiveRestatement": "Deliver all 1,180 DEEP_AUDIT_REQUIREMENTS_V2.md checklist items, preserve the previous COMPLETE_FIX_REQUIREMENTS.md completion contract, pass every final command gate, and satisfy visual, clinical, expert, user, accessibility, memory, bundle, multi-environment, and release-quality evidence requirements.",
+    "numberedChecklist": {
+      "evidence": [
+        "DEEP_AUDIT_REQUIREMENTS_V2.md: numbered checklist rows",
+        "artifacts/manual-evidence/deep-audit-completion-audit.json"
+      ],
+      "finding": "1180/1180 checked; unchecked=0; missing=none; duplicates=none.",
+      "requirement": "1,180 / 1,180 DEEP checklist rows are present, unique, consecutive, and checked.",
+      "status": "verified"
+    },
+    "nonOverlap": {
+      "duplicateCount": 0,
+      "evidence": [
+        "DEEP_AUDIT_REQUIREMENTS_V2.md",
+        "COMPLETE_FIX_REQUIREMENTS.md",
+        "artifacts/manual-evidence/deep-audit-completion-audit.json"
+      ],
+      "finding": "0 exact duplicate DEEP rows found against 1150 previous rows.",
+      "requirement": "DEEP checklist items do not exactly duplicate previous checklist items.",
+      "status": "verified"
+    },
+    "sectionCounts": {
+      "evidence": [
+        "DEEP_AUDIT_REQUIREMENTS_V2.md",
+        "artifacts/manual-evidence/deep-audit-completion-audit.json"
+      ],
+      "finding": "10 sections reconcile with their heading counts.",
+      "mismatches": [],
+      "requirement": "DEEP section heading counts match actual checklist rows.",
+      "sections": [
+        {
+          "checked": 200,
+          "claimedCount": 200,
+          "first": 1,
+          "last": 200,
+          "title": "🩺 SECTION A: 의학적 정확성 (200개)",
+          "total": 200
+        },
+        {
+          "checked": 220,
+          "claimedCount": 220,
+          "first": 201,
+          "last": 420,
+          "title": "🎨 SECTION B: UI 시각적 디테일 (220개)",
+          "total": 220
+        },
+        {
+          "checked": 150,
+          "claimedCount": 150,
+          "first": 421,
+          "last": 570,
+          "title": "🔌 SECTION C: 인터랙션 디테일 (150개)",
+          "total": 150
+        },
+        {
+          "checked": 150,
+          "claimedCount": 150,
+          "first": 571,
+          "last": 720,
+          "title": "🎯 SECTION D: 시뮬레이션 정확성 (150개)",
+          "total": 150
+        },
+        {
+          "checked": 100,
+          "claimedCount": 100,
+          "first": 721,
+          "last": 820,
+          "title": "♿ SECTION E: 접근성 세부 (100개)",
+          "total": 100
+        },
+        {
+          "checked": 100,
+          "claimedCount": 100,
+          "first": 821,
+          "last": 920,
+          "title": "🌐 SECTION F: 국제화/현지화 (100개)",
+          "total": 100
+        },
+        {
+          "checked": 110,
+          "claimedCount": 110,
+          "first": 921,
+          "last": 1030,
+          "title": "🚀 SECTION G: 성능 미세 최적화 (110개)",
+          "total": 110
+        },
+        {
+          "checked": 50,
+          "claimedCount": 50,
+          "first": 1031,
+          "last": 1080,
+          "title": "🔒 SECTION H: 보안 강화 (50개)",
+          "total": 50
+        },
+        {
+          "checked": 50,
+          "claimedCount": 50,
+          "first": 1081,
+          "last": 1130,
+          "title": "📊 SECTION I: 분석/모니터링 (50개)",
+          "total": 50
+        },
+        {
+          "checked": 50,
+          "claimedCount": 50,
+          "first": 1131,
+          "last": 1180,
+          "title": "🎓 SECTION J: 교육적 가치 (50개)",
+          "total": 50
+        }
+      ],
+      "status": "verified"
+    },
+    "phasePlan": {
+      "evidence": [
+        "DEEP_AUDIT_REQUIREMENTS_V2.md",
+        "artifacts/manual-evidence/deep-audit-completion-audit.json"
+      ],
+      "finding": "9 phases map to 10 DEEP sections; canonical rows=1180; prompt plan rows=1150; expanded rows=30.",
+      "phases": [
+        {
+          "phase": "Phase 8",
+          "promptPlanRows": 200,
+          "sectionTitleIncludes": ["의학적 정확성"],
+          "topic": "의학적 정확성",
+          "actualRows": 200,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 1, "last": 200, "title": "🩺 SECTION A: 의학적 정확성 (200개)", "total": 200 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 9",
+          "promptPlanRows": 200,
+          "sectionTitleIncludes": ["UI 시각적 디테일"],
+          "topic": "UI 시각적 디테일",
+          "actualRows": 220,
+          "rowDeltaFromPromptPlan": 20,
+          "sections": [
+            { "first": 201, "last": 420, "title": "🎨 SECTION B: UI 시각적 디테일 (220개)", "total": 220 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 10",
+          "promptPlanRows": 150,
+          "sectionTitleIncludes": ["인터랙션 디테일"],
+          "topic": "인터랙션 디테일",
+          "actualRows": 150,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 421, "last": 570, "title": "🔌 SECTION C: 인터랙션 디테일 (150개)", "total": 150 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 11",
+          "promptPlanRows": 150,
+          "sectionTitleIncludes": ["시뮬레이션 정확성"],
+          "topic": "시뮬레이션 정확성",
+          "actualRows": 150,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 571, "last": 720, "title": "🎯 SECTION D: 시뮬레이션 정확성 (150개)", "total": 150 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 12",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["접근성 세부"],
+          "topic": "접근성 세부",
+          "actualRows": 100,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 721, "last": 820, "title": "♿ SECTION E: 접근성 세부 (100개)", "total": 100 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 13",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["국제화/현지화"],
+          "topic": "국제화",
+          "actualRows": 100,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 821, "last": 920, "title": "🌐 SECTION F: 국제화/현지화 (100개)", "total": 100 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 14",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["성능 미세 최적화"],
+          "topic": "성능 미세",
+          "actualRows": 110,
+          "rowDeltaFromPromptPlan": 10,
+          "sections": [
+            { "first": 921, "last": 1030, "title": "🚀 SECTION G: 성능 미세 최적화 (110개)", "total": 110 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 15",
+          "promptPlanRows": 100,
+          "sectionTitleIncludes": ["보안 강화", "분석/모니터링"],
+          "topic": "보안 + 분석",
+          "actualRows": 100,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 1031, "last": 1080, "title": "🔒 SECTION H: 보안 강화 (50개)", "total": 50 },
+            { "first": 1081, "last": 1130, "title": "📊 SECTION I: 분석/모니터링 (50개)", "total": 50 }
+          ],
+          "status": "mapped"
+        },
+        {
+          "phase": "Phase 16",
+          "promptPlanRows": 50,
+          "sectionTitleIncludes": ["교육적 가치"],
+          "topic": "교육 가치 + 최종 검증",
+          "actualRows": 50,
+          "rowDeltaFromPromptPlan": 0,
+          "sections": [
+            { "first": 1131, "last": 1180, "title": "🎓 SECTION J: 교육적 가치 (50개)", "total": 50 }
+          ],
+          "status": "mapped"
+        }
+      ],
+      "requirement": "Phase 8-16 plan is mapped to concrete DEEP sections and row ranges.",
+      "status": "verified"
+    },
+    "priorObjective": {
+      "evidence": ["artifacts/completion-audit.json"],
+      "finding": "completion audit status=incomplete; blockers=chrome-ux-report",
+      "requirement": "Previous COMPLETE_FIX_REQUIREMENTS.md objective is complete before this objective is claimed complete.",
+      "status": "blocked"
+    },
+    "finalVerificationCommands": [
+      {
+        "command": "npm run clean",
+        "evidence": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      },
+      {
+        "command": "npm install",
+        "evidence": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      },
+      {
+        "command": "npm run type-check",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run lint",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run lint:css",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run format:check",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm test",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run test:coverage",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run test:e2e",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run build",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:bundle-size",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:contrast",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:performance",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:lighthouse",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:memory",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:memory:10min",
+        "evidence": "artifacts/memory-profile-10min.json",
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:memory:30min",
+        "evidence": "artifacts/memory-profile-1hour.json",
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:memory:1hour",
+        "evidence": "artifacts/memory-profile-1hour.json",
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:no-raster",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:jsdoc-exports",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:test-realism",
+        "evidence": "artifacts/manual-evidence/test-realism.json",
+        "result": "passed",
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:licenses",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run check:forbidden-patterns",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run docs:codemap",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run docs:api",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run docs:storybook",
+        "evidence": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      },
+      {
+        "command": "npm run docs:pdf",
+        "evidence": "artifacts/manual-evidence/phase-gate-command-results.json",
+        "exitCode": 0,
+        "status": "verified"
+      },
+      {
+        "command": "npm run dev",
+        "evidence": "artifacts/manual-evidence/final-command-evidence.json",
+        "exitCode": 0,
+        "result": "passed",
+        "status": "verified"
+      }
+    ],
+    "trueCompletionCriteria": [
+      {
+        "evidence": [
+          "artifacts/manual-evidence/visual-screenshot-review.json",
+          "artifacts/patient-avatar-current.png",
+          "artifacts/manual-evidence/patient-visual-review-results.json"
+        ],
+        "finding": "Visual screenshot review artifact exists, but the objective asks for subjective visual and clinical confirmation; this still needs human reviewer sign-off. Scenario visual review packet is ready with 5 captures at artifacts/manual-evidence/patient-visual-review-packet.json.",
+        "requirement": "Patient looks like a real patient, not a schematic, with natural breathing animations.",
+        "status": "blocked"
+      },
+      {
+        "evidence": [
+          "artifacts/manual-evidence/deep-audit-completion-audit.json",
+          "artifacts/manual-evidence/medical-expert-review-results.json"
+        ],
+        "finding": "Medical expert review packet is ready, but completed reviewer attestations are still missing. Artifact: artifacts/manual-evidence/medical-expert-review-packet.json.",
+        "requirement": "At least 5 medical experts certify simulation accuracy, terminology, scenarios, alarms, drugs, and education value.",
+        "status": "blocked"
+      },
+      {
+        "evidence": [
+          "artifacts/manual-evidence/deep-audit-completion-audit.json",
+          "artifacts/manual-evidence/user-testing-results.json"
+        ],
+        "finding": "User testing packet is ready, but completed participant results are still missing. Artifact: artifacts/manual-evidence/user-testing-packet.json.",
+        "requirement": "At least 10 medical students and listed clinician/teacher roles complete user testing with favorable feedback.",
+        "status": "blocked"
+      },
+      {
+        "evidence": ["artifacts/manual-evidence/multi-environment-verification.json"],
+        "finding": "8/12 environments passed; missing or unavailable: Firefox desktop, Edge desktop, Linux Chromium, iOS Safari. Multi-environment evidence incomplete; missing passed labels=Firefox desktop, Edge desktop, Linux Chromium, iOS Safari; invalid evidence labels=Safari macOS.",
+        "requirement": "Chrome, Firefox, Safari macOS/iOS, Edge, Linux Chromium, Android Chrome, iOS Safari, tablet, 4K, ultra-wide, portrait, and landscape are verified.",
+        "status": "blocked"
+      },
+      {
+        "evidence": [
+          "artifacts/completion-audit.json:dist",
+          "latest terminal run: npm run check:bundle-size"
+        ],
+        "finding": "Brotli JS/CSS transfer=92273 bytes; budget=100000 bytes; raw primary JS/CSS=345123 bytes.",
+        "requirement": "Brotli-compressed JS/CSS transfer remains below 100 KB.",
+        "status": "verified"
+      },
+      {
+        "evidence": [
+          "artifacts/completion-audit.json",
+          "artifacts/manual-evidence/strict-accessibility-scan.json",
+          "latest terminal runs"
+        ],
+        "finding": "Strict accessibility scan result=passed; violations=0; consoleErrors=0; incomplete=0. local gates verified=true; lighthouse accessibility=1; one-hour memory=verified.",
+        "requirement": "0 console errors, 0 type errors, 0 lint errors, 0 a11y errors, no memory leak, WCAG AAA/100% accessibility.",
+        "status": "verified"
+      }
+    ],
+    "blockers": [
+      {
+        "evidence": ["artifacts/completion-audit.json"],
+        "finding": "completion audit status=incomplete; blockers=chrome-ux-report",
+        "id": "previous-complete-fix-requirements",
+        "requirement": "Previous COMPLETE_FIX_REQUIREMENTS.md objective is also complete.",
+        "status": "blocked"
+      },
+      {
+        "evidence": [
+          "artifacts/manual-evidence/visual-screenshot-review.json",
+          "artifacts/patient-avatar-current.png",
+          "artifacts/manual-evidence/patient-visual-review-results.json"
+        ],
+        "finding": "Visual screenshot review artifact exists, but the objective asks for subjective visual and clinical confirmation; this still needs human reviewer sign-off. Scenario visual review packet is ready with 5 captures at artifacts/manual-evidence/patient-visual-review-packet.json.",
+        "id": "human-like-patient-visual-review",
+        "requirement": "Patient looks like a real patient, not a schematic, with natural breathing animations.",
+        "status": "blocked"
+      },
+      {
+        "evidence": ["artifacts/manual-evidence/multi-environment-verification.json"],
+        "finding": "8/12 environments passed; missing or unavailable: Firefox desktop, Edge desktop, Linux Chromium, iOS Safari. Multi-environment evidence incomplete; missing passed labels=Firefox desktop, Edge desktop, Linux Chromium, iOS Safari; invalid evidence labels=Safari macOS.",
+        "id": "multi-environment-verification",
+        "requirement": "Chrome, Firefox, Safari macOS/iOS, Edge, Linux Chromium, Android Chrome, iOS Safari, tablet, 4K, ultra-wide, portrait, and landscape are verified.",
+        "status": "blocked"
+      },
+      {
+        "evidence": [
+          "artifacts/manual-evidence/deep-audit-completion-audit.json",
+          "artifacts/manual-evidence/medical-expert-review-results.json"
+        ],
+        "finding": "Medical expert review packet is ready, but completed reviewer attestations are still missing. Artifact: artifacts/manual-evidence/medical-expert-review-packet.json.",
+        "id": "medical-expert-review",
+        "requirement": "At least 5 medical experts certify simulation accuracy, terminology, scenarios, alarms, drugs, and education value.",
+        "status": "blocked"
+      },
+      {
+        "evidence": [
+          "artifacts/manual-evidence/deep-audit-completion-audit.json",
+          "artifacts/manual-evidence/user-testing-results.json"
+        ],
+        "finding": "User testing packet is ready, but completed participant results are still missing. Artifact: artifacts/manual-evidence/user-testing-packet.json.",
+        "id": "user-testing",
+        "requirement": "At least 10 medical students and listed clinician/teacher roles complete user testing with favorable feedback.",
+        "status": "blocked"
+      }
+    ]
+  },
+  "status": "incomplete"
+}

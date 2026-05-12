@@ -1,0 +1,74 @@
+[
+  {
+    "ProcessName": "fsATProxy",
+    "Id": 7748,
+    "StartTime": "2026-05-11T01:29:20.013722+00:00",
+    "Path": "C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\fsATProxy.exe"
+  },
+  {
+    "ProcessName": "FSOcrServer",
+    "Id": 7484,
+    "StartTime": "2026-05-11T01:29:17.4046562+00:00",
+    "Path": "C:\\Program Files (x86)\\Freedom Scientific\\Shared\\FSOcr\\2\\FSOcrServer.exe"
+  },
+  {
+    "ProcessName": "fsSynth32",
+    "Id": 9688,
+    "StartTime": "2026-05-11T01:29:20.3354749+00:00",
+    "Path": "C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\x86\\fsSynth32.exe"
+  },
+  {
+    "ProcessName": "jfw",
+    "Id": 8160,
+    "StartTime": "2026-05-11T01:29:13.9890779+00:00",
+    "Path": "C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\jfw.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 1260,
+    "StartTime": "2026-05-11T01:28:49.3921408+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 4068,
+    "StartTime": "2026-05-11T01:28:49.797657+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 4340,
+    "StartTime": "2026-05-11T01:28:49.0599168+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 7412,
+    "StartTime": "2026-05-11T01:29:49.1009209+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 7840,
+    "StartTime": "2026-05-11T01:28:48.9918764+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 7868,
+    "StartTime": "2026-05-11T01:28:48.8858038+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 8220,
+    "StartTime": "2026-05-11T01:28:49.0900746+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 8748,
+    "StartTime": "2026-05-11T01:28:49.0588728+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  }
+]

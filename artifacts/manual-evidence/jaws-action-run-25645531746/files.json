@@ -1,0 +1,182 @@
+[
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\edge-profile",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:29:47.9436619Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\installed-files.json",
+    "Length": 152,
+    "LastWriteTimeUtc": "2026-05-11T01:29:55.4790866Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_000_Eloquence.log",
+    "Length": 129808,
+    "LastWriteTimeUtc": "2026-05-11T01:27:34.4604582Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_001_VidAccDriverUninstaller64.log",
+    "Length": 401,
+    "LastWriteTimeUtc": "2026-05-11T01:27:34.5741752Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_002_Utilities64.log",
+    "Length": 98058,
+    "LastWriteTimeUtc": "2026-05-11T01:27:34.9513485Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_003_SentinelProtectionInstaller.log",
+    "Length": 467106,
+    "LastWriteTimeUtc": "2026-05-11T01:27:53.4817171Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_004_FsElevation64.log",
+    "Length": 138722,
+    "LastWriteTimeUtc": "2026-05-11T01:27:55.9327689Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_005_fsSynth.log",
+    "Length": 141874,
+    "LastWriteTimeUtc": "2026-05-11T01:27:56.4302087Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_006_UIAHooks64.log",
+    "Length": 103458,
+    "LastWriteTimeUtc": "2026-05-11T01:27:56.8249102Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_007_HookManager64.log",
+    "Length": 104496,
+    "LastWriteTimeUtc": "2026-05-11T01:27:57.1883636Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_008_AccEventCache64.log",
+    "Length": 121366,
+    "LastWriteTimeUtc": "2026-05-11T01:27:57.6024473Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_009_GlobalHooksDispatcher64.log",
+    "Length": 109310,
+    "LastWriteTimeUtc": "2026-05-11T01:27:57.9698011Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_010_GateManager64.log",
+    "Length": 171448,
+    "LastWriteTimeUtc": "2026-05-11T01:27:58.4862528Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_011_FSReader64.log",
+    "Length": 900742,
+    "LastWriteTimeUtc": "2026-05-11T01:28:01.8936908Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_012_TableOfContents64.log",
+    "Length": 135818,
+    "LastWriteTimeUtc": "2026-05-11T01:28:02.7594926Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_013_FSOmniPage.log",
+    "Length": 486952,
+    "LastWriteTimeUtc": "2026-05-11T01:28:07.6828015Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_014_FSOcr64.log",
+    "Length": 247490,
+    "LastWriteTimeUtc": "2026-05-11T01:28:08.3282191Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_015_FSSupportTool64.log",
+    "Length": 370496,
+    "LastWriteTimeUtc": "2026-05-11T01:28:09.4481066Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_016_ErrorReporting64.log",
+    "Length": 179186,
+    "LastWriteTimeUtc": "2026-05-11T01:28:09.9362924Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_017_TouchServer64.log",
+    "Length": 177598,
+    "LastWriteTimeUtc": "2026-05-11T01:28:10.6004283Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_018_FusionInterface64.log",
+    "Length": 185176,
+    "LastWriteTimeUtc": "2026-05-11T01:28:11.2019704Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_019_Authorization64.log",
+    "Length": 746108,
+    "LastWriteTimeUtc": "2026-05-11T01:28:15.1991704Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_020_UnifiedKeyboard.log",
+    "Length": 140464,
+    "LastWriteTimeUtc": "2026-05-11T01:28:16.0733022Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_021_FSCam64.log",
+    "Length": 115444,
+    "LastWriteTimeUtc": "2026-05-11T01:28:16.8766045Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_022_RDP64.log",
+    "Length": 505942,
+    "LastWriteTimeUtc": "2026-05-11T01:28:18.2372893Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_023_Telemetry64.log",
+    "Length": 151506,
+    "LastWriteTimeUtc": "2026-05-11T01:28:18.7239034Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_024_VoiceAssistant64.log",
+    "Length": 208976,
+    "LastWriteTimeUtc": "2026-05-11T01:28:19.8492926Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_025_JAWS64.log",
+    "Length": 5092934,
+    "LastWriteTimeUtc": "2026-05-11T01:28:38.3559088Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_026_JAWSLanguage64enu.log",
+    "Length": 1273734,
+    "LastWriteTimeUtc": "2026-05-11T01:28:41.0303573Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_027_Xerces64.log",
+    "Length": 69038,
+    "LastWriteTimeUtc": "2026-05-11T01:28:41.1750651Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_028_JAWSStart64enu.log",
+    "Length": 127156,
+    "LastWriteTimeUtc": "2026-05-11T01:28:41.9979857Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install_029_PostInstall.log",
+    "Length": 752,
+    "LastWriteTimeUtc": "2026-05-11T01:28:42.0394331Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\jaws-install.log",
+    "Length": 325378,
+    "LastWriteTimeUtc": "2026-05-11T01:28:47.611665Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\processes.json",
+    "Length": 2348,
+    "LastWriteTimeUtc": "2026-05-11T01:29:55.4654122Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\summary.json",
+    "Length": 796,
+    "LastWriteTimeUtc": "2026-05-11T01:29:55.4942371Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\jaws-evidence\\windows-jaws-edge.png",
+    "Length": 169781,
+    "LastWriteTimeUtc": "2026-05-11T01:29:55.3692878Z"
+  }
+]

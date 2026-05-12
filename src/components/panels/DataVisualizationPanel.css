@@ -1,0 +1,193 @@
+.data-viz-panel {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr) 92px;
+  gap: 6px;
+  padding: 7px;
+  border: 1px solid var(--control-border);
+  border-radius: 7px;
+  background: rgba(2, 14, 25, 0.5);
+}
+
+.data-viz-toolbar,
+.metric-tabs,
+.viz-grid {
+  display: flex;
+  gap: 4px;
+}
+
+.data-viz-toolbar {
+  grid-column: 1 / 4;
+  align-items: center;
+}
+
+.data-viz-toolbar strong {
+  margin-right: auto;
+  color: var(--text-main);
+  font-size: 11px;
+}
+
+.data-viz-toolbar button,
+.metric-tabs button,
+.detail-analysis {
+  min-height: 22px;
+  border: 1px solid var(--control-border);
+  border-radius: 5px;
+  background: rgba(0, 10, 18, 0.58);
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.metric-tabs {
+  flex-direction: column;
+}
+
+.metric-tabs button[aria-selected='true'] {
+  color: var(--normal-green);
+}
+
+.sparkline-card {
+  position: relative;
+  min-width: 0;
+}
+
+.sparkline-card svg {
+  width: 100%;
+  height: 54px;
+}
+
+.sparkline-card polyline {
+  fill: none;
+  stroke: var(--normal-green);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+.sparkline-card span,
+.gauge-card span,
+.donut-card span {
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.range-normal {
+  fill: rgba(53, 210, 127, 0.1);
+}
+
+.range-danger {
+  fill: rgba(255, 138, 128, 0.14);
+}
+
+.threshold-line {
+  stroke: var(--warning-yellow);
+  stroke-dasharray: 3 2;
+  stroke-width: 1;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.gauge-card,
+.donut-card,
+.bar-card,
+.heatmap-card {
+  min-height: 31px;
+  border-radius: 5px;
+  background: rgba(0, 10, 18, 0.42);
+}
+
+.gauge-card,
+.donut-card {
+  display: grid;
+  place-items: center;
+}
+
+.gauge-card strong,
+.donut-card strong {
+  color: var(--text-main);
+  font-size: 11px;
+}
+
+.donut-card span,
+.donut-card strong {
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: #020e19;
+}
+
+.gauge-card meter {
+  width: 86%;
+}
+
+.donut-card {
+  background:
+    radial-gradient(circle, rgba(2, 14, 25, 0.95) 0 42%, transparent 44%),
+    conic-gradient(var(--wave-pressure) var(--donut-degrees), rgba(80, 160, 220, 0.18) 0);
+}
+
+.bar-card,
+.heatmap-card {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 2px;
+  padding: 4px;
+}
+
+.bar-card span {
+  width: 7px;
+  height: var(--bar-height);
+  background: var(--wave-volume);
+}
+
+.heatmap-card {
+  align-items: stretch;
+}
+
+.heatmap-card span {
+  flex: 1;
+  background: rgba(255, 138, 128, var(--heat-alpha));
+}
+
+.loop-grid {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.loop-grid svg {
+  width: 100%;
+  height: 36px;
+  border-radius: 5px;
+  background: rgba(0, 10, 18, 0.42);
+}
+
+.loop-grid polyline {
+  fill: none;
+  stroke: var(--wave-co2);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.detail-analysis {
+  grid-column: 1 / 3;
+  text-align: left;
+}
+
+.lazy-trend-table {
+  grid-column: 1 / 4;
+  min-height: 1px;
+}
+
+.data-viz-panel > small {
+  align-self: center;
+  color: var(--text-muted);
+  font-size: 9px;
+}

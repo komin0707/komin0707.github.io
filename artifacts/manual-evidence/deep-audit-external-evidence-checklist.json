@@ -1,0 +1,58 @@
+{
+  "artifactPath": "artifacts/manual-evidence/deep-audit-external-evidence-checklist.json",
+  "result": "blocked",
+  "blockers": [
+    {
+      "id": "previous-complete-fix-requirements",
+      "requiredArtifact": "artifacts/manual-evidence/chrome-ux-report.json",
+      "template": null,
+      "minimumPassCondition": "Canonical artifact contains real CrUX/PageSpeed field-data indicators for the production origin.",
+      "commands": [
+        "npm run check:crux-credentials",
+        "npm run check:crux-live-probes",
+        "npm run check:crux-monitoring",
+        "npm run refresh:crux-blocker-evidence"
+      ]
+    },
+    {
+      "id": "human-like-patient-visual-review",
+      "packet": "artifacts/manual-evidence/patient-visual-review-packet.json",
+      "rubric": "artifacts/manual-evidence/patient-visual-review-rubric.md",
+      "template": "artifacts/manual-evidence/patient-visual-review-results.template.json",
+      "requiredArtifact": "artifacts/manual-evidence/patient-visual-review-results.json",
+      "minimumPassCondition": "Named reviewer with real role, attestation, reviewedAt on or after the visual review packet checkedAt, all 5 named scenario capture reviews (normal, pneumonia, ards, airwayObstruction, pneumothorax), real reviewer notes for each capture, and no unresolved critical issues."
+    },
+    {
+      "id": "multi-environment-verification",
+      "currentArtifact": "artifacts/manual-evidence/multi-environment-verification.json",
+      "template": "artifacts/manual-evidence/external-multi-environment-results.template.json",
+      "requiredArtifact": "artifacts/manual-evidence/external-multi-environment-results.json",
+      "remainingEnvironments": ["Firefox desktop", "Edge desktop", "Linux Chromium", "iOS Safari"],
+      "minimumPassCondition": "Each remaining environment includes browser, platform, checkedAt, visible simulator heading, visible patient avatar, screenshot width/height, and matching SHA-256.",
+      "commands": ["npm run record:multi-environment-evidence"]
+    },
+    {
+      "id": "medical-expert-review",
+      "packet": "artifacts/manual-evidence/medical-expert-review-packet.json",
+      "rubric": "artifacts/manual-evidence/medical-expert-review-rubric.md",
+      "template": "artifacts/manual-evidence/medical-expert-review-results.template.json",
+      "requiredArtifact": "artifacts/manual-evidence/medical-expert-review-results.json",
+      "minimumPassCondition": "5 named role-qualified reviewers covering critical care/intensivist, respiratory therapy/ventilation specialist, emergency medicine/anesthesiology, ICU nurse educator, and medical simulation educator; each reviewer includes credentials, reviewedAt on or after the medical review packet generatedAt, attestation, 5 required passed domain reviews with real reviewer notes, and no unresolved critical safety issues."
+    },
+    {
+      "id": "user-testing",
+      "packet": "artifacts/manual-evidence/user-testing-packet.json",
+      "rubric": "artifacts/manual-evidence/user-testing-rubric.md",
+      "template": "artifacts/manual-evidence/user-testing-results.template.json",
+      "requiredArtifact": "artifacts/manual-evidence/user-testing-results.json",
+      "minimumPassCondition": "10 participants covering Medical students, Respiratory therapy learners, ICU/ER nursing learners, and Clinical instructors; testedAt on or after the user-testing packet generatedAt, all 5 named task completion rates (scenarioIdentification, modeChange, alarmRecognition, debriefRead, assistiveNavigation) >=0.8, favorable feedback >=0.8, qualitative summary, and no unresolved critical usability issues."
+    }
+  ],
+  "finalVerificationCommands": [
+    "npm run record:multi-environment-evidence",
+    "npm run check:deep-audit-handoff",
+    "npm run check:deep-audit-completion",
+    "npm run write:final-blocker-summary",
+    "npm run check:completion-consistency"
+  ]
+}

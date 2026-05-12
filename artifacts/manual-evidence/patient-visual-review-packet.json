@@ -1,0 +1,106 @@
+{
+  "artifactPath": "artifacts/manual-evidence/patient-visual-review-packet.json",
+  "captures": [
+    {
+      "id": "normal",
+      "label": "Normal baseline",
+      "attributes": {
+        "alarmLevel": "none",
+        "breathPattern": "regular",
+        "breathSource": "mechanical",
+        "condition": "stable",
+        "expression": "calm",
+        "scenario": "normal"
+      },
+      "boundingBox": { "x": 317, "y": 198, "width": 696, "height": 391.703125 },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/patient-visual-review/normal.png",
+        "sha256": "1bda9845ada9d7daead933ac2ef0da7ae5390219e33e5a5621678878d2e68d3d",
+        "sizeBytes": 322478
+      }
+    },
+    {
+      "id": "pneumonia",
+      "label": "Pneumonia",
+      "attributes": {
+        "alarmLevel": "critical",
+        "breathPattern": "tachypnea",
+        "breathSource": "mechanical",
+        "condition": "worsening",
+        "expression": "drowsy",
+        "scenario": "pneumonia"
+      },
+      "boundingBox": { "x": 317, "y": 198, "width": 696, "height": 391.703125 },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/patient-visual-review/pneumonia.png",
+        "sha256": "22e7662dd4c9f94dae18dfc53c3dc5bb80c474e768d284b285b668e738fff20f",
+        "sizeBytes": 339481
+      }
+    },
+    {
+      "id": "ards",
+      "label": "ARDS",
+      "attributes": {
+        "alarmLevel": "critical",
+        "breathPattern": "gasping",
+        "breathSource": "mechanical",
+        "condition": "critical",
+        "expression": "critical",
+        "scenario": "ards"
+      },
+      "boundingBox": { "x": 317, "y": 198, "width": 696, "height": 391.703125 },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/patient-visual-review/ards.png",
+        "sha256": "7dea9993c33e7c78292ed255f4cc45092cd829e948f4d33624bf1f631323b1e4",
+        "sizeBytes": 334890
+      }
+    },
+    {
+      "id": "airwayObstruction",
+      "label": "Airway obstruction",
+      "attributes": {
+        "alarmLevel": "critical",
+        "breathPattern": "regular",
+        "breathSource": "mechanical",
+        "condition": "worsening",
+        "expression": "distressed",
+        "scenario": "airwayObstruction"
+      },
+      "boundingBox": { "x": 317, "y": 198, "width": 696, "height": 391.703125 },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/patient-visual-review/airwayObstruction.png",
+        "sha256": "193d43a714161d9df6959b417b58768346defde3500f82a39edb62849c609a7c",
+        "sizeBytes": 341600
+      }
+    },
+    {
+      "id": "pneumothorax",
+      "label": "Pneumothorax",
+      "attributes": {
+        "alarmLevel": "critical",
+        "breathPattern": "tachypnea",
+        "breathSource": "mechanical",
+        "condition": "worsening",
+        "expression": "drowsy",
+        "scenario": "pneumothorax"
+      },
+      "boundingBox": { "x": 317, "y": 198, "width": 696, "height": 391.703125 },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/patient-visual-review/pneumothorax.png",
+        "sha256": "347d2ce798b19765337c8ee6871211c4c20b103c4dc4c980e9cc18060ca911dc",
+        "sizeBytes": 340510
+      }
+    }
+  ],
+  "checkedAt": "2026-05-12T01:55:44.253Z",
+  "limitation": "This packet prepares objective screenshots and rubric criteria for external visual/clinical reviewers; it is not a substitute for human reviewer sign-off.",
+  "result": "review-packet-ready",
+  "reviewerRubricPath": "artifacts/manual-evidence/patient-visual-review-rubric.md",
+  "rubric": [
+    "Human morphology: face, head, torso, arms, hands, and body proportions read as a patient rather than a symbolic diagram.",
+    "Bedside context: pillow, bed surface, gown, lines, circuit, and airway equipment are visible and clinically coherent.",
+    "Respiratory state: chest movement, breath source, breath pattern, and oxygenation cues match the selected scenario.",
+    "Clinical pathology: scenario-specific color, perfusion, lung, secretion, or distress cues are visible without hiding anatomy.",
+    "Readability: overlays and labels support clinical interpretation without visual clutter or occlusion."
+  ]
+}

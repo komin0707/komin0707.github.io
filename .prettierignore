@@ -1,0 +1,8 @@
+coverage
+dist
+.git
+*.log
+.env
+.env.*
+node_modules
+package-lock.json

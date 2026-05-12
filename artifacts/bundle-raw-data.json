@@ -1,0 +1,3891 @@
+{
+  "version": 2,
+  "tree": {
+    "name": "root",
+    "children": [
+      {
+        "name": "assets/index-BZCgn1Hq.js",
+        "children": [
+          {
+            "name": "src",
+            "children": [
+              {
+                "name": "preact",
+                "children": [
+                  {
+                    "uid": "56bdb42a-1",
+                    "name": "reactShim.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-3",
+                    "name": "reactDomClientShim.ts"
+                  }
+                ]
+              },
+              {
+                "name": "components",
+                "children": [
+                  {
+                    "name": "ui",
+                    "children": [
+                      {
+                        "uid": "56bdb42a-5",
+                        "name": "icons.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-79",
+                        "name": "ScenarioSelector.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-81",
+                        "name": "BottomBar.css"
+                      },
+                      {
+                        "uid": "56bdb42a-83",
+                        "name": "BottomBar.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-85",
+                        "name": "ErrorBoundary.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-87",
+                        "name": "Header.css"
+                      },
+                      {
+                        "uid": "56bdb42a-89",
+                        "name": "Header.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-91",
+                        "name": "ContextMenuOverlay.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-93",
+                        "name": "ShortcutHelp.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-95",
+                        "name": "InteractionToolbar.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-97",
+                        "name": "SliderControl.css"
+                      },
+                      {
+                        "uid": "56bdb42a-99",
+                        "name": "SliderControl.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-107",
+                        "name": "WaveformChart.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-109",
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "panels",
+                    "children": [
+                      {
+                        "uid": "56bdb42a-23",
+                        "name": "AlarmPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-25",
+                        "name": "Panel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-27",
+                        "name": "AlarmPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-51",
+                        "name": "DataVisualizationPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-53",
+                        "name": "DataVisualizationPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-55",
+                        "name": "LungStatusPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-57",
+                        "name": "LungStatusPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-59",
+                        "name": "ModeSafetyPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-61",
+                        "name": "ModeSafetyPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-111",
+                        "name": "MonitorPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-113",
+                        "name": "MonitorPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-115",
+                        "name": "Panel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-117",
+                        "name": "PatientConditionPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-121",
+                        "name": "PatientConditionPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-123",
+                        "name": "ScenarioInterventionPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-125",
+                        "name": "ScenarioInterventionPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-127",
+                        "name": "SettingsPanel.css"
+                      },
+                      {
+                        "uid": "56bdb42a-129",
+                        "name": "SettingsPanel.tsx"
+                      },
+                      {
+                        "uid": "56bdb42a-131",
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "uid": "56bdb42a-133",
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "simulation",
+                "children": [
+                  {
+                    "uid": "56bdb42a-7",
+                    "name": "alarmDefinitions.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-9",
+                    "name": "alarms.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-11",
+                    "name": "clinicalAssessments.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-13",
+                    "name": "conditionMessages.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-15",
+                    "name": "ventilatorMath.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-17",
+                    "name": "vitals.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-19",
+                    "name": "visualState.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-21",
+                    "name": "ventilatorModel.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-35",
+                    "name": "scenarioEngine.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-37",
+                    "name": "scenarios.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-39",
+                    "name": "typeGuards.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-75",
+                    "name": "simulationSnapshot.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-101",
+                    "name": "waveform.worker.ts?worker"
+                  },
+                  {
+                    "uid": "56bdb42a-103",
+                    "name": "waveformGenerator.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-105",
+                    "name": "waveformWorkerClient.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-147",
+                    "name": "modeSafety.ts"
+                  }
+                ]
+              },
+              {
+                "name": "hooks",
+                "children": [
+                  {
+                    "uid": "56bdb42a-29",
+                    "name": "useElapsedTimer.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-31",
+                    "name": "useIntersectionVisibility.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-33",
+                    "name": "useMemoryPressurePause.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-41",
+                    "name": "useSimulatorInteractions.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-43",
+                    "name": "useSimulation.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-45",
+                    "name": "useThrottledViewportMetrics.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-47",
+                    "name": "useVentilatorSettings.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-49",
+                    "name": "index.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-149",
+                    "name": "useSimulatorLayoutModel.ts"
+                  }
+                ]
+              },
+              {
+                "name": "lib",
+                "children": [
+                  {
+                    "uid": "56bdb42a-63",
+                    "name": "runtime.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-65",
+                    "name": "errorTracking.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-67",
+                    "name": "i18n.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-69",
+                    "name": "realUserMonitoring.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-71",
+                    "name": "serviceWorkerRegistration.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-73",
+                    "name": "vercelObservability.ts"
+                  }
+                ]
+              },
+              {
+                "name": "utils/formatTime.ts",
+                "uid": "56bdb42a-77"
+              },
+              {
+                "name": "config",
+                "children": [
+                  {
+                    "uid": "56bdb42a-135",
+                    "name": "env.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-137",
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "context",
+                "children": [
+                  {
+                    "uid": "56bdb42a-139",
+                    "name": "simulationContextValue.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-141",
+                    "name": "SimulationContext.tsx"
+                  },
+                  {
+                    "uid": "56bdb42a-143",
+                    "name": "useSimulationContext.ts"
+                  },
+                  {
+                    "uid": "56bdb42a-145",
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "uid": "56bdb42a-151",
+                "name": "App.css"
+              },
+              {
+                "uid": "56bdb42a-153",
+                "name": "App.responsive.css"
+              },
+              {
+                "uid": "56bdb42a-155",
+                "name": "App.tsx"
+              },
+              {
+                "name": "styles/global.css",
+                "uid": "56bdb42a-157"
+              },
+              {
+                "uid": "56bdb42a-159",
+                "name": "main.tsx"
+              }
+            ]
+          },
+          {
+            "name": "\u0000vite/preload-helper.js",
+            "uid": "56bdb42a-119"
+          },
+          {
+            "uid": "56bdb42a-161",
+            "name": "index.html"
+          }
+        ]
+      },
+      {
+        "name": "assets/PatientAvatar2D-Du3RghiM.js",
+        "children": [
+          {
+            "name": "src/components/patient",
+            "children": [
+              {
+                "uid": "56bdb42a-163",
+                "name": "patientAvatarGeometry.ts"
+              },
+              {
+                "uid": "56bdb42a-165",
+                "name": "patientAvatarPalette.ts"
+              },
+              {
+                "uid": "56bdb42a-167",
+                "name": "AirwayCircuit.tsx"
+              },
+              {
+                "uid": "56bdb42a-169",
+                "name": "AirwayEquipment.tsx"
+              },
+              {
+                "uid": "56bdb42a-171",
+                "name": "AirwayProximal.tsx"
+              },
+              {
+                "uid": "56bdb42a-173",
+                "name": "AirwayLayer.tsx"
+              },
+              {
+                "uid": "56bdb42a-175",
+                "name": "AvatarDefs.tsx"
+              },
+              {
+                "uid": "56bdb42a-177",
+                "name": "BedLayer.tsx"
+              },
+              {
+                "uid": "56bdb42a-179",
+                "name": "BodyBaseParts.tsx"
+              },
+              {
+                "uid": "56bdb42a-181",
+                "name": "BodyBaseLayer.tsx"
+              },
+              {
+                "uid": "56bdb42a-183",
+                "name": "BodyClinicalLines.tsx"
+              },
+              {
+                "uid": "56bdb42a-185",
+                "name": "avatarSvgShared.ts"
+              },
+              {
+                "uid": "56bdb42a-187",
+                "name": "BodyElectrodes.tsx"
+              },
+              {
+                "uid": "56bdb42a-189",
+                "name": "BodyGownSurface.tsx"
+              },
+              {
+                "uid": "56bdb42a-191",
+                "name": "BodyLungParts.tsx"
+              },
+              {
+                "uid": "56bdb42a-193",
+                "name": "BodyLungFields.tsx"
+              },
+              {
+                "uid": "56bdb42a-195",
+                "name": "BodyPeripheralParts.tsx"
+              },
+              {
+                "uid": "56bdb42a-197",
+                "name": "BodyPeripheralPerfusion.tsx"
+              },
+              {
+                "uid": "56bdb42a-199",
+                "name": "BodyRespiratoryPosture.tsx"
+              },
+              {
+                "uid": "56bdb42a-201",
+                "name": "BodyLayer.tsx"
+              },
+              {
+                "uid": "56bdb42a-203",
+                "name": "HeadAnatomy.tsx"
+              },
+              {
+                "uid": "56bdb42a-205",
+                "name": "HeadExpressionMarks.tsx"
+              },
+              {
+                "uid": "56bdb42a-207",
+                "name": "HeadEyes.tsx"
+              },
+              {
+                "uid": "56bdb42a-209",
+                "name": "HeadFacialFeatures.tsx"
+              },
+              {
+                "uid": "56bdb42a-211",
+                "name": "HeadLayer.tsx"
+              },
+              {
+                "uid": "56bdb42a-213",
+                "name": "patientAvatarSvgParts.tsx"
+              },
+              {
+                "uid": "56bdb42a-215",
+                "name": "PatientAvatar2D.css"
+              },
+              {
+                "name": "styles",
+                "children": [
+                  {
+                    "uid": "56bdb42a-217",
+                    "name": "PatientAvatarAnatomy.css"
+                  },
+                  {
+                    "uid": "56bdb42a-219",
+                    "name": "PatientAvatarAnimations.css"
+                  },
+                  {
+                    "uid": "56bdb42a-221",
+                    "name": "PatientAvatarBreathing.css"
+                  },
+                  {
+                    "uid": "56bdb42a-223",
+                    "name": "PatientAvatarPathology.css"
+                  },
+                  {
+                    "uid": "56bdb42a-225",
+                    "name": "PatientAvatarSvgDetails.css"
+                  }
+                ]
+              },
+              {
+                "uid": "56bdb42a-227",
+                "name": "PatientAvatar2D.tsx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "assets/vendor-DZL88MYr.js",
+        "children": [
+          {
+            "name": "node_modules/preact",
+            "children": [
+              {
+                "name": "dist/preact.module.js",
+                "uid": "56bdb42a-229"
+              },
+              {
+                "name": "hooks/dist/hooks.module.js",
+                "uid": "56bdb42a-231"
+              },
+              {
+                "name": "jsx-runtime/dist/jsxRuntime.module.js",
+                "uid": "56bdb42a-233"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "isRoot": true
+  },
+  "nodeParts": {
+    "56bdb42a-1": {
+      "renderedLength": 1759,
+      "gzipLength": 771,
+      "brotliLength": 674,
+      "metaUid": "56bdb42a-0"
+    },
+    "56bdb42a-3": {
+      "renderedLength": 248,
+      "gzipLength": 173,
+      "brotliLength": 155,
+      "metaUid": "56bdb42a-2"
+    },
+    "56bdb42a-5": {
+      "renderedLength": 5463,
+      "gzipLength": 1764,
+      "brotliLength": 1554,
+      "metaUid": "56bdb42a-4"
+    },
+    "56bdb42a-7": {
+      "renderedLength": 2260,
+      "gzipLength": 858,
+      "brotliLength": 755,
+      "metaUid": "56bdb42a-6"
+    },
+    "56bdb42a-9": {
+      "renderedLength": 10150,
+      "gzipLength": 1807,
+      "brotliLength": 1625,
+      "metaUid": "56bdb42a-8"
+    },
+    "56bdb42a-11": {
+      "renderedLength": 2937,
+      "gzipLength": 1307,
+      "brotliLength": 1157,
+      "metaUid": "56bdb42a-10"
+    },
+    "56bdb42a-13": {
+      "renderedLength": 1140,
+      "gzipLength": 684,
+      "brotliLength": 564,
+      "metaUid": "56bdb42a-12"
+    },
+    "56bdb42a-15": {
+      "renderedLength": 205,
+      "gzipLength": 159,
+      "brotliLength": 144,
+      "metaUid": "56bdb42a-14"
+    },
+    "56bdb42a-17": {
+      "renderedLength": 5148,
+      "gzipLength": 1532,
+      "brotliLength": 1402,
+      "metaUid": "56bdb42a-16"
+    },
+    "56bdb42a-19": {
+      "renderedLength": 2492,
+      "gzipLength": 865,
+      "brotliLength": 757,
+      "metaUid": "56bdb42a-18"
+    },
+    "56bdb42a-21": {
+      "renderedLength": 598,
+      "gzipLength": 297,
+      "brotliLength": 264,
+      "metaUid": "56bdb42a-20"
+    },
+    "56bdb42a-23": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-22"
+    },
+    "56bdb42a-25": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-24"
+    },
+    "56bdb42a-27": {
+      "renderedLength": 9952,
+      "gzipLength": 2795,
+      "brotliLength": 2421,
+      "metaUid": "56bdb42a-26"
+    },
+    "56bdb42a-29": {
+      "renderedLength": 782,
+      "gzipLength": 351,
+      "brotliLength": 302,
+      "metaUid": "56bdb42a-28"
+    },
+    "56bdb42a-31": {
+      "renderedLength": 1179,
+      "gzipLength": 485,
+      "brotliLength": 411,
+      "metaUid": "56bdb42a-30"
+    },
+    "56bdb42a-33": {
+      "renderedLength": 420,
+      "gzipLength": 225,
+      "brotliLength": 190,
+      "metaUid": "56bdb42a-32"
+    },
+    "56bdb42a-35": {
+      "renderedLength": 4698,
+      "gzipLength": 1672,
+      "brotliLength": 1459,
+      "metaUid": "56bdb42a-34"
+    },
+    "56bdb42a-37": {
+      "renderedLength": 1818,
+      "gzipLength": 795,
+      "brotliLength": 660,
+      "metaUid": "56bdb42a-36"
+    },
+    "56bdb42a-39": {
+      "renderedLength": 290,
+      "gzipLength": 213,
+      "brotliLength": 201,
+      "metaUid": "56bdb42a-38"
+    },
+    "56bdb42a-41": {
+      "renderedLength": 5404,
+      "gzipLength": 1745,
+      "brotliLength": 1518,
+      "metaUid": "56bdb42a-40"
+    },
+    "56bdb42a-43": {
+      "renderedLength": 237,
+      "gzipLength": 156,
+      "brotliLength": 124,
+      "metaUid": "56bdb42a-42"
+    },
+    "56bdb42a-45": {
+      "renderedLength": 1322,
+      "gzipLength": 521,
+      "brotliLength": 444,
+      "metaUid": "56bdb42a-44"
+    },
+    "56bdb42a-47": {
+      "renderedLength": 664,
+      "gzipLength": 313,
+      "brotliLength": 265,
+      "metaUid": "56bdb42a-46"
+    },
+    "56bdb42a-49": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-48"
+    },
+    "56bdb42a-51": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-50"
+    },
+    "56bdb42a-53": {
+      "renderedLength": 10005,
+      "gzipLength": 2768,
+      "brotliLength": 2447,
+      "metaUid": "56bdb42a-52"
+    },
+    "56bdb42a-55": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-54"
+    },
+    "56bdb42a-57": {
+      "renderedLength": 2131,
+      "gzipLength": 775,
+      "brotliLength": 664,
+      "metaUid": "56bdb42a-56"
+    },
+    "56bdb42a-59": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-58"
+    },
+    "56bdb42a-61": {
+      "renderedLength": 709,
+      "gzipLength": 368,
+      "brotliLength": 306,
+      "metaUid": "56bdb42a-60"
+    },
+    "56bdb42a-63": {
+      "renderedLength": 137,
+      "gzipLength": 126,
+      "brotliLength": 92,
+      "metaUid": "56bdb42a-62"
+    },
+    "56bdb42a-65": {
+      "renderedLength": 598,
+      "gzipLength": 373,
+      "brotliLength": 299,
+      "metaUid": "56bdb42a-64"
+    },
+    "56bdb42a-67": {
+      "renderedLength": 2142,
+      "gzipLength": 979,
+      "brotliLength": 820,
+      "metaUid": "56bdb42a-66"
+    },
+    "56bdb42a-69": {
+      "renderedLength": 3048,
+      "gzipLength": 1045,
+      "brotliLength": 883,
+      "metaUid": "56bdb42a-68"
+    },
+    "56bdb42a-71": {
+      "renderedLength": 298,
+      "gzipLength": 212,
+      "brotliLength": 164,
+      "metaUid": "56bdb42a-70"
+    },
+    "56bdb42a-73": {
+      "renderedLength": 776,
+      "gzipLength": 426,
+      "brotliLength": 339,
+      "metaUid": "56bdb42a-72"
+    },
+    "56bdb42a-75": {
+      "renderedLength": 1942,
+      "gzipLength": 721,
+      "brotliLength": 627,
+      "metaUid": "56bdb42a-74"
+    },
+    "56bdb42a-77": {
+      "renderedLength": 260,
+      "gzipLength": 166,
+      "brotliLength": 125,
+      "metaUid": "56bdb42a-76"
+    },
+    "56bdb42a-79": {
+      "renderedLength": 781,
+      "gzipLength": 415,
+      "brotliLength": 352,
+      "metaUid": "56bdb42a-78"
+    },
+    "56bdb42a-81": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-80"
+    },
+    "56bdb42a-83": {
+      "renderedLength": 5864,
+      "gzipLength": 1577,
+      "brotliLength": 1401,
+      "metaUid": "56bdb42a-82"
+    },
+    "56bdb42a-85": {
+      "renderedLength": 651,
+      "gzipLength": 458,
+      "brotliLength": 375,
+      "metaUid": "56bdb42a-84"
+    },
+    "56bdb42a-87": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-86"
+    },
+    "56bdb42a-89": {
+      "renderedLength": 1982,
+      "gzipLength": 666,
+      "brotliLength": 588,
+      "metaUid": "56bdb42a-88"
+    },
+    "56bdb42a-91": {
+      "renderedLength": 660,
+      "gzipLength": 303,
+      "brotliLength": 250,
+      "metaUid": "56bdb42a-90"
+    },
+    "56bdb42a-93": {
+      "renderedLength": 2683,
+      "gzipLength": 986,
+      "brotliLength": 832,
+      "metaUid": "56bdb42a-92"
+    },
+    "56bdb42a-95": {
+      "renderedLength": 3518,
+      "gzipLength": 1180,
+      "brotliLength": 1001,
+      "metaUid": "56bdb42a-94"
+    },
+    "56bdb42a-97": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-96"
+    },
+    "56bdb42a-99": {
+      "renderedLength": 3558,
+      "gzipLength": 1095,
+      "brotliLength": 948,
+      "metaUid": "56bdb42a-98"
+    },
+    "56bdb42a-101": {
+      "renderedLength": 180,
+      "gzipLength": 167,
+      "brotliLength": 142,
+      "metaUid": "56bdb42a-100"
+    },
+    "56bdb42a-103": {
+      "renderedLength": 5009,
+      "gzipLength": 1505,
+      "brotliLength": 1357,
+      "metaUid": "56bdb42a-102"
+    },
+    "56bdb42a-105": {
+      "renderedLength": 1555,
+      "gzipLength": 583,
+      "brotliLength": 493,
+      "metaUid": "56bdb42a-104"
+    },
+    "56bdb42a-107": {
+      "renderedLength": 6665,
+      "gzipLength": 1735,
+      "brotliLength": 1531,
+      "metaUid": "56bdb42a-106"
+    },
+    "56bdb42a-109": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-108"
+    },
+    "56bdb42a-111": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-110"
+    },
+    "56bdb42a-113": {
+      "renderedLength": 6471,
+      "gzipLength": 1541,
+      "brotliLength": 1370,
+      "metaUid": "56bdb42a-112"
+    },
+    "56bdb42a-115": {
+      "renderedLength": 396,
+      "gzipLength": 237,
+      "brotliLength": 196,
+      "metaUid": "56bdb42a-114"
+    },
+    "56bdb42a-117": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-116"
+    },
+    "56bdb42a-119": {
+      "renderedLength": 2335,
+      "gzipLength": 1064,
+      "brotliLength": 907,
+      "metaUid": "56bdb42a-118"
+    },
+    "56bdb42a-121": {
+      "renderedLength": 3643,
+      "gzipLength": 1259,
+      "brotliLength": 1093,
+      "metaUid": "56bdb42a-120"
+    },
+    "56bdb42a-123": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-122"
+    },
+    "56bdb42a-125": {
+      "renderedLength": 4901,
+      "gzipLength": 1106,
+      "brotliLength": 965,
+      "metaUid": "56bdb42a-124"
+    },
+    "56bdb42a-127": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-126"
+    },
+    "56bdb42a-129": {
+      "renderedLength": 1707,
+      "gzipLength": 701,
+      "brotliLength": 611,
+      "metaUid": "56bdb42a-128"
+    },
+    "56bdb42a-131": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-130"
+    },
+    "56bdb42a-133": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-132"
+    },
+    "56bdb42a-135": {
+      "renderedLength": 690,
+      "gzipLength": 397,
+      "brotliLength": 335,
+      "metaUid": "56bdb42a-134"
+    },
+    "56bdb42a-137": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-136"
+    },
+    "56bdb42a-139": {
+      "renderedLength": 94,
+      "gzipLength": 91,
+      "brotliLength": 74,
+      "metaUid": "56bdb42a-138"
+    },
+    "56bdb42a-141": {
+      "renderedLength": 2290,
+      "gzipLength": 707,
+      "brotliLength": 652,
+      "metaUid": "56bdb42a-140"
+    },
+    "56bdb42a-143": {
+      "renderedLength": 240,
+      "gzipLength": 165,
+      "brotliLength": 139,
+      "metaUid": "56bdb42a-142"
+    },
+    "56bdb42a-145": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-144"
+    },
+    "56bdb42a-147": {
+      "renderedLength": 1919,
+      "gzipLength": 672,
+      "brotliLength": 598,
+      "metaUid": "56bdb42a-146"
+    },
+    "56bdb42a-149": {
+      "renderedLength": 2818,
+      "gzipLength": 967,
+      "brotliLength": 855,
+      "metaUid": "56bdb42a-148"
+    },
+    "56bdb42a-151": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-150"
+    },
+    "56bdb42a-153": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-152"
+    },
+    "56bdb42a-155": {
+      "renderedLength": 6232,
+      "gzipLength": 1777,
+      "brotliLength": 1568,
+      "metaUid": "56bdb42a-154"
+    },
+    "56bdb42a-157": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-156"
+    },
+    "56bdb42a-159": {
+      "renderedLength": 639,
+      "gzipLength": 345,
+      "brotliLength": 276,
+      "metaUid": "56bdb42a-158"
+    },
+    "56bdb42a-161": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-160"
+    },
+    "56bdb42a-163": {
+      "renderedLength": 663,
+      "gzipLength": 326,
+      "brotliLength": 269,
+      "metaUid": "56bdb42a-162"
+    },
+    "56bdb42a-165": {
+      "renderedLength": 1780,
+      "gzipLength": 814,
+      "brotliLength": 697,
+      "metaUid": "56bdb42a-164"
+    },
+    "56bdb42a-167": {
+      "renderedLength": 3432,
+      "gzipLength": 1047,
+      "brotliLength": 865,
+      "metaUid": "56bdb42a-166"
+    },
+    "56bdb42a-169": {
+      "renderedLength": 4967,
+      "gzipLength": 1141,
+      "brotliLength": 973,
+      "metaUid": "56bdb42a-168"
+    },
+    "56bdb42a-171": {
+      "renderedLength": 3989,
+      "gzipLength": 1011,
+      "brotliLength": 872,
+      "metaUid": "56bdb42a-170"
+    },
+    "56bdb42a-173": {
+      "renderedLength": 382,
+      "gzipLength": 244,
+      "brotliLength": 201,
+      "metaUid": "56bdb42a-172"
+    },
+    "56bdb42a-175": {
+      "renderedLength": 4262,
+      "gzipLength": 720,
+      "brotliLength": 627,
+      "metaUid": "56bdb42a-174"
+    },
+    "56bdb42a-177": {
+      "renderedLength": 3443,
+      "gzipLength": 1078,
+      "brotliLength": 905,
+      "metaUid": "56bdb42a-176"
+    },
+    "56bdb42a-179": {
+      "renderedLength": 9774,
+      "gzipLength": 2013,
+      "brotliLength": 1699,
+      "metaUid": "56bdb42a-178"
+    },
+    "56bdb42a-181": {
+      "renderedLength": 367,
+      "gzipLength": 228,
+      "brotliLength": 194,
+      "metaUid": "56bdb42a-180"
+    },
+    "56bdb42a-183": {
+      "renderedLength": 2904,
+      "gzipLength": 862,
+      "brotliLength": 726,
+      "metaUid": "56bdb42a-182"
+    },
+    "56bdb42a-185": {
+      "renderedLength": 1779,
+      "gzipLength": 539,
+      "brotliLength": 435,
+      "metaUid": "56bdb42a-184"
+    },
+    "56bdb42a-187": {
+      "renderedLength": 2950,
+      "gzipLength": 958,
+      "brotliLength": 817,
+      "metaUid": "56bdb42a-186"
+    },
+    "56bdb42a-189": {
+      "renderedLength": 1697,
+      "gzipLength": 610,
+      "brotliLength": 532,
+      "metaUid": "56bdb42a-188"
+    },
+    "56bdb42a-191": {
+      "renderedLength": 7980,
+      "gzipLength": 1988,
+      "brotliLength": 1657,
+      "metaUid": "56bdb42a-190"
+    },
+    "56bdb42a-193": {
+      "renderedLength": 771,
+      "gzipLength": 356,
+      "brotliLength": 295,
+      "metaUid": "56bdb42a-192"
+    },
+    "56bdb42a-195": {
+      "renderedLength": 8024,
+      "gzipLength": 1751,
+      "brotliLength": 1478,
+      "metaUid": "56bdb42a-194"
+    },
+    "56bdb42a-197": {
+      "renderedLength": 393,
+      "gzipLength": 214,
+      "brotliLength": 202,
+      "metaUid": "56bdb42a-196"
+    },
+    "56bdb42a-199": {
+      "renderedLength": 4760,
+      "gzipLength": 1149,
+      "brotliLength": 964,
+      "metaUid": "56bdb42a-198"
+    },
+    "56bdb42a-201": {
+      "renderedLength": 2841,
+      "gzipLength": 859,
+      "brotliLength": 765,
+      "metaUid": "56bdb42a-200"
+    },
+    "56bdb42a-203": {
+      "renderedLength": 4354,
+      "gzipLength": 1025,
+      "brotliLength": 864,
+      "metaUid": "56bdb42a-202"
+    },
+    "56bdb42a-205": {
+      "renderedLength": 4815,
+      "gzipLength": 1263,
+      "brotliLength": 1050,
+      "metaUid": "56bdb42a-204"
+    },
+    "56bdb42a-207": {
+      "renderedLength": 4057,
+      "gzipLength": 887,
+      "brotliLength": 754,
+      "metaUid": "56bdb42a-206"
+    },
+    "56bdb42a-209": {
+      "renderedLength": 1106,
+      "gzipLength": 422,
+      "brotliLength": 363,
+      "metaUid": "56bdb42a-208"
+    },
+    "56bdb42a-211": {
+      "renderedLength": 3783,
+      "gzipLength": 1274,
+      "brotliLength": 1084,
+      "metaUid": "56bdb42a-210"
+    },
+    "56bdb42a-213": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-212"
+    },
+    "56bdb42a-215": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-214"
+    },
+    "56bdb42a-217": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-216"
+    },
+    "56bdb42a-219": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-218"
+    },
+    "56bdb42a-221": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-220"
+    },
+    "56bdb42a-223": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-222"
+    },
+    "56bdb42a-225": {
+      "renderedLength": 0,
+      "gzipLength": 0,
+      "brotliLength": 0,
+      "metaUid": "56bdb42a-224"
+    },
+    "56bdb42a-227": {
+      "renderedLength": 7702,
+      "gzipLength": 2309,
+      "brotliLength": 2020,
+      "metaUid": "56bdb42a-226"
+    },
+    "56bdb42a-229": {
+      "renderedLength": 14426,
+      "gzipLength": 5181,
+      "brotliLength": 4666,
+      "metaUid": "56bdb42a-228"
+    },
+    "56bdb42a-231": {
+      "renderedLength": 3972,
+      "gzipLength": 1460,
+      "brotliLength": 1324,
+      "metaUid": "56bdb42a-230"
+    },
+    "56bdb42a-233": {
+      "renderedLength": 666,
+      "gzipLength": 411,
+      "brotliLength": 379,
+      "metaUid": "56bdb42a-232"
+    }
+  },
+  "nodeMetas": {
+    "56bdb42a-0": {
+      "id": "/src/preact/reactShim.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-1"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-228"
+        },
+        {
+          "uid": "56bdb42a-230"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        },
+        {
+          "uid": "56bdb42a-148"
+        },
+        {
+          "uid": "56bdb42a-26"
+        },
+        {
+          "uid": "56bdb42a-52"
+        },
+        {
+          "uid": "56bdb42a-112"
+        },
+        {
+          "uid": "56bdb42a-120"
+        },
+        {
+          "uid": "56bdb42a-124"
+        },
+        {
+          "uid": "56bdb42a-82"
+        },
+        {
+          "uid": "56bdb42a-84"
+        },
+        {
+          "uid": "56bdb42a-94"
+        },
+        {
+          "uid": "56bdb42a-78"
+        },
+        {
+          "uid": "56bdb42a-98"
+        },
+        {
+          "uid": "56bdb42a-106"
+        },
+        {
+          "uid": "56bdb42a-140"
+        },
+        {
+          "uid": "56bdb42a-138"
+        },
+        {
+          "uid": "56bdb42a-142"
+        },
+        {
+          "uid": "56bdb42a-32"
+        },
+        {
+          "uid": "56bdb42a-40"
+        },
+        {
+          "uid": "56bdb42a-44"
+        },
+        {
+          "uid": "56bdb42a-226"
+        },
+        {
+          "uid": "56bdb42a-92"
+        },
+        {
+          "uid": "56bdb42a-28"
+        },
+        {
+          "uid": "56bdb42a-30"
+        },
+        {
+          "uid": "56bdb42a-42"
+        },
+        {
+          "uid": "56bdb42a-46"
+        }
+      ]
+    },
+    "56bdb42a-2": {
+      "id": "/src/preact/reactDomClientShim.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-3"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-228"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        }
+      ]
+    },
+    "56bdb42a-4": {
+      "id": "/src/components/ui/icons.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-5"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-26"
+        },
+        {
+          "uid": "56bdb42a-52"
+        },
+        {
+          "uid": "56bdb42a-128"
+        },
+        {
+          "uid": "56bdb42a-82"
+        },
+        {
+          "uid": "56bdb42a-88"
+        },
+        {
+          "uid": "56bdb42a-106"
+        }
+      ]
+    },
+    "56bdb42a-6": {
+      "id": "/src/simulation/alarmDefinitions.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-7"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-8"
+        }
+      ]
+    },
+    "56bdb42a-8": {
+      "id": "/src/simulation/alarms.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-9"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-6"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-20"
+        }
+      ]
+    },
+    "56bdb42a-10": {
+      "id": "/src/simulation/clinicalAssessments.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-11"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-20"
+        }
+      ]
+    },
+    "56bdb42a-12": {
+      "id": "/src/simulation/conditionMessages.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-13"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-20"
+        }
+      ]
+    },
+    "56bdb42a-14": {
+      "id": "/src/simulation/ventilatorMath.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-15"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-20"
+        },
+        {
+          "uid": "56bdb42a-16"
+        },
+        {
+          "uid": "56bdb42a-18"
+        }
+      ]
+    },
+    "56bdb42a-16": {
+      "id": "/src/simulation/vitals.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-17"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-14"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-20"
+        }
+      ]
+    },
+    "56bdb42a-18": {
+      "id": "/src/simulation/visualState.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-19"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-14"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-20"
+        }
+      ]
+    },
+    "56bdb42a-20": {
+      "id": "/src/simulation/ventilatorModel.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-21"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-8"
+        },
+        {
+          "uid": "56bdb42a-10"
+        },
+        {
+          "uid": "56bdb42a-12"
+        },
+        {
+          "uid": "56bdb42a-16"
+        },
+        {
+          "uid": "56bdb42a-18"
+        },
+        {
+          "uid": "56bdb42a-14"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-26"
+        },
+        {
+          "uid": "56bdb42a-120"
+        },
+        {
+          "uid": "56bdb42a-140"
+        },
+        {
+          "uid": "56bdb42a-42"
+        },
+        {
+          "uid": "56bdb42a-102"
+        }
+      ]
+    },
+    "56bdb42a-22": {
+      "id": "/src/components/panels/AlarmPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-23"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-26"
+        }
+      ]
+    },
+    "56bdb42a-24": {
+      "id": "/src/components/panels/Panel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-25"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-26"
+        },
+        {
+          "uid": "56bdb42a-56"
+        },
+        {
+          "uid": "56bdb42a-112"
+        },
+        {
+          "uid": "56bdb42a-114"
+        },
+        {
+          "uid": "56bdb42a-120"
+        }
+      ]
+    },
+    "56bdb42a-26": {
+      "id": "/src/components/panels/AlarmPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-27"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-4"
+        },
+        {
+          "uid": "56bdb42a-20"
+        },
+        {
+          "uid": "56bdb42a-22"
+        },
+        {
+          "uid": "56bdb42a-24"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        }
+      ]
+    },
+    "56bdb42a-28": {
+      "id": "/src/hooks/useElapsedTimer.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-29"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-48"
+        }
+      ]
+    },
+    "56bdb42a-30": {
+      "id": "/src/hooks/useIntersectionVisibility.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-31"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-48"
+        }
+      ]
+    },
+    "56bdb42a-32": {
+      "id": "/src/hooks/useMemoryPressurePause.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-33"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-148"
+        },
+        {
+          "uid": "56bdb42a-48"
+        }
+      ]
+    },
+    "56bdb42a-34": {
+      "id": "/src/simulation/scenarioEngine.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-35"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-148"
+        },
+        {
+          "uid": "56bdb42a-40"
+        }
+      ]
+    },
+    "56bdb42a-36": {
+      "id": "/src/simulation/scenarios.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-37"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-82"
+        },
+        {
+          "uid": "56bdb42a-78"
+        },
+        {
+          "uid": "56bdb42a-140"
+        },
+        {
+          "uid": "56bdb42a-138"
+        },
+        {
+          "uid": "56bdb42a-74"
+        },
+        {
+          "uid": "56bdb42a-38"
+        },
+        {
+          "uid": "56bdb42a-46"
+        }
+      ]
+    },
+    "56bdb42a-38": {
+      "id": "/src/simulation/typeGuards.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-39"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-36"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-78"
+        },
+        {
+          "uid": "56bdb42a-40"
+        },
+        {
+          "uid": "56bdb42a-74"
+        }
+      ]
+    },
+    "56bdb42a-40": {
+      "id": "/src/hooks/useSimulatorInteractions.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-41"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-34"
+        },
+        {
+          "uid": "56bdb42a-38"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-148"
+        },
+        {
+          "uid": "56bdb42a-48"
+        }
+      ]
+    },
+    "56bdb42a-42": {
+      "id": "/src/hooks/useSimulation.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-43"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-20"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-48"
+        }
+      ]
+    },
+    "56bdb42a-44": {
+      "id": "/src/hooks/useThrottledViewportMetrics.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-45"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-148"
+        },
+        {
+          "uid": "56bdb42a-48"
+        }
+      ]
+    },
+    "56bdb42a-46": {
+      "id": "/src/hooks/useVentilatorSettings.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-47"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-36"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-48"
+        }
+      ]
+    },
+    "56bdb42a-48": {
+      "id": "/src/hooks/index.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-49"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-28"
+        },
+        {
+          "uid": "56bdb42a-30"
+        },
+        {
+          "uid": "56bdb42a-32"
+        },
+        {
+          "uid": "56bdb42a-40"
+        },
+        {
+          "uid": "56bdb42a-42"
+        },
+        {
+          "uid": "56bdb42a-44"
+        },
+        {
+          "uid": "56bdb42a-46"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-52"
+        },
+        {
+          "uid": "56bdb42a-140"
+        }
+      ]
+    },
+    "56bdb42a-50": {
+      "id": "/src/components/panels/DataVisualizationPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-51"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-52"
+        }
+      ]
+    },
+    "56bdb42a-52": {
+      "id": "/src/components/panels/DataVisualizationPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-53"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-4"
+        },
+        {
+          "uid": "56bdb42a-48"
+        },
+        {
+          "uid": "56bdb42a-50"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        },
+        {
+          "uid": "56bdb42a-112"
+        }
+      ]
+    },
+    "56bdb42a-54": {
+      "id": "/src/components/panels/LungStatusPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-55"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-56"
+        }
+      ]
+    },
+    "56bdb42a-56": {
+      "id": "/src/components/panels/LungStatusPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-57"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-54"
+        },
+        {
+          "uid": "56bdb42a-24"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        }
+      ]
+    },
+    "56bdb42a-58": {
+      "id": "/src/components/panels/ModeSafetyPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-59"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-60"
+        }
+      ]
+    },
+    "56bdb42a-60": {
+      "id": "/src/components/panels/ModeSafetyPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-61"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-58"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        }
+      ]
+    },
+    "56bdb42a-62": {
+      "id": "/src/lib/runtime.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-63"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-64"
+        },
+        {
+          "uid": "56bdb42a-68"
+        },
+        {
+          "uid": "56bdb42a-70"
+        },
+        {
+          "uid": "56bdb42a-72"
+        }
+      ]
+    },
+    "56bdb42a-64": {
+      "id": "/src/lib/errorTracking.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-65"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-62"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-234"
+        }
+      ]
+    },
+    "56bdb42a-66": {
+      "id": "/src/lib/i18n.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-67"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-234"
+        }
+      ]
+    },
+    "56bdb42a-68": {
+      "id": "/src/lib/realUserMonitoring.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-69"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-62"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-234"
+        }
+      ]
+    },
+    "56bdb42a-70": {
+      "id": "/src/lib/serviceWorkerRegistration.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-71"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-62"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-234"
+        }
+      ]
+    },
+    "56bdb42a-72": {
+      "id": "/src/lib/vercelObservability.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-73"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-62"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-234"
+        }
+      ]
+    },
+    "56bdb42a-74": {
+      "id": "/src/simulation/simulationSnapshot.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-75"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-36"
+        },
+        {
+          "uid": "56bdb42a-38"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-82"
+        },
+        {
+          "uid": "56bdb42a-140"
+        }
+      ]
+    },
+    "56bdb42a-76": {
+      "id": "/src/utils/formatTime.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-77"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-235"
+        }
+      ]
+    },
+    "56bdb42a-78": {
+      "id": "/src/components/ui/ScenarioSelector.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-79"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-36"
+        },
+        {
+          "uid": "56bdb42a-38"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-108"
+        },
+        {
+          "uid": "56bdb42a-82"
+        }
+      ]
+    },
+    "56bdb42a-80": {
+      "id": "/src/components/ui/BottomBar.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-81"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-82"
+        }
+      ]
+    },
+    "56bdb42a-82": {
+      "id": "/src/components/ui/BottomBar.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-83"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-36"
+        },
+        {
+          "uid": "56bdb42a-74"
+        },
+        {
+          "uid": "56bdb42a-235"
+        },
+        {
+          "uid": "56bdb42a-4"
+        },
+        {
+          "uid": "56bdb42a-78"
+        },
+        {
+          "uid": "56bdb42a-80"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-108"
+        }
+      ]
+    },
+    "56bdb42a-84": {
+      "id": "/src/components/ui/ErrorBoundary.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-85"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-108"
+        }
+      ]
+    },
+    "56bdb42a-86": {
+      "id": "/src/components/ui/Header.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-87"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-88"
+        }
+      ]
+    },
+    "56bdb42a-88": {
+      "id": "/src/components/ui/Header.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-89"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-4"
+        },
+        {
+          "uid": "56bdb42a-86"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-108"
+        }
+      ]
+    },
+    "56bdb42a-90": {
+      "id": "/src/components/ui/ContextMenuOverlay.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-91"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-94"
+        }
+      ]
+    },
+    "56bdb42a-92": {
+      "id": "/src/components/ui/ShortcutHelp.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-93"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-94"
+        }
+      ]
+    },
+    "56bdb42a-94": {
+      "id": "/src/components/ui/InteractionToolbar.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-95"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-90"
+        },
+        {
+          "uid": "56bdb42a-92"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-108"
+        }
+      ]
+    },
+    "56bdb42a-96": {
+      "id": "/src/components/ui/SliderControl.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-97"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-98"
+        }
+      ]
+    },
+    "56bdb42a-98": {
+      "id": "/src/components/ui/SliderControl.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-99"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-96"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-108"
+        }
+      ]
+    },
+    "56bdb42a-100": {
+      "id": "/src/simulation/waveform.worker.ts?worker",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-101"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-104"
+        }
+      ]
+    },
+    "56bdb42a-102": {
+      "id": "/src/simulation/waveformGenerator.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-103"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-20"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-104"
+        }
+      ]
+    },
+    "56bdb42a-104": {
+      "id": "/src/simulation/waveformWorkerClient.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-105"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-100"
+        },
+        {
+          "uid": "56bdb42a-102"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-106"
+        }
+      ]
+    },
+    "56bdb42a-106": {
+      "id": "/src/components/ui/WaveformChart.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-107"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-104"
+        },
+        {
+          "uid": "56bdb42a-4"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-108"
+        }
+      ]
+    },
+    "56bdb42a-108": {
+      "id": "/src/components/ui/index.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-109"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-82"
+        },
+        {
+          "uid": "56bdb42a-84"
+        },
+        {
+          "uid": "56bdb42a-88"
+        },
+        {
+          "uid": "56bdb42a-94"
+        },
+        {
+          "uid": "56bdb42a-78"
+        },
+        {
+          "uid": "56bdb42a-98"
+        },
+        {
+          "uid": "56bdb42a-106"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-132"
+        },
+        {
+          "uid": "56bdb42a-112"
+        },
+        {
+          "uid": "56bdb42a-128"
+        }
+      ]
+    },
+    "56bdb42a-110": {
+      "id": "/src/components/panels/MonitorPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-111"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-112"
+        }
+      ]
+    },
+    "56bdb42a-112": {
+      "id": "/src/components/panels/MonitorPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-113"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-108"
+        },
+        {
+          "uid": "56bdb42a-52"
+        },
+        {
+          "uid": "56bdb42a-110"
+        },
+        {
+          "uid": "56bdb42a-24"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        }
+      ]
+    },
+    "56bdb42a-114": {
+      "id": "/src/components/panels/Panel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-115"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-24"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        },
+        {
+          "uid": "56bdb42a-128"
+        }
+      ]
+    },
+    "56bdb42a-116": {
+      "id": "/src/components/panels/PatientConditionPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-117"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-120"
+        }
+      ]
+    },
+    "56bdb42a-118": {
+      "id": "\u0000vite/preload-helper.js",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-119"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-120"
+        }
+      ]
+    },
+    "56bdb42a-120": {
+      "id": "/src/components/panels/PatientConditionPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-121"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-20"
+        },
+        {
+          "uid": "56bdb42a-24"
+        },
+        {
+          "uid": "56bdb42a-116"
+        },
+        {
+          "uid": "56bdb42a-232"
+        },
+        {
+          "uid": "56bdb42a-118"
+        },
+        {
+          "uid": "56bdb42a-226",
+          "dynamic": true
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        }
+      ]
+    },
+    "56bdb42a-122": {
+      "id": "/src/components/panels/ScenarioInterventionPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-123"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-124"
+        }
+      ]
+    },
+    "56bdb42a-124": {
+      "id": "/src/components/panels/ScenarioInterventionPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-125"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-122"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        }
+      ]
+    },
+    "56bdb42a-126": {
+      "id": "/src/components/panels/SettingsPanel.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-127"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-128"
+        }
+      ]
+    },
+    "56bdb42a-128": {
+      "id": "/src/components/panels/SettingsPanel.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-129"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-108"
+        },
+        {
+          "uid": "56bdb42a-4"
+        },
+        {
+          "uid": "56bdb42a-114"
+        },
+        {
+          "uid": "56bdb42a-126"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-130"
+        }
+      ]
+    },
+    "56bdb42a-130": {
+      "id": "/src/components/panels/index.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-131"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-26"
+        },
+        {
+          "uid": "56bdb42a-52"
+        },
+        {
+          "uid": "56bdb42a-56"
+        },
+        {
+          "uid": "56bdb42a-60"
+        },
+        {
+          "uid": "56bdb42a-112"
+        },
+        {
+          "uid": "56bdb42a-114"
+        },
+        {
+          "uid": "56bdb42a-120"
+        },
+        {
+          "uid": "56bdb42a-124"
+        },
+        {
+          "uid": "56bdb42a-128"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-132"
+        }
+      ]
+    },
+    "56bdb42a-132": {
+      "id": "/src/components/index.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-133"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-130"
+        },
+        {
+          "uid": "56bdb42a-108"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        },
+        {
+          "uid": "56bdb42a-154"
+        }
+      ]
+    },
+    "56bdb42a-134": {
+      "id": "/src/config/env.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-135"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-136"
+        }
+      ]
+    },
+    "56bdb42a-136": {
+      "id": "/src/config/index.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-137"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-134"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        },
+        {
+          "uid": "56bdb42a-154"
+        }
+      ]
+    },
+    "56bdb42a-138": {
+      "id": "/src/context/simulationContextValue.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-139"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-36"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-144"
+        },
+        {
+          "uid": "56bdb42a-140"
+        },
+        {
+          "uid": "56bdb42a-142"
+        }
+      ]
+    },
+    "56bdb42a-140": {
+      "id": "/src/context/SimulationContext.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-141"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-48"
+        },
+        {
+          "uid": "56bdb42a-36"
+        },
+        {
+          "uid": "56bdb42a-74"
+        },
+        {
+          "uid": "56bdb42a-20"
+        },
+        {
+          "uid": "56bdb42a-138"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-144"
+        }
+      ]
+    },
+    "56bdb42a-142": {
+      "id": "/src/context/useSimulationContext.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-143"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-138"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-144"
+        }
+      ]
+    },
+    "56bdb42a-144": {
+      "id": "/src/context/index.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-145"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-140"
+        },
+        {
+          "uid": "56bdb42a-138"
+        },
+        {
+          "uid": "56bdb42a-142"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-154"
+        },
+        {
+          "uid": "56bdb42a-148"
+        }
+      ]
+    },
+    "56bdb42a-146": {
+      "id": "/src/simulation/modeSafety.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-147"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-148"
+        }
+      ]
+    },
+    "56bdb42a-148": {
+      "id": "/src/hooks/useSimulatorLayoutModel.ts",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-149"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-144"
+        },
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-146"
+        },
+        {
+          "uid": "56bdb42a-34"
+        },
+        {
+          "uid": "56bdb42a-32"
+        },
+        {
+          "uid": "56bdb42a-40"
+        },
+        {
+          "uid": "56bdb42a-44"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-154"
+        }
+      ]
+    },
+    "56bdb42a-150": {
+      "id": "/src/App.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-151"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-154"
+        }
+      ]
+    },
+    "56bdb42a-152": {
+      "id": "/src/App.responsive.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-153"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-154"
+        }
+      ]
+    },
+    "56bdb42a-154": {
+      "id": "/src/App.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-155"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-132"
+        },
+        {
+          "uid": "56bdb42a-136"
+        },
+        {
+          "uid": "56bdb42a-144"
+        },
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-148"
+        },
+        {
+          "uid": "56bdb42a-150"
+        },
+        {
+          "uid": "56bdb42a-152"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        }
+      ]
+    },
+    "56bdb42a-156": {
+      "id": "/src/styles/global.css",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-157"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        }
+      ]
+    },
+    "56bdb42a-158": {
+      "id": "/src/main.tsx",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-159"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-2"
+        },
+        {
+          "uid": "56bdb42a-132"
+        },
+        {
+          "uid": "56bdb42a-136"
+        },
+        {
+          "uid": "56bdb42a-234"
+        },
+        {
+          "uid": "56bdb42a-154"
+        },
+        {
+          "uid": "56bdb42a-156"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-160"
+        }
+      ]
+    },
+    "56bdb42a-160": {
+      "id": "/index.html",
+      "moduleParts": {
+        "assets/index-BZCgn1Hq.js": "56bdb42a-161"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-158"
+        }
+      ],
+      "importedBy": [],
+      "isEntry": true
+    },
+    "56bdb42a-162": {
+      "id": "/src/components/patient/patientAvatarGeometry.ts",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-163"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-164": {
+      "id": "/src/components/patient/patientAvatarPalette.ts",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-165"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        },
+        {
+          "uid": "56bdb42a-200"
+        },
+        {
+          "uid": "56bdb42a-210"
+        },
+        {
+          "uid": "56bdb42a-184"
+        },
+        {
+          "uid": "56bdb42a-202"
+        },
+        {
+          "uid": "56bdb42a-178"
+        },
+        {
+          "uid": "56bdb42a-204"
+        }
+      ]
+    },
+    "56bdb42a-166": {
+      "id": "/src/components/patient/AirwayCircuit.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-167"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-172"
+        }
+      ]
+    },
+    "56bdb42a-168": {
+      "id": "/src/components/patient/AirwayEquipment.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-169"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-172"
+        }
+      ]
+    },
+    "56bdb42a-170": {
+      "id": "/src/components/patient/AirwayProximal.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-171"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-172"
+        }
+      ]
+    },
+    "56bdb42a-172": {
+      "id": "/src/components/patient/AirwayLayer.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-173"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-166"
+        },
+        {
+          "uid": "56bdb42a-168"
+        },
+        {
+          "uid": "56bdb42a-170"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-212"
+        }
+      ]
+    },
+    "56bdb42a-174": {
+      "id": "/src/components/patient/AvatarDefs.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-175"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-212"
+        }
+      ]
+    },
+    "56bdb42a-176": {
+      "id": "/src/components/patient/BedLayer.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-177"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-212"
+        }
+      ]
+    },
+    "56bdb42a-178": {
+      "id": "/src/components/patient/BodyBaseParts.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-179"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-164"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-180"
+        }
+      ]
+    },
+    "56bdb42a-180": {
+      "id": "/src/components/patient/BodyBaseLayer.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-181"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-178"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        }
+      ]
+    },
+    "56bdb42a-182": {
+      "id": "/src/components/patient/BodyClinicalLines.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-183"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        }
+      ]
+    },
+    "56bdb42a-184": {
+      "id": "/src/components/patient/avatarSvgShared.ts",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-185"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-164"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        },
+        {
+          "uid": "56bdb42a-186"
+        }
+      ]
+    },
+    "56bdb42a-186": {
+      "id": "/src/components/patient/BodyElectrodes.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-187"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-184"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        }
+      ]
+    },
+    "56bdb42a-188": {
+      "id": "/src/components/patient/BodyGownSurface.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-189"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        }
+      ]
+    },
+    "56bdb42a-190": {
+      "id": "/src/components/patient/BodyLungParts.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-191"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-192"
+        }
+      ]
+    },
+    "56bdb42a-192": {
+      "id": "/src/components/patient/BodyLungFields.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-193"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-190"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        }
+      ]
+    },
+    "56bdb42a-194": {
+      "id": "/src/components/patient/BodyPeripheralParts.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-195"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-196"
+        }
+      ]
+    },
+    "56bdb42a-196": {
+      "id": "/src/components/patient/BodyPeripheralPerfusion.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-197"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-194"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        }
+      ]
+    },
+    "56bdb42a-198": {
+      "id": "/src/components/patient/BodyRespiratoryPosture.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-199"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-200"
+        }
+      ]
+    },
+    "56bdb42a-200": {
+      "id": "/src/components/patient/BodyLayer.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-201"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-180"
+        },
+        {
+          "uid": "56bdb42a-182"
+        },
+        {
+          "uid": "56bdb42a-186"
+        },
+        {
+          "uid": "56bdb42a-188"
+        },
+        {
+          "uid": "56bdb42a-192"
+        },
+        {
+          "uid": "56bdb42a-196"
+        },
+        {
+          "uid": "56bdb42a-198"
+        },
+        {
+          "uid": "56bdb42a-184"
+        },
+        {
+          "uid": "56bdb42a-164"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-212"
+        }
+      ]
+    },
+    "56bdb42a-202": {
+      "id": "/src/components/patient/HeadAnatomy.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-203"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-164"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-210"
+        }
+      ]
+    },
+    "56bdb42a-204": {
+      "id": "/src/components/patient/HeadExpressionMarks.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-205"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-164"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-208"
+        }
+      ]
+    },
+    "56bdb42a-206": {
+      "id": "/src/components/patient/HeadEyes.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-207"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-208"
+        }
+      ]
+    },
+    "56bdb42a-208": {
+      "id": "/src/components/patient/HeadFacialFeatures.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-209"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-204"
+        },
+        {
+          "uid": "56bdb42a-206"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-210"
+        }
+      ]
+    },
+    "56bdb42a-210": {
+      "id": "/src/components/patient/HeadLayer.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-211"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-202"
+        },
+        {
+          "uid": "56bdb42a-208"
+        },
+        {
+          "uid": "56bdb42a-164"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-212"
+        }
+      ]
+    },
+    "56bdb42a-212": {
+      "id": "/src/components/patient/patientAvatarSvgParts.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-213"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-172"
+        },
+        {
+          "uid": "56bdb42a-174"
+        },
+        {
+          "uid": "56bdb42a-176"
+        },
+        {
+          "uid": "56bdb42a-200"
+        },
+        {
+          "uid": "56bdb42a-210"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-214": {
+      "id": "/src/components/patient/PatientAvatar2D.css",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-215"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-216": {
+      "id": "/src/components/patient/styles/PatientAvatarAnatomy.css",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-217"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-218": {
+      "id": "/src/components/patient/styles/PatientAvatarAnimations.css",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-219"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-220": {
+      "id": "/src/components/patient/styles/PatientAvatarBreathing.css",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-221"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-222": {
+      "id": "/src/components/patient/styles/PatientAvatarPathology.css",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-223"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-224": {
+      "id": "/src/components/patient/styles/PatientAvatarSvgDetails.css",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-225"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-226"
+        }
+      ]
+    },
+    "56bdb42a-226": {
+      "id": "/src/components/patient/PatientAvatar2D.tsx",
+      "moduleParts": {
+        "assets/PatientAvatar2D-Du3RghiM.js": "56bdb42a-227"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-162"
+        },
+        {
+          "uid": "56bdb42a-164"
+        },
+        {
+          "uid": "56bdb42a-212"
+        },
+        {
+          "uid": "56bdb42a-214"
+        },
+        {
+          "uid": "56bdb42a-216"
+        },
+        {
+          "uid": "56bdb42a-218"
+        },
+        {
+          "uid": "56bdb42a-220"
+        },
+        {
+          "uid": "56bdb42a-222"
+        },
+        {
+          "uid": "56bdb42a-224"
+        },
+        {
+          "uid": "56bdb42a-232"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-120"
+        }
+      ]
+    },
+    "56bdb42a-228": {
+      "id": "/node_modules/preact/dist/preact.module.js",
+      "moduleParts": {
+        "assets/vendor-DZL88MYr.js": "56bdb42a-229"
+      },
+      "imported": [],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-0"
+        },
+        {
+          "uid": "56bdb42a-2"
+        },
+        {
+          "uid": "56bdb42a-232"
+        },
+        {
+          "uid": "56bdb42a-230"
+        }
+      ]
+    },
+    "56bdb42a-230": {
+      "id": "/node_modules/preact/hooks/dist/hooks.module.js",
+      "moduleParts": {
+        "assets/vendor-DZL88MYr.js": "56bdb42a-231"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-228"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-0"
+        }
+      ]
+    },
+    "56bdb42a-232": {
+      "id": "/node_modules/preact/jsx-runtime/dist/jsxRuntime.module.js",
+      "moduleParts": {
+        "assets/vendor-DZL88MYr.js": "56bdb42a-233"
+      },
+      "imported": [
+        {
+          "uid": "56bdb42a-228"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        },
+        {
+          "uid": "56bdb42a-154"
+        },
+        {
+          "uid": "56bdb42a-26"
+        },
+        {
+          "uid": "56bdb42a-52"
+        },
+        {
+          "uid": "56bdb42a-56"
+        },
+        {
+          "uid": "56bdb42a-60"
+        },
+        {
+          "uid": "56bdb42a-112"
+        },
+        {
+          "uid": "56bdb42a-114"
+        },
+        {
+          "uid": "56bdb42a-120"
+        },
+        {
+          "uid": "56bdb42a-124"
+        },
+        {
+          "uid": "56bdb42a-128"
+        },
+        {
+          "uid": "56bdb42a-82"
+        },
+        {
+          "uid": "56bdb42a-84"
+        },
+        {
+          "uid": "56bdb42a-88"
+        },
+        {
+          "uid": "56bdb42a-94"
+        },
+        {
+          "uid": "56bdb42a-78"
+        },
+        {
+          "uid": "56bdb42a-98"
+        },
+        {
+          "uid": "56bdb42a-106"
+        },
+        {
+          "uid": "56bdb42a-140"
+        },
+        {
+          "uid": "56bdb42a-4"
+        },
+        {
+          "uid": "56bdb42a-226"
+        },
+        {
+          "uid": "56bdb42a-90"
+        },
+        {
+          "uid": "56bdb42a-92"
+        },
+        {
+          "uid": "56bdb42a-172"
+        },
+        {
+          "uid": "56bdb42a-174"
+        },
+        {
+          "uid": "56bdb42a-176"
+        },
+        {
+          "uid": "56bdb42a-200"
+        },
+        {
+          "uid": "56bdb42a-210"
+        },
+        {
+          "uid": "56bdb42a-166"
+        },
+        {
+          "uid": "56bdb42a-168"
+        },
+        {
+          "uid": "56bdb42a-170"
+        },
+        {
+          "uid": "56bdb42a-180"
+        },
+        {
+          "uid": "56bdb42a-182"
+        },
+        {
+          "uid": "56bdb42a-186"
+        },
+        {
+          "uid": "56bdb42a-188"
+        },
+        {
+          "uid": "56bdb42a-192"
+        },
+        {
+          "uid": "56bdb42a-196"
+        },
+        {
+          "uid": "56bdb42a-198"
+        },
+        {
+          "uid": "56bdb42a-202"
+        },
+        {
+          "uid": "56bdb42a-208"
+        },
+        {
+          "uid": "56bdb42a-178"
+        },
+        {
+          "uid": "56bdb42a-190"
+        },
+        {
+          "uid": "56bdb42a-194"
+        },
+        {
+          "uid": "56bdb42a-204"
+        },
+        {
+          "uid": "56bdb42a-206"
+        }
+      ]
+    },
+    "56bdb42a-234": {
+      "id": "/src/lib/index.ts",
+      "moduleParts": {},
+      "imported": [
+        {
+          "uid": "56bdb42a-64"
+        },
+        {
+          "uid": "56bdb42a-66"
+        },
+        {
+          "uid": "56bdb42a-62"
+        },
+        {
+          "uid": "56bdb42a-68"
+        },
+        {
+          "uid": "56bdb42a-70"
+        },
+        {
+          "uid": "56bdb42a-72"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-158"
+        },
+        {
+          "uid": "56bdb42a-154"
+        },
+        {
+          "uid": "56bdb42a-148"
+        },
+        {
+          "uid": "56bdb42a-82"
+        },
+        {
+          "uid": "56bdb42a-84"
+        },
+        {
+          "uid": "56bdb42a-88"
+        },
+        {
+          "uid": "56bdb42a-78"
+        }
+      ]
+    },
+    "56bdb42a-235": {
+      "id": "/src/utils/index.ts",
+      "moduleParts": {},
+      "imported": [
+        {
+          "uid": "56bdb42a-76"
+        }
+      ],
+      "importedBy": [
+        {
+          "uid": "56bdb42a-82"
+        }
+      ]
+    }
+  },
+  "env": {
+    "rollup": "4.23.0"
+  },
+  "options": {
+    "gzip": true,
+    "brotli": true,
+    "sourcemap": false
+  }
+}

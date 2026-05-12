@@ -1,0 +1,44 @@
+[
+  {
+    "ProcessName": "msedge",
+    "Id": 1224,
+    "StartTime": "2026-05-11T01:21:53.6180721+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 1536,
+    "StartTime": "2026-05-11T01:21:53.5298708+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 3980,
+    "StartTime": "2026-05-11T01:21:53.6201476+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 5104,
+    "StartTime": "2026-05-11T01:21:53.6546739+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 5400,
+    "StartTime": "2026-05-11T01:21:54.6562735+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 6968,
+    "StartTime": "2026-05-11T01:21:54.4359974+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  {
+    "ProcessName": "msedge",
+    "Id": 7256,
+    "StartTime": "2026-05-11T01:21:53.4208705+00:00",
+    "Path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  }
+]

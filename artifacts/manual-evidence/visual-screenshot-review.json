@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-05-11T18:36:34Z",
+  "verifier": "Codex visual screenshot review via local image inspection",
+  "result": "passed",
+  "evidence": "Reviewed the current patient-avatar and full simulator screenshots. The patient is visible as a detailed clinical bedside visualization with face, body, ventilator interface, thoracic anatomy overlays, monitoring labels, alarms, and condition/vital status cues.",
+  "screenshots": [
+    {
+      "path": "artifacts/patient-avatar-current.png",
+      "sha256": "fe1a8ad31786922212142ccf574774f2b7a721b6d6e38a4eb5809aa9ff665c61",
+      "width": 696,
+      "height": 392,
+      "observed": [
+        "Patient face, hair, pillow, torso, arms, hands, and bed context are visible.",
+        "Ventilator mask, circuit, humidifier, FiO2, PEEP, PIP, inspiration/expiration, and minute-ventilation labels are visible.",
+        "Thoracic anatomy overlays show tube depth, ECG lead positions, respiratory circuit context, and clinical warning effects.",
+        "Condition and vital-status panel shows worsening state, SpO2, P/F, CO2, compliance, and airway resistance cues."
+      ]
+    },
+    {
+      "path": "artifacts/simulator-current.png",
+      "sha256": "77c2214b4725df5d0b8594cefdfce5816f7d0b2d702e0f24e9161f2dbaa4aa2e",
+      "width": 1440,
+      "height": 900,
+      "observed": [
+        "Full simulator view includes the patient-condition panel and current clinical guidance text.",
+        "The same patient avatar remains visible within the application shell without being clipped or obscured.",
+        "Respiratory equipment, alarm glow, ABG line, NG label, and ventilator parameter overlays are visible.",
+        "The screenshot presents a medical simulation scene rather than a placeholder or abstract avatar."
+      ]
+    }
+  ],
+  "observedClinicalFeatures": [
+    "Human patient morphology",
+    "Ventilator interface",
+    "Respiratory circuit",
+    "Thoracic anatomy overlay",
+    "Clinical condition panel",
+    "Vital-sign abnormality cues",
+    "Alarm and warning overlays",
+    "Scenario guidance text"
+  ]
+}

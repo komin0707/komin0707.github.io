@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-05-11T01:39:53Z",
+  "verifier": "Codex local audit",
+  "result": "passed",
+  "evidence": "Authenticated Snyk CLI dependency scan completed with exit code 0 for npm project vent-simulator-2d and reported zero vulnerabilities.",
+  "command": "npx snyk test --json",
+  "rawResultPath": "artifacts/manual-evidence/snyk-test.json",
+  "stderrPath": "artifacts/manual-evidence/snyk-test.stderr",
+  "exitCodePath": "artifacts/manual-evidence/snyk-test.exitcode",
+  "rawResultSha256": "5989d931aa56f489422f75ce4b6086420224511cfb575199c322fdaa05654499",
+  "scan": {
+    "exitCode": 0,
+    "ok": true,
+    "projectName": "vent-simulator-2d",
+    "packageManager": "npm",
+    "dependencyCount": 1,
+    "vulnerabilityCount": 0,
+    "uniqueCount": 0
+  }
+}

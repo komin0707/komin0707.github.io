@@ -1,0 +1,6 @@
+{
+  "verifiedAt": "2026-05-10T23:33:28Z",
+  "verifier": "Codex local macOS session",
+  "result": "passed",
+  "evidence": "React Developer Tools standalone 7.0.1 Profiler was connected to the Vite dev app through the documented React DOM standalone connector. A real profiling session was recorded while changing FiO2 from 40 to 78 in Chrome. Compressed exported profile: artifacts/manual-evidence/react-devtools-profiler-profile.json.gz. Profile version 5 contains 1 root (ErrorBoundary), 4116 commits, first commit render duration 2.4 ms, maximum observed commit duration 9.0 ms, and visible commit details for DataVisualizationPanelComponent, MonitorPanelComponent, PatientAvatar2DComponent, AlarmPanel, and PatientConditionPanel."
+}

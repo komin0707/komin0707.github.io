@@ -1,0 +1,197 @@
+.settings-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 8px;
+}
+
+.settings-fullscreen {
+  position: fixed;
+  inset: 10px;
+  z-index: 31;
+  overflow: auto;
+  box-shadow: 0 0 0 999px rgba(0, 6, 12, 0.72);
+}
+
+.settings-panel[data-layout='compact'] fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.settings-panel[data-minimized='true'] .settings-audit-log {
+  min-height: 58px;
+}
+
+.settings-panel[data-locked='true'] {
+  border-color: rgba(255, 216, 74, 0.48);
+}
+
+.settings-panel fieldset {
+  display: contents;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.settings-panel legend {
+  margin: 2px 16px;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.settings-panel-toolbar,
+.settings-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 8px;
+}
+
+.settings-panel-toolbar button,
+.settings-presets button {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid var(--control-border);
+  border-radius: 6px;
+  background: #0f263f;
+  color: var(--text-main);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 850;
+  box-shadow: 0 4px 10px rgba(0, 8, 20, 0.2);
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    opacity 150ms ease,
+    transform 150ms ease;
+}
+
+.settings-panel-toolbar button:hover:not(:disabled),
+.settings-presets button:hover:not(:disabled),
+.settings-footer-actions button:hover:not(:disabled) {
+  border-color: var(--control-hover-border);
+  box-shadow: 0 8px 18px rgba(0, 8, 20, 0.28);
+  transform: translateY(-1px);
+}
+
+.settings-panel-toolbar button:active:not(:disabled),
+.settings-presets button:active:not(:disabled),
+.settings-footer-actions button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.settings-panel-toolbar button:disabled,
+.settings-presets button:disabled {
+  opacity: 0.5;
+}
+
+.settings-panel-toolbar button.loading {
+  opacity: 0.72;
+}
+
+.settings-panel-toolbar button.success::after {
+  content: '✓';
+}
+
+.settings-panel-toolbar button.error {
+  animation: settings-error-shake 160ms ease-in-out 2;
+  border-color: var(--clinical-danger);
+}
+
+.settings-reason {
+  display: grid;
+  gap: 4px;
+  margin: 0 8px;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.settings-reason input {
+  min-height: 34px;
+  border: 1px solid var(--control-border);
+  border-radius: 6px;
+  background: rgba(0, 10, 18, 0.55);
+  color: var(--text-main);
+  padding: 0 10px;
+}
+
+.settings-presets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.settings-audit-log {
+  display: grid;
+  gap: 3px;
+  margin: 0 8px;
+  padding: 7px 8px;
+  border: 1px solid rgba(95, 127, 157, 0.46);
+  border-radius: 6px;
+  background: rgba(0, 10, 18, 0.35);
+  color: var(--text-muted);
+}
+
+.settings-audit-log small {
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 760;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.settings-footer-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: auto 8px 0;
+  padding-top: 8px;
+}
+
+.settings-footer-actions button {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--control-border);
+  border-radius: 6px;
+  background: #0f263f;
+  color: var(--text-main);
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(0, 8, 20, 0.22);
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    opacity 150ms ease,
+    transform 150ms ease;
+}
+
+.settings-footer-actions button:first-child {
+  background: #0d68bf;
+}
+
+.settings-footer-actions button.success::after {
+  content: '✓';
+  font-weight: 900;
+}
+
+.settings-footer-actions button.error {
+  animation: settings-error-shake 160ms ease-in-out 2;
+  border-color: var(--clinical-danger);
+}
+
+@keyframes settings-error-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(2px);
+  }
+}

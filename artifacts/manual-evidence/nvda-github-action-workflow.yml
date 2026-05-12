@@ -1,0 +1,180 @@
+name: NVDA Evidence
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  nvda:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - name: Capture NVDA evidence
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $targetUrl = 'https://komin0707.github.io/'
+          $evidence = Join-Path $env:RUNNER_TEMP 'nvda-evidence'
+          New-Item -ItemType Directory -Force -Path $evidence | Out-Null
+
+          $release = Invoke-RestMethod -Headers @{ 'User-Agent' = 'codex-nvda-evidence' } `
+            -Uri 'https://api.github.com/repos/nvaccess/nvda/releases/latest'
+          $asset = $release.assets | Where-Object { $_.name -match '^nvda_.*\.exe$' } | Select-Object -First 1
+          if (-not $asset) {
+            throw 'Could not find an NVDA Windows installer asset on the latest NVDA GitHub release.'
+          }
+
+          $installerPath = Join-Path $evidence $asset.name
+          Invoke-WebRequest -Headers @{ 'User-Agent' = 'codex-nvda-evidence' } `
+            -Uri $asset.browser_download_url `
+            -OutFile $installerPath
+
+          $install = Start-Process -FilePath $installerPath `
+            -ArgumentList '--minimal', '--install-silent' `
+            -Wait `
+            -PassThru
+          if ($install.ExitCode -ne 0) {
+            throw "NVDA installer exited with code $($install.ExitCode)."
+          }
+
+          $nvdaPathCandidates = @(
+            (Join-Path ${env:ProgramFiles(x86)} 'NVDA\nvda.exe'),
+            (Join-Path $env:ProgramFiles 'NVDA\nvda.exe')
+          )
+          $nvdaPath = $nvdaPathCandidates | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $nvdaPath) {
+            throw 'NVDA executable was not found after installation.'
+          }
+
+          $configPath = Join-Path $evidence 'config'
+          New-Item -ItemType Directory -Force -Path $configPath | Out-Null
+          Add-Type -AssemblyName System.Windows.Forms
+          $edgePath = Join-Path ${env:ProgramFiles(x86)} 'Microsoft\Edge\Application\msedge.exe'
+          if (-not (Test-Path $edgePath)) {
+            $edgePath = Join-Path $env:ProgramFiles 'Microsoft\Edge\Application\msedge.exe'
+          }
+          if (-not (Test-Path $edgePath)) {
+            throw 'Microsoft Edge executable was not found on the Windows runner.'
+          }
+
+          $edgeProfile = Join-Path $evidence 'edge-profile'
+          New-Item -ItemType Directory -Force -Path $edgeProfile | Out-Null
+          $edgeProcess = Start-Process -FilePath $edgePath `
+            -ArgumentList @(
+              '--new-window',
+              '--no-first-run',
+              '--no-default-browser-check',
+              '--disable-search-engine-choice-screen',
+              "--user-data-dir=$edgeProfile",
+              $targetUrl
+            ) `
+            -PassThru
+          Start-Sleep -Seconds 22
+
+          $wshell = New-Object -ComObject WScript.Shell
+          [void]$wshell.AppActivate($edgeProcess.Id)
+          Start-Sleep -Seconds 2
+          [System.Windows.Forms.SendKeys]::SendWait('{ESC}')
+          Start-Sleep -Seconds 1
+
+          $nvdaLogPath = Join-Path $evidence 'nvda-session.log'
+          $existingNvda = Start-Process -FilePath $nvdaPath `
+            -ArgumentList @('--quit') `
+            -Wait `
+            -PassThru
+          $nvdaProcess = Start-Process -FilePath $nvdaPath `
+            -ArgumentList @('--minimal', '--disable-addons', '--log-level=12', "--log-file=$nvdaLogPath", "--config-path=$configPath") `
+            -PassThru
+          Start-Sleep -Seconds 12
+
+          [void]$wshell.AppActivate($edgeProcess.Id)
+          Start-Sleep -Seconds 2
+
+          [System.Windows.Forms.SendKeys]::SendWait('{TAB}')
+          Start-Sleep -Seconds 2
+          [System.Windows.Forms.SendKeys]::SendWait('{TAB}')
+          Start-Sleep -Seconds 2
+          [System.Windows.Forms.SendKeys]::SendWait('{INSERT}{DOWN}')
+          Start-Sleep -Seconds 10
+
+          try {
+            Add-Type -AssemblyName System.Drawing
+            $bounds = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+            $bitmap = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height
+            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+            $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size)
+            $screenshotPath = Join-Path $evidence 'windows-nvda-edge.png'
+            $bitmap.Save($screenshotPath, [System.Drawing.Imaging.ImageFormat]::Png)
+            $graphics.Dispose()
+            $bitmap.Dispose()
+          } catch {
+            $_ | Out-String | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'screenshot-error.txt')
+          }
+
+          Start-Process -FilePath $nvdaPath -ArgumentList @('--quit') -Wait | Out-Null
+          Start-Sleep -Seconds 2
+
+          $logs = @(
+            (Join-Path $env:TEMP 'nvda.log'),
+            $nvdaLogPath,
+            (Join-Path $configPath 'nvda.log')
+          ) | Where-Object { Test-Path $_ }
+          foreach ($log in $logs) {
+            $destination = Join-Path $evidence (Split-Path -Leaf $log)
+            if ((Resolve-Path $log).Path -ne (Resolve-Path $destination -ErrorAction SilentlyContinue).Path) {
+              Copy-Item -Force -Path $log -Destination $destination
+            }
+          }
+
+          $processes = Get-Process nvda, msedge -ErrorAction SilentlyContinue |
+            Select-Object ProcessName, Id, StartTime, Path
+          $processes | ConvertTo-Json -Depth 4 | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'processes.json')
+
+          $summary = [ordered]@{
+            verifiedAt = (Get-Date).ToUniversalTime().ToString('o')
+            verifier = 'GitHub Actions windows-latest runner with NVDA installed and launched'
+            targetUrl = $targetUrl
+            runner = [ordered]@{
+              os = $env:ImageOS
+              version = $env:ImageVersion
+              runnerName = $env:RUNNER_NAME
+            }
+            nvda = [ordered]@{
+              release = $release.tag_name
+              installer = $asset.name
+              installerUrl = $asset.browser_download_url
+              installExitCode = $install.ExitCode
+              executable = $nvdaPath
+              processId = $nvdaProcess.Id
+              quitExitCode = $existingNvda.ExitCode
+            }
+            browser = [ordered]@{
+              executable = $edgePath
+              processId = $edgeProcess.Id
+            }
+            logs = $logs
+          }
+          $summary | ConvertTo-Json -Depth 6 | Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'summary.json')
+
+          Get-ChildItem -Path $evidence -Recurse |
+            Select-Object FullName, Length, LastWriteTimeUtc |
+            ConvertTo-Json -Depth 4 |
+            Set-Content -Encoding UTF8 -Path (Join-Path $evidence 'files.json')
+
+      - name: Upload NVDA evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: nvda-evidence
+          path: |
+            ${{ runner.temp }}\nvda-evidence\summary.json
+            ${{ runner.temp }}\nvda-evidence\nvda.log
+            ${{ runner.temp }}\nvda-evidence\nvda-session.log
+            ${{ runner.temp }}\nvda-evidence\windows-nvda-edge.png
+            ${{ runner.temp }}\nvda-evidence\screenshot-error.txt
+            ${{ runner.temp }}\nvda-evidence\processes.json
+            ${{ runner.temp }}\nvda-evidence\files.json
+            ${{ runner.temp }}\nvda-evidence\config\nvda.ini
+            ${{ runner.temp }}\nvda-evidence\config\updateCheckState.pickle
+          if-no-files-found: error

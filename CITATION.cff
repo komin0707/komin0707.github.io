@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use Vent Simulator 2D for teaching, cite it as educational simulation software."
+title: "Vent Simulator 2D"
+version: "0.1.0"
+date-released: "2026-05-10"
+license: "MIT"
+authors:
+  - name: "Vent Simulator 2D contributors"
+preferred-citation:
+  type: software
+  title: "Vent Simulator 2D: Educational mechanical ventilation simulator"
+  authors:
+    - name: "Vent Simulator 2D contributors"
+  version: "0.1.0"
+  date-released: "2026-05-10"

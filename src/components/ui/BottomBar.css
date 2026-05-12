@@ -1,0 +1,155 @@
+.bottom-bar {
+  display: grid;
+  flex: 0 0 auto;
+  min-height: 86px;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 8px;
+  align-items: stretch;
+  padding-top: 4px;
+  border-top: 1px solid var(--control-border);
+}
+
+.bottom-bar > div,
+.timeline-slider,
+.timeline-readout,
+.snapshot-controls,
+.time-controls,
+.scenario-select {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #071524;
+}
+
+.time-controls {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(68px, 0.7fr) repeat(7, minmax(52px, 1fr)) minmax(90px, 0.9fr) minmax(
+      64px,
+      0.6fr
+    );
+  align-items: end;
+}
+
+.snapshot-controls {
+  grid-column: span 2;
+  grid-template-columns: minmax(0, 1fr) 58px;
+  align-items: end;
+}
+
+.timeline-slider,
+.timeline-readout {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 8px 12px;
+}
+
+.timeline-slider {
+  grid-column: span 4;
+}
+
+.timeline-slider label {
+  display: grid;
+  gap: 4px;
+}
+
+.time-controls label,
+.snapshot-controls label {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+}
+
+.time-controls select,
+.time-controls input,
+.timeline-slider input,
+.snapshot-controls textarea {
+  min-width: 0;
+  border: 1px solid var(--control-border);
+  border-radius: 6px;
+  background: #0b1b2d;
+  color-scheme: dark;
+  color: #eaf3ff;
+  -webkit-text-fill-color: #eaf3ff;
+}
+
+.time-controls select,
+.time-controls input {
+  height: 34px;
+  padding: 0 8px;
+}
+
+.snapshot-controls textarea {
+  height: 42px;
+  resize: none;
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 12px;
+}
+
+.bottom-bar span,
+.scenario-select span,
+.timeline-slider small,
+.timeline-readout small {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.bottom-bar strong {
+  min-width: 0;
+  color: #fff;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
+}
+
+.bottom-bar div:first-child strong {
+  width: fit-content;
+  padding: 7px 14px;
+  border-radius: 6px;
+  background: #142d49;
+  font-size: 23px;
+  letter-spacing: 0;
+}
+
+.bottom-bar > div:nth-of-type(3) strong {
+  white-space: normal;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.bottom-bar button {
+  min-height: 46px;
+  padding: 0 10px;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.time-controls button {
+  min-width: 0;
+  padding: 0 6px;
+}
+
+.scenario-select select {
+  min-width: 0;
+  height: 36px;
+  border: 1px solid var(--control-border);
+  border-radius: 6px;
+  background: #0b1b2d;
+  color-scheme: dark;
+  color: #eaf3ff;
+  -webkit-text-fill-color: #eaf3ff;
+  padding: 0 10px;
+}
+
+.education-warning {
+  margin: 0;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: #020e19;
+  color: #dbeafe;
+  font-size: 12px;
+  text-align: right;
+}

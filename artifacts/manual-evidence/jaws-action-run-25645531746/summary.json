@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-05-11T01:29:55.4891464Z",
+  "verifier": "GitHub Actions windows-latest runner with JAWS 2026 installed and launched",
+  "targetUrl": "https://komin0707.github.io/",
+  "runner": {
+    "os": "win25-vs2026",
+    "version": "20260428.85.1",
+    "runnerName": "GitHub Actions 1000000126"
+  },
+  "jaws": {
+    "installer": "J2026.2603.86.400-any.exe",
+    "installerUrl": "https://software.vfo.digital/JAWS/2026/2026.2603.86.400/4C358832-E709-4832-9C4B-47357E07F729/J2026.2603.86.400-any.exe",
+    "installExitCode": 0,
+    "executable": "C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\jfw.exe",
+    "processId": 8160
+  },
+  "browser": {
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "processId": 7868
+  }
+}

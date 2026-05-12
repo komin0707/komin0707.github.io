@@ -1,0 +1,855 @@
+Timestamp               Ty Process[PID:TID]
+2026-05-11 09:40:42.262 Df 458C1556-D1D9-3031-8AE5-ECF9D1477B90[11313:2c4e52] [com.apple.PersistentConnection:com.apple.apsd(sandbox.push.apple.com)-NonCellular] <PCConnectionManager: 0x158d04870> Setting server stats max keep alive interval for (null) to 0
+2026-05-11 09:40:42.577 Df trustd[12272:2c8777] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C1.1.1.1:2][0x12db08620] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:43.620 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c79be] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C30.1.1.1:2][0x137308c20] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:43.807 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C31.1.1.1:2][0x137314e20] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:44.777 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c79be] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C33.1.1.1:2][0x137718680] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:47.441 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c79be] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C34.1.1.1:2][0x13b51c9e0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:48.720 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ea9] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C35.1.1.1:2][0x137e152d0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:48.995 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ea9] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C36.1.1.1:2][0x137e08a50] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:49.184 Df searchd[11422:2c8d47] [com.apple.corespotlight:default] requestRequiresImportWithoutSandboxExtension maxCount:0, depth:0
+2026-05-11 09:40:49.184 E  searchd[11422:2c8d47] [com.apple.corespotlight:default] ==== restartAttachmentImport enter, maxCount: 256, depth:0
+2026-05-11 09:40:50.711 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c79be] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C38.1.1.1:2][0x13771c100] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:54.651 E  dataaccessd[11372:2c50af] [com.apple.accounts:core] "Exceeded the maximum number of connections (2) to accountsd: 7 connections open. Consider switching to +[ACAccountStore defaultStore]"
+2026-05-11 09:40:54.784 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C7:1][0x15561ebd0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:54.805 Df MobileSafari[11980:2c917a] [com.apple.xpc:connection] [0x176d13240] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-05-11 09:40:54.806 Df MobileSafari[11980:2c8d46] [com.apple.accounts:core] "The connection to ACDAccountStore was invalidated."
+2026-05-11 09:40:54.986 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C6.1.2.1:2][0x15541a780] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:54.991 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C8:1][0x15441a830] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:55.079 Df amsengagementd[11460:2c904b] [com.apple.network:quic] quic_pmtud_restart [C6.1.1.3:2] [-13d457cfc380432c] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:40:55.116 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C10:1][0x154415aa0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:55.495 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C11:1][0x155519180] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:55.496 Df amsengagementd[11460:2c904b] [com.apple.network:quic] quic_pmtud_restart [C9.1.1.1:2] [-17ca6eaec180432c] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:40:55.527 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C13:1][0x155612550] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:55.741 E  healthd[11268:2c91a4] [com.apple.IDS:utilities] IDSInternalQueue - assertQueueIsNotCurrent in -[IDSService initWithService:commands:manuallyAckMessages:] failed {symbols: (
+	0   IDS                                 0x00000001126bd0ac IDSRefreshUserAccessTokensWithCompletionBlock + 151384
+	1   IDS                                 0x000000011263a034 IDSServiceCalculatedPseudonymChanges + 1196
+	2   IDS                                 0x00000001125d29ac IDSActivityMonitorMaxTokenCount + 8404
+	3   libdispatch.dylib                   0x0000000108e9c278 _dispatch_client_callout + 12
+	4   libdispatch.dylib                   0x0000000108e91f08 _dispatch_lane_barrier_sync_invoke_and_complete + 92
+	5   IDS                                 0x00000001126a76dc IDSRefreshUserAccessTokensWithCompletionBlock + 62856
+	6   IDS                                 0x00000001125d2898 IDSActivityMonitorMaxTokenCount + 8128
+	7   HealthDaemon                        0x0000000103980958 -[HDIDSInvitationManager initWithServiceIdentifier:messageClass:schema:] + 200
+	8   HealthDaemon                        0x000000010358bf30 __57-[HDSummar}. The only acceptable callstack includes dealloc.
+2026-05-11 09:40:56.024 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C14:1][0x15541a9a0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:56.084 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C12.1.2.1:2][0x155411ff0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:56.511 Df healthd[11268:2c8fb5] [com.apple.HealthKit:ontology] <HDOntologyUpdateCoordinator: 0x6000030c8120>: Trigger gated update with maximum delay 5.000s
+2026-05-11 09:40:56.568 Df healthd[11268:2c8fb5] [com.apple.HealthKit:ontology] <HDXPCGatedActivity:0x600002c55000 com.apple.healthd.ontology.gated 800152861.51s>: Requesting run with maximum delay 5.000000, required delay 0.000000
+2026-05-11 09:40:57.650 Df dataaccessd[11372:2c917b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C1.1.1.1:2][0x15da0e810] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:57.827 Df healthd[11268:2c919e] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C1.1.1.1:2][0x13e01a8f0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:40:58.308 Df healthd[11268:2c91ab] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C2.1.1:2][0x13c71d3c0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:00.739 Df amsengagementd[11460:2c904b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C15.1.1.1:2][0x154517530] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:01.421 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c7369] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C41:1][0x137f0b9f0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:01.430 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c7369] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C40.1.1:2][0x136e157b0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:01.515 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c7369] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C39.1.2.1:2][0x136e1ae70] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:01.529 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c7369] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C42:1][0x136e20ac0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:01.637 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c7369] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C43:1][0x137f0aba0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:01.907 Df amsengagementd[11460:2c5983] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C16.1.1.1:2][0x153d0da50] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:02.507 Df amsengagementd[11460:2c8ff6] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C17.1.1.1:2][0x153d0fd20] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:02.883 Df amsengagementd[11460:2c90e1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C18.1.1.1:2][0x154610100] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:04.069 E  amsengagementd[11460:2c5983] [com.apple.network:connection] nw_connection_add_timestamp_locked_on_nw_queue [C18] Hit maximum timestamp count, will start dropping events
+2026-05-11 09:41:05.534 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C44.1.1:2][0x136f08250] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:06.024 Df amsengagementd[11460:2c8ff6] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C19.1.1.1:2][0x154523ae0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:06.394 Df amsengagementd[11460:2c91ee] [com.apple.AppleMediaServices:url-loading] AMSURLRequestEncoder: [46A9C9CF] Encoding request for URL: https://assets-mercury.mzstatic.com/content/ma_Q_03O6XbR3-ZuEpETPVAXw/ko-kr.json { 
+	account = <ACAccount: 0x600000892ae0 type = iTunesStore | backingID = EA89A8CC-1B40-4C37-9A4A-16460418AEE5 | username = local | storefront = H:506d58a582> 
+	mediaType = com.apple.AppleMediaServices.accountmediatype.production 
+}
+2026-05-11 09:41:06.396 Df amsengagementd[11460:2c91ed] [com.apple.AppleMediaServices:general] AMSAbsinthe: [46A9C9CF] Determining signing data for request <AMSURLRequest: 0x6000031f12c0> { URL: https://assets-mercury.mzstatic.com/content/ma_Q_03O6XbR3-ZuEpETPVAXw/ko-kr.json }
+2026-05-11 09:41:06.401 Df amsengagementd[11460:2c8ff6] [com.apple.AppleMediaServices:url-loading] amsengagementd.AppURLSession: [46A9C9CF] Preparing request: <AMSURLRequest: 0x6000031c9380> { URL: https://assets-mercury.mzstatic.com/content/ma_Q_03O6XbR3-ZuEpETPVAXw/ko-kr.json }
+2026-05-11 09:41:06.412 Df amsengagementd[11460:2c8ff6] [com.apple.AppleMediaServices:url-loading] amsengagementd.AppURLSession: [46A9C9CF] Task finished loading for URL request <AMSURLRequest: 0x6000031d4ee0> { URL: https://assets-mercury.mzstatic.com/content/ma_Q_03O6XbR3-ZuEpETPVAXw/ko-kr.json }
+2026-05-11 09:41:06.832 Df amsengagementd[11460:2c9312] [com.apple.AppleMediaServices:url-loading] AMSURLRequestEncoder: [4DF9C4A7] Encoding request for URL: https://apps.mzstatic.com/content/ma_tb3XJVbcSSGo60aXXNlEzg/ko-kr.json { 
+	account = <ACAccount: 0x600000885b20 type = iTunesStore | backingID = EA89A8CC-1B40-4C37-9A4A-16460418AEE5 | username = local | storefront = H:506d58a582> 
+	mediaType = com.apple.AppleMediaServices.accountmediatype.production 
+}
+2026-05-11 09:41:06.837 Df amsengagementd[11460:2c91ee] [com.apple.AppleMediaServices:general] AMSAbsinthe: [4DF9C4A7] Determining signing data for request <AMSURLRequest: 0x6000031f1120> { URL: https://apps.mzstatic.com/content/ma_tb3XJVbcSSGo60aXXNlEzg/ko-kr.json }
+2026-05-11 09:41:06.841 Df amsengagementd[11460:2c8ff6] [com.apple.AppleMediaServices:url-loading] amsengagementd.AppURLSession: [4DF9C4A7] Preparing request: <AMSURLRequest: 0x6000031d49e0> { URL: https://apps.mzstatic.com/content/ma_tb3XJVbcSSGo60aXXNlEzg/ko-kr.json }
+2026-05-11 09:41:06.895 Df dataaccessd[11372:2c917b] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C1.1.1.2:2][0x15b90c080] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:06.903 Df amsengagementd[11460:2c9310] [com.apple.AppleMediaServices:url-loading] amsengagementd.AppURLSession: [4DF9C4A7] Task finished loading for URL request <AMSURLRequest: 0x6000031d6660> { URL: https://apps.mzstatic.com/content/ma_tb3XJVbcSSGo60aXXNlEzg/ko-kr.json }
+2026-05-11 09:41:07.176 Df trustd[12272:2c8778] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C2.1.1.1:2][0x12d8061d0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:07.389 A  MobileSafari[11980:2c7dc1] (Accounts) accounts/accounts-with-types-sync
+2026-05-11 09:41:07.398 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x172a594c0] activating connection: mach=true listener=false peer=false name=com.apple.accountsd.accountmanager
+2026-05-11 09:41:07.419 A  MobileSafari[11980:2c7dc1] (Accounts) accounts/accounts-with-types-sync
+2026-05-11 09:41:07.420 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x1769193a0] activating connection: mach=true listener=false peer=false name=com.apple.accountsd.accountmanager
+2026-05-11 09:41:07.421 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x1769193a0] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-05-11 09:41:07.421 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x172a594c0] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-05-11 09:41:07.425 Df MobileSafari[11980:2c8d46] [com.apple.accounts:core] "The connection to ACDAccountStore was invalidated."
+2026-05-11 09:41:07.426 Df MobileSafari[11980:2c8d46] [com.apple.accounts:core] "The connection to ACDAccountStore was invalidated."
+2026-05-11 09:41:08.100 A  MobileSafari[11980:2c7dc1] (Accounts) accounts/accounts-with-types-sync
+2026-05-11 09:41:08.100 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x1769193a0] activating connection: mach=true listener=false peer=false name=com.apple.accountsd.accountmanager
+2026-05-11 09:41:08.101 A  MobileSafari[11980:2c7dc1] (Accounts) accounts/accounts-with-types-sync
+2026-05-11 09:41:08.102 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x176d1c080] activating connection: mach=true listener=false peer=false name=com.apple.accountsd.accountmanager
+2026-05-11 09:41:08.103 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x176d1c080] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-05-11 09:41:08.103 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x1769193a0] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-05-11 09:41:08.104 Df MobileSafari[11980:2c8d46] [com.apple.accounts:core] "The connection to ACDAccountStore was invalidated."
+2026-05-11 09:41:08.105 Df MobileSafari[11980:2c8d46] [com.apple.accounts:core] "The connection to ACDAccountStore was invalidated."
+2026-05-11 09:41:09.001 Df 458C1556-D1D9-3031-8AE5-ECF9D1477B90[11313:2c4e52] [com.apple.PersistentConnection:com.apple.apsd(sandbox.push.apple.com)-NonCellular] <PCConnectionManager: 0x158d04870> Setting server stats max keep alive interval for (null) to 0
+2026-05-11 09:41:09.061 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C46.1.1:2][0x136e11b80] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:09.062 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C45.1.1:2][0x136e13d80] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:09.344 Df nanoprefsyncd[11283:2c92d7] [com.apple.NanoPreferencesSync:Daemon] 		Feature: (maxFailedAttempts); Value: ({
+})
+2026-05-11 09:41:09.345 Df nanoprefsyncd[11283:2c92d7] [com.apple.NanoPreferencesSync:Daemon] 		Feature: (ratingApps); Value: ({
+    rangeMaximum = 2000;
+    rangeMinimum = 0;
+    value = 1000;
+})
+2026-05-11 09:41:09.345 Df nanoprefsyncd[11283:2c92d7] [com.apple.NanoPreferencesSync:Daemon] 		Feature: (maxPINAgeInDays); Value: ({
+})
+2026-05-11 09:41:09.388 Df nanoprefsyncd[11283:2c92d7] [com.apple.NanoPreferencesSync:Daemon] 		Feature: (maxFailedAttempts); Value: ({
+    preferSmallerValues = 1;
+})
+2026-05-11 09:41:09.389 Df nanoprefsyncd[11283:2c92d7] [com.apple.NanoPreferencesSync:Daemon] 		Feature: (maxPINAgeInDays); Value: ({
+    preferSmallerValues = 1;
+})
+2026-05-11 09:41:09.751 Df dataaccessd[11372:2c91b5] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C2.1.1.1:2][0x15bb0e650] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:09.841 Df SpringBoard[11256:2c8c58] [com.apple.UserNotifications:DataProvider] [com.apple.familynotifications] Returning 0 bulletins since Mon May  4 09:41:09 2026 (max 500)
+2026-05-11 09:41:11.344 Df axassetsd[11267:2c8e55] [com.apple.Accessibility:AXAssetDaemon] axasstsd is starting up. MallocStackLogging=(null)
+2026-05-11 09:41:11.503 A  MobileSafari[11980:2c7dc1] (Accounts) accounts/accounts-with-types-sync
+2026-05-11 09:41:11.503 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x172b83310] activating connection: mach=true listener=false peer=false name=com.apple.accountsd.accountmanager
+2026-05-11 09:41:11.504 A  MobileSafari[11980:2c7dc1] (Accounts) accounts/accounts-with-types-sync
+2026-05-11 09:41:11.504 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x172b7ec80] activating connection: mach=true listener=false peer=false name=com.apple.accountsd.accountmanager
+2026-05-11 09:41:11.505 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x172b7ec80] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-05-11 09:41:11.505 Df MobileSafari[11980:2c7dc1] [com.apple.xpc:connection] [0x172b83310] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-05-11 09:41:11.505 Df MobileSafari[11980:2c9381] [com.apple.accounts:core] "The connection to ACDAccountStore was invalidated."
+2026-05-11 09:41:11.505 Df MobileSafari[11980:2c9381] [com.apple.accounts:core] "The connection to ACDAccountStore was invalidated."
+2026-05-11 09:41:11.710 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] AXATM: Added active reason: 'AXComponentChangeSimpleTask<0x600002236340> ID=AXComponentChangeSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger'. Reason count=1
+2026-05-11 09:41:11.710 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] AXATM: Will begin os_transaction
+2026-05-11 09:41:11.710 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Dispatching: AXComponentChangeSimpleTask<0x600002236340> ID=AXComponentChangeSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.712 Df axassetsd[11267:2c940a] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Running: AXComponentChangeSimpleTask<0x600002236340> ID=AXComponentChangeSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.712 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] AXATM: Added active reason: 'AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger'. Reason count=2
+2026-05-11 09:41:11.713 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Dispatching: AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.713 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Running: AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.781 Df axassetsd[11267:2c8e55] [com.apple.Accessibility:AXAssetDaemon] AXATM: Added active reason: 'AXUpdateSiriResourcesSimpleTask<0x600002236aa0> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger'. Reason count=3
+2026-05-11 09:41:11.781 Df axassetsd[11267:2c8e55] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Dispatching: AXUpdateSiriResourcesSimpleTask<0x600002236aa0> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.781 Df axassetsd[11267:2c8e55] [com.apple.Accessibility:AXAssetDaemon] AXATM: Added active reason: 'AXRefreshSSEVoicesForBundlePrefixSimpleTask<0x600002236a80> ID=AXRefreshSSEVoicesForBundlePrefixSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger'. Reason count=4
+2026-05-11 09:41:11.781 Df axassetsd[11267:2c8e55] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Dispatching: AXRefreshSSEVoicesForBundlePrefixSimpleTask<0x600002236a80> ID=AXRefreshSSEVoicesForBundlePrefixSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.781 Df axassetsd[11267:2c8e55] [com.apple.Accessibility:AXAssetDaemon] AXATM: Added active reason: 'AXUpdateCacheVersionSimpleTask<0x600002236ae0> ID=AXUpdateCacheVersionSimpleTask Group=kAXResourceCacheTaskGroup Trigger=AXSimpleAssetTaskTrigger'. Reason count=5
+2026-05-11 09:41:11.781 Df axassetsd[11267:2c8e55] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Dispatching: AXUpdateCacheVersionSimpleTask<0x600002236ae0> ID=AXUpdateCacheVersionSimpleTask Group=kAXResourceCacheTaskGroup Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.782 Df axassetsd[11267:2c940b] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Running: AXRefreshSSEVoicesForBundlePrefixSimpleTask<0x600002236a80> ID=AXRefreshSSEVoicesForBundlePrefixSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:11.782 Df axassetsd[11267:2c940c] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Running: AXUpdateCacheVersionSimpleTask<0x600002236ae0> ID=AXUpdateCacheVersionSimpleTask Group=kAXResourceCacheTaskGroup Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:12.617 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a0] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C47.1.1:2][0x13b005400] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:12.729 E  axassetsd[11267:2c940c] [com.apple.Accessibility:AXAssetLoader] TTSAXResourceModelAssets<0x6000001389b0>: Refreshing assets. Metadata query failed: XmlNotPresent. Error Domain=AXAssetLoader Code=3002 "Operation failed" UserInfo={NSLocalizedDescription=Operation failed}
+2026-05-11 09:41:12.809 Df parsecd[11579:2c8ec4] [com.apple.parsecd:Parsec_DownloadManager] download of https://cdn.smoot.apple.com/static/installed_app_whitelist_url?eat=_Xa2pSmGvA-vbCe334DBl3QStjGkqQe7Aa3lGFzsxDhYBAZCCzMu5LmheFYkhTnLmws3Y_UDQEKDVHSBGs-k5no&lsk=6kp2k3yKKX8LKGDZSbNPUw&version=d952ed940d15e278436dce7b92f002bd finished file:///.nofollow/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.parsecd/CFNetworkDownload_aAxRz1.tmp
+2026-05-11 09:41:13.969 Df triald[11802:2c8d5c] [com.apple.triald:server] New connection to com.apple.triald.namespace-management from axassetsd (11267).
+2026-05-11 09:41:14.811 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C48.1.1:2][0x136f06670] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:14.811 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C49.1.1:2][0x136f0dfe0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:14.896 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C50.1.1:2][0x136e08860] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:14.993 Df axassetsd[11267:2c945c] [com.apple.extensionkit:NSExtension] discovered extensions: attributes {
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+}, extensionSet {(
+    <EXConcreteExtension: 0x600001734000> {id = com.apple.ax.MauiTTSSupport.MauiAUSP},
+    <EXConcreteExtension: 0x600001730300> {id = com.apple.speech.MacinTalkFramework.MacinTalkAUSP},
+    <EXConcreteExtension: 0x60000173c000> {id = com.apple.ax.KonaTTSSupport.KonaSynthesizer},
+    <EXConcreteExtension: 0x6000017300c0> {id = com.apple.texttospeech.SiriAUSP}
+)}
+2026-05-11 09:41:15.110 Df axassetsd[11267:2c9468] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Ready plugins sent as euid = 501, uid = 501, (persona not available)
+2026-05-11 09:41:15.115 Df axassetsd[11267:2c9467] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] Ready plugins sent as euid = 501, uid = 501, (persona not available)
+2026-05-11 09:41:15.123 Df runningboardd[11261:2c8666] [com.apple.runningboard:process] Resolved pid 11267 to [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:15.124 Df runningboardd[11261:2c8666] [com.apple.runningboard:general] Full encoding handle [osservice<com.apple.accessibility.axassetsd>:11267], with data 4ecff6ed00002c03, and pid 11267
+2026-05-11 09:41:15.124 Df runningboardd[11261:2c8666] [com.apple.runningboard:process] [osservice<com.apple.accessibility.axassetsd>:11267] is not RunningBoard jetsam managed.
+2026-05-11 09:41:15.124 Df runningboardd[11261:2c8666] [com.apple.runningboard:process] [osservice<com.apple.accessibility.axassetsd>:11267] This process will not be managed.
+2026-05-11 09:41:15.127 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Executing launch request for xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0} (Launching extension com.apple.speech.MacinTalkFramework.MacinTalkAUSP(4F31D92F-DBAC-4423-A6AA-0C8114641B52) for host 11267) from requestor: [osservice<com.apple.pluginkit.pkd>:11357]
+2026-05-11 09:41:15.128 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] Resolved pid 11267 to [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:15.129 Df runningboardd[11261:2c938d] [com.apple.runningboard:general] Full encoding handle [osservice<com.apple.accessibility.axassetsd>:11267], with data 43efaf7300002c03, and pid 11267
+2026-05-11 09:41:15.129 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] [osservice<com.apple.accessibility.axassetsd>:11267] is not RunningBoard jetsam managed.
+2026-05-11 09:41:15.129 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] [osservice<com.apple.accessibility.axassetsd>:11267] This process will not be managed.
+2026-05-11 09:41:15.129 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Now tracking process: [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:15.131 Df runningboardd[11261:2c938d] [com.apple.runningboard:job] Creating and launching job for: xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:15.131 Df runningboardd[11261:2c8666] [com.apple.runningboard:job_oversize] '(null)' Submitting extension overlay (host PID 11267, path /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MacinTalk.framework/PlugIns/MacinTalkAUSP.appex/MacinTalkAUSP):
+<dictionary: 0x60000342ba20> { count = 3, transaction: 0, voucher = 0x0, contents =
+	"XPCService" => <dictionary: 0x600003429800> { count = 10, transaction: 0, voucher = 0x0, contents =
+		"_ManagedBy" => <string: 0x600001e3b780> { length = 22, contents = "com.apple.runningboard" }
+		"Platform" => <int64: 0xa4907a252ab17fd7>: 7
+		"RunLoopType" => <string: 0x600001e3bd50> { length = 9, contents = "NSRunLoop" }
+		"_SandboxProfile" => <string: 0x600001e3b240> { length = 8, contents = "keyboard" }
+		"_AdditionalSubServices" => <dictionary: 0x600003429e60> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"apple-extension-service" => <bool: 0x107409d80>: true
+		}
+		"_AdditionalProperties" => <dictionary: 0x600003429680> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"RunningBoard" => <dictionary: 0x60000342bae0> { count = 2, transaction: 0, voucher = 0x0, contents =
+				"RunningBoardLaunchedIdentity" => <dictionary: 0x600003429f20> { count = 5, transaction: 0, voucher = 0x0, contents =
+					"TYPE" => <int64: 0xa4907a252ab17fcf>: 4
+					"h" => <int64: 0xa4907a252ab01ff7>: 11267
+					"i" => <string: 0x600001e3ad30> { length = 49, contents = "com.apple.speech.MacinTalkFramework.MacinTalkAUSP" }
+					"r" => <int64: 0xa4907a252ab17fff>: 2
+					"H" => <dictionary: 0x60000342bcc0> { count = 4, transaction: 0, voucher = 0x0, contents =
+						"l" => <string: 0x600001e3b810> { length = 33, contents = "com.apple.accessibility.axassetsd" }
+						"t" => <int64: 0xa4907a252ab17fff>: 2
+						"TYPE" => <int64: 0xa4907a252ab17fdf>: 6
+						"p" => <int64: 0xa4907a252ab17fef>: 0
+					}
+				}
+				"RunningBoardLaunched" => <bool: 0x107409d80>: true
+			}
+		}
+		"EnvironmentVariables" => <dictionary: 0x60000342b000> { count = 3, transaction: 0, voucher = 0x0, contents =
+			"TMPDIR" => <string: 0x600001e394d0> { length = 167, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/F33BD908-B983-43D1-A784-299671411B71/tmp" }
+			"HOME" => <string: 0x600001e3b8d0> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/F33BD908-B983-43D1-A784-299671411B71" }
+			"CFFIXED_USER_HOME" => <string: 0x600001e38b40> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/F33BD908-B983-43D1-A784-299671411B71" }
+		}
+		"_OmitSandboxParameters" => <bool: 0x107409d80>: true
+		"ServiceType" => <string: 0x600001e3ae80> { length = 11, contents = "Application" }
+		"ProgramArguments" => <array: 0x600001e3adc0> { count = 3, capacity = 8, contents =
+			0: <string: 0x600001e3b450> { length = 247, contents = "/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MacinTalk.framework/PlugIns/MacinTalkAUSP.appex/MacinTalkAUSP" }
+			1: <string: 0x600001e39440> { length = 15, contents = "-AppleLanguages" }
+			2: <string: 0x600001e3ba50> { length = 18, contents = "("ko-KR", "en-KR")" }
+		}
+	}
+	"RunningBoard" => <dictionary: 0x6000034299e0> { count = 1, transaction: 0, voucher = 0x0, contents =
+		"Managed" => <bool: 0x107409d80>: true
+	}
+	"CFBundlePackageType" => <string: 0x600001e3ac40> { length = 4, contents = "XPC!" }
+}
+2026-05-11 09:41:15.131 Df runningboardd[11261:2c91d0] [com.apple.runningboard:general] [osservice<com.apple.accessibility.axassetsd>:11267] reported to RB as running
+2026-05-11 09:41:15.131 Df SpringBoard[11256:2c8ee5] [com.apple.runningboard:process] Hit the server for a process handle 3efaf7300002c03 that resolved to: [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:15.131 Df SpringBoard[11256:2c8ee5] [com.apple.runningboard:monitor] Received state update for 11267 (osservice<com.apple.accessibility.axassetsd>, running-NotVisible
+2026-05-11 09:41:15.451 Df runningboardd[11261:2c938d] [com.apple.runningboard:general] Full encoding handle [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496], with data e17d165d000030d0, and pid 12496
+2026-05-11 09:41:15.451 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Memory Limits: active 0 inactive 0
+ <RBJetsamProperties| tasklimit=0
+(null)>
+2026-05-11 09:41:15.451 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] This process will be managed.
+2026-05-11 09:41:15.451 E  runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Memorystatus failed with unexpected error: Operation not permitted (1)
+2026-05-11 09:41:15.451 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] is not freezer eligible, disabling freezing.
+2026-05-11 09:41:15.451 E  runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Memorystatus failed with unexpected error: Invalid argument (22)
+2026-05-11 09:41:15.451 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Now tracking process: [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]
+2026-05-11 09:41:15.452 Df runningboardd[11261:2c92dc] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:15.452 Df runningboardd[11261:2c92dc] [com.apple.runningboard:general] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] reported to RB as running
+2026-05-11 09:41:15.453 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:process] Hit the server for a process handle 17d165d000030d0 that resolved to: [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]
+2026-05-11 09:41:15.453 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:15.453 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:process] Hit the server for a process handle 17d165d000030d0 that resolved to: [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]
+2026-05-11 09:41:15.454 Df locationd[11282:2c9398] [com.apple.runningboard:process] Hit the server for a process handle 17d165d000030d0 that resolved to: [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]
+2026-05-11 09:41:15.454 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:15.454 Df locationd[11282:2c9398] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:15.474 Df pkd[11357:2c945a] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] will be managed by runningboard
+2026-05-11 09:41:15.525 Df runningboardd[11261:2c938d] [com.apple.runningboard:connection] Setting client for [osservice<com.apple.accessibility.axassetsd>:11267] as ready
+2026-05-11 09:41:15.529 Df pkd[11357:2c945a] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Allowing host pid 11267 to use plugin [/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeechMauiSupport.framework/PlugIns/MauiAUSP.appex]
+2026-05-11 09:41:15.541 Df axassetsd[11267:2c9466] [com.apple.runningboard:connection] Identity resolved as osservice<com.apple.accessibility.axassetsd>
+2026-05-11 09:41:15.543 Df runningboardd[11261:2c91d0] [com.apple.runningboard:ttl] Executing launch request for xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0} (Launching extension com.apple.ax.MauiTTSSupport.MauiAUSP(87BF6A3F-3F5D-4D21-A807-9CF707659007) for host 11267) from requestor: [osservice<com.apple.pluginkit.pkd>:11357]
+2026-05-11 09:41:15.543 Df runningboardd[11261:2c91d0] [com.apple.runningboard:job] Creating and launching job for: xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:15.543 Df runningboardd[11261:2c938d] [com.apple.runningboard:job_oversize] '(null)' Submitting extension overlay (host PID 11267, path /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeechMauiSupport.framework/PlugIns/MauiAUSP.appex/MauiAUSP):
+<dictionary: 0x60000340a3a0> { count = 3, transaction: 0, voucher = 0x0, contents =
+	"XPCService" => <dictionary: 0x60000340a4c0> { count = 10, transaction: 0, voucher = 0x0, contents =
+		"_ManagedBy" => <string: 0x600001e22fd0> { length = 22, contents = "com.apple.runningboard" }
+		"Platform" => <int64: 0xa4907a252ab17fd7>: 7
+		"RunLoopType" => <string: 0x600001e23150> { length = 9, contents = "NSRunLoop" }
+		"_SandboxProfile" => <string: 0x600001e45560> { length = 8, contents = "keyboard" }
+		"_AdditionalSubServices" => <dictionary: 0x600003429680> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"apple-extension-service" => <bool: 0x107409d80>: true
+		}
+		"_AdditionalProperties" => <dictionary: 0x60000342bae0> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"RunningBoard" => <dictionary: 0x600003429f20> { count = 2, transaction: 0, voucher = 0x0, contents =
+				"RunningBoardLaunchedIdentity" => <dictionary: 0x600003429e60> { count = 5, transaction: 0, voucher = 0x0, contents =
+					"TYPE" => <int64: 0xa4907a252ab17fcf>: 4
+					"h" => <int64: 0xa4907a252ab01ff7>: 11267
+					"i" => <string: 0x600001e21380> { length = 36, contents = "com.apple.ax.MauiTTSSupport.MauiAUSP" }
+					"r" => <int64: 0xa4907a252ab17fff>: 2
+					"H" => <dictionary: 0x600003428540> { count = 4, transaction: 0, voucher = 0x0, contents =
+						"l" => <string: 0x600001e22c70> { length = 33, contents = "com.apple.accessibility.axassetsd" }
+						"t" => <int64: 0xa4907a252ab17fff>: 2
+						"TYPE" => <int64: 0xa4907a252ab17fdf>: 6
+						"p" => <int64: 0xa4907a252ab17fef>: 0
+					}
+				}
+				"RunningBoardLaunched" => <bool: 0x107409d80>: true
+			}
+		}
+		"EnvironmentVariables" => <dictionary: 0x60000342b000> { count = 3, transaction: 0, voucher = 0x0, contents =
+			"TMPDIR" => <string: 0x600001e20d50> { length = 167, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/00292BD3-EE43-44E5-B103-664F5B88F07B/tmp" }
+			"HOME" => <string: 0x600001e222b0> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/00292BD3-EE43-44E5-B103-664F5B88F07B" }
+			"CFFIXED_USER_HOME" => <string: 0x600001e20960> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/00292BD3-EE43-44E5-B103-664F5B88F07B" }
+		}
+		"_OmitSandboxParameters" => <bool: 0x107409d80>: true
+		"ServiceType" => <string: 0x600001e222e0> { length = 11, contents = "Application" }
+		"ProgramArguments" => <array: 0x600001e239f0> { count = 3, capacity = 8, contents =
+			0: <string: 0x600001e23960> { length = 251, contents = "/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeechMauiSupport.framework/PlugIns/MauiAUSP.appex/MauiAUSP" }
+			1: <string: 0x600001e23e10> { length = 15, contents = "-AppleLanguages" }
+			2: <string: 0x600001e20f30> { length = 18, contents = "("ko-KR", "en-KR")" }
+		}
+	}
+	"RunningBoard" => <dictionary: 0x60000340bae0> { count = 1, transaction: 0, voucher = 0x0, contents =
+		"Managed" => <bool: 0x107409d80>: true
+	}
+	"CFBundlePackageType" => <string: 0x600001e21200> { length = 4, contents = "XPC!" }
+}
+2026-05-11 09:41:15.543 Df launchd_sim[11246:2c948b] [pid/11267/com.apple.ax.MauiTTSSupport.MauiAUSP:] draining messages from com.apple.ax.MauiTTSSupport.MauiAUSP.apple-extension-service
+2026-05-11 09:41:15.546 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-743 target:12496 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:15.547 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Assertion 11261-11267-743 (target:[xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]) will be created as active
+2026-05-11 09:41:15.547 Df runningboardd[11261:2c8666] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-active (role: UserInteractiveNonFocal) (endowments: (null))
+2026-05-11 09:41:15.547 Df runningboardd[11261:2c92dc] [com.apple.runningboard:ttl] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Resuming task.
+2026-05-11 09:41:15.547 Df SpringBoard[11256:2c8ee5] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:15.547 Df mediaremoted[11265:2c938f] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:15.547 Df locationd[11282:2c9398] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:15.553 Df runningboardd[11261:2c92dc] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Result 45 setting darwin role to UserInteractiveNonFocal: Operation not supported, falling back to setting priority
+2026-05-11 09:41:15.553 Df runningboardd[11261:2c92dc] [com.apple.runningboard:ttl] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Set darwin priority to: PRIO_DEFAULT
+2026-05-11 09:41:15.553 E  runningboardd[11261:2c92dc] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Error 1 setting Carplay mode to 0: Operation not permitted
+2026-05-11 09:41:15.589 Df axassetsd[11267:2c9467] [com.apple.runningboard:process] Hit the server for a process handle 17d165d000030d0 that resolved to: [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]
+2026-05-11 09:41:15.862 Df runningboardd[11261:2c91d0] [com.apple.runningboard:general] Full encoding handle [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499], with data e02256ff000030d3, and pid 12499
+2026-05-11 09:41:15.862 Df runningboardd[11261:2c91d0] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Memory Limits: active 0 inactive 0
+ <RBJetsamProperties| tasklimit=0
+(null)>
+2026-05-11 09:41:15.862 Df runningboardd[11261:2c91d0] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] This process will be managed.
+2026-05-11 09:41:15.862 E  runningboardd[11261:2c91d0] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Memorystatus failed with unexpected error: Operation not permitted (1)
+2026-05-11 09:41:15.862 Df runningboardd[11261:2c91d0] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] is not freezer eligible, disabling freezing.
+2026-05-11 09:41:15.862 E  runningboardd[11261:2c91d0] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Memorystatus failed with unexpected error: Invalid argument (22)
+2026-05-11 09:41:15.862 Df runningboardd[11261:2c91d0] [com.apple.runningboard:ttl] Now tracking process: [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]
+2026-05-11 09:41:15.863 Df runningboardd[11261:2c8666] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:15.863 Df runningboardd[11261:2c92dc] [com.apple.runningboard:general] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] reported to RB as running
+2026-05-11 09:41:15.863 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:process] Hit the server for a process handle 2256ff000030d3 that resolved to: [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]
+2026-05-11 09:41:15.863 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:15.863 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:process] Hit the server for a process handle 2256ff000030d3 that resolved to: [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]
+2026-05-11 09:41:15.864 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:15.864 Df locationd[11282:2c9398] [com.apple.runningboard:process] Hit the server for a process handle 2256ff000030d3 that resolved to: [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]
+2026-05-11 09:41:15.864 Df locationd[11282:2c9398] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:15.864 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":12499, "bundleID":com.apple.ax.MauiTTSSupport.MauiAUSP, "state":3}
+2026-05-11 09:41:15.864 Df locationd[11282:2c8511] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundTaskSuspended, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:15.864 Df locationd[11282:2c8511] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.ax.MauiTTSSupport.MauiAUSP:}
+2026-05-11 09:41:15.864 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11267;
+    SBApplicationStateDisplayIDKey = "com.apple.ax.MauiTTSSupport.MauiAUSP";
+    SBApplicationStateKey = 2;
+    SBApplicationStateProcessIDKey = 12499;
+    SBMostElevatedStateForProcessID = 2;
+}}
+2026-05-11 09:41:15.864 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundTaskSuspended, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:15.864 Df locationd[11282:2c8511] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":2, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP, "ClientKey":icom.apple.ax.MauiTTSSupport.MauiAUSP:}
+2026-05-11 09:41:15.865 Df locationd[11282:2c8511] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:15.884 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Executing launch request for xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0} (Launching extension com.apple.texttospeech.SiriAUSP(1F4444B4-5056-4DD5-AA64-C2C8AE3F2682) for host 11267) from requestor: [osservice<com.apple.pluginkit.pkd>:11357]
+2026-05-11 09:41:15.884 Df runningboardd[11261:2c8668] [com.apple.runningboard:job] Creating and launching job for: xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:15.884 Df runningboardd[11261:2c92dc] [com.apple.runningboard:job_oversize] '(null)' Submitting extension overlay (host PID 11267, path /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeech.framework/PlugIns/SiriAUSP.appex/SiriAUSP):
+<dictionary: 0x60000342bc60> { count = 3, transaction: 0, voucher = 0x0, contents =
+	"XPCService" => <dictionary: 0x600003428600> { count = 10, transaction: 0, voucher = 0x0, contents =
+		"_ManagedBy" => <string: 0x600001e4e820> { length = 22, contents = "com.apple.runningboard" }
+		"Platform" => <int64: 0xa4907a252ab17fd7>: 7
+		"RunLoopType" => <string: 0x600001e4db90> { length = 9, contents = "NSRunLoop" }
+		"_SandboxProfile" => <string: 0x600001e4c510> { length = 8, contents = "keyboard" }
+		"_AdditionalSubServices" => <dictionary: 0x600003429aa0> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"apple-extension-service" => <bool: 0x107409d80>: true
+		}
+		"_AdditionalProperties" => <dictionary: 0x600003429e00> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"RunningBoard" => <dictionary: 0x60000342a7c0> { count = 2, transaction: 0, voucher = 0x0, contents =
+				"RunningBoardLaunchedIdentity" => <dictionary: 0x600003428480> { count = 5, transaction: 0, voucher = 0x0, contents =
+					"TYPE" => <int64: 0xa4907a252ab17fcf>: 4
+					"h" => <int64: 0xa4907a252ab01ff7>: 11267
+					"i" => <string: 0x600001e4d260> { length = 31, contents = "com.apple.texttospeech.SiriAUSP" }
+					"r" => <int64: 0xa4907a252ab17fff>: 2
+					"H" => <dictionary: 0x600003428f00> { count = 4, transaction: 0, voucher = 0x0, contents =
+						"l" => <string: 0x600001e4ecd0> { length = 33, contents = "com.apple.accessibility.axassetsd" }
+						"t" => <int64: 0xa4907a252ab17fff>: 2
+						"TYPE" => <int64: 0xa4907a252ab17fdf>: 6
+						"p" => <int64: 0xa4907a252ab17fef>: 0
+					}
+				}
+				"RunningBoardLaunched" => <bool: 0x107409d80>: true
+			}
+		}
+		"EnvironmentVariables" => <dictionary: 0x600003428c60> { count = 3, transaction: 0, voucher = 0x0, contents =
+			"TMPDIR" => <string: 0x600001e4fc90> { length = 167, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/92D2D8F9-51B2-4C39-9493-9E97482EEBE5/tmp" }
+			"HOME" => <string: 0x600001e4d410> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/92D2D8F9-51B2-4C39-9493-9E97482EEBE5" }
+			"CFFIXED_USER_HOME" => <string: 0x600001e4c870> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/92D2D8F9-51B2-4C39-9493-9E97482EEBE5" }
+		}
+		"_OmitSandboxParameters" => <bool: 0x107409d80>: true
+		"ServiceType" => <string: 0x600001e4d710> { length = 11, contents = "Application" }
+		"ProgramArguments" => <array: 0x600001e4ee50> { count = 3, capacity = 8, contents =
+			0: <string: 0x600001e4c990> { length = 240, contents = "/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeech.framework/PlugIns/SiriAUSP.appex/SiriAUSP" }
+			1: <string: 0x600001e4da10> { length = 15, contents = "-AppleLanguages" }
+			2: <string: 0x600001e4d500> { length = 18, contents = "("ko-KR", "en-KR")" }
+		}
+	}
+	"RunningBoard" => <dictionary: 0x600003428de0> { count = 1, transaction: 0, voucher = 0x0, contents =
+		"Managed" => <bool: 0x107409d80>: true
+	}
+	"CFBundlePackageType" => <string: 0x600001e4d770> { length = 4, contents = "XPC!" }
+}
+2026-05-11 09:41:15.891 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] got pid from ready request: 12499
+2026-05-11 09:41:15.891 Df runningboardd[11261:2c92dc] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-744 target:12499 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:15.891 Df runningboardd[11261:2c92dc] [com.apple.runningboard:ttl] Assertion 11261-11267-744 (target:[xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]) will be created as active
+2026-05-11 09:41:15.892 Df runningboardd[11261:2c8666] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-active (role: UserInteractiveNonFocal) (endowments: (null))
+2026-05-11 09:41:15.892 Df runningboardd[11261:2c91d0] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Resuming task.
+2026-05-11 09:41:15.892 Df mediaremoted[11265:2c938f] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:15.892 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:15.892 Df locationd[11282:2c8fba] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:15.892 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":12499, "bundleID":com.apple.ax.MauiTTSSupport.MauiAUSP, "state":4}
+2026-05-11 09:41:15.893 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundRunning, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:15.893 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11267;
+    SBApplicationStateDisplayIDKey = "com.apple.ax.MauiTTSSupport.MauiAUSP";
+    SBApplicationStateKey = 4;
+    SBApplicationStateProcessIDKey = 12499;
+    SBApplicationStateRunningReasonsKey =     (
+                {
+            SBApplicationStateRunningReasonAssertionIdentifierKey = "com.apple.extension.session";
+            SBApplicationStateRunningReasonAssertionReasonKey = 13;
+        }
+    );
+    SBMostElevatedStateForProcessID = 4;
+}}
+2026-05-11 09:41:15.893 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.ax.MauiTTSSupport.MauiAUSP:}
+2026-05-11 09:41:15.893 Df locationd[11282:2c906c] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundRunning, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:15.893 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":3, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP, "ClientKey":icom.apple.ax.MauiTTSSupport.MauiAUSP:}
+2026-05-11 09:41:15.893 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:15.895 Df runningboardd[11261:2c91d0] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Result 45 setting darwin role to UserInteractiveNonFocal: Operation not supported, falling back to setting priority
+2026-05-11 09:41:15.895 Df runningboardd[11261:2c91d0] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Set darwin priority to: PRIO_DEFAULT
+2026-05-11 09:41:15.895 E  runningboardd[11261:2c91d0] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Error 1 setting Carplay mode to 0: Operation not permitted
+2026-05-11 09:41:15.899 Df runningboardd[11261:2c92dc] [com.apple.runningboard:connection] Setting client for [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] as ready
+2026-05-11 09:41:15.899 Df MacinTalkAUSP[12496:2c94b6] [com.apple.runningboard:connection] Identity resolved as xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:15.900 Df cloudd[11340:2c7c93] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C58.1.1.1:2][0x152511860] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:15.912 Df runningboardd[11261:2c81ba] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-745 target:12496 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown WantsForegroundResourcePriority )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:15.912 Df runningboardd[11261:2c81ba] [com.apple.runningboard:ttl] Assertion 11261-11267-745 (target:[xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]) will be created as active
+2026-05-11 09:41:15.915 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-743 (target:[xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:15.942 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] acquired startup assertion
+2026-05-11 09:41:15.949 Df axassetsd[11267:2c943f] [com.apple.runningboard:process] Hit the server for a process handle 2256ff000030d3 that resolved to: [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]
+2026-05-11 09:41:15.973 Df axassetsd[11267:2c943f] [com.apple.xpc:connection] [0x142a08ff0] activating connection: mach=false listener=false peer=false name=com.apple.ax.MauiTTSSupport.MauiAUSP
+2026-05-11 09:41:16.008 Df MacinTalkAUSP[12496:2c94bb] [com.apple.extensionkit:NSExtension] discovered extensions: attributes {
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+}, extensionSet {(
+    <EXConcreteExtension: 0x60000030c0c0> {id = com.apple.ax.MauiTTSSupport.MauiAUSP},
+    <EXConcreteExtension: 0x60000030c240> {id = com.apple.speech.MacinTalkFramework.MacinTalkAUSP},
+    <EXConcreteExtension: 0x600000314000> {id = com.apple.ax.KonaTTSSupport.KonaSynthesizer},
+    <EXConcreteExtension: 0x600000304000> {id = com.apple.texttospeech.SiriAUSP}
+)}
+2026-05-11 09:41:16.044 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Prepare using sent as euid = 501, uid = 501, (persona not available)
+2026-05-11 09:41:16.044 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Sending prepareUsing to managed extension; this should launch it if not already running.
+2026-05-11 09:41:16.257 Df runningboardd[11261:2c8668] [com.apple.runningboard:general] Full encoding handle [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500], with data fcdb651e000030d4, and pid 12500
+2026-05-11 09:41:16.257 Df runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Memory Limits: active 0 inactive 0
+ <RBJetsamProperties| tasklimit=0
+(null)>
+2026-05-11 09:41:16.257 Df runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] This process will be managed.
+2026-05-11 09:41:16.257 E  runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Memorystatus failed with unexpected error: Operation not permitted (1)
+2026-05-11 09:41:16.257 Df runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] is not freezer eligible, disabling freezing.
+2026-05-11 09:41:16.257 E  runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Memorystatus failed with unexpected error: Invalid argument (22)
+2026-05-11 09:41:16.257 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Now tracking process: [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]
+2026-05-11 09:41:16.258 Df runningboardd[11261:2c938d] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:16.258 Df runningboardd[11261:2c938d] [com.apple.runningboard:general] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] reported to RB as running
+2026-05-11 09:41:16.258 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:process] Hit the server for a process handle 1cdb651e000030d4 that resolved to: [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]
+2026-05-11 09:41:16.258 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.259 Df mediaremoted[11265:2c938f] [com.apple.runningboard:process] Hit the server for a process handle 1cdb651e000030d4 that resolved to: [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]
+2026-05-11 09:41:16.259 Df mediaremoted[11265:2c938f] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.259 Df locationd[11282:2c906c] [com.apple.runningboard:process] Hit the server for a process handle 1cdb651e000030d4 that resolved to: [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]
+2026-05-11 09:41:16.259 Df locationd[11282:2c906c] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.283 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-746 target:12500 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:16.283 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Assertion 11261-11267-746 (target:[xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]) will be created as active
+2026-05-11 09:41:16.283 Df runningboardd[11261:2c8666] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-active (role: UserInteractiveNonFocal) (endowments: (null))
+2026-05-11 09:41:16.283 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Resuming task.
+2026-05-11 09:41:16.283 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:16.284 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:16.284 Df locationd[11282:2c909c] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:16.289 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Result 45 setting darwin role to UserInteractiveNonFocal: Operation not supported, falling back to setting priority
+2026-05-11 09:41:16.289 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Set darwin priority to: PRIO_DEFAULT
+2026-05-11 09:41:16.289 E  runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Error 1 setting Carplay mode to 0: Operation not permitted
+2026-05-11 09:41:16.298 Df pkd[11357:2c945a] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] will be managed by runningboard
+2026-05-11 09:41:16.309 Df axassetsd[11267:2c943f] [com.apple.runningboard:process] Hit the server for a process handle 1cdb651e000030d4 that resolved to: [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]
+2026-05-11 09:41:16.321 Df pkd[11357:2c945a] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] Allowing host pid 11267 to use plugin [/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeechKonaSupport.framework/PlugIns/KonaSynthesizer.appex]
+2026-05-11 09:41:16.329 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Executing launch request for xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0} (Launching extension com.apple.ax.KonaTTSSupport.KonaSynthesizer(96D4F2E3-AA83-47D1-978C-1306C2A4D3C9) for host 11267) from requestor: [osservice<com.apple.pluginkit.pkd>:11357]
+2026-05-11 09:41:16.329 Df runningboardd[11261:2c8668] [com.apple.runningboard:job] Creating and launching job for: xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:16.329 Df runningboardd[11261:2c938d] [com.apple.runningboard:job_oversize] '(null)' Submitting extension overlay (host PID 11267, path /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeechKonaSupport.framework/PlugIns/KonaSynthesizer.appex/KonaSynthesizer):
+<dictionary: 0x60000342d620> { count = 3, transaction: 0, voucher = 0x0, contents =
+	"XPCService" => <dictionary: 0x60000342ee20> { count = 10, transaction: 0, voucher = 0x0, contents =
+		"_ManagedBy" => <string: 0x600001e6ddd0> { length = 22, contents = "com.apple.runningboard" }
+		"Platform" => <int64: 0xa4907a252ab17fd7>: 7
+		"RunLoopType" => <string: 0x600001e6e760> { length = 9, contents = "NSRunLoop" }
+		"_SandboxProfile" => <string: 0x600001e6ec70> { length = 8, contents = "keyboard" }
+		"_AdditionalSubServices" => <dictionary: 0x60000342f5a0> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"apple-extension-service" => <bool: 0x107409d80>: true
+		}
+		"_AdditionalProperties" => <dictionary: 0x60000342fd20> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"RunningBoard" => <dictionary: 0x60000342cfc0> { count = 2, transaction: 0, voucher = 0x0, contents =
+				"RunningBoardLaunchedIdentity" => <dictionary: 0x60000342f660> { count = 5, transaction: 0, voucher = 0x0, contents =
+					"TYPE" => <int64: 0xa4907a252ab17fcf>: 4
+					"h" => <int64: 0xa4907a252ab01ff7>: 11267
+					"i" => <string: 0x600001e6f990> { length = 43, contents = "com.apple.ax.KonaTTSSupport.KonaSynthesizer" }
+					"r" => <int64: 0xa4907a252ab17fff>: 2
+					"H" => <dictionary: 0x60000342ed00> { count = 4, transaction: 0, voucher = 0x0, contents =
+						"l" => <string: 0x600001e6f7e0> { length = 33, contents = "com.apple.accessibility.axassetsd" }
+						"t" => <int64: 0xa4907a252ab17fff>: 2
+						"TYPE" => <int64: 0xa4907a252ab17fdf>: 6
+						"p" => <int64: 0xa4907a252ab17fef>: 0
+					}
+				}
+				"RunningBoardLaunched" => <bool: 0x107409d80>: true
+			}
+		}
+		"EnvironmentVariables" => <dictionary: 0x60000342eb20> { count = 3, transaction: 0, voucher = 0x0, contents =
+			"TMPDIR" => <string: 0x600001e6e640> { length = 167, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/988FE50F-3D47-4281-9378-C20D20E95AFF/tmp" }
+			"HOME" => <string: 0x600001e6ce10> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/988FE50F-3D47-4281-9378-C20D20E95AFF" }
+			"CFFIXED_USER_HOME" => <string: 0x600001e6f720> { length = 163, contents = "/Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Containers/Data/PluginKitPlugin/988FE50F-3D47-4281-9378-C20D20E95AFF" }
+		}
+		"_OmitSandboxParameters" => <bool: 0x107409d80>: true
+		"ServiceType" => <string: 0x600001e6edc0> { length = 11, contents = "Application" }
+		"ProgramArguments" => <array: 0x600001e6f000> { count = 3, capacity = 8, contents =
+			0: <string: 0x600001e6e8b0> { length = 265, contents = "/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextToSpeechKonaSupport.framework/PlugIns/KonaSynthesizer.appex/KonaSynthesizer" }
+			1: <string: 0x600001e6e040> { length = 15, contents = "-AppleLanguages" }
+			2: <string: 0x600001e6ebb0> { length = 18, contents = "("ko-KR", "en-KR")" }
+		}
+	}
+	"RunningBoard" => <dictionary: 0x60000342c120> { count = 1, transaction: 0, voucher = 0x0, contents =
+		"Managed" => <bool: 0x107409d80>: true
+	}
+	"CFBundlePackageType" => <string: 0x600001e6e3a0> { length = 4, contents = "XPC!" }
+}
+2026-05-11 09:41:16.329 Df launchd_sim[11246:2c9469] [pid/11267/com.apple.ax.KonaTTSSupport.KonaSynthesizer:] draining messages from com.apple.ax.KonaTTSSupport.KonaSynthesizer.apple-extension-service
+2026-05-11 09:41:16.431 Df runningboardd[11261:2c938d] [com.apple.runningboard:connection] Setting client for [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] as ready
+2026-05-11 09:41:16.431 Df MauiAUSP[12499:2c94cc] [com.apple.runningboard:connection] Identity resolved as xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:16.433 Df MauiAUSP[12499:2c94b4] [com.apple.xpc:connection] [0x13a9041c0] activating connection: mach=true listener=true peer=false name=com.apple.ax.MauiTTSSupport.MauiAUSP.apple-extension-service
+2026-05-11 09:41:16.434 Df MauiAUSP[12499:2c94b4] [com.apple.xpc:connection] [0x13c1042c0] activating connection: mach=false listener=true peer=false name=com.apple.ax.MauiTTSSupport.MauiAUSP
+2026-05-11 09:41:16.437 Df MauiAUSP[12499:2c94cc] [com.apple.xpc:connection] [0x139504aa0] activating connection: mach=false listener=false peer=true name=com.apple.ax.MauiTTSSupport.MauiAUSP.peer[11267].0x139504aa0
+2026-05-11 09:41:16.438 Df MauiAUSP[12499:2c94ce] [com.apple.PlugInKit:lifecycle] [u A8A808DD-79F7-47BE-B888-80BE3BB5E5E3] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Set sole personality.
+2026-05-11 09:41:16.492 Df axassetsd[11267:2c945c] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Begin using sent as euid = 501, uid = 501, (persona not available)
+2026-05-11 09:41:16.494 Df MauiAUSP[12499:2c94cc] [com.apple.PlugInKit:lifecycle] [u A8A808DD-79F7-47BE-B888-80BE3BB5E5E3] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Begin using received as euid = 501, uid = 501, (persona not available)
+2026-05-11 09:41:16.505 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] plugin loaded and ready for host
+2026-05-11 09:41:16.505 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-747 target:12499 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown WantsForegroundResourcePriority )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:16.505 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] Assertion 11261-11267-747 (target:[xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]) will be created as active
+2026-05-11 09:41:16.526 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] invalidating startup assertion
+2026-05-11 09:41:16.527 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-744 (target:[xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:16.631 Df axassetsd[11267:2c9465] [com.apple.xpc:connection] [0x141d04880] activating connection: mach=false listener=false peer=false name=com.apple.ax.MauiTTSSupport.MauiAUSP.apple-extension-service
+2026-05-11 09:41:16.656 Df MauiAUSP[12499:2c94ce] [com.apple.xpc:connection] [0x13a806120] activating connection: mach=false listener=false peer=true name=com.apple.ax.MauiTTSSupport.MauiAUSP.apple-extension-service.peer[11267].0x13a806120
+2026-05-11 09:41:16.695 Df runningboardd[11261:2c81ba] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-745 (target:[xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:16.713 Df MauiAUSP[12499:2c94f4] [com.apple.extensionkit:NSExtension] discovered extensions: attributes {
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+}, extensionSet {(
+    <EXConcreteExtension: 0x6000007a8180> {id = com.apple.ax.MauiTTSSupport.MauiAUSP},
+    <EXConcreteExtension: 0x6000007ac000> {id = com.apple.speech.MacinTalkFramework.MacinTalkAUSP},
+    <EXConcreteExtension: 0x6000007ac0c0> {id = com.apple.ax.KonaTTSSupport.KonaSynthesizer},
+    <EXConcreteExtension: 0x6000007a80c0> {id = com.apple.texttospeech.SiriAUSP}
+)}
+2026-05-11 09:41:16.803 Df runningboardd[11261:2c938d] [com.apple.runningboard:assertion] Removed last relative-start-date-defining assertion for process xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:16.803 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Suspending task.
+2026-05-11 09:41:16.803 Df runningboardd[11261:2c8666] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:16.804 Df SpringBoard[11256:2c93af] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.804 Df mediaremoted[11265:2c938f] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.805 Df locationd[11282:2c8fba] [com.apple.runningboard:monitor] Received state update for 12496 (xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.810 E  runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] pid_suspend() failed with error 1: Operation not permitted
+2026-05-11 09:41:16.810 Df runningboardd[11261:2c938d] [com.apple.runningboard:process] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Result 45 setting darwin role to None: Operation not supported, falling back to setting priority
+2026-05-11 09:41:16.811 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] [xpcservice<com.apple.speech.MacinTalkFramework.MacinTalkAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12496] Set darwin priority to: PRIO_DARWIN_BG
+2026-05-11 09:41:16.815 Df runningboardd[11261:2c8668] [com.apple.runningboard:general] Full encoding handle [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501], with data e4a22848000030d5, and pid 12501
+2026-05-11 09:41:16.815 Df runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Memory Limits: active 0 inactive 0
+ <RBJetsamProperties| tasklimit=0
+(null)>
+2026-05-11 09:41:16.815 Df runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] This process will be managed.
+2026-05-11 09:41:16.815 E  runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Memorystatus failed with unexpected error: Operation not permitted (1)
+2026-05-11 09:41:16.815 Df runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] is not freezer eligible, disabling freezing.
+2026-05-11 09:41:16.816 E  runningboardd[11261:2c8668] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Memorystatus failed with unexpected error: Invalid argument (22)
+2026-05-11 09:41:16.816 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Now tracking process: [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]
+2026-05-11 09:41:16.816 Df runningboardd[11261:2c81ba] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:16.817 Df runningboardd[11261:2c8668] [com.apple.runningboard:general] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] reported to RB as running
+2026-05-11 09:41:16.817 Df SpringBoard[11256:2c93af] [com.apple.runningboard:process] Hit the server for a process handle 4a22848000030d5 that resolved to: [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]
+2026-05-11 09:41:16.817 Df SpringBoard[11256:2c93af] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.820 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:process] Hit the server for a process handle 4a22848000030d5 that resolved to: [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]
+2026-05-11 09:41:16.820 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.820 Df locationd[11282:2c8511] [com.apple.runningboard:process] Hit the server for a process handle 4a22848000030d5 that resolved to: [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]
+2026-05-11 09:41:16.821 Df locationd[11282:2c8511] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:16.821 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":12501, "bundleID":com.apple.ax.KonaTTSSupport.KonaSynthesizer, "state":3}
+2026-05-11 09:41:16.821 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundTaskSuspended, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:16.821 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.ax.KonaTTSSupport.KonaSynthesizer:}
+2026-05-11 09:41:16.821 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11267;
+    SBApplicationStateDisplayIDKey = "com.apple.ax.KonaTTSSupport.KonaSynthesizer";
+    SBApplicationStateKey = 2;
+    SBApplicationStateProcessIDKey = 12501;
+    SBMostElevatedStateForProcessID = 2;
+}}
+2026-05-11 09:41:16.821 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundTaskSuspended, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:16.821 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":2, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer, "ClientKey":icom.apple.ax.KonaTTSSupport.KonaSynthesizer:}
+2026-05-11 09:41:16.822 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:16.834 Df axassetsd[11267:2c9463] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] got pid from ready request: 12501
+2026-05-11 09:41:16.836 Df runningboardd[11261:2c81ba] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-748 target:12501 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:16.836 Df runningboardd[11261:2c81ba] [com.apple.runningboard:ttl] Assertion 11261-11267-748 (target:[xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]) will be created as active
+2026-05-11 09:41:16.836 Df runningboardd[11261:2c938d] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-active (role: UserInteractiveNonFocal) (endowments: (null))
+2026-05-11 09:41:16.836 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Resuming task.
+2026-05-11 09:41:16.836 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:16.837 Df mediaremoted[11265:2c938f] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:16.837 Df locationd[11282:2c8fba] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-active-NotVisible
+2026-05-11 09:41:16.837 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":12501, "bundleID":com.apple.ax.KonaTTSSupport.KonaSynthesizer, "state":4}
+2026-05-11 09:41:16.837 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundRunning, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:16.837 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.ax.KonaTTSSupport.KonaSynthesizer:}
+2026-05-11 09:41:16.837 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11267;
+    SBApplicationStateDisplayIDKey = "com.apple.ax.KonaTTSSupport.KonaSynthesizer";
+    SBApplicationStateKey = 4;
+    SBApplicationStateProcessIDKey = 12501;
+    SBApplicationStateRunningReasonsKey =     (
+                {
+            SBApplicationStateRunningReasonAssertionIdentifierKey = "com.apple.extension.session";
+            SBApplicationStateRunningReasonAssertionReasonKey = 13;
+        }
+    );
+    SBMostElevatedStateForProcessID = 4;
+}}
+2026-05-11 09:41:16.838 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundRunning, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:16.838 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":3, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer, "ClientKey":icom.apple.ax.KonaTTSSupport.KonaSynthesizer:}
+2026-05-11 09:41:16.838 Df locationd[11282:2c909c] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:16.840 Df runningboardd[11261:2c8666] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Result 45 setting darwin role to UserInteractiveNonFocal: Operation not supported, falling back to setting priority
+2026-05-11 09:41:16.840 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Set darwin priority to: PRIO_DEFAULT
+2026-05-11 09:41:16.840 E  runningboardd[11261:2c8666] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Error 1 setting Carplay mode to 0: Operation not permitted
+2026-05-11 09:41:16.840 Df axassetsd[11267:2c9463] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] acquired startup assertion
+2026-05-11 09:41:16.861 Df runningboardd[11261:2c8668] [com.apple.runningboard:connection] Setting client for [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] as ready
+2026-05-11 09:41:16.861 Df SiriAUSP[12500:2c94f7] [com.apple.runningboard:connection] Identity resolved as xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:16.875 Df axassetsd[11267:2c9463] [com.apple.runningboard:process] Hit the server for a process handle 4a22848000030d5 that resolved to: [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]
+2026-05-11 09:41:16.875 Df axassetsd[11267:2c9463] [com.apple.xpc:connection] [0x142a09110] activating connection: mach=false listener=false peer=false name=com.apple.ax.KonaTTSSupport.KonaSynthesizer
+2026-05-11 09:41:16.884 Df axassetsd[11267:2c9463] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] Prepare using sent as euid = 501, uid = 501, (persona not available)
+2026-05-11 09:41:16.884 Df axassetsd[11267:2c9463] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] Sending prepareUsing to managed extension; this should launch it if not already running.
+2026-05-11 09:41:16.887 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-749 target:12500 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown WantsForegroundResourcePriority )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:16.887 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Assertion 11261-11267-749 (target:[xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]) will be created as active
+2026-05-11 09:41:16.899 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-746 (target:[xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:17.015 Df axassetsd[11267:2c943f] [com.apple.extensionkit:NSExtension] tearing down extension request ED2EE357-0E2F-4E5D-8D89-2E6F85251DE8 to extension <EXConcreteExtension: 0x600001734000> {id = com.apple.ax.MauiTTSSupport.MauiAUSP} (last known pid 12499)
+2026-05-11 09:41:17.016 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] all extension sessions ended
+2026-05-11 09:41:17.016 Df MauiAUSP[12499:2c94cc] [com.apple.PlugInKit:lifecycle] [u A8A808DD-79F7-47BE-B888-80BE3BB5E5E3] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Removed sole personality.
+2026-05-11 09:41:17.023 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-747 (target:[xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:17.024 Df MauiAUSP[12499:2c94f2] [com.apple.PlugInKit:xpc] [u A8A808DD-79F7-47BE-B888-80BE3BB5E5E3] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] host connection from pid 11267 invalidated
+2026-05-11 09:41:17.024 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 87BF6A3F-3F5D-4D21-A807-9CF707659007:m (null)] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] Emptying requests set
+2026-05-11 09:41:17.056 Df SiriAUSP[12500:2c9502] [com.apple.extensionkit:NSExtension] discovered extensions: attributes {
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+}, extensionSet {(
+    <EXConcreteExtension: 0x6000015b8000> {id = com.apple.ax.MauiTTSSupport.MauiAUSP},
+    <EXConcreteExtension: 0x6000015b0000> {id = com.apple.speech.MacinTalkFramework.MacinTalkAUSP},
+    <EXConcreteExtension: 0x6000015a8000> {id = com.apple.ax.KonaTTSSupport.KonaSynthesizer},
+    <EXConcreteExtension: 0x6000015a80c0> {id = com.apple.texttospeech.SiriAUSP}
+)}
+2026-05-11 09:41:17.133 Df runningboardd[11261:2c81ba] [com.apple.runningboard:assertion] Removed last relative-start-date-defining assertion for process xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:17.134 Df runningboardd[11261:2c81ba] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:17.134 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Suspending task.
+2026-05-11 09:41:17.134 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:17.140 Df locationd[11282:2c9398] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:17.140 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":12499, "bundleID":com.apple.ax.MauiTTSSupport.MauiAUSP, "state":3}
+2026-05-11 09:41:17.140 Df locationd[11282:2c906c] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundTaskSuspended, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:17.140 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.ax.MauiTTSSupport.MauiAUSP:}
+2026-05-11 09:41:17.140 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11267;
+    SBApplicationStateDisplayIDKey = "com.apple.ax.MauiTTSSupport.MauiAUSP";
+    SBApplicationStateKey = 2;
+    SBApplicationStateProcessIDKey = 12499;
+    SBMostElevatedStateForProcessID = 2;
+}}
+2026-05-11 09:41:17.140 Df locationd[11282:2c8511] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundTaskSuspended, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:17.140 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:monitor] Received state update for 12499 (xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:17.141 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":2, "pid":12499, "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP, "ClientKey":icom.apple.ax.MauiTTSSupport.MauiAUSP:}
+2026-05-11 09:41:17.141 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.ax.MauiTTSSupport.MauiAUSP}
+2026-05-11 09:41:17.141 E  runningboardd[11261:2c8666] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] pid_suspend() failed with error 1: Operation not permitted
+2026-05-11 09:41:17.141 Df runningboardd[11261:2c8666] [com.apple.runningboard:process] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Result 45 setting darwin role to None: Operation not supported, falling back to setting priority
+2026-05-11 09:41:17.141 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.MauiTTSSupport.MauiAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12499] Set darwin priority to: PRIO_DARWIN_BG
+2026-05-11 09:41:17.428 Df runningboardd[11261:2c8666] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-749 (target:[xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:17.537 Df runningboardd[11261:2c81ba] [com.apple.runningboard:assertion] Removed last relative-start-date-defining assertion for process xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:17.537 Df runningboardd[11261:2c8668] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:17.537 Df runningboardd[11261:2c81ba] [com.apple.runningboard:ttl] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Suspending task.
+2026-05-11 09:41:17.537 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:17.539 Df mediaremoted[11265:2c938f] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:17.539 Df locationd[11282:2c9398] [com.apple.runningboard:monitor] Received state update for 12500 (xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:17.542 E  runningboardd[11261:2c81ba] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] pid_suspend() failed with error 1: Operation not permitted
+2026-05-11 09:41:17.542 Df runningboardd[11261:2c81ba] [com.apple.runningboard:process] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Result 45 setting darwin role to None: Operation not supported, falling back to setting priority
+2026-05-11 09:41:17.542 Df runningboardd[11261:2c81ba] [com.apple.runningboard:ttl] [xpcservice<com.apple.texttospeech.SiriAUSP([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12500] Set darwin priority to: PRIO_DARWIN_BG
+2026-05-11 09:41:18.748 E  amsengagementd[11460:2c91ee] [com.apple.network:connection] nw_connection_add_timestamp_locked_on_nw_queue [C19] Hit maximum timestamp count, will start dropping events
+2026-05-11 09:41:19.093 Df amsengagementd[11460:2c9527] [com.apple.AppleMediaServices:url-loading] AMSURLRequestEncoder: [0FB72A04] Encoding request for URL: https://apps.mzstatic.com/content/ma_CjNSFxCiQ5CpKCfl8AXfeA/ko-kr.json { 
+	account = <ACAccount: 0x6000008897a0 type = iTunesStore | backingID = EA89A8CC-1B40-4C37-9A4A-16460418AEE5 | username = local | storefront = H:506d58a582> 
+	mediaType = com.apple.AppleMediaServices.accountmediatype.production 
+}
+2026-05-11 09:41:19.102 Df amsengagementd[11460:2c9526] [com.apple.AppleMediaServices:general] AMSAbsinthe: [0FB72A04] Determining signing data for request <AMSURLRequest: 0x6000031a1be0> { URL: https://apps.mzstatic.com/content/ma_CjNSFxCiQ5CpKCfl8AXfeA/ko-kr.json }
+2026-05-11 09:41:19.105 Df amsengagementd[11460:2c9526] [com.apple.AppleMediaServices:url-loading] amsengagementd.AppURLSession: [0FB72A04] Preparing request: <AMSURLRequest: 0x6000031ff4c0> { URL: https://apps.mzstatic.com/content/ma_CjNSFxCiQ5CpKCfl8AXfeA/ko-kr.json }
+2026-05-11 09:41:19.152 E  amsengagementd[11460:2c9341] [com.apple.network:connection] nw_connection_add_timestamp_locked_on_nw_queue [C12] Hit maximum timestamp count, will start dropping events
+2026-05-11 09:41:19.158 Df amsengagementd[11460:2c9526] [com.apple.AppleMediaServices:url-loading] amsengagementd.AppURLSession: [0FB72A04] Task finished loading for URL request <AMSURLRequest: 0x6000031feae0> { URL: https://apps.mzstatic.com/content/ma_CjNSFxCiQ5CpKCfl8AXfeA/ko-kr.json }
+2026-05-11 09:41:19.397 Df amsengagementd[11460:2c91f2] [com.apple.amsengagementd:engagement-js-interface] JSContent: [8F206776_1] Failed to locate content: (cacheKey: https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw, version: 1)
+2026-05-11 09:41:19.398 Df amsengagementd[11460:2c91f2] [com.apple.amsengagementd:engagement-js-interface] JSContent: [8F206776_1] Failed to locate content: (cacheKey: https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw, version: (null))
+2026-05-11 09:41:19.977 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Finishing: Status=1 Task:AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:19.977 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Executing synchronously and blocking group: AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:19.977 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Completed: AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger, executing post-task action
+2026-05-11 09:41:19.977 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::CleanUp: AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:19.978 Df axassetsd[11267:2c9409] [com.apple.Accessibility:AXAssetDaemon] SmpTskMgr::Running: AXUpdateSiriResourcesSimpleTask<0x600002236aa0> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger
+2026-05-11 09:41:19.978 Df axassetsd[11267:2c9468] [com.apple.Accessibility:AXAssetDaemon] AXATM: Removed active reason: 'AXUpdateSiriResourcesSimpleTask<0x60000223e580> ID=AXUpdateSiriResourcesSimpleTask Group=(null) Trigger=AXSimpleAssetTaskTrigger'. Reason count=4
+2026-05-11 09:41:20.039 Df itunescloudd[11412:2c8f4f] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C2.1.1.1:2][0x14030b250] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:20.110 Df SpringBoard[11256:2c93af] [com.apple.Accessibility:AXAssetLoader] AXAssetsService being deallocated: <AXAssetsService: 0x6000017f4600>
+2026-05-11 09:41:20.293 Df scrod[12516:2c9570] [com.apple.xpc:connection] [0x600001e28e10] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-05-11 09:41:20.306 Df scrod[12516:2c9586] [com.apple.Accessibility:AXBrailleHW] Handled lock: <MSCRODBrailleDisplayManager: 0x14d0046d0> 13
+2026-05-11 09:41:20.311 Df scrod[12516:2c9586] (libMobileGestalt.dylib) No persisted cache on this platform.
+2026-05-11 09:41:20.313 Df scrod[12516:2c9586] [com.apple.Accessibility:AXIPC] Setting client identifier com.apple.accessibility.AXSystemReplyServer-12516-0
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:AXBrailleHW] System server lock state: 0, passcode state: 0
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Updating system ui lock status: 0, screen blank status: 0, system lock: 0
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Initialized: 0, should disconnected 0, is disconnected: 0
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Braille Device: Waking
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:AXBrailleHW] Registered lock state: <MSCRODBrailleDisplayManager: 0x14d0046d0> 13
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:AXBrailleHW] Handled screen wake: <MSCRODBrailleDisplayManager: 0x14d0046d0> 25
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:AXBrailleHW] System server lock state: 0, passcode state: 0
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Updating system ui lock status: 0, screen blank status: 0, system lock: 0
+2026-05-11 09:41:20.319 Df scrod[12516:2c9586] [com.apple.Accessibility:AXBrailleHW] Registered blank screen state: <MSCRODBrailleDisplayManager: 0x14d0046d0> 25
+2026-05-11 09:41:20.320 A  scrod[12516:2c9589] (CoreFoundation) Updating Key-Value Observers Of Preferences
+2026-05-11 09:41:20.321 Df scrod[12516:2c9570] [com.apple.bluetooth:BluetoothManager] Attaching to bluetooth daemon
+2026-05-11 09:41:20.321 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Created a virtual display with main size: 1
+2026-05-11 09:41:20.322 Df scrod[12516:2c958c] [com.apple.Accessibility:ScreenReaderOutput] Load driver <SCROBrailleStealthDriver: 0x600002f00210> with element: (null) : result: 1
+2026-05-11 09:41:20.322 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Virtual display with 1 main cells loaded. Token: 0
+2026-05-11 09:41:20.322 Df scrod[12516:2c958d] [com.apple.Accessibility:ScreenReaderOutput] Load driver <SCROVirtualBrailleDriver: 0x600002f004e0> with element: <SCROVirtualIOElement: 0x600002334140> : result: 1
+2026-05-11 09:41:20.325 E  scrod[12516:2c9570] [com.apple.bluetooth:BluetoothManager] failed to attach with error 9
+2026-05-11 09:41:20.325 Df scrod[12516:2c9570] [com.apple.bluetooth:BluetoothManager] BluetoothManager cleanup called with detach 1
+2026-05-11 09:41:20.325 Df scrod[12516:2c9570] [com.apple.Accessibility:ScreenReaderOutput] Starting auto detect
+2026-05-11 09:41:20.325 Df scrod[12516:2c958d] [com.apple.Accessibility:ScreenReaderOutput] Driver did load: 1 <SCROVirtualBrailleDisplay: 0x14d305e80>
+2026-05-11 09:41:20.325 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Display loaded: com.apple.scrod.braille.driver.generic.hid
+2026-05-11 09:41:20.325 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Current display state: 4
+2026-05-11 09:41:20.325 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Set state: 1 for display <SCROVirtualBrailleDisplay: 0x14d305e80>
+2026-05-11 09:41:20.326 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Braille display loaded: will notify: 0, will save: 0
+2026-05-11 09:41:20.326 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] active: (
+    "<SCROVirtualBrailleDisplay: 0x14d305e80>"
+) pending (null)
+2026-05-11 09:41:20.326 Df scrod[12516:2c958c] [com.apple.Accessibility:ScreenReaderOutput] Driver did load: 1 <SCROStealthBrailleDisplay: 0x600001d34f00>
+2026-05-11 09:41:20.326 Df scrod[12516:2c9570] [com.apple.Accessibility:ScreenReaderOutput] -[SCROBrailleHandler configurationDidChange]: _callbacks.configChanged == 0
+2026-05-11 09:41:20.327 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Display loaded: com.apple.scrod.braille.driver.stealth
+2026-05-11 09:41:20.327 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Current display state: 4
+2026-05-11 09:41:20.327 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] Braille display loaded: will notify: 0, will save: 0
+2026-05-11 09:41:20.327 Df scrod[12516:2c9586] [com.apple.Accessibility:ScreenReaderOutput] active: (
+    "<SCROVirtualBrailleDisplay: 0x14d305e80>"
+) pending (null)
+2026-05-11 09:41:20.328 Df itunescloudd[11412:2c9575] [com.apple.amp.iTunesCloud:Default] <ICMusicSubscriptionStatusRequestOperation: 0x13560b840>: Created child operation queue: <NSOperationQueue: 0x135718010; name = "com.apple.iTunesCloud.ICAsyncOperation.childOperationQueue-E2536C46-E57C-4E2A-8344-A9BC2FC988C2"; maxConcurrentOperationCount = 3; qualityOfService = userInitiated>.
+2026-05-11 09:41:20.363 Df itunescloudd[11412:2c958e] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C3.1.1.1:2][0x135619fe0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.097 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C51.1.1.1:2][0x137f0bf20] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.104 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C54:1][0x137f158c0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.106 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C55:1][0x137f197c0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.130 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a0] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C57:1][0x136e27220] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.139 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a0] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C59:1][0x136f07030] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.157 Df trustd[12272:2c8778] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C3.1.1.1:2][0x12d90a8c0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.206 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a0] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C52.1.2.1:2][0x137f107e0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.210 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C53.1.2.1:2][0x136f15c00] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.213 Df trustd[12272:2c87db] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C4.1.1:2][0x12d716540] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.215 Df trustd[12272:2c87db] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C5.1.1:2][0x12d80d810] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.217 Df trustd[12272:2c87db] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C6.1.1:2][0x12d90c550] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.244 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C56.1.2.1:2][0x137f1fdf0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.249 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C52.1.1.1:2] [-7936149cc04ef2ea23138db1829e57ba60] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.265 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C58.1.2.1:2][0x136e316c0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.275 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C53.1.1.1:2] [-799eae85ba65d90ef8a233ae91a3609ad9] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.279 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C56.1.1.1:2] [-7970592e5b6108e5593952c05c3c17d8ae] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.281 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C58.1.1.1:2] [-7928e59fb27cc5f2213f7eb66d4c8310a9] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.302 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C61:1][0x136f15ff0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.317 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c903f] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C65:1][0x13b016d40] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.322 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c903f] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C66:1][0x137f19030] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.324 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c903f] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C67:1][0x137f204b0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.330 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C60.1.1.1:2] [-795ca301628ed61cb85d0aa7bd07ffe36b] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.340 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C62.1.1.1:2] [-79cd034344aef30409c2b76ee75d75924f] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.355 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C63.1.1.1:2] [-79532b0bc0d29d11351297811691a9d92c] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.360 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C64.1.1.1:2] [-794e5b3b2014b0677b48d8138775930c52] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.374 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C70:1][0x136e1fd00] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.379 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C71:1][0x136e27620] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.390 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C74:1][0x136e2db80] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.398 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C75:1][0x13b0156d0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.406 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C68.1.1.1:2] [-792ad4e73b973e2848e91dc184615bbc7a] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.418 Df scrod[12516:2c9570] [com.apple.Accessibility:AXBrailleHW] Processing wake from sleep to auto detect
+2026-05-11 09:41:21.418 Df scrod[12516:2c9570] [com.apple.Accessibility:ScreenReaderOutput] Starting auto detect
+2026-05-11 09:41:21.418 Df scrod[12516:2c9570] [com.apple.Accessibility:AXBrailleHW] Handing power change: (null)
+2026-05-11 09:41:21.418 Df scrod[12516:2c9570] [com.apple.bluetooth:BluetoothManager] Attaching to bluetooth daemon
+2026-05-11 09:41:21.418 E  scrod[12516:2c9570] [com.apple.bluetooth:BluetoothManager] failed to attach with error 9
+2026-05-11 09:41:21.418 Df scrod[12516:2c9570] [com.apple.bluetooth:BluetoothManager] BluetoothManager cleanup called with detach 1
+2026-05-11 09:41:21.422 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C69.1.1.1:2] [-79570007370d37a700737cb15e47d0a5ef] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.429 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C72.1.1.1:2] [-798d3f7b3d41c4afc60c566ff46e804759] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.435 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C77:1][0x136f1a200] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.453 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C73.1.1.1:2] [-791c2caf2f84b542f8e4843b03bd0a58b9] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.463 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C80:1][0x136f07030] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.469 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C81:1][0x13b013470] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.475 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C83:1][0x137f19530] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.481 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c903f] [com.apple.network:quic] quic_pmtud_restart [C76.1.1.1:2] [-7965a8c0dc52d60382591a99330492eb0e] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.490 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c903f] [com.apple.CFNetwork:Default] Task <E9CF2FF7-94A4-44EA-A3B7-353FCB05EBE9>.<15> RetryReason::Deny_MaxRetriesReached fNumConnectionLossRetries=0, fNumRetries=2
+2026-05-11 09:41:21.517 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C78.1.1.1:2] [-795f687e013705003d34ec8a3cd18c7a6d] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.523 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.CFNetwork:Default] Task <6FCAB630-DFDC-44A3-B1AB-69A7A8CFA4F4>.<16> RetryReason::Deny_MaxRetriesReached fNumConnectionLossRetries=0, fNumRetries=2
+2026-05-11 09:41:21.531 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C79.1.1.1:2] [-7961f3ba8bfa6f2a7fc3472f36009e926e] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.542 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.CFNetwork:Default] Task <0D8716B9-2892-4007-AD0F-C804DB44525E>.<19> RetryReason::Deny_MaxRetriesReached fNumConnectionLossRetries=0, fNumRetries=2
+2026-05-11 09:41:21.543 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C82.1.1.1:2] [-79faebbbcfad98745d382e95643593c23a] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.553 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.CFNetwork:Default] Task <D320EA65-5E7F-40DD-B1A4-70EA15B12144>.<20> RetryReason::Deny_MaxRetriesReached fNumConnectionLossRetries=0, fNumRetries=2
+2026-05-11 09:41:21.612 E  794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a2] [com.apple.network:connection] nw_connection_add_timestamp_locked_on_nw_queue [C51] Hit maximum timestamp count, will start dropping events
+2026-05-11 09:41:21.725 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a0] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C85:1][0x13b017400] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.743 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C84.1.1.1:2] [-79f811f7355cf7e7389bff61b90b5e2507] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.755 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a2] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C87:1][0x13b016420] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.773 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:quic] quic_pmtud_restart [C86.1.1.1:2] [-799c00892ff70860035c9bb9fbab468b86] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.783 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a3] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C89:1][0x136e0fdf0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.802 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C88.1.1.1:2] [-7980a520bdcfea7fe8db4e854f9a646bcf] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.813 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C91:1][0x136e1e050] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:21.827 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.network:quic] quic_pmtud_restart [C90.1.1.1:2] [-79834bb302262d8322cd58c4fa86ceace7] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:21.831 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c8ee7] [com.apple.CFNetwork:Default] Task <354EA866-7E76-4656-A457-D070E1D0B5FE>.<35> RetryReason::Deny_MaxRetriesReached fNumConnectionLossRetries=0, fNumRetries=2
+2026-05-11 09:41:21.846 Df runningboardd[11261:2c81ba] [com.apple.runningboard:connection] Setting client for [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] as ready
+2026-05-11 09:41:21.940 Df axassetsd[11267:2c9468] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] Begin using sent as euid = 501, uid = 501, (persona not available)
+2026-05-11 09:41:21.965 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] plugin loaded and ready for host
+2026-05-11 09:41:21.998 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] from originator [osservice<com.apple.accessibility.axassetsd>:11267] with description <RBSAssertionDescriptor| "com.apple.extension.session" ID:11261-11267-752 target:12501 attributes:[
+	<RBSLegacyAttribute| requestedReason:ViewService reason:ViewService flags:( AllowIdleSleep PreventTaskSuspend PreventTaskThrottleDown WantsForegroundResourcePriority )>,
+	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
+	]>
+2026-05-11 09:41:21.998 Df runningboardd[11261:2c938d] [com.apple.runningboard:ttl] Assertion 11261-11267-752 (target:[xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]) will be created as active
+2026-05-11 09:41:22.130 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a2] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C92.1.1.1:2][0x136e0ffa0] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:22.191 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] invalidating startup assertion
+2026-05-11 09:41:22.193 Df axassetsd[11267:2c943f] [com.apple.xpc:connection] [0x142a16100] activating connection: mach=false listener=false peer=false name=com.apple.ax.KonaTTSSupport.KonaSynthesizer.apple-extension-service
+2026-05-11 09:41:22.202 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-748 (target:[xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:22.568 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a2] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C94:1][0x137e10e70] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:22.586 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:quic] quic_pmtud_restart [C93.1.1.1:2] [-79cb55da3a0095284ab6066cb5f66c856e] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:22.598 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a2] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C96:1][0x13b015dd0] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:22.613 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:quic] quic_pmtud_restart [C95.1.1.1:2] [-790d8ed9a8b0392279446f797fda64b779] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:22.624 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c92a1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C98:1][0x137f25460] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:22.645 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c903f] [com.apple.network:quic] quic_pmtud_restart [C97.1.1.1:2] [-799aeb33a94bc3de357f51baf471e4dd74] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:22.658 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c903f] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C100:1][0x13b01c830] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:22.675 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a2] [com.apple.network:quic] quic_pmtud_restart [C99.1.1.1:2] [-798f089e49f9380221ab07f17fdcb5a09a] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228
+2026-05-11 09:41:22.682 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a2] [com.apple.CFNetwork:Default] Task <D320EA65-5E7F-40DD-B1A4-70EA15B12144>.<20> RetryReason::Deny_MaxRetriesReached fNumConnectionLossRetries=0, fNumRetries=2
+2026-05-11 09:41:23.287 Df scrod[12516:2c9570] [com.apple.Accessibility:ScreenReaderOutput] Posting server timeout
+2026-05-11 09:41:23.287 Df scrod[12516:2c9570] [com.apple.Accessibility:AXBrailleHW] Stopping scrod
+2026-05-11 09:41:23.395 Df amsengagementd[11460:2c91f2] [com.apple.amsengagementd:engagement-js-interface] JSContent: [8F206776_1] Failed to locate content: (cacheKey: https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw, version: 1)
+2026-05-11 09:41:23.395 Df amsengagementd[11460:2c91f2] [com.apple.amsengagementd:engagement-js-interface] JSContent: [8F206776_1] Performing Batch Download request with cacheRequests: [amsengagementd.JSContent.CacheRequest(cacheKey: "https://images-mercury.mzstatic.com/image/thumb/L557Mks0oGQnr1sl3LNd-Q", version: "1", request: amsengagementd.JSContent.Request(url: https://images-mercury.mzstatic.com/image/thumb/L557Mks0oGQnr1sl3LNd-Q/1680x3636.heic, headers: ["User-Agent": "com.apple.amsengagementd/1.0 iOS/18.4 model/iPhone17,3 hwp/t8103 build/22E238 (6) AMS/1"], method: amsengagementd.JSContent.Request.Method.get, body: nil), options: amsengagementd.JSContent.Options(onTimeout: true, requiresPluggedIn: false, requiresInexpensiveNetwork: false)), amsengagementd.JSContent.CacheRequest(cacheKey: "https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw", version: "1", request: amsengagementd.JSContent.Request(url: https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw/1680x3636.heic, headers: ["User-Agent": "com.apple.amsengagementd/1.0 iOS/18.4 model/iPhone17,3 hwp/t8103 bui<…>
+2026-05-11 09:41:23.406 Df amsengagementd[11460:2c91f2] [com.apple.amsengagementd:content-downloading] ContentManager: [52B4ED73] Received download request. (
+	 batchKey: marketing:89fb94a9-4972-45c1-ba3f-0130357c6452, 
+	key: https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw, 
+	version: 1, 
+	url: [private]
+)
+2026-05-11 09:41:23.406 Df amsengagementd[11460:2c91f2] [com.apple.amsengagementd:content-downloading] NetworkObserver: [52B4ED73] Starting download: https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw/1680x3636.heic
+2026-05-11 09:41:23.438 Df amsengagementd[11460:2c91ee] [com.apple.amsengagementd:content-downloading] ContentManager.Type: [0A999C7E] Download finished! https://images-mercury.mzstatic.com/image/thumb/w1JzbcBFfhOKoaX4L4S5Sw 1
+2026-05-11 09:41:24.426 Df axassetsd[11267:2c943f] [com.apple.extensionkit:NSExtension] tearing down extension request D4C3BA64-C19B-4C0E-B4F2-BFD94E53109B to extension <EXConcreteExtension: 0x60000173c000> {id = com.apple.ax.KonaTTSSupport.KonaSynthesizer} (last known pid 12501)
+2026-05-11 09:41:24.426 Df axassetsd[11267:2c943f] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] all extension sessions ended
+2026-05-11 09:41:24.495 Df axassetsd[11267:2c9465] [com.apple.PlugInKit:lifecycle] [u 96D4F2E3-AA83-47D1-978C-1306C2A4D3C9:m (null)] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] Emptying requests set
+2026-05-11 09:41:24.608 Df runningboardd[11261:2c8668] [com.apple.runningboard:ttl] Invalidating assertion 11261-11267-752 (target:[xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501]) from originator [osservice<com.apple.accessibility.axassetsd>:11267]
+2026-05-11 09:41:25.061 Df runningboardd[11261:2c92dc] [com.apple.runningboard:assertion] Removed last relative-start-date-defining assertion for process xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}
+2026-05-11 09:41:25.076 Df runningboardd[11261:2c92dc] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:41:25.076 Df SpringBoard[11256:2c8ee0] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:25.076 Df runningboardd[11261:2c92dc] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Suspending task.
+2026-05-11 09:41:25.077 Df locationd[11282:2c8fba] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:25.078 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":12501, "bundleID":com.apple.ax.KonaTTSSupport.KonaSynthesizer, "state":3}
+2026-05-11 09:41:25.078 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundTaskSuspended, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:25.078 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.ax.KonaTTSSupport.KonaSynthesizer:}
+2026-05-11 09:41:25.078 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11267;
+    SBApplicationStateDisplayIDKey = "com.apple.ax.KonaTTSSupport.KonaSynthesizer";
+    SBApplicationStateKey = 2;
+    SBApplicationStateProcessIDKey = 12501;
+    SBMostElevatedStateForProcessID = 2;
+}}
+2026-05-11 09:41:25.078 Df locationd[11282:2c8fba] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundTaskSuspended, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:25.079 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":2, "pid":12501, "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer, "ClientKey":icom.apple.ax.KonaTTSSupport.KonaSynthesizer:}
+2026-05-11 09:41:25.079 Df locationd[11282:2c9398] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.ax.KonaTTSSupport.KonaSynthesizer}
+2026-05-11 09:41:25.243 Df mediaremoted[11265:2c8b89] [com.apple.runningboard:monitor] Received state update for 12501 (xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}, running-suspended-NotVisible
+2026-05-11 09:41:25.245 E  runningboardd[11261:2c92dc] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] pid_suspend() failed with error 1: Operation not permitted
+2026-05-11 09:41:25.249 Df runningboardd[11261:2c92dc] [com.apple.runningboard:process] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Result 45 setting darwin role to None: Operation not supported, falling back to setting priority
+2026-05-11 09:41:25.249 Df runningboardd[11261:2c92dc] [com.apple.runningboard:ttl] [xpcservice<com.apple.ax.KonaTTSSupport.KonaSynthesizer([osservice<com.apple.accessibility.axassetsd>:11267])>{vt hash: 0}:12501] Set darwin priority to: PRIO_DARWIN_BG
+2026-05-11 09:41:26.170 Df 794D2449-39A1-3EA3-B620-7D6A9F6334AF[11314:2c95a3] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C101.1.1.1:2][0x137f0ec10] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:26.225 Df amsengagementd[11460:2c8ff6] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C20.1.1.1:2][0x15451c810] TLS configured [min_version(0x0301) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:26.312 E  amsengagementd[11460:2c90e1] [com.apple.AppleMediaServices:url-loading] AMSURLSession: [07F7429D_0] Exceeded max retry count
+2026-05-11 09:41:26.564 Df log[12537:0] [com.apple.log:] log run noninteractively, parent: 11246 (launchd_sim), args: 'log' 'show' '--last' '45s' '--style' 'compact' '--predicate' 'process == "scrod" OR process == "AccessibilityUIServer" OR process == "MobileSafari" OR eventMessage CONTAINS[c] "VoiceOver" OR ev
+2026-05-11 09:41:26.656 Df amsengagementd[11460:2c90e1] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2170) [C22:1][0x153d24e00] TLS configured [min_version(0x0304) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false)]
+2026-05-11 09:41:26.757 Df amsengagementd[11460:2c9527] [com.apple.network:quic] quic_pmtud_restart [C21.1.1.1:2] [-026e6a4d2c80432c] PMTUD enabled, max PMTU: 1500, header size: 28, current PMTU 1228

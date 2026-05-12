@@ -1,0 +1,7 @@
+check-crux-field-data	Fail when field data is unavailable	﻿2026-05-11T06:16:10.4894781Z ##[group]Run echo "Chrome UX Report field data is not available yet. Check the uploaded chrome-ux-report-monitoring artifact."
+check-crux-field-data	Fail when field data is unavailable	2026-05-11T06:16:10.4895639Z [36;1mecho "Chrome UX Report field data is not available yet. Check the uploaded chrome-ux-report-monitoring artifact."[0m
+check-crux-field-data	Fail when field data is unavailable	2026-05-11T06:16:10.4896234Z [36;1mexit 1[0m
+check-crux-field-data	Fail when field data is unavailable	2026-05-11T06:16:10.4909937Z shell: /usr/bin/bash -e {0}
+check-crux-field-data	Fail when field data is unavailable	2026-05-11T06:16:10.4910336Z ##[endgroup]
+check-crux-field-data	Fail when field data is unavailable	2026-05-11T06:16:10.4944568Z Chrome UX Report field data is not available yet. Check the uploaded chrome-ux-report-monitoring artifact.
+check-crux-field-data	Fail when field data is unavailable	2026-05-11T06:16:10.4946993Z ##[error]Process completed with exit code 1.

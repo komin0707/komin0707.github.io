@@ -1,0 +1,21 @@
+{
+  "artifactPath": "artifacts/manual-evidence/system-safari-macos-verification.json",
+  "browserName": "Safari",
+  "checkedAt": "2026-05-12T04:33:32Z",
+  "evidenceMethod": "Computer Use accessibility tree plus macOS screencapture against local Vite preview",
+  "label": "Safari macOS",
+  "observedAccessibility": {
+    "documentTitle": "Vent Simulator 2D",
+    "patientAvatarAccessibleName": "상태 기반 삽관 환자 이미지, worsening, 산소포화도 86%",
+    "patientAvatarVisible": true,
+    "simulatorHeadingVisible": true,
+    "url": "127.0.0.1:4180/?lang=ko"
+  },
+  "result": "passed",
+  "screenshot": {
+    "height": 1800,
+    "path": "artifacts/manual-evidence/system-safari-macos-current.png",
+    "sha256": "eaf303cd85a1023564e7e5e71750291d811ad7e2eaef02c67ff89dddb57c41fb",
+    "width": 2880
+  }
+}

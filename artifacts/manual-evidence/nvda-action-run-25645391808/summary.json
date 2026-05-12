@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-05-11T01:22:52.0458164Z",
+  "verifier": "GitHub Actions windows-latest runner with NVDA installed and launched",
+  "targetUrl": "https://komin0707.github.io/",
+  "runner": {
+    "os": "win25-vs2026",
+    "version": "20260428.85.1",
+    "runnerName": "GitHub Actions 1000000119"
+  },
+  "nvda": {
+    "release": "release-2026.1",
+    "installer": "nvda_2026.1.exe",
+    "installerUrl": "https://github.com/nvaccess/nvda/releases/download/release-2026.1/nvda_2026.1.exe",
+    "installExitCode": 0,
+    "executable": "C:\\Program Files\\NVDA\\nvda.exe",
+    "processId": 6716,
+    "quitExitCode": 0
+  },
+  "browser": {
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "processId": 7256
+  },
+  "logs": [
+    "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\nvda.log",
+    "D:\\a\\_temp\\nvda-evidence\\nvda-session.log"
+  ]
+}

@@ -1,0 +1,44 @@
+name: Alerts
+
+on:
+  workflow_run:
+    workflows: [CI, CD, Preview, CrUX Monitoring]
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: read
+  issues: write
+
+jobs:
+  open-failure-issue:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            const title = `[alert] ${run.name} failed on ${run.head_branch}`;
+            const marker = `workflow-run:${run.id}`;
+            const body = [
+              `Alert channel: GitHub Issues`,
+              `Workflow: ${run.name}`,
+              `Branch: ${run.head_branch}`,
+              `Commit: ${run.head_sha}`,
+              `Run: ${run.html_url}`,
+              '',
+              marker,
+            ].join('\n');
+            const { data: existingIssues } = await github.rest.search.issuesAndPullRequests({
+              q: `repo:${context.repo.owner}/${context.repo.repo} is:issue is:open ${marker}`,
+            });
+            if (existingIssues.total_count === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['alert', 'ci-failure'],
+              });
+            }

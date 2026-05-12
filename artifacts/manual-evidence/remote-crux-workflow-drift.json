@@ -1,0 +1,72 @@
+{
+  "verifiedAt": "2026-05-11T16:10:42.912Z",
+  "verifier": "Codex remote CrUX workflow drift verifier",
+  "result": "passed",
+  "repository": "komin0707/komin0707.github.io",
+  "ref": "main",
+  "mirroredFiles": [
+    {
+      "localPath": "scripts/check-pages-domain.mjs",
+      "matches": true,
+      "remotePath": ".github/scripts/check-pages-domain.mjs",
+      "remoteSha": "bf6bb7924fbfb7f7ba9ea95c5bf65d458eebe285"
+    },
+    {
+      "localPath": "scripts/crux-env.mjs",
+      "matches": true,
+      "remotePath": ".github/scripts/crux-env.mjs",
+      "remoteSha": "e4df414558b2e8722050d36f8e8bdaa04ed7666a"
+    },
+    {
+      "localPath": "scripts/check-crux-credentials.mjs",
+      "matches": true,
+      "remotePath": ".github/scripts/check-crux-credentials.mjs",
+      "remoteSha": "b6fc86071c72907c471f4027c3687b43441f3ec2"
+    },
+    {
+      "localPath": "scripts/check-crux-monitoring.mjs",
+      "matches": true,
+      "remotePath": ".github/scripts/check-crux-monitoring.mjs",
+      "remoteSha": "17c908482d67eb2f5d2346b48ab71c26e5ab4898"
+    },
+    {
+      "localPath": "scripts/check-crux-live-probes.mjs",
+      "matches": true,
+      "remotePath": ".github/scripts/check-crux-live-probes.mjs",
+      "remoteSha": "7ef3f590921cfb2d0d706fcf53c5c4afcf4f8b21"
+    }
+  ],
+  "workflow": {
+    "path": ".github/workflows/crux-monitoring.yml",
+    "remoteSha": "db92bedc532c66a8e553ad6d78279fe00a7092b8",
+    "requiredMarkers": [
+      "node .github/scripts/check-pages-domain.mjs",
+      "node .github/scripts/check-crux-credentials.mjs",
+      "node .github/scripts/check-crux-monitoring.mjs",
+      "node .github/scripts/check-crux-live-probes.mjs",
+      "environment: github-pages",
+      "GH_TOKEN: ${{ github.token }}\n          CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}",
+      "PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}",
+      "GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}",
+      "artifacts/manual-evidence/github-pages-domain.json",
+      "artifacts/manual-evidence/chrome-ux-report-credentials.json",
+      "artifacts/manual-evidence/chrome-ux-report-monitoring.json",
+      "artifacts/manual-evidence/crux-live-probe.json",
+      "artifacts/manual-evidence/pagespeed-live-probe.json",
+      "Direct CrUX live probe origin status:",
+      "Direct PageSpeed loadingExperience:",
+      "Credential preflight monitor key source:",
+      "Credential preflight usable exported env names:",
+      "Credential preflight usable env-file names:",
+      "Credential preflight usable GitHub secret names:",
+      "Credential preflight usable GitHub environment secret names:",
+      "Credential preflight usable GitHub environment variable names:",
+      "Credential preflight non-accepted local credential names:",
+      "gh secret set PAGESPEED_API_KEY --repo komin0707/komin0707.github.io --env github-pages",
+      "npm run refresh:crux-blocker-evidence",
+      "Fail when field data is unavailable"
+    ],
+    "missingMarkers": []
+  },
+  "requiredToComplete": []
+}
