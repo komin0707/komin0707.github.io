@@ -8,6 +8,9 @@ on:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    env:
+      VITE_APP_ENV: test
+      VITE_ENABLE_DEBUG_PANEL: 'false'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
