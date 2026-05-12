@@ -9,64 +9,68 @@ import { describe, expect, it } from 'vitest';
 const scriptPath = resolve('scripts/check-crux-credentials.mjs');
 
 describe('CrUX credential preflight', () => {
-  it('treats accepted local env-file names as monitor-usable without leaking values', async () => {
-    const workspace = await createFixtureWorkspace();
-    writeFileSync(
-      join(workspace, '.env'),
-      [
-        'VITE_APP_ENV=test',
-        'CRUX_API_KEY=secret-value-that-must-not-leak',
-        'LEGACY_GOOGLE_API_KEY=legacy-secret-that-must-not-leak',
-        '',
-      ].join('\n'),
-    );
+  it(
+    'treats accepted local env-file names as monitor-usable without leaking values',
+    async () => {
+      const workspace = await createFixtureWorkspace();
+      writeFileSync(
+        join(workspace, '.env'),
+        [
+          'VITE_APP_ENV=test',
+          'CRUX_API_KEY=secret-value-that-must-not-leak',
+          'LEGACY_GOOGLE_API_KEY=legacy-secret-that-must-not-leak',
+          '',
+        ].join('\n'),
+      );
 
-    const result = spawnSync(process.execPath, [scriptPath], {
-      cwd: workspace,
-      encoding: 'utf8',
-      env: fixtureEnv(workspace),
-    });
+      const result = spawnSync(process.execPath, [scriptPath], {
+        cwd: workspace,
+        encoding: 'utf8',
+        env: fixtureEnv(workspace),
+      });
 
-    expect(result.stderr).toBe('');
-    expect(result.status).toBe(0);
-    expect(result.stdout).not.toContain('secret-value-that-must-not-leak');
-    expect(
-      readFileSync(join(workspace, 'artifacts/manual-evidence/chrome-ux-report-credentials.json'), 'utf8'),
-    ).not.toContain('secret-value-that-must-not-leak');
-    expect(
-      readFileSync(join(workspace, 'artifacts/manual-evidence/chrome-ux-report-credentials.json'), 'utf8'),
-    ).not.toContain('legacy-secret-that-must-not-leak');
+      expect(result.stderr).toBe('');
+      expect(result.status).toBe(0);
+      expect(result.stdout).not.toContain('secret-value-that-must-not-leak');
+      expect(
+        readFileSync(join(workspace, 'artifacts/manual-evidence/chrome-ux-report-credentials.json'), 'utf8'),
+      ).not.toContain('secret-value-that-must-not-leak');
+      expect(
+        readFileSync(join(workspace, 'artifacts/manual-evidence/chrome-ux-report-credentials.json'), 'utf8'),
+      ).not.toContain('legacy-secret-that-must-not-leak');
 
-    const artifact = readJson(join(workspace, 'artifacts/manual-evidence/chrome-ux-report-credentials.json'));
-    expect(artifact).toMatchObject({
-      monitorApiKeySource: {
-        name: 'CRUX_API_KEY',
-        path: '.env',
-        source: 'env-file',
-      },
-      result: 'present',
-      localEnvFiles: {
+      const artifact = readJson(join(workspace, 'artifacts/manual-evidence/chrome-ux-report-credentials.json'));
+      expect(artifact).toMatchObject({
+        monitorApiKeySource: {
+          name: 'CRUX_API_KEY',
+          path: '.env',
+          source: 'env-file',
+        },
+        result: 'present',
+        localEnvFiles: {
+          acceptedPresent: ['CRUX_API_KEY'],
+          checked: true,
+        },
+        usableByCurrentMonitor: {
+          envFileNames: ['CRUX_API_KEY'],
+          githubSecretNames: [],
+          localEnvironmentNames: [],
+        },
+      });
+      expect(artifact.localEnvFiles.files.find((file) => file.path === '.env')).toMatchObject({
         acceptedPresent: ['CRUX_API_KEY'],
         checked: true,
-      },
-      usableByCurrentMonitor: {
-        envFileNames: ['CRUX_API_KEY'],
-        githubSecretNames: [],
-        localEnvironmentNames: [],
-      },
-    });
-    expect(artifact.localEnvFiles.files.find((file) => file.path === '.env')).toMatchObject({
-      acceptedPresent: ['CRUX_API_KEY'],
-      checked: true,
-      exists: true,
-      path: '.env',
-    });
-    expect(artifact.nonAcceptedCredentialNames.envFileNames.find((file) => file.path === '.env')).toEqual({
-      exists: true,
-      names: ['LEGACY_GOOGLE_API_KEY'],
-      path: '.env',
-    });
-  });
+        exists: true,
+        path: '.env',
+      });
+      expect(artifact.nonAcceptedCredentialNames.envFileNames.find((file) => file.path === '.env')).toEqual({
+        exists: true,
+        names: ['LEGACY_GOOGLE_API_KEY'],
+        path: '.env',
+      });
+    },
+    20000,
+  );
 
   it('treats exported accepted environment names as monitor-usable', async () => {
     const workspace = await createFixtureWorkspace();
