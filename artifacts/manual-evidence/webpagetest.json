@@ -1,0 +1,44 @@
+{
+  "verifiedAt": "2026-05-11T00:25:54Z",
+  "verifier": "Codex via public Catchpoint/WebPageTest result API",
+  "result": "passed",
+  "evidence": "Completed WebPageTest/Catchpoint instant test for https://komin0707.github.io/ with testId 1140655 and waterfall id 260511_instant_32fbda59b6e94e2eb9d62cef966da71e. Metrics: TTFB 132 ms, firstContentfulPaint 1282 ms, largestContentfulPaint 1282 ms, totalBlockingTime 0 ms, cumulativeLayoutShift 0, speedIndex 1307 ms, docTime 1140 ms, fullyLoaded 3172 ms, bytesIn 63587.",
+  "targetUrl": "https://komin0707.github.io/",
+  "provider": "Catchpoint WebPageTest",
+  "publicEntryUrl": "https://public.catchpoint.com/UI/Entry/WPTITP/ARL-D-E-B2ACSi4jervA.Hq4AA-N",
+  "testId": 1140655,
+  "waterfallId": "260511_instant_32fbda59b6e94e2eb9d62cef966da71e",
+  "createdAt": "2026-05-11T00:11:50.647",
+  "location": "Los Angeles, California, USA",
+  "browser": "Chrome 145.0.0.0",
+  "device": "Desktop",
+  "connection": "WiFi (240/120 Mbps and 2ms RTT)",
+  "runs": 1,
+  "firstViewOnly": true,
+  "metrics": {
+    "timeToFirstByteMs": 132,
+    "firstContentfulPaintMs": 1282,
+    "largestContentfulPaintMs": 1282,
+    "totalBlockingTimeMs": 0,
+    "cumulativeLayoutShift": 0,
+    "speedIndexMs": 1307,
+    "documentCompleteMs": 1140,
+    "fullyLoadedMs": 3172,
+    "bytesIn": 63587,
+    "bytesInDoc": 62658
+  },
+  "artifacts": [
+    {
+      "path": "artifacts/manual-evidence/webpagetest-catchpoint-result.json",
+      "sha256": "e4fff085d05ad89d2f1d250992702f265188395d84559cc75586edde364792b0"
+    },
+    {
+      "path": "artifacts/manual-evidence/webpagetest-catchpoint-config.json",
+      "sha256": "ad0997a2f71995c0256a969c4d5819c0bde063cc791ff90a082109b70989a7c0"
+    },
+    {
+      "path": "artifacts/manual-evidence/webpagetest-public-entry-latest.png",
+      "sha256": "116e677e326e18e3d655d1e326af6d906844e689b3ee8725eb2697d8a06d5dbd"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+user/501/com.apple.scrod = {
+	active count = 0
+	path = /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/LaunchDaemons/com.apple.scrod.plist
+	type = LaunchDaemon
+	state = not running
+
+	program = /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/CoreServices/VoiceOverTouch.app/scrod
+	arguments = {
+		/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/CoreServices/VoiceOverTouch.app/scrod
+	}
+
+	global environment = {
+		IOS_SIMULATOR_SYSLOG_SOCKET => /private/var/tmp/com.apple.CoreSimulator.SimDevice.6903A251-0A49-43DE-AA7D-58322BFF6D31/syslogsock
+		SIMULATOR_SHARED_RESOURCES_DIRECTORY => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data
+		XPC_SIMULATOR_LAUNCHD_NAME => com.apple.CoreSimulator.SimDevice.6903A251-0A49-43DE-AA7D-58322BFF6D31
+		IPHONE_SIMULATOR_ROOT => /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot
+		LS_ENABLE_BUNDLE_LOCALIZATION_CACHING => 1
+		SIMULATOR_HID_SYSTEM_MANAGER => /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Resources/Platforms/iphoneos/Library/Frameworks/SimulatorHID.framework
+		SIMULATOR_MAINSCREEN_HEIGHT => 2556
+		SIMULATOR_MEMORY_WARNINGS => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/var/run/memory_warning_simulation
+		SIMULATOR_AUDIO_DEVICES_PLIST_PATH => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/var/run/com.apple.coresimulator.audio.plist
+		SIMULATOR_LOG_ROOT => /Users/komin/Library/Logs/CoreSimulator/6903A251-0A49-43DE-AA7D-58322BFF6D31
+		SIMULATOR_RUNTIME_BUILD_VERSION => 22E238
+		DYLD_ROOT_PATH => /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot
+		PATH => /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/usr/bin:/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/bin:/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/usr/sbin:/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/sbin:/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/usr/local/bin
+		SIMULATOR_HOST_HOME => /Users/komin
+		SIMULATOR_ROOT => /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot
+		TERM => xterm-256color
+		IPHONE_SHARED_RESOURCES_DIRECTORY => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data
+		IPHONE_TVOUT_EXTENDED_PROPERTIES => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Library/Application Support/Simulator/extended_display.plist
+		SIMULATOR_BOOT_TIME => 1778459665
+		SIMULATOR_CAPABILITIES => /Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 16.simdevicetype/Contents/Resources/capabilities.plist
+		SIMULATOR_FRAMEBUFFER_FRAMEWORK => /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Resources/Platforms/iphoneos/Library/PrivateFrameworks/SimFramebuffer.framework/SimFramebuffer
+		SIMULATOR_LEGACY_ASSET_SUFFIX => iphone
+		SIMULATOR_MAINSCREEN_PITCH => 460.000000
+		SIMULATOR_MAINSCREEN_WIDTH => 1179
+		SIMULATOR_MODEL_IDENTIFIER => iPhone17,3
+		SIMULATOR_PRODUCT_CLASS => D47
+		SIMULATOR_RUNTIME_VERSION => 18.4
+		SIMULATOR_ARCHS => arm64 x86_64
+		SIMULATOR_AUDIO_SETTINGS_PATH => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/var/run/simulatoraudio/audiosettings.plist
+		SIMULATOR_DEVICE_NAME => Codex iPhone VoiceOver 18.4
+		SIMULATOR_EXTENDED_DISPLAY_PROPERTIES => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/Library/Application Support/Simulator/extended_display.plist
+		SIMULATOR_MAINSCREEN_SCALE => 3.000000
+		SIMULATOR_UDID => 6903A251-0A49-43DE-AA7D-58322BFF6D31
+		SIMULATOR_VERSION_INFO => CoreSimulator 1010.10 - Device: Codex iPhone VoiceOver 18.4 (6903A251-0A49-43DE-AA7D-58322BFF6D31) - Runtime: iOS 18.4 (22E238) - DeviceType: iPhone 16
+		VM_KERNEL_PAGE_SIZE_4K => 1
+	}
+
+	inherited environment = {
+		TESTMANAGERD_REMOTE_AUTOMATION_SIM_SOCK => /private/tmp/com.apple.launchd.MOop82q36n/com.apple.testmanagerd.remote-automation.unix-domain.socket
+		TESTMANAGERD_SIM_SOCK => /private/tmp/com.apple.launchd.Jw6OCCMvQS/com.apple.testmanagerd.unix-domain.socket
+		RWI_LISTEN_SOCKET => /private/tmp/com.apple.launchd.YmlAy21PcA/com.apple.webinspectord_sim.socket
+	}
+
+	default environment = {
+		DYLD_FALLBACK_FRAMEWORK_PATH => /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks
+		CFFIXED_USER_HOME => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data
+		DYLD_FALLBACK_LIBRARY_PATH => /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/usr/lib
+		HOME => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data
+		TMPDIR => /Users/komin/Library/Developer/CoreSimulator/Devices/6903A251-0A49-43DE-AA7D-58322BFF6D31/data/tmp/
+	}
+
+	environment = {
+		XPC_SERVICE_NAME => com.apple.scrod
+	}
+
+	domain = user/501
+	minimum runtime = 1
+	base minimum runtime = 1
+	exit timeout = 3
+	runs = 1
+	last exit code = 0
+
+	endpoints = {
+		"com.apple.scrod" = {
+			port = 0x0
+			active = 0
+			managed = 1
+			reset = 1
+			hide = 0
+			watching = 1
+			host-side = 0
+		}
+	}
+
+	spawn type = interactive (4)
+	binary order preference = {
+		arm64
+		x86_64
+	}
+
+	cpumon = default
+	exponential throttling grace limit = 10
+	probabilistic guard malloc policy = {
+		activation rate = 1/1000
+		sample rate = 1/0
+	}
+
+	properties = supports transactions | inferred program | exponential throttling | tle system
+}

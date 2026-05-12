@@ -1,0 +1,75 @@
+.lower-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.62fr;
+  gap: 8px;
+}
+
+.compact-panel h2 {
+  padding: 11px 16px;
+}
+
+.lung-status-content {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px 18px;
+}
+
+.lung-status-content div {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+}
+
+.lung-status-content dt {
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+.lung-status-content dd {
+  overflow: hidden;
+  font-size: 13px;
+  text-overflow: ellipsis;
+}
+
+.mini-lung {
+  width: 86px;
+  align-self: center;
+}
+
+.mini-lung path:first-child,
+.mini-lung path:nth-child(2) {
+  fill: rgba(221, 84, 91, 0.7);
+  stroke: rgba(255, 220, 220, 0.5);
+}
+
+.mini-lung path:nth-child(3) {
+  fill: none;
+  stroke: #e2f2ff;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.mini-lung circle {
+  fill: var(--warning-yellow);
+}
+
+.secretion-dots {
+  display: inline-grid;
+  grid-template-columns: repeat(6, 9px);
+  gap: 4px;
+}
+
+.secretion-dots::before {
+  content: '';
+  display: block;
+  width: calc(var(--active-dots) * 13px);
+  max-width: 74px;
+  height: 9px;
+  border-radius: 999px;
+  background: repeating-radial-gradient(circle at 4px 4px, var(--danger-red) 0 4px, transparent 5px 13px);
+}

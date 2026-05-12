@@ -1,0 +1,95 @@
+{
+  "verifiedAt": "2026-05-11T13:12:42.615Z",
+  "verifier": "Codex CrUX monitoring verifier",
+  "result": "blocked",
+  "evidence": "Chrome UX Report monitoring is configured for https://komin0707.github.io/, but no CrUX field-data evidence is currently available to verify the production origin.",
+  "origin": "https://komin0707.github.io",
+  "startedAt": "2026-05-11T13:11:43.250Z",
+  "targetUrl": "https://komin0707.github.io/",
+  "fieldDataAvailable": false,
+  "fieldDataEvidence": {
+    "available": false,
+    "cruxApiRecord": false,
+    "cruxApiUrlRecord": false,
+    "pageSpeedLoadingExperience": false,
+    "pageSpeedOriginLoadingExperience": false,
+    "publicCruxCacheOrigin": false
+  },
+  "apiKeySource": {
+    "name": null,
+    "path": null,
+    "source": "none"
+  },
+  "staleCanonicalEvidenceRemoved": false,
+  "checks": {
+    "discoverability": {
+      "canonicalPresent": true,
+      "homeStatus": 200,
+      "homeStatusText": "OK",
+      "noIndexPresent": false,
+      "robotsAllowsAll": true,
+      "robotsSitemapPresent": true,
+      "robotsStatus": 200,
+      "sitemapHasOrigin": true,
+      "sitemapStatus": 200
+    },
+    "cruxApi": {
+      "endpoint": "records:queryRecord",
+      "hasApiKey": false,
+      "hasRecord": false,
+      "originRecord": {
+        "error": {
+          "code": 403,
+          "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+          "status": "PERMISSION_DENIED"
+        },
+        "hasRecord": false,
+        "status": 403,
+        "statusText": "Forbidden"
+      },
+      "status": 403,
+      "statusText": "Forbidden",
+      "urlRecord": {
+        "error": {
+          "code": 403,
+          "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+          "status": "PERMISSION_DENIED"
+        },
+        "hasRecord": false,
+        "status": 403,
+        "statusText": "Forbidden"
+      }
+    },
+    "pageSpeed": {
+      "endpoint": "pagespeedonline/v5/runPagespeed",
+      "hasApiKey": false,
+      "hasLoadingExperience": false,
+      "hasOriginLoadingExperience": false,
+      "loadingExperienceCategory": null,
+      "originLoadingExperienceCategory": null,
+      "status": 429,
+      "statusText": "Too Many Requests",
+      "error": {
+        "code": 429,
+        "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+        "status": "RESOURCE_EXHAUSTED"
+      }
+    },
+    "cruxCache": {
+      "dataset": "global",
+      "datasetsStatus": 200,
+      "foundOrigin": false,
+      "latestMonth": "202603",
+      "manifestStatus": 200,
+      "origins": 18257384,
+      "scannedChunks": 21,
+      "scanEnabled": true,
+      "totalChunks": 21
+    }
+  },
+  "requiredToComplete": [
+    "Set CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY to a Google API key with Chrome UX Report/PageSpeed quota and rerun this verifier.",
+    "Use a production origin that is publicly discoverable and sufficiently popular for CrUX inclusion.",
+    "Optionally run CRUX_CACHE_SCAN=1 npm run check:crux-monitoring to stream-search the latest public CrUX cache origin list."
+  ]
+}

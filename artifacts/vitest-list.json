@@ -1,0 +1,1254 @@
+[
+  {
+    "name": "App integration flow > renders the default pneumonia simulator dashboard with warnings and monitor values",
+    "file": "/Users/komin/vent 2d/src/App.test.tsx"
+  },
+  {
+    "name": "App integration flow > switches the simulator chrome between Korean and English locale copy",
+    "file": "/Users/komin/vent 2d/src/App.test.tsx"
+  },
+  {
+    "name": "App integration flow > updates settings, mode, scenario, pause, resume, and reset from user controls",
+    "file": "/Users/komin/vent 2d/src/App.test.tsx"
+  },
+  {
+    "name": "App integration flow > supports keyboard shortcuts, context menu, drag-drop scenarios, touch gestures, voice, AR, and help modes",
+    "file": "/Users/komin/vent 2d/src/App.test.tsx"
+  },
+  {
+    "name": "App integration flow > renders the debug panel when the runtime config enables it",
+    "file": "/Users/komin/vent 2d/src/App.test.tsx"
+  },
+  {
+    "name": "App integration flow > keeps the debug panel out of production builds",
+    "file": "/Users/komin/vent 2d/src/App.test.tsx"
+  },
+  {
+    "name": "remote CrUX workflow drift verifier > passes when remote monitoring files match local expected files and workflow markers exist",
+    "file": "/Users/komin/vent 2d/scripts/check-remote-crux-workflow.test.mjs"
+  },
+  {
+    "name": "remote CrUX workflow drift verifier > fails when a mirrored remote script differs from the local expected file",
+    "file": "/Users/komin/vent 2d/scripts/check-remote-crux-workflow.test.mjs"
+  },
+  {
+    "name": "remote CrUX workflow drift verifier > fails when the remote workflow omits a supported credential secret",
+    "file": "/Users/komin/vent 2d/scripts/check-remote-crux-workflow.test.mjs"
+  },
+  {
+    "name": "latest remote CrUX run verifier > passes when the completion index points at the latest remote run artifact and commit",
+    "file": "/Users/komin/vent 2d/scripts/check-latest-remote-crux-run.test.mjs"
+  },
+  {
+    "name": "latest remote CrUX run verifier > fails when a newer remote run has not been synced into the completion index",
+    "file": "/Users/komin/vent 2d/scripts/check-latest-remote-crux-run.test.mjs"
+  },
+  {
+    "name": "latest remote CrUX run verifier > fails when the latest run id is indexed but the workflow commit is stale",
+    "file": "/Users/komin/vent 2d/scripts/check-latest-remote-crux-run.test.mjs"
+  },
+  {
+    "name": "latest remote CrUX run verifier > fails when the indexed artifact path does not belong to the latest run directory",
+    "file": "/Users/komin/vent 2d/scripts/check-latest-remote-crux-run.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects canonical CrUX evidence while monitoring still reports blocked field data",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > accepts a blocked CrUX fixture when no canonical field-data artifact exists",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects an incomplete CrUX blocker refresh command sequence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects an unexpected CrUX blocker refresh command failure",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a stale final blocker summary for the CrUX blocker refresh",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a stale completion audit objective claim finding",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects objective phase claims that disagree with the audit artifact",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a final blocker summary missing do-not-complete warnings",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > accepts blocked CrUX evidence when credentials are present but field data is absent",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects checking item 874 while the canonical CrUX artifact is absent",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects an additional unchecked checklist item even when aggregate counts match",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a stale remote CrUX index when a newer downloaded run exists",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a blocker manifest that omits the indexed remote CrUX run",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a stale blocker manifest timestamp",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects stale generatedAt when source evidence is newer than the index",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects phase reports with non-verified command or visual evidence status",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a synced CrUX blocker issue that is older than the latest local monitoring evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a synced CrUX blocker issue comment missing credential-name evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a latest remote CrUX run check with a stale workflow commit",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a stale objective checklist row count",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits the visual screenshot review artifact",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits required command-gate evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits phase-gate command artifact evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a failed phase-gate command artifact",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits forbidden-pattern gate evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits temporary-bypass gate evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits test-realism gate evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits required build command evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects a prompt map that omits required external manual evidence",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects remote CrUX evidence without the intentional unavailable-field-data failure log",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects remote CrUX workflow drift evidence with mismatched files",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects checklist numbering gaps",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion consistency assertions > rejects duplicate checklist item numbers",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-consistency.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > runs Snyk through non-interactive npx and does not report a Snyk blocker when it passes",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > rejects completion when the objective claims more checklist rows than the file contains",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > rejects completion when actual rows match the total claim but phase claims do not reconcile",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > rejects malformed checkbox rows that are not numbered checklist items",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > rejects a checked Chrome UX Report item when canonical field-data evidence is missing",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > rejects completion when dist build output is missing",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > rejects completion when dist has no primary JavaScript or CSS assets",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > rejects a checked Chrome UX Report item when evidence lacks real field data",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "completion audit command integration > records checklist counts by top-level requirements section",
+    "file": "/Users/komin/vent 2d/scripts/assert-completion-audit.test.mjs"
+  },
+  {
+    "name": "refresh completion evidence wrapper > runs the manifest refresh but preserves an incomplete audit exit code",
+    "file": "/Users/komin/vent 2d/scripts/refresh-completion-evidence.test.mjs"
+  },
+  {
+    "name": "refresh completion evidence wrapper > exits zero only when the audit summary is complete and the objective is achieved",
+    "file": "/Users/komin/vent 2d/scripts/refresh-completion-evidence.test.mjs"
+  },
+  {
+    "name": "refresh completion evidence wrapper > preserves a failed objective exit code when the audit is complete but claimed rows are not achieved",
+    "file": "/Users/komin/vent 2d/scripts/refresh-completion-evidence.test.mjs"
+  },
+  {
+    "name": "refresh completion evidence wrapper > does not mask a manifest refresh failure",
+    "file": "/Users/komin/vent 2d/scripts/refresh-completion-evidence.test.mjs"
+  },
+  {
+    "name": "refresh completion evidence wrapper > does not mask a latest remote CrUX run verifier failure",
+    "file": "/Users/komin/vent 2d/scripts/refresh-completion-evidence.test.mjs"
+  },
+  {
+    "name": "refresh completion evidence wrapper > does not mask a post-refresh consistency failure",
+    "file": "/Users/komin/vent 2d/scripts/refresh-completion-evidence.test.mjs"
+  },
+  {
+    "name": "CrUX blocker evidence refresher > runs the full CrUX evidence sequence and exits zero when consistency passes",
+    "file": "/Users/komin/vent 2d/scripts/refresh-crux-blocker-evidence.test.mjs"
+  },
+  {
+    "name": "CrUX blocker evidence refresher > does not mask an unexpected command failure",
+    "file": "/Users/komin/vent 2d/scripts/refresh-crux-blocker-evidence.test.mjs"
+  },
+  {
+    "name": "CrUX blocker evidence refresher > marks the artifact failed when post-artifact consistency validation fails",
+    "file": "/Users/komin/vent 2d/scripts/refresh-crux-blocker-evidence.test.mjs"
+  },
+  {
+    "name": "monitor and waveform component rendering > MonitorPanel and WaveformChart render labels, values, and paused waveform output",
+    "file": "/Users/komin/vent 2d/src/components/components.monitor.test.tsx"
+  },
+  {
+    "name": "monitor and waveform component rendering > DataVisualizationPanel lazy-renders trend table after intersection",
+    "file": "/Users/komin/vent 2d/src/components/components.monitor.test.tsx"
+  },
+  {
+    "name": "monitor and waveform component rendering > DataVisualizationPanel saves snapshots when blob URLs are unavailable",
+    "file": "/Users/komin/vent 2d/src/components/components.monitor.test.tsx"
+  },
+  {
+    "name": "monitor and waveform component rendering > DataVisualizationPanel clicks a generated download link outside jsdom user agents",
+    "file": "/Users/komin/vent 2d/src/components/components.monitor.test.tsx"
+  },
+  {
+    "name": "monitor and waveform component rendering > MonitorPanel distinguishes normal, warning, and danger vital classes",
+    "file": "/Users/komin/vent 2d/src/components/components.monitor.test.tsx"
+  },
+  {
+    "name": "GitHub Pages production domain verifier > records the connected GitHub Pages origin when no CNAME is configured",
+    "file": "/Users/komin/vent 2d/scripts/check-pages-domain.test.mjs"
+  },
+  {
+    "name": "GitHub Pages production domain verifier > blocks when the expected origin is not connected to GitHub Pages",
+    "file": "/Users/komin/vent 2d/scripts/check-pages-domain.test.mjs"
+  },
+  {
+    "name": "GitHub Pages production domain verifier > passes when the expected origin is connected while Pages is rebuilding",
+    "file": "/Users/komin/vent 2d/scripts/check-pages-domain.test.mjs"
+  },
+  {
+    "name": "CrUX blocker issue updater > posts the latest local monitoring timestamp when the issue is stale",
+    "file": "/Users/komin/vent 2d/scripts/update-crux-blocker-issue.test.mjs"
+  },
+  {
+    "name": "CrUX blocker issue updater > does not post a duplicate comment when the timestamp already exists",
+    "file": "/Users/komin/vent 2d/scripts/update-crux-blocker-issue.test.mjs"
+  },
+  {
+    "name": "CrUX blocker issue updater > posts a comment when the timestamp exists but the credential-name evidence is stale",
+    "file": "/Users/komin/vent 2d/scripts/update-crux-blocker-issue.test.mjs"
+  },
+  {
+    "name": "CrUX credential preflight > treats accepted local env-file names as monitor-usable without leaking values",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-credentials.test.mjs"
+  },
+  {
+    "name": "CrUX credential preflight > treats exported accepted environment names as monitor-usable",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-credentials.test.mjs"
+  },
+  {
+    "name": "CrUX credential preflight > treats GitHub environment secrets as remote workflow-usable without leaking values",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-credentials.test.mjs"
+  },
+  {
+    "name": "InteractionToolbar > routes toolbar button, switch, and drag actions",
+    "file": "/Users/komin/vent 2d/src/components/ui/InteractionToolbar.test.tsx"
+  },
+  {
+    "name": "InteractionToolbar > closes help with Escape and restores focus to the help button",
+    "file": "/Users/komin/vent 2d/src/components/ui/InteractionToolbar.test.tsx"
+  },
+  {
+    "name": "InteractionToolbar > cycles focus inside the help dialog in both tab directions",
+    "file": "/Users/komin/vent 2d/src/components/ui/InteractionToolbar.test.tsx"
+  },
+  {
+    "name": "InteractionToolbar > renders tutorial and context menu overlays with pause, reset, close actions",
+    "file": "/Users/komin/vent 2d/src/components/ui/InteractionToolbar.test.tsx"
+  },
+  {
+    "name": "InteractionToolbar > renders shortcut state overlays for command, search, settings, fullscreen, and exit confirm",
+    "file": "/Users/komin/vent 2d/src/components/ui/InteractionToolbar.test.tsx"
+  },
+  {
+    "name": "InteractionToolbar > falls back to the first tutorial step for negative indices",
+    "file": "/Users/komin/vent 2d/src/components/ui/InteractionToolbar.test.tsx"
+  },
+  {
+    "name": "alarm panel component > renders empty, warning, and critical alarm states",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > supports mute, pause, resume, snooze, mobile notification, and threshold controls",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > enables audio without playing a tone when browser audio APIs are unavailable",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > plays an alarm tone when audio is enabled for visible alarms",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > does not play an alarm tone while muted",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > marks mobile notifications off when permission is denied",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > marks mobile notifications granted without a service worker",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > queues mobile notifications through the service worker when permission is granted",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > uses default notification copy when no active alarm message exists",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "alarm panel component > marks granted when service worker notifications are unavailable",
+    "file": "/Users/komin/vent 2d/src/components/components.alarms.test.tsx"
+  },
+  {
+    "name": "sync remote CrUX evidence > downloads the latest run metadata, failed log, artifact, and issue snapshot",
+    "file": "/Users/komin/vent 2d/scripts/sync-remote-crux-evidence.test.mjs"
+  },
+  {
+    "name": "update completion evidence manifests > derives CrUX evidence strings from the current monitoring artifacts",
+    "file": "/Users/komin/vent 2d/scripts/update-completion-evidence-manifests.test.mjs"
+  },
+  {
+    "name": "update completion evidence manifests > does not write manifests in dry-run mode",
+    "file": "/Users/komin/vent 2d/scripts/update-completion-evidence-manifests.test.mjs"
+  },
+  {
+    "name": "update completion evidence manifests > keeps the objective unachieved when complete checklist rows conflict with phase claims",
+    "file": "/Users/komin/vent 2d/scripts/update-completion-evidence-manifests.test.mjs"
+  },
+  {
+    "name": "update completion evidence manifests > updates remote CrUX evidence to the newest downloaded run",
+    "file": "/Users/komin/vent 2d/scripts/update-completion-evidence-manifests.test.mjs"
+  },
+  {
+    "name": "component controls > Header marks the active mode and emits mode changes",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "component controls > Header exposes English locale controls and dispatches language changes",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "component controls > SliderControl exposes bounds, value, progress style, and change callback",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "component controls > SliderControl clears pending debounce work on cleanup",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "component controls > SliderControl ignores stale debounce callbacks after an immediate commit clears pending value",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "component controls > SliderControl ignores parsed values that are not finite",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "component controls > SettingsPanel renders all ventilator controls and routes typed updates",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "component controls > ScenarioSelector emits scenario type changes",
+    "file": "/Users/komin/vent 2d/src/components/components.controls.test.tsx"
+  },
+  {
+    "name": "patient avatar component rendering > PatientAvatar2D renders stable baseline anatomy, labels, and animation variables",
+    "file": "/Users/komin/vent 2d/src/components/components.avatar.test.tsx"
+  },
+  {
+    "name": "patient avatar component rendering > PatientAvatar2D updates alarm, condition, source, and pneumothorax variants",
+    "file": "/Users/komin/vent 2d/src/components/components.avatar.test.tsx"
+  },
+  {
+    "name": "patient avatar component rendering > PatientAvatar2D renders apnea and abnormal respiratory pattern variants",
+    "file": "/Users/komin/vent 2d/src/components/components.avatar.test.tsx"
+  },
+  {
+    "name": "patient avatar component rendering > PatientAvatar2D exposes visual condition, skin tone, lip color, and expression data attributes",
+    "file": "/Users/komin/vent 2d/src/components/components.avatar.test.tsx"
+  },
+  {
+    "name": "patient avatar component rendering > LungOverlay renders left, right, inflamed, secretion, and collapsed SVG details",
+    "file": "/Users/komin/vent 2d/src/components/components.avatar.test.tsx"
+  },
+  {
+    "name": "final blocker summary writer > writes the canonical incomplete summary for the remaining CrUX blocker",
+    "file": "/Users/komin/vent 2d/scripts/write-final-blocker-summary.test.mjs"
+  },
+  {
+    "name": "final blocker summary writer > adds phase reports with command and screenshot evidence",
+    "file": "/Users/komin/vent 2d/scripts/write-final-blocker-summary.test.mjs"
+  },
+  {
+    "name": "final blocker summary writer > marks objective phases incomplete when checked rows do not reconcile with phase claims",
+    "file": "/Users/komin/vent 2d/scripts/write-final-blocker-summary.test.mjs"
+  },
+  {
+    "name": "CrUX monitoring verifier > removes stale canonical CrUX evidence when a fresh run has no field data",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-monitoring.test.mjs"
+  },
+  {
+    "name": "CrUX monitoring verifier > writes canonical CrUX evidence when PageSpeed field data is available",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-monitoring.test.mjs"
+  },
+  {
+    "name": "CrUX monitoring verifier > uses an accepted local env-file API key without writing the value to artifacts",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-monitoring.test.mjs"
+  },
+  {
+    "name": "deep audit completion verifier > verifies zero-error accessibility when strict axe, Lighthouse, contrast, and one-hour memory pass",
+    "file": "/Users/komin/vent 2d/scripts/assert-deep-audit-completion.test.mjs"
+  },
+  {
+    "name": "deep audit completion verifier > verifies completed visual, medical expert, and user testing result artifacts",
+    "file": "/Users/komin/vent 2d/scripts/assert-deep-audit-completion.test.mjs"
+  },
+  {
+    "name": "deep audit completion verifier > blocks exact duplicates between previous and deep audit checklist rows",
+    "file": "/Users/komin/vent 2d/scripts/assert-deep-audit-completion.test.mjs"
+  },
+  {
+    "name": "useSimulatorInteractions direct gestures > covers fallback touch coordinates and guarded pinch movement",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorInteractions.test.tsx"
+  },
+  {
+    "name": "useSimulatorInteractions direct gestures > falls back to pneumonia when cycling with an empty scenario order",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorInteractions.test.tsx"
+  },
+  {
+    "name": "useSimulatorInteractions direct gestures > handles global keyboard shortcut overlays and scenario navigation",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorInteractions.test.tsx"
+  },
+  {
+    "name": "useSimulatorInteractions direct gestures > covers the complete bedside keyboard shortcut contract",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorInteractions.test.tsx"
+  },
+  {
+    "name": "useSimulatorInteractions direct gestures > handles long press context menu, vertical panel swipes, haptic toggle, and shake undo",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorInteractions.test.tsx"
+  },
+  {
+    "name": "useSimulatorInteractions direct gestures > recognizes pause, resume, reset, PEEP, FiO2, and medical voice commands",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorInteractions.test.tsx"
+  },
+  {
+    "name": "useSimulatorInteractions direct gestures > routes spatial hand, eye, AR, and VR commands through simulator state",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorInteractions.test.tsx"
+  },
+  {
+    "name": "BottomBar and scenario selection > renders all props and dispatches pause, reset, rewind, jump, import, export, scenario, and speed events",
+    "file": "/Users/komin/vent 2d/src/components/ui/BottomBar.test.tsx"
+  },
+  {
+    "name": "BottomBar and scenario selection > shows import failure and paused resume state",
+    "file": "/Users/komin/vent 2d/src/components/ui/BottomBar.test.tsx"
+  },
+  {
+    "name": "BottomBar and scenario selection > renders English locale labels and scenario names",
+    "file": "/Users/komin/vent 2d/src/components/ui/BottomBar.test.tsx"
+  },
+  {
+    "name": "BottomBar and scenario selection > does not jump when the parsed time is not finite",
+    "file": "/Users/komin/vent 2d/src/components/ui/BottomBar.test.tsx"
+  },
+  {
+    "name": "patient status panels > LungStatusPanel reflects compliance, resistance, FRC, and secretion state",
+    "file": "/Users/komin/vent 2d/src/components/components.patient-panels.test.tsx"
+  },
+  {
+    "name": "patient status panels > PatientConditionPanel renders trend classes and description text",
+    "file": "/Users/komin/vent 2d/src/components/components.patient-panels.test.tsx"
+  },
+  {
+    "name": "patient status panels > ModeSafetyPanel renders standby and inactive mode safety states",
+    "file": "/Users/komin/vent 2d/src/components/components.patient-panels.test.tsx"
+  },
+  {
+    "name": "render profiler budget > keeps monitor update render work under one 60fps frame",
+    "file": "/Users/komin/vent 2d/src/test/renderProfiler.test.tsx"
+  },
+  {
+    "name": "render profiler budget > detects unnecessary monitor rerenders under parent-only state changes",
+    "file": "/Users/komin/vent 2d/src/test/renderProfiler.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useSimulation recalculates when settings or scenario inputs change",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useVentilatorSettings exposes initial state, immutable updates, scenario changes, and reset",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useElapsedTimer starts, pauses, cleans up, jumps, rewinds, resets, and advances exactly by time scale",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > SimulationProvider, useSimulationContext, and selector hook provide integrated context access",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useIntersectionVisibility falls back to timeout scheduling and cleanup",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useIntersectionVisibility cancels pending idle visibility updates",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useIntersectionVisibility ignores hidden observer entries",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useIntersectionVisibility tolerates missing observed elements",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useIntersectionVisibility starts visible when IntersectionObserver is unavailable",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useThrottledViewportMetrics keeps identical measurements stable",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useThrottledViewportMetrics cancels pending animation frames on cleanup",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useThrottledViewportMetrics batches scroll and resize updates into one animation frame",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "simulation hooks > useThrottledViewportMetrics reports bottom scroll bucket",
+    "file": "/Users/komin/vent 2d/src/hooks/hooks.test.tsx"
+  },
+  {
+    "name": "component geometry contracts > keeps the patient avatar SVG viewBox and CSS aspect ratio in sync",
+    "file": "/Users/komin/vent 2d/src/components/components.geometry.test.tsx"
+  },
+  {
+    "name": "component geometry contracts > documents normalized patient avatar layer bounds and supine projection constraints",
+    "file": "/Users/komin/vent 2d/src/components/components.geometry.test.tsx"
+  },
+  {
+    "name": "patient avatar airway SVG parts > renders airway tubing, warning state, and peak pressure label",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgAirway.test.tsx"
+  },
+  {
+    "name": "patient avatar airway SVG parts > renders distinct visual markers for every patient scenario state",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgAirway.test.tsx"
+  },
+  {
+    "name": "ShortcutHelp > closes, traps tab focus, and restores fallback focus",
+    "file": "/Users/komin/vent 2d/src/components/ui/ShortcutHelp.test.tsx"
+  },
+  {
+    "name": "ShortcutHelp > ignores tab trapping when no focusable elements are found",
+    "file": "/Users/komin/vent 2d/src/components/ui/ShortcutHelp.test.tsx"
+  },
+  {
+    "name": "ShortcutHelp > ignores malformed focusable query results",
+    "file": "/Users/komin/vent 2d/src/components/ui/ShortcutHelp.test.tsx"
+  },
+  {
+    "name": "ShortcutHelp > handles a missing active element while setting initial focus",
+    "file": "/Users/komin/vent 2d/src/components/ui/ShortcutHelp.test.tsx"
+  },
+  {
+    "name": "ShortcutHelp > moves forward from the last focusable element",
+    "file": "/Users/komin/vent 2d/src/components/ui/ShortcutHelp.test.tsx"
+  },
+  {
+    "name": "patient avatar body SVG parts > renders healthy body anatomy, monitoring lines, posture, and baseline perfusion",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgBody.test.tsx"
+  },
+  {
+    "name": "patient avatar body SVG parts > renders pneumonia, pallor, jaundice, obstruction, pneumothorax, and ARDS body states",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgBody.test.tsx"
+  },
+  {
+    "name": "patient avatar body SVG parts > renders right-sided and legacy left-sided reduced chest motion",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgBody.test.tsx"
+  },
+  {
+    "name": "remaining blocker report > prints compact CrUX remote run context for the Chrome UX Report blocker",
+    "file": "/Users/komin/vent 2d/scripts/report-remaining-blockers.test.mjs"
+  },
+  {
+    "name": "remaining blocker report > exits non-zero when audit is complete but objective row claims are not achieved",
+    "file": "/Users/komin/vent 2d/scripts/report-remaining-blockers.test.mjs"
+  },
+  {
+    "name": "SimulationContext > provides simulation state to descendants",
+    "file": "/Users/komin/vent 2d/src/context/SimulationContext.test.tsx"
+  },
+  {
+    "name": "SimulationContext > updates time controls and imports serialized simulation state",
+    "file": "/Users/komin/vent 2d/src/context/SimulationContext.test.tsx"
+  },
+  {
+    "name": "SimulationContext > throws when the simulation hook is used outside the provider",
+    "file": "/Users/komin/vent 2d/src/context/SimulationContext.test.tsx"
+  },
+  {
+    "name": "patient avatar head SVG parts > renders calm head anatomy, hair, face, and baseline reflex state",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgHead.test.tsx"
+  },
+  {
+    "name": "patient avatar head SVG parts > renders drowsy, pale strained, distressed, and jaundiced face states",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgHead.test.tsx"
+  },
+  {
+    "name": "patient avatar head SVG parts > renders stupor and coma pupil and eyelid states",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgHead.test.tsx"
+  },
+  {
+    "name": "patient avatar head SVG parts > renders critical cyanosis, dilated pupils, sweat, edema, and facial markers",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgHead.test.tsx"
+  },
+  {
+    "name": "patient avatar head SVG parts > renders demographic hair, sex presentation, and head rotation variants",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgHead.test.tsx"
+  },
+  {
+    "name": "deep audit external evidence handoff verifier > passes when the handoff checklist matches current deep audit blockers",
+    "file": "/Users/komin/vent 2d/scripts/assert-deep-audit-handoff.test.mjs"
+  },
+  {
+    "name": "deep audit external evidence handoff verifier > fails when the handoff omits a current deep audit blocker",
+    "file": "/Users/komin/vent 2d/scripts/assert-deep-audit-handoff.test.mjs"
+  },
+  {
+    "name": "ScenarioInterventionPanel > toggles fluid rate and fluid type from both branch states",
+    "file": "/Users/komin/vent 2d/src/components/panels/ScenarioInterventionPanel.test.tsx"
+  },
+  {
+    "name": "ErrorBoundary > renders children when no error is thrown",
+    "file": "/Users/komin/vent 2d/src/components/ui/ErrorBoundary.test.tsx"
+  },
+  {
+    "name": "ErrorBoundary > renders fallback UI and logs the render failure in development",
+    "file": "/Users/komin/vent 2d/src/components/ui/ErrorBoundary.test.tsx"
+  },
+  {
+    "name": "ErrorBoundary > suppresses development warning logs outside dev mode",
+    "file": "/Users/komin/vent 2d/src/components/ui/ErrorBoundary.test.tsx"
+  },
+  {
+    "name": "ErrorBoundary > recovers when the boundary is remounted after a render failure",
+    "file": "/Users/komin/vent 2d/src/components/ui/ErrorBoundary.test.tsx"
+  },
+  {
+    "name": "patient avatar SVG parts > renders path, circle, and rect primitives with explicit paint attributes",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgParts.test.tsx"
+  },
+  {
+    "name": "patient avatar SVG parts > renders reusable SVG definitions and bed geometry",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarSvgParts.test.tsx"
+  },
+  {
+    "name": "production preact react shims > renders and unmounts through the createRoot shim",
+    "file": "/Users/komin/vent 2d/src/preact/reactShim.test.tsx"
+  },
+  {
+    "name": "production preact react shims > keeps lightweight react compatibility helpers functional",
+    "file": "/Users/komin/vent 2d/src/preact/reactShim.test.tsx"
+  },
+  {
+    "name": "production preact react shims > normalizes React SVG attribute names for Preact DOM output",
+    "file": "/Users/komin/vent 2d/src/preact/reactShim.test.tsx"
+  },
+  {
+    "name": "production preact react shims > normalizes compact production DOM prop names for Preact output",
+    "file": "/Users/komin/vent 2d/src/preact/reactShim.test.tsx"
+  },
+  {
+    "name": "production preact react shims > loads lazy components and rerenders after the module resolves",
+    "file": "/Users/komin/vent 2d/src/preact/reactShim.test.tsx"
+  },
+  {
+    "name": "calculates bounded vitals for every supported ventilator mode",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "calculates scenario-specific vitals for every scenario",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "clamps boundary and invalid ventilator setting inputs",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "raises oxygenation and clears low SpO2 alarm when FiO2 is increased",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "improves oxygenation with moderate PEEP but raises PIP when PEEP is excessive",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "raises PaCO2 when tidal volume and respiratory rate are reduced",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "models timed physiologic trajectories and ventilator injury risks",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "keeps moderate hypercapnia drowsy before critical physiology is reached",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "models airway obstruction with high resistance and high peak pressure",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "models ARDS with low compliance and lung stiffness alarms",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "calculates pulmonary mechanics, protective ventilation, and weaning readiness metrics",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "escalates severe ARDS physiology to a distinct critical visual state",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "does not mark a well-saturated normal patient critical just because FiO2 is high",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "models pneumothorax with asymmetric chest motion and scenario-specific message",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "lets mode, inspiratory time, and trigger affect derived values",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "supports advanced ventilator modes for PRVC, volume support, adaptive, and proportional assist ventilation",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "covers alarm severity boundaries and math fallbacks",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "covers alarm priority, custom thresholds, mode thresholds, and precision alarm types",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "maps every patient condition to visual state, labels, chest motion, and lung mapping",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "describes every scenario and condition label accurately",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "recognizes every valid scenario and ventilator mode string",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "keeps scenario objects, default settings, public exports, and model types complete",
+    "file": "/Users/komin/vent 2d/src/simulation/ventilatorModel.test.tsx"
+  },
+  {
+    "name": "useSimulatorLayoutModel > keeps the simulator running when visibility changes while visible",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorLayoutModel.test.tsx"
+  },
+  {
+    "name": "useSimulatorLayoutModel > pauses the simulator when the document becomes hidden",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorLayoutModel.test.tsx"
+  },
+  {
+    "name": "useSimulatorLayoutModel > pauses and marks lifecycle events for pagehide, freeze, beforeunload, and resume",
+    "file": "/Users/komin/vent 2d/src/hooks/useSimulatorLayoutModel.test.tsx"
+  },
+  {
+    "name": "rendering performance budget > keeps forced layout reads out of runtime source except the rAF-throttled viewport hook",
+    "file": "/Users/komin/vent 2d/src/test/renderingBudget.test.tsx"
+  },
+  {
+    "name": "rendering performance budget > routes waveform polyline generation through a Vite Web Worker client",
+    "file": "/Users/komin/vent 2d/src/test/renderingBudget.test.tsx"
+  },
+  {
+    "name": "rendering performance budget > documents G.1 render, resource hint, and cache strategy coverage",
+    "file": "/Users/komin/vent 2d/src/test/renderingBudget.test.tsx"
+  },
+  {
+    "name": "rendering performance budget > documents G.2 bundle, CSS, image, and font optimization coverage",
+    "file": "/Users/komin/vent 2d/src/test/renderingBudget.test.tsx"
+  },
+  {
+    "name": "rendering performance budget > documents G.3 memory, lifecycle, worker, and scheduling coverage",
+    "file": "/Users/komin/vent 2d/src/test/renderingBudget.test.tsx"
+  },
+  {
+    "name": "rendering performance budget > documents G.4 network, compression, and static hosting coverage",
+    "file": "/Users/komin/vent 2d/src/test/renderingBudget.test.tsx"
+  },
+  {
+    "name": "i18n locale registry > covers all F.1 supported languages with fallback-safe copy",
+    "file": "/Users/komin/vent 2d/src/lib/i18n.test.ts"
+  },
+  {
+    "name": "i18n locale registry > resolves browser, URL, RTL, glossary, unit, and medical standards metadata",
+    "file": "/Users/komin/vent 2d/src/lib/i18n.test.ts"
+  },
+  {
+    "name": "i18n locale registry > formats local dates, numbers, money, sorting, cultural rules, policies, and docs",
+    "file": "/Users/komin/vent 2d/src/lib/i18n.test.ts"
+  },
+  {
+    "name": "scenario medical findings > adds every deep-audit respiratory and critical-care scenario requested in A.3 items 80-100",
+    "file": "/Users/komin/vent 2d/src/simulation/scenarioMedicalFindings.test.ts"
+  },
+  {
+    "name": "scenario medical findings > documents pneumonia, ARDS, obstruction, and pneumothorax diagnostic cues",
+    "file": "/Users/komin/vent 2d/src/simulation/scenarioMedicalFindings.test.ts"
+  },
+  {
+    "name": "waveform generator > uses Flow setting for inspiratory flow amplitude",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformGenerator.test.tsx"
+  },
+  {
+    "name": "waveform generator > extends expiratory tail in airway obstruction",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformGenerator.test.tsx"
+  },
+  {
+    "name": "waveform generator > generates pressure and volume waveforms across inspiration and expiration",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformGenerator.test.tsx"
+  },
+  {
+    "name": "waveform generator > generates capnography and supports zoomed historical windows",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformGenerator.test.tsx"
+  },
+  {
+    "name": "waveform generator > generates distinct mode-specific waveform shapes for advanced ventilator modes",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformGenerator.test.tsx"
+  },
+  {
+    "name": "waveform generator > generates patient monitoring waveforms for ECG, pleth, IBP, CVP, PAP, and EEG/BIS",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformGenerator.test.tsx"
+  },
+  {
+    "name": "clinical assessments > derives bedside chart data, labs, imaging, ECG, BP, temperature, GCS, pain, trends, and log",
+    "file": "/Users/komin/vent 2d/src/simulation/clinicalAssessments.test.tsx"
+  },
+  {
+    "name": "clinical assessments > marks scenario-specific X-ray and critical bedside status",
+    "file": "/Users/komin/vent 2d/src/simulation/clinicalAssessments.test.tsx"
+  },
+  {
+    "name": "clinical assessments > reports AFib and V-tach rhythm scenarios for ECG and HR analysis",
+    "file": "/Users/komin/vent 2d/src/simulation/clinicalAssessments.test.tsx"
+  },
+  {
+    "name": "scenario engine > calculates learning, evaluation, treatments, recovery, branching, and endpoint state",
+    "file": "/Users/komin/vent 2d/src/simulation/scenarioEngine.test.tsx"
+  },
+  {
+    "name": "scenario engine > models extubation failure, CPR, death, ROSC, and reintubation branches",
+    "file": "/Users/komin/vent 2d/src/simulation/scenarioEngine.test.tsx"
+  },
+  {
+    "name": "scenario engine > models auto-recovery branch and timed scenario emergencies",
+    "file": "/Users/komin/vent 2d/src/simulation/scenarioEngine.test.tsx"
+  },
+  {
+    "name": "simulation time controls > scales real elapsed time exactly for D.2 playback speeds",
+    "file": "/Users/komin/vent 2d/src/simulation/simulationTime.test.ts"
+  },
+  {
+    "name": "simulation time controls > formats elapsed time with millisecond precision and both clock formats",
+    "file": "/Users/komin/vent 2d/src/simulation/simulationTime.test.ts"
+  },
+  {
+    "name": "simulation time controls > builds timeline markers, remaining time, time zone, and CSV event export",
+    "file": "/Users/komin/vent 2d/src/simulation/simulationTime.test.ts"
+  },
+  {
+    "name": "real user monitoring > observes Web Vitals entries and publishes snapshots",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "real user monitoring > returns a no-op cleanup outside browser runtime",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "real user monitoring > does not register observers when disabled",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "real user monitoring > reports unsupported when PerformanceObserver is unavailable",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "real user monitoring > publishes an unsupported snapshot when no entry types are observable",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "real user monitoring > treats malformed supported entry type metadata as unsupported",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "real user monitoring > marks partial support when observer registration throws",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "real user monitoring > marks storage as blocked when session storage rejects snapshots",
+    "file": "/Users/komin/vent 2d/src/lib/realUserMonitoring.test.tsx"
+  },
+  {
+    "name": "Vercel observability registration > detects Vercel deployment runtimes from env or deployment hostnames",
+    "file": "/Users/komin/vent 2d/src/lib/vercelObservability.test.ts"
+  },
+  {
+    "name": "Vercel observability registration > skips script injection in local production previews",
+    "file": "/Users/komin/vent 2d/src/lib/vercelObservability.test.ts"
+  },
+  {
+    "name": "Vercel observability registration > skips script injection when disabled even on Vercel deployments",
+    "file": "/Users/komin/vent 2d/src/lib/vercelObservability.test.ts"
+  },
+  {
+    "name": "Vercel observability registration > injects analytics and speed insights on Vercel deployments",
+    "file": "/Users/komin/vent 2d/src/lib/vercelObservability.test.ts"
+  },
+  {
+    "name": "waveform worker client > uses a Web Worker when available",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformWorkerClient.test.tsx"
+  },
+  {
+    "name": "waveform worker client > falls back to synchronous waveform generation when Worker is unavailable",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformWorkerClient.test.tsx"
+  },
+  {
+    "name": "waveform worker client > falls back when worker postMessage throws",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformWorkerClient.test.tsx"
+  },
+  {
+    "name": "waveform worker client > falls back when worker construction throws",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformWorkerClient.test.tsx"
+  },
+  {
+    "name": "waveform worker client > falls back and clears pending requests when the worker errors",
+    "file": "/Users/komin/vent 2d/src/simulation/waveformWorkerClient.test.tsx"
+  },
+  {
+    "name": "alarm branch coverage > documents A.5 default alarm thresholds and alarm control features",
+    "file": "/Users/komin/vent 2d/src/simulation/alarms.test.ts"
+  },
+  {
+    "name": "alarm branch coverage > classifies low pressure, low battery, and oxygen supply critical states",
+    "file": "/Users/komin/vent 2d/src/simulation/alarms.test.ts"
+  },
+  {
+    "name": "alarm branch coverage > classifies low pressure, low battery, and oxygen supply warning states",
+    "file": "/Users/komin/vent 2d/src/simulation/alarms.test.ts"
+  },
+  {
+    "name": "alarm branch coverage > escalates repeated low-priority alarms to medium priority",
+    "file": "/Users/komin/vent 2d/src/simulation/alarms.test.ts"
+  },
+  {
+    "name": "CrUX live probes > records blocked direct API probes when neither API returns field data",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-live-probes.test.mjs"
+  },
+  {
+    "name": "CrUX live probes > passes when either direct API returns field data",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-live-probes.test.mjs"
+  },
+  {
+    "name": "CrUX live probes > writes both probe artifacts",
+    "file": "/Users/komin/vent 2d/scripts/check-crux-live-probes.test.mjs"
+  },
+  {
+    "name": "privacy-friendly analytics and observability controls > records page views, aggregate events, click maps, heat maps, scroll depth, conversions, and funnels",
+    "file": "/Users/komin/vent 2d/src/lib/analyticsMonitoring.test.ts"
+  },
+  {
+    "name": "privacy-friendly analytics and observability controls > keeps analytics disabled without browser/runtime consent",
+    "file": "/Users/komin/vent 2d/src/lib/analyticsMonitoring.test.ts"
+  },
+  {
+    "name": "privacy-friendly analytics and observability controls > documents Section I analytics, operations, reliability, and Web Vitals coverage",
+    "file": "/Users/komin/vent 2d/src/lib/analyticsMonitoring.test.ts"
+  },
+  {
+    "name": "mode safety > applies mode-specific parameter defaults",
+    "file": "/Users/komin/vent 2d/src/simulation/modeSafety.test.tsx"
+  },
+  {
+    "name": "mode safety > detects mode transition warnings, apnea backup, automatic backup, and IRV",
+    "file": "/Users/komin/vent 2d/src/simulation/modeSafety.test.tsx"
+  },
+  {
+    "name": "mode safety > describes advanced ventilator mode details",
+    "file": "/Users/komin/vent 2d/src/simulation/modeSafety.test.tsx"
+  },
+  {
+    "name": "mode safety > covers A.4 ventilator mode targets, cycling, safety, and adjunct controls",
+    "file": "/Users/komin/vent 2d/src/simulation/modeSafety.test.tsx"
+  },
+  {
+    "name": "mode safety > classifies critical transition pressure warnings",
+    "file": "/Users/komin/vent 2d/src/simulation/modeSafety.test.tsx"
+  },
+  {
+    "name": "source asset policy > keeps patient UI source free of raster image references",
+    "file": "/Users/komin/vent 2d/src/test/sourceRasterAssets.test.tsx"
+  },
+  {
+    "name": "mobile and PWA contracts > keeps touch-device responsive rules for phone, tablet, iOS, Android, and foldable layouts",
+    "file": "/Users/komin/vent 2d/src/test/mobilePwaContracts.test.ts"
+  },
+  {
+    "name": "mobile and PWA contracts > declares installable PWA metadata and mobile viewport behavior",
+    "file": "/Users/komin/vent 2d/src/test/mobilePwaContracts.test.ts"
+  },
+  {
+    "name": "security controls > sanitizes user-authored plain text before it is rendered back into the UI",
+    "file": "/Users/komin/vent 2d/src/lib/securityControls.test.ts"
+  },
+  {
+    "name": "security controls > records CSP violation events without leaking unsanitized event fields",
+    "file": "/Users/komin/vent 2d/src/lib/securityControls.test.ts"
+  },
+  {
+    "name": "security controls > defines strict static security headers across supported hosts",
+    "file": "/Users/komin/vent 2d/src/lib/securityControls.test.ts"
+  },
+  {
+    "name": "security controls > documents non-applicable cookie, auth, server, SRI, and traffic-abuse controls",
+    "file": "/Users/komin/vent 2d/src/lib/securityControls.test.ts"
+  },
+  {
+    "name": "security controls > keeps high-risk browser injection and network primitives out of runtime source",
+    "file": "/Users/komin/vent 2d/src/lib/securityControls.test.ts"
+  },
+  {
+    "name": "patient avatar motion CSS > keeps critical gasping, apnea, and reduced-motion controls in source CSS",
+    "file": "/Users/komin/vent 2d/src/test/patientAvatarMotionCss.test.tsx"
+  },
+  {
+    "name": "patient avatar motion CSS > keeps staged cyanosis filters distinct for worsening and critical patients",
+    "file": "/Users/komin/vent 2d/src/test/patientAvatarMotionCss.test.tsx"
+  },
+  {
+    "name": "patient avatar motion CSS > keeps patient-state animations tied to breath speed and compositor-friendly properties",
+    "file": "/Users/komin/vent 2d/src/test/patientAvatarMotionCss.test.tsx"
+  },
+  {
+    "name": "patient avatar motion CSS > limits keyframe animations to transform and opacity",
+    "file": "/Users/komin/vent 2d/src/test/patientAvatarMotionCss.test.tsx"
+  },
+  {
+    "name": "educational value framework > defines learning objectives and Bloom levels for every scenario",
+    "file": "/Users/komin/vent 2d/src/lib/educationFramework.test.ts"
+  },
+  {
+    "name": "educational value framework > covers assessment, feedback, references, clinical reasoning, media, encounters, and recertification",
+    "file": "/Users/komin/vent 2d/src/lib/educationFramework.test.ts"
+  },
+  {
+    "name": "CrUX environment helpers > prefers exported environment keys over local env-file keys",
+    "file": "/Users/komin/vent 2d/scripts/crux-env.test.mjs"
+  },
+  {
+    "name": "CrUX environment helpers > reads accepted local env-file names without reading .env.example placeholders",
+    "file": "/Users/komin/vent 2d/scripts/crux-env.test.mjs"
+  },
+  {
+    "name": "CrUX environment helpers > uses .env.local before .env for local key resolution",
+    "file": "/Users/komin/vent 2d/scripts/crux-env.test.mjs"
+  },
+  {
+    "name": "environment config > exports config loaded from the current import meta env",
+    "file": "/Users/komin/vent 2d/src/config/env.test.tsx"
+  },
+  {
+    "name": "environment config > loads allowed app environments and parses only literal true as enabled",
+    "file": "/Users/komin/vent 2d/src/config/env.test.tsx"
+  },
+  {
+    "name": "environment config > throws for missing or unsupported app environments",
+    "file": "/Users/komin/vent 2d/src/config/env.test.tsx"
+  },
+  {
+    "name": "application error tracking > stores bounded error reports and emits monitoring events",
+    "file": "/Users/komin/vent 2d/src/lib/errorTracking.test.ts"
+  },
+  {
+    "name": "application error tracking > returns reports without browser globals",
+    "file": "/Users/komin/vent 2d/src/lib/errorTracking.test.ts"
+  },
+  {
+    "name": "patient avatar semantic palette > maps clinical status colors to named semantic tokens",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarPalette.test.tsx"
+  },
+  {
+    "name": "patient avatar semantic palette > maps secretion burden to low, medium, and high clinical colors",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarPalette.test.tsx"
+  },
+  {
+    "name": "patient avatar semantic palette > maps patient expression and condition to visible face-state colors",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarPalette.test.tsx"
+  },
+  {
+    "name": "patient avatar semantic palette > exposes patient-critical colors as CSS custom properties",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarPalette.test.tsx"
+  },
+  {
+    "name": "patient avatar semantic palette > keeps danger text colors above WCAG AAA contrast on clinical panels",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarPalette.test.tsx"
+  },
+  {
+    "name": "patient avatar semantic palette > renders collapsed lung and patient outline from semantic CSS tokens",
+    "file": "/Users/komin/vent 2d/src/components/patient/patientAvatarPalette.test.tsx"
+  },
+  {
+    "name": "acid-base assessment > classifies ABGA threshold ranges used by the clinical monitor",
+    "file": "/Users/komin/vent 2d/src/simulation/acidBase.test.ts"
+  },
+  {
+    "name": "acid-base assessment > calculates ABGA formulas explicitly",
+    "file": "/Users/komin/vent 2d/src/simulation/acidBase.test.ts"
+  },
+  {
+    "name": "acid-base assessment > builds a full text report with disorder and compensation cues",
+    "file": "/Users/komin/vent 2d/src/simulation/acidBase.test.ts"
+  },
+  {
+    "name": "simulation snapshot serialization > round-trips elapsed time, speed, scenario, pause state, and settings as JSON",
+    "file": "/Users/komin/vent 2d/src/simulation/simulationSnapshot.test.tsx"
+  },
+  {
+    "name": "simulation snapshot serialization > rejects invalid snapshots and normalizes unsafe settings",
+    "file": "/Users/komin/vent 2d/src/simulation/simulationSnapshot.test.tsx"
+  },
+  {
+    "name": "simulation snapshot serialization > normalizes unsafe settings with per-field defaults",
+    "file": "/Users/komin/vent 2d/src/simulation/simulationSnapshot.test.tsx"
+  },
+  {
+    "name": "service worker registration > does not register when disabled",
+    "file": "/Users/komin/vent 2d/src/lib/serviceWorkerRegistration.test.tsx"
+  },
+  {
+    "name": "service worker registration > registers the production service worker when available",
+    "file": "/Users/komin/vent 2d/src/lib/serviceWorkerRegistration.test.tsx"
+  },
+  {
+    "name": "completion audit validators > rejects generic Chrome UX Report evidence without field data",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  },
+  {
+    "name": "completion audit validators > accepts Chrome UX Report evidence with real field-data indicators",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  },
+  {
+    "name": "completion audit validators > accepts Chrome UX Report evidence with URL-level CrUX API record",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  },
+  {
+    "name": "completion audit validators > accepts Chrome UX Report evidence with PageSpeed page loading experience",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  },
+  {
+    "name": "completion audit validators > accepts Chrome UX Report evidence with PageSpeed origin loading experience",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  },
+  {
+    "name": "completion audit validators > accepts Chrome UX Report evidence with public CrUX cache origin",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  },
+  {
+    "name": "completion audit validators > accepts Chrome UX Report evidence with explicit fieldDataEvidence flag",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  },
+  {
+    "name": "completion audit validators > does not apply Chrome UX Report semantics to unrelated evidence",
+    "file": "/Users/komin/vent 2d/scripts/completion-audit-validators.test.mjs"
+  }
+]

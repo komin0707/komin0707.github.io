@@ -1,0 +1,48 @@
+{
+  "verifiedAt": "2026-05-11T00:05:29Z",
+  "verifier": "Codex via macOS VoiceOver, Google Chrome, Computer Use accessibility tree, and unified logging",
+  "result": "pass",
+  "evidence": {
+    "targetUrl": "https://komin0707.github.io/",
+    "environment": {
+      "platform": "macOS",
+      "productVersion": "15.7.3",
+      "buildVersion": "24G419",
+      "browser": "Google Chrome"
+    },
+    "checks": [
+      "Started macOS VoiceOver and verified the VoiceOver process was running.",
+      "Activated Google Chrome on the deployed simulator URL.",
+      "Sent VoiceOver navigation key commands with Control-Option while Chrome was active.",
+      "Captured the Chrome accessibility tree showing the simulator controls and patient image accessibility text.",
+      "Captured macOS unified log evidence showing VoiceOver speech synthesis queue activity with the Korean Yuna voice while Chrome was active."
+    ],
+    "observedAccessibleText": [
+      "Vent Simulator 2D",
+      "A/C",
+      "FiO2 (%) controls",
+      "상태 기반 삽관 환자 이미지, worsening, 산소포화도 86%",
+      "저산소혈증, 고탄산혈증, 분비물 증가 상태입니다. PEEP, FiO2, 환기량 조정과 분비물 제거를 고려할 수 있습니다."
+    ],
+    "voiceOverProcess": "/System/Library/CoreServices/VoiceOver.app/Contents/MacOS/VoiceOver launchd -s",
+    "logSignals": [
+      "VoiceOver resolved com.apple.voice.compact.ko-KR.Yuna",
+      "VoiceOver CoreSynthesizer enqueued utterances",
+      "VoiceOver TTSSpeechQueue entered running state",
+      "VoiceOver acquired AudioHAL assertion"
+    ],
+    "limitations": [
+      "VoiceOver AppleScript cursor/last-phrase APIs did not return readable phrase text in this environment, so the evidence relies on the real VoiceOver process, TTS queue logs, screenshot, and Chrome accessibility tree instead of a copied phrase transcript."
+    ],
+    "artifacts": [
+      {
+        "path": "artifacts/manual-evidence/voiceover-mac-log.txt",
+        "sha256": "68d82e34c26559497fca750ce64c5e0263f4eb29fd4f007b8427941d064a5efa"
+      },
+      {
+        "path": "artifacts/manual-evidence/voiceover-mac-screenshot.png",
+        "sha256": "27edf6e06d2f53839afba1cf53ef2db134a23981665481270a4eff1456566612"
+      }
+    ]
+  }
+}

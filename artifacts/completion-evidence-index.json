@@ -1,0 +1,435 @@
+{
+  "generatedAt": "2026-05-12T05:50:57Z",
+  "objective": {
+    "source": "User requested COMPLETE_FIX_REQUIREMENTS.md to be 100% complete and claimed 1167 items.",
+    "actualChecklistRowsObserved": 1150,
+    "completionCriterion": "Every checklist row in COMPLETE_FIX_REQUIREMENTS.md is checked and every explicit command, evidence artifact, screenshot, build, accessibility, security, deployment, and monitoring gate has real evidence.",
+    "status": "not_achieved",
+    "claimedChecklistRows": 1150,
+    "expectedHighestItemNumber": 1150,
+    "checklistRowDeltaFromClaim": 0,
+    "phaseClaimedChecklistRowsTotal": 1150,
+    "checklistRowDeltaFromPhaseClaims": 0,
+    "phaseClaimsDeltaFromClaimedTotal": 0
+  },
+  "currentAudit": {
+    "path": "artifacts/completion-audit.json",
+    "status": "incomplete",
+    "checked": 1149,
+    "duplicateItemNumbers": [],
+    "expectedHighestItemNumber": 1150,
+    "malformedChecklistRows": [],
+    "sections": [
+      {
+        "checked": 250,
+        "firstItem": 1,
+        "lastItem": 250,
+        "title": "🚨 SECTION A: 환자 아바타 UI 완전 재설계 (250+ 항목)",
+        "total": 250,
+        "unchecked": 0
+      },
+      {
+        "checked": 170,
+        "firstItem": 251,
+        "lastItem": 420,
+        "title": "🚨 SECTION B: 미구현/불완전 기능 (200+ 항목)",
+        "total": 170,
+        "unchecked": 0
+      },
+      {
+        "checked": 200,
+        "firstItem": 421,
+        "lastItem": 620,
+        "title": "🚨 SECTION C: 코드 품질 (200+ 항목)",
+        "total": 200,
+        "unchecked": 0
+      },
+      {
+        "checked": 200,
+        "firstItem": 621,
+        "lastItem": 820,
+        "title": "🚨 SECTION D: 테스트 (200+ 항목)",
+        "total": 200,
+        "unchecked": 0
+      },
+      {
+        "checked": 79,
+        "firstItem": 821,
+        "lastItem": 900,
+        "title": "🚨 SECTION E: 성능 (100+ 항목)",
+        "total": 80,
+        "unchecked": 1
+      },
+      {
+        "checked": 100,
+        "firstItem": 901,
+        "lastItem": 1000,
+        "title": "🚨 SECTION F: 접근성 (WCAG 2.1 AA) (100+ 항목)",
+        "total": 100,
+        "unchecked": 0
+      },
+      {
+        "checked": 50,
+        "firstItem": 1001,
+        "lastItem": 1050,
+        "title": "🚨 SECTION G: 보안 & 모범 사례 (50+ 항목)",
+        "total": 50,
+        "unchecked": 0
+      },
+      {
+        "checked": 50,
+        "firstItem": 1051,
+        "lastItem": 1100,
+        "title": "🚨 SECTION H: 문서화 (50+ 항목)",
+        "total": 50,
+        "unchecked": 0
+      },
+      {
+        "checked": 50,
+        "firstItem": 1101,
+        "lastItem": 1150,
+        "title": "🚨 SECTION I: 배포 & DevOps (50+ 항목)",
+        "total": 50,
+        "unchecked": 0
+      }
+    ],
+    "unchecked": 1,
+    "observedTotal": 1150,
+    "missingItemNumbers": [],
+    "blockerCount": 1
+  },
+  "remainingBlocker": {
+    "item": 874,
+    "text": "Chrome UX Report monitoring",
+    "id": "chrome-ux-report",
+    "checklistLine": "874. [ ] Chrome UX Report 모니터링",
+    "reason": "Chrome UX Report field data is not available for the connected production origin.",
+    "requiredToComplete": [
+      "A valid Chrome UX Report or PageSpeed API key with quota and available field data for the production origin.",
+      "A production origin with enough real-user Chrome traffic to be included in CrUX."
+    ],
+    "mustNotMarkCompleteBecause": "The completion audit requires a valid artifacts/manual-evidence/chrome-ux-report.json field-data evidence file and the checklist item remains unchecked."
+  },
+  "promptRequirementMap": [
+    {
+      "requirement": "Read COMPLETE_FIX_REQUIREMENTS.md and complete every checklist item.",
+      "evidence": ["COMPLETE_FIX_REQUIREMENTS.md", "artifacts/completion-audit.json"],
+      "status": "blocked",
+      "notes": "1149 of 1150 actual checklist rows are checked; item 874 remains unchecked."
+    },
+    {
+      "requirement": "Section A patient avatar redesign and visual patient screenshot.",
+      "evidence": [
+        "artifacts/patient-avatar-current.png",
+        "artifacts/simulator-current.png",
+        "artifacts/completion-audit.json:screenshots",
+        "artifacts/manual-evidence/visual-screenshot-review.json",
+        "artifacts/completion-audit.json:visualReview"
+      ],
+      "status": "verified",
+      "notes": "Visual review passed for 2 screenshot artifacts: artifacts/patient-avatar-current.png 696x392, artifacts/simulator-current.png 1440x900."
+    },
+    {
+      "requirement": "No skipped checklist rows.",
+      "evidence": [
+        "artifacts/completion-audit.json:checklist",
+        "latest terminal run: npm run check:completion-evidence exited 0",
+        "artifacts/completion-audit.json:checklist.sections"
+      ],
+      "status": "blocked",
+      "notes": "The audit reports 1 unchecked item: 874. scripts/assert-completion-consistency.mjs verifies checklist counts, malformed rows, section totals, and blocker alignment across COMPLETE_FIX_REQUIREMENTS.md, artifacts/completion-audit.json, artifacts/completion-evidence-index.json, and artifacts/manual-evidence/remaining-external-blockers.json."
+    },
+    {
+      "requirement": "npm run type-check.",
+      "evidence": [
+        "latest terminal run: npm run type-check exited 0",
+        "artifacts/manual-evidence/phase-gate-command-results.json:commands.typeCheck"
+      ],
+      "status": "verified"
+    },
+    {
+      "requirement": "npm run lint.",
+      "evidence": [
+        "latest terminal run: npm run lint exited 0",
+        "artifacts/manual-evidence/phase-gate-command-results.json:commands.lint"
+      ],
+      "status": "verified"
+    },
+    {
+      "requirement": "npm test:coverage result.",
+      "evidence": [
+        "latest terminal run: npm run test:coverage exited 0",
+        "66 test files passed",
+        "313 tests passed",
+        "Statements 94.56% (3042/3217)",
+        "Branches 92.31% (2186/2368)",
+        "Functions 93.54% (826/883)",
+        "Lines 95.65% (2490/2603)",
+        "artifacts/manual-evidence/phase-gate-command-results.json:commands.coverage"
+      ],
+      "status": "verified",
+      "notes": "The prompt names the coverage gate as npm test:coverage; package.json defines test:coverage as a custom npm script, so the runnable command is npm run test:coverage.",
+      "commandMapping": {
+        "packageScript": "test:coverage",
+        "packageScriptValue": "npm run test:list && vitest run --coverage",
+        "promptCommand": "npm test:coverage",
+        "runnableCommand": "npm run test:coverage"
+      }
+    },
+    {
+      "requirement": "npm run build, image-free output, under 100KB primary budget.",
+      "evidence": [
+        "latest terminal run: npm run build exited 0",
+        "latest terminal run: npm run check:no-raster exited 0",
+        "latest terminal run: npm run check:bundle-size exited 0",
+        "artifacts/completion-audit.json:dist",
+        "artifacts/manual-evidence/phase-gate-command-results.json:commands.build",
+        "artifacts/manual-evidence/phase-gate-command-results.json:commands.noRaster",
+        "artifacts/manual-evidence/phase-gate-command-results.json:commands.bundleSize",
+        "artifacts/manual-evidence/phase-gate-command-results.json:dist"
+      ],
+      "status": "verified",
+      "notes": "Audit dist exists is true, fileCount is 26, hasBuildOutput is true, totalBytes is 559496, primaryBytesNoCompressedSidecars is 353920, primaryJsCssBytes is 345123, transferBrotliJsCssBytes is 92273, withinBrotliTransferBudget is true, and rasterAssets is empty. scripts/assert-completion-audit.mjs now requires real dist build output, at least one primary JS/CSS asset, no raster assets, and Brotli JS/CSS transfer bytes to remain below 100000. Raw primary/dist bytes are reported as diagnostic context, not the pass criterion."
+    },
+    {
+      "requirement": "Security scan including Snyk.",
+      "evidence": [
+        "artifacts/manual-evidence/snyk.json",
+        "artifacts/manual-evidence/snyk-test.json",
+        "artifacts/completion-audit.json:commands.snyk",
+        "latest terminal run: npm audit --audit-level=moderate exited 0",
+        "latest terminal run: npm run check:licenses exited 0",
+        "latest terminal run: npm run check:sbom exited 0",
+        "artifacts/sbom.json",
+        "artifacts/completion-audit.json:commands.npmAudit",
+        "artifacts/completion-audit.json:commands.licensePolicy",
+        "artifacts/completion-audit.json:commands.sbom",
+        "artifacts/completion-audit.json:sbom"
+      ],
+      "status": "verified",
+      "notes": "Security and release evidence passed: npm audit, license policy, SBOM generation, Snyk, and CycloneDX SBOM validation with 1 component(s) for vent 2d."
+    },
+    {
+      "requirement": "External manual evidence for profiler, WebPageTest, screen readers, and domain connection.",
+      "evidence": [
+        "artifacts/manual-evidence/react-devtools-profiler.json",
+        "artifacts/manual-evidence/webpagetest.json",
+        "artifacts/manual-evidence/nvda.json",
+        "artifacts/manual-evidence/jaws.json",
+        "artifacts/manual-evidence/voiceover-mac.json",
+        "artifacts/manual-evidence/voiceover-ios.json",
+        "artifacts/manual-evidence/talkback-android.json",
+        "artifacts/manual-evidence/domain-connection.json",
+        "artifacts/completion-audit.json:manualEvidence"
+      ],
+      "status": "verified_except_crux",
+      "notes": "Chrome UX Report manual evidence is the only missing manual evidence artifact."
+    },
+    {
+      "requirement": "Chrome UX Report monitoring.",
+      "evidence": [
+        "artifacts/manual-evidence/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25646337690/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25646460087/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25646460087/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25646847291/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25646847291/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647346071/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647346071/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647346071/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647483504/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647483504/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647483504/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647617836/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647617836/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647617836/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647717850/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647717850/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647717850/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647853727/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647853727/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647853727/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647964321/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647964321/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25647964321/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25648413186/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25648413186/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25648413186/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25649269307/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25649269307/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25649269307/issue.json",
+        "artifacts/manual-evidence/chrome-ux-report-credentials.json",
+        "docs/RUNBOOK.md:Chrome UX Report Monitoring",
+        "docs/DEPLOYMENT.md:Optional monitoring secret",
+        "docs/SECRETS.md:Chrome UX Report monitoring",
+        "scripts/completion-audit-validators.mjs",
+        "scripts/completion-audit-validators.test.mjs",
+        "scripts/assert-completion-audit.mjs",
+        "artifacts/completion-audit.json:manualEvidence.chrome-ux-report.supportingEvidence",
+        "scripts/assert-completion-consistency.mjs",
+        "latest terminal run: npm run check:completion-consistency exited 0 after verifying CrUX credential evidence alignment, audit supportingEvidence, and latest remote CrUX run metadata",
+        "latest terminal run: npx vitest run scripts/completion-audit-validators.test.mjs exited 0 with 8 tests",
+        "latest terminal run: npm run check:crux-credentials exited 1 with result missing at 2026-05-12T04:48:33.465Z",
+        "latest terminal run: npm run check:crux-monitoring exited 1 with result blocked and fieldDataAvailable false at 2026-05-12T04:48:54.907Z",
+        "https://github.com/komin0707/komin0707.github.io/issues/1",
+        "artifacts/manual-evidence/crux-monitoring-run-25650617959/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25650617959/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25650617959/issue.json",
+        "docs/RUNBOOK.md:CrUX credential env-file scan",
+        "docs/DEPLOYMENT.md:CrUX credential env-file scan",
+        "docs/SECRETS.md:CrUX credential env-file scan",
+        "artifacts/manual-evidence/crux-monitoring-run-25651470769/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25651470769/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25651470769/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25651470769/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25652159860/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25652159860/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25652159860/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25652159860/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25653607870/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25653607870/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25653607870/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25653607870/issue.json",
+        "artifacts/manual-evidence/github-pages-domain.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25654345927/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25654345927/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25654345927/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25654345927/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25656583627/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25656583627/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25656583627/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25656583627/issue.json",
+        "artifacts/manual-evidence/remote-crux-workflow-drift.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25658567774/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25658567774/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25658567774/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25658567774/issue.json",
+        "artifacts/manual-evidence/remote-crux-latest-run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25659984336/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25659984336/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25659984336/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25659984336/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25663549851/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25663549851/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25663549851/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25663549851/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665436430/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665436430/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665436430/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665436430/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665837651/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665837651/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665837651/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25665837651/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667041371/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667041371/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667041371/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667041371/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667928163/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667928163/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667928163/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25667928163/issue.json",
+        "artifacts/manual-evidence/crux-live-probe.json",
+        "artifacts/manual-evidence/pagespeed-live-probe.json",
+        "latest terminal run: npm run check:crux-live-probes exited 1 with CrUX records absent/absent and PageSpeed loadingExperience absent/absent at 2026-05-12T04:48:31Z",
+        "artifacts/manual-evidence/crux-monitoring-run-25669237661/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25669237661/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25669237661/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25669237661/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25670238333/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25670238333/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25670238333/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25670238333/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672260309/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672260309/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672260309/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672260309/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672705535/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672705535/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672705535/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25672705535/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25674975632/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25674975632/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25674975632/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25674975632/issue.json",
+        "artifacts/manual-evidence/crux-blocker-refresh.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25679215736/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25679215736/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25679215736/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25679215736/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25681516283/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25681516283/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25681516283/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25681516283/issue.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25682216707/run.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25682216707/chrome-ux-report-credentials.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25682216707/chrome-ux-report-monitoring.json",
+        "artifacts/manual-evidence/crux-monitoring-run-25682216707/issue.json"
+      ],
+      "status": "blocked",
+      "notes": "Monitoring exists locally and remotely, but field-data evidence is unavailable. scripts/assert-completion-audit.mjs now requires item 874 evidence to have result \"passed\" plus real CrUX/PageSpeed field-data indicators before it can count as valid. The CrUX monitor now checks both origin-level and URL-level records and writes artifacts/manual-evidence/chrome-ux-report.json only when real field data is found."
+    },
+    {
+      "requirement": "No forbidden implementation shortcuts.",
+      "evidence": [
+        "latest terminal run: npm run check:forbidden-patterns exited 0",
+        "artifacts/completion-audit.json:commands.forbiddenPatterns"
+      ],
+      "status": "verified",
+      "notes": "scripts/assert-forbidden-patterns.mjs scans production source for type-suppression comments, debug print calls, task-marker comments, explicit TypeScript top-type usage, and temporary or workaround implementation bypass markers."
+    },
+    {
+      "requirement": "No mock-only test completion.",
+      "evidence": [
+        "latest terminal run: npm run check:test-realism exited 0",
+        "artifacts/manual-evidence/test-realism.json",
+        "artifacts/completion-audit.json:commands.testRealism"
+      ],
+      "status": "verified",
+      "notes": "Test realism verifier passed with 313 Vitest tests, 1 E2E spec file, 23 behavior-oriented test files, 34 production-import test files, and 11 files using constrained platform-boundary test doubles."
+    },
+    {
+      "requirement": "No temporary implementation bypasses.",
+      "evidence": [
+        "latest terminal run: npm run check:forbidden-patterns exited 0",
+        "artifacts/completion-audit.json:commands.forbiddenPatterns"
+      ],
+      "status": "verified",
+      "notes": "The same source scanner rejects temporary or workaround implementation bypass markers in production source roots."
+    }
+  ],
+  "remoteCruxEvidence": {
+    "productionOrigin": "https://komin0707.github.io",
+    "pagesRepository": "komin0707/komin0707.github.io",
+    "workflow": "CrUX Monitoring",
+    "latestWorkflowCommit": "41b98e10419e7f32bf0d600ac68e07bf37fbd4fe",
+    "latestRunId": 25682216707,
+    "latestRunConclusion": "failure",
+    "blockerIssue": "https://github.com/komin0707/komin0707.github.io/issues/1",
+    "latestMonitoringArtifact": "artifacts/manual-evidence/crux-monitoring-run-25682216707/chrome-ux-report-monitoring.json",
+    "workflowDrift": {
+      "artifact": "artifacts/manual-evidence/remote-crux-workflow-drift.json",
+      "result": "passed",
+      "verifiedAt": "2026-05-11T16:10:42.912Z",
+      "mismatchedFiles": [],
+      "missingWorkflowMarkers": []
+    },
+    "latestRemoteRunCheck": {
+      "artifact": "artifacts/manual-evidence/remote-crux-latest-run.json",
+      "result": "passed",
+      "verifiedAt": "2026-05-12T05:50:57.154Z",
+      "latestRemoteRunId": 25682216707,
+      "latestRemoteHeadSha": "41b98e10419e7f32bf0d600ac68e07bf37fbd4fe",
+      "indexedRunId": 25682216707,
+      "indexedWorkflowCommit": "41b98e10419e7f32bf0d600ac68e07bf37fbd4fe",
+      "indexedWorkflowCommitMatchesLatest": true,
+      "indexedArtifactExists": true,
+      "indexedArtifactMatchesRun": true
+    }
+  },
+  "doNotCompleteYet": [
+    "Do not call update_goal.",
+    "Do not check item 874.",
+    "Do not create artifacts/manual-evidence/chrome-ux-report.json unless it contains real CrUX/PageSpeed field-data evidence for the production origin."
+  ]
+}

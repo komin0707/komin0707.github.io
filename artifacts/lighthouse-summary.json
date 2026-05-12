@@ -1,0 +1,18 @@
+{
+  "budgets": {
+    "accessibility": 0.95,
+    "bestPractices": 0.95,
+    "performance": 0.9,
+    "seo": 0.95,
+    "speedIndexMs": 5000
+  },
+  "summary": {
+    "scores": {
+      "accessibility": 1,
+      "bestPractices": 1,
+      "performance": 1,
+      "seo": 1
+    },
+    "speedIndexMs": 474.1309819261157
+  }
+}

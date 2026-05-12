@@ -1,0 +1,91 @@
+05-11 09:00:33.973 I/AiAiEcho( 1777): Settings cha with uri: content://settings/secure/enabled_accessibility_services
+05-11 09:00:33.995 I/AiAiEcho( 1777): Settings cha with uri: content://settings/secure/accessibility_enabled
+05-11 09:00:34.002 I/A11yListener( 1834): (REDACTED) #onAccessibilityStateChanged enabled: %s
+05-11 09:00:34.014 D/BatterySaverPolicy(  516): accessibility changed to true, updating policy.
+05-11 09:00:34.022 I/AiAiEcho( 1777): Settings cha with uri: content://settings/secure/accessibility_enabled
+05-11 09:00:34.069 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:34.071 I/AiAiEcho( 1777): Settings cha with uri: content://settings/secure/accessibility_enabled
+05-11 09:00:34.229 I/TextToSpeech(14206): Sucessfully bound to com.google.android.tts
+05-11 09:00:34.230 D/TextToSpeechManagerPerUserService(  516): Trying to start connection to TTS engine: com.google.android.tts
+05-11 09:00:34.270 I/GoogleTtsServicePeer(12300): Creating Google TTS service, version googletts.google-speech-apk_20230123.02_p3.506463867
+05-11 09:00:34.286 D/TextToSpeechManagerPerUserService(  516): Connected successfully to TTS engine: com.google.android.tts
+05-11 09:00:34.286 I/TextToSpeech(14206): Connected to TTS engine
+05-11 09:00:34.287 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:34.290 I/GoogleTTSServiceImpl(12300): For default lang ko-kr is name ko-KR-language (ko-kr-x-ism-server)
+05-11 09:00:34.290 I/TextToSpeech(14206): Setting up the connection to TTS engine...
+05-11 09:00:34.372 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:34.448 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:34.570 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:34.659 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:34.702 I/A       ( 1834): FCF A11y Checker - servicesRequiringEarcon: TalkBack
+05-11 09:00:34.710 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:34.711 W/System.err(13576): 	at android.view.accessibility.AccessibilityManager.lambda$notifyTouchExplorationStateChanged$1(AccessibilityManager.java:1903)
+05-11 09:00:34.711 W/System.err(13576): 	at android.view.accessibility.AccessibilityManager$$ExternalSyntheticLambda3.run(Unknown Source:4)
+05-11 09:00:34.759 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:35.096 E/talkback: SpeechControllerImpl(14206): TTS is not ready. Attempted to speak before TTS was initialized. Item: {utteranceId:"", fragments:[{text:TalkBack 사용, earcons:[], haptics:[], speechParams:Bundle[{pitch=1.0}]nonSpeechParams:Bundle[{}]fragmentStartIndex:0}], uninterruptible:true, flushGlobalTtsQueue:false, flags:62, creationTime:1778457635096}
+05-11 09:00:35.116 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:35.164 E/talkback: FeatureDownloader(14206): Fail to get session states. com.google.android.play.core.serviceconnection.ServiceUnavailableException: Failed to bind to the service.
+05-11 09:00:35.968 E/talkback: SpeechControllerImpl(14206): TTS is not ready. Attempted to speak before TTS was initialized. Item: {utteranceId:"", fragments:[{text:발생 13:27, earcons:[], haptics:[2130903051], speechParams:Bundle[{pitch=1.0}]nonSpeechParams:Bundle[{}]fragmentStartIndex:0}], uninterruptible:true, flushGlobalTtsQueue:false, flags:300, creationTime:1778457635968}
+05-11 09:00:35.973 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:35.974 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:35.974 I/GoogleTTSServiceImpl(12300): For default lang ko-kr is name ko-KR-language (ko-kr-x-ism-server)
+05-11 09:00:35.975 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:36.135 I/gle.android.tts(12300): Background young concurrent copying GC freed 32996(2766KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 10158KB/14MB, paused 84us,11us total 137.063ms
+05-11 09:00:36.153 I/MediaFocusControl(  516): requestAudioFocus() from uid/pid 10132/14206 AA=USAGE_ASSISTANCE_ACCESSIBILITY/CONTENT_TYPE_SPEECH clientId=android.media.AudioManager@9f31b18com.google.android.accessibility.utils.output.SpeechControllerImpl$5@b540971 callingPack=com.google.android.marvin.talkback req=3 flags=0x0 sdk=34
+05-11 09:00:37.130 I/GoogleTTSServiceImpl(12300): Synthesis request for locale kor-KOR and name ko-KR-language
+05-11 09:00:37.131 I/GoogleTTSServiceImpl(12300): TTS dispatch: ko-kr-x-ism-lstm-embedded
+05-11 09:00:39.023 I/GoogleTTSServiceImpl(12300): Synthesis request for locale kor-KOR and name ko-KR-language
+05-11 09:00:39.023 I/GoogleTTSServiceImpl(12300): TTS dispatch: ko-kr-x-ism-lstm-embedded
+05-11 09:00:40.983 I/GoogleTTSServiceImpl(12300): Synthesis request for locale kor-KOR and name ko-KR-language
+05-11 09:00:40.985 I/GoogleTTSServiceImpl(12300): TTS dispatch: ko-kr-x-ism-lstm-embedded
+05-11 09:00:41.029 I/MediaFocusControl(  516): abandonAudioFocus() from uid/pid 10132/14206 clientId=android.media.AudioManager@9f31b18com.google.android.accessibility.utils.output.SpeechControllerImpl$5@b540971
+05-11 09:00:41.062 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:41.098 I/GoogleTTSServiceImpl(12300): Synthesis request for locale kor-KOR and name ko-KR-language
+05-11 09:00:41.099 I/GoogleTTSServiceImpl(12300): TTS dispatch: ko-kr-x-ism-lstm-embedded
+05-11 09:00:41.100 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:41.100 I/GoogleTTSServiceImpl(12300): Did not cache synthesis request.
+05-11 09:00:41.113 W/System.err(13576): 	at android.view.accessibility.AccessibilityManager.lambda$notifyTouchExplorationStateChanged$1(AccessibilityManager.java:1903)
+05-11 09:00:41.113 W/System.err(13576): 	at android.view.accessibility.AccessibilityManager$$ExternalSyntheticLambda3.run(Unknown Source:4)
+05-11 09:00:41.117 I/MediaFocusControl(  516): requestAudioFocus() from uid/pid 10132/14206 AA=USAGE_ASSISTANCE_ACCESSIBILITY/CONTENT_TYPE_SPEECH clientId=android.media.AudioManager@9f31b18com.google.android.accessibility.utils.output.SpeechControllerImpl$5@b540971 callingPack=com.google.android.marvin.talkback req=3 flags=0x0 sdk=34
+05-11 09:00:41.121 I/GoogleTTSServiceImpl(12300): Synthesis request for locale kor-KOR and name ko-KR-language
+05-11 09:00:41.122 I/GoogleTTSServiceImpl(12300): TTS dispatch: ko-kr-x-ism-lstm-embedded
+05-11 09:00:43.022 I/MediaFocusControl(  516): abandonAudioFocus() from uid/pid 10132/14206 clientId=android.media.AudioManager@9f31b18com.google.android.accessibility.utils.output.SpeechControllerImpl$5@b540971
+05-11 09:00:43.028 I/GoogleTTSServiceImpl(12300): Synthesis request for locale kor-KOR and name ko-KR-language
+05-11 09:00:43.029 I/GoogleTTSServiceImpl(12300): TTS dispatch: ko-kr-x-ism-lstm-embedded
+05-11 09:00:43.030 I/GoogleTTSServiceImpl(12300): Did not cache synthesis request.
+05-11 09:00:43.031 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:43.036 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:43.039 I/GoogleTTSServiceImpl(12300): Synthesis request for locale kor-KOR and name ko-KR-language
+05-11 09:00:43.040 I/GoogleTTSServiceImpl(12300): TTS dispatch: ko-kr-x-ism-lstm-embedded
+05-11 09:00:43.040 I/GoogleTTSServiceImpl(12300): Did not cache synthesis request.
+05-11 09:00:43.042 D/TextToSpeechManagerPerUserService(  516): Unbinding TTS engine: com.google.android.tts. Reason: client disconnection request
+05-11 09:00:43.045 W/TextToSpeechManagerPerUserService(  516): Disconnected from TTS engine
+05-11 09:00:43.046 I/TextToSpeech(14206): Disconnected from TTS engine
+05-11 09:00:51.240 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:51.288 I/TextToSpeech(14206): Sucessfully bound to com.google.android.tts
+05-11 09:00:51.289 D/TextToSpeechManagerPerUserService(  516): Trying to start connection to TTS engine: com.google.android.tts
+05-11 09:00:51.296 I/GoogleTtsServicePeer(12300): Creating Google TTS service, version googletts.google-speech-apk_20230123.02_p3.506463867
+05-11 09:00:51.338 D/TextToSpeechManagerPerUserService(  516): Connected successfully to TTS engine: com.google.android.tts
+05-11 09:00:51.342 I/TextToSpeech(14206): Connected to TTS engine
+05-11 09:00:51.345 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:51.348 I/GoogleTTSServiceImpl(12300): For default lang ko-kr is name ko-KR-language (ko-kr-x-ism-server)
+05-11 09:00:51.348 I/TextToSpeech(14206): Setting up the connection to TTS engine...
+05-11 09:00:51.469 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:51.546 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:51.644 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:51.726 I/LibLouisWrapper_Native(14206): Setting tables path to: /data/user_de/0/com.google.android.marvin.talkback/app_translator
+05-11 09:00:51.742 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:51.745 W/System.err(13576): 	at android.view.accessibility.AccessibilityManager.lambda$notifyTouchExplorationStateChanged$1(AccessibilityManager.java:1903)
+05-11 09:00:51.745 W/System.err(13576): 	at android.view.accessibility.AccessibilityManager$$ExternalSyntheticLambda3.run(Unknown Source:4)
+05-11 09:00:51.749 I/A       ( 1834): FCF A11y Checker - servicesRequiringEarcon: TalkBack
+05-11 09:00:51.805 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:52.115 E/talkback: SpeechControllerImpl(14206): TTS is not ready. Attempted to speak before TTS was initialized. Item: {utteranceId:"", fragments:[{text:TalkBack 사용, earcons:[], haptics:[], speechParams:Bundle[{pitch=1.0}]nonSpeechParams:Bundle[{}]fragmentStartIndex:0}], uninterruptible:true, flushGlobalTtsQueue:false, flags:62, creationTime:1778457652115}
+05-11 09:00:52.149 V/SafetyCenterAccessibilityListener(12275): accessibility event occurred, safety center feature not enabled.
+05-11 09:00:52.176 E/talkback: FeatureDownloader(14206): Fail to get session states. com.google.android.play.core.serviceconnection.ServiceUnavailableException: Failed to bind to the service.
+05-11 09:00:52.879 E/talkback: SpeechControllerImpl(14206): TTS is not ready. Attempted to speak before TTS was initialized. Item: {utteranceId:"", fragments:[{text:발생 13:44, earcons:[], haptics:[2130903051], speechParams:Bundle[{pitch=1.0}]nonSpeechParams:Bundle[{}]fragmentStartIndex:0}], uninterruptible:true, flushGlobalTtsQueue:false, flags:300, creationTime:1778457652879}
+05-11 09:00:52.894 E/talkback: SpeechControllerImpl(14206): TTS is not ready. Attempted to speak before TTS was initialized. Item: {utteranceId:"", fragments:[{text:홈, earcons:[], haptics:[], speechParams:Bundle[{pitch=1.0}]nonSpeechParams:Bundle[{}]fragmentStartIndex:0}], uninterruptible:false, flushGlobalTtsQueue:true, flags:32, creationTime:1778457652894}
+05-11 09:00:52.930 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:52.954 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:52.955 I/GoogleTTSServiceImpl(12300): For default lang ko-kr is name ko-KR-language (ko-kr-x-ism-server)
+05-11 09:00:52.956 I/GoogleTTSServiceImpl(12300): currentLocale = ko-KR
+05-11 09:00:53.103 I/MediaFocusControl(  516): requestAudioFocus() from uid/pid 10132/14206 AA=USAGE_ASSISTANCE_ACCESSIBILITY/CONTENT_TYPE_SPEECH clientId=android.media.AudioManager@48cc648com.google.android.accessibility.utils.output.SpeechControllerImpl$5@80a8ce1 callingPack=com.google.android.marvin.talkback req=3 flags=0x0 sdk=34

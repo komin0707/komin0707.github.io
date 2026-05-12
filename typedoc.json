@@ -1,0 +1,24 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "src/components/index.ts",
+    "src/config/index.ts",
+    "src/context/index.ts",
+    "src/hooks/index.ts",
+    "src/simulation/index.ts",
+    "src/types/index.ts",
+    "src/utils/index.ts"
+  ],
+  "entryPointStrategy": "expand",
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "hideGenerator": true,
+  "out": "docs/api",
+  "readme": "none",
+  "tsconfig": "tsconfig.json",
+  "validation": {
+    "invalidLink": false,
+    "notExported": false
+  }
+}

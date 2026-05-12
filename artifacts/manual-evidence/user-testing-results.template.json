@@ -1,0 +1,26 @@
+{
+  "result": "passed",
+  "testedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "participants": [
+    { "id": "P01", "cohort": "Medical students" },
+    { "id": "P02", "cohort": "Medical students" },
+    { "id": "P03", "cohort": "Medical students" },
+    { "id": "P04", "cohort": "Respiratory therapy learners" },
+    { "id": "P05", "cohort": "Respiratory therapy learners" },
+    { "id": "P06", "cohort": "Respiratory therapy learners" },
+    { "id": "P07", "cohort": "ICU/ER nursing learners" },
+    { "id": "P08", "cohort": "ICU/ER nursing learners" },
+    { "id": "P09", "cohort": "Clinical instructors" },
+    { "id": "P10", "cohort": "Clinical instructors" }
+  ],
+  "taskCompletionRates": {
+    "scenarioIdentification": 0.8,
+    "modeChange": 0.8,
+    "alarmRecognition": 0.8,
+    "debriefRead": 0.8,
+    "assistiveNavigation": 0.8
+  },
+  "favorableFeedbackRate": 0.8,
+  "unresolvedCriticalIssues": [],
+  "qualitativeSummary": "Required: summarize feedback by cohort and date"
+}

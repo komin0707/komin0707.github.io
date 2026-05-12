@@ -1,0 +1,310 @@
+.effect-hypoxia-mask {
+  top: 23%;
+  left: 20%;
+  width: 18%;
+  height: 25%;
+  border-radius: 50%;
+  opacity: calc(var(--cyanosis-opacity) * 0.58);
+  background:
+    radial-gradient(circle at 44% 44%, rgba(18, 28, 111, 0.82), transparent 39%),
+    radial-gradient(circle at 57% 64%, rgba(31, 48, 160, 0.62), transparent 34%),
+    radial-gradient(circle, rgba(37, 64, 190, 0.44), transparent 70%);
+  filter: blur(1.2px);
+  mix-blend-mode: multiply;
+}
+
+.effect-cyanosis {
+  opacity: var(--cyanosis-opacity);
+  mix-blend-mode: multiply;
+}
+
+.effect-cyanosis.face {
+  top: 23%;
+  left: 19%;
+  width: 18%;
+  height: 27%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(58, 93, 230, 0.42), rgba(37, 56, 164, 0.18) 58%, transparent 74%);
+}
+
+.effect-lip-cyanosis {
+  top: 42%;
+  left: 28%;
+  width: 7%;
+  height: 4%;
+  border-radius: 50%;
+  opacity: var(--cyanosis-opacity);
+  background: radial-gradient(ellipse, rgba(12, 22, 117, 0.94), rgba(40, 59, 177, 0.58) 48%, transparent 74%);
+  filter: blur(0.4px);
+  mix-blend-mode: multiply;
+}
+
+.effect-cyanosis.chest {
+  top: 51%;
+  left: 27%;
+  width: 30%;
+  height: 31%;
+  border-radius: 46%;
+  background: radial-gradient(circle, rgba(49, 72, 184, 0.42), transparent 68%);
+}
+
+.effect-lung-haze {
+  --pulse-min-opacity: calc(var(--infiltration-opacity) * var(--distress-opacity) * 0.72);
+  --pulse-max-opacity: calc(var(--infiltration-opacity) * var(--distress-opacity));
+  top: 57%;
+  width: 11%;
+  height: 24%;
+  border-radius: 48%;
+  opacity: calc(var(--infiltration-opacity) * var(--distress-opacity));
+  background:
+    radial-gradient(circle at 42% 35%, rgba(255, 238, 202, 0.76), transparent 26%),
+    radial-gradient(circle at 58% 58%, rgba(255, 191, 84, 0.48), transparent 34%), rgba(218, 50, 66, 0.34);
+  filter: blur(0.5px);
+  mix-blend-mode: screen;
+  animation: opacity-pulse var(--lung-pulse-speed) ease-in-out infinite;
+  will-change: opacity;
+}
+
+.effect-lung-haze.left {
+  left: 31%;
+}
+
+.effect-lung-haze.right {
+  left: 43%;
+}
+
+.effect-lung-consolidation {
+  --pulse-min-opacity: calc(var(--distress-opacity) * 0.62);
+  --pulse-max-opacity: calc(var(--distress-opacity) * 0.9);
+  top: 56%;
+  width: 12%;
+  height: 27%;
+  border-radius: 48% 48% 42% 42%;
+  opacity: calc(var(--distress-opacity) * 0.9);
+  background:
+    radial-gradient(circle at 37% 32%, rgba(255, 220, 164, 0.56), transparent 18%),
+    radial-gradient(circle at 61% 57%, rgba(255, 95, 95, 0.58), transparent 27%),
+    radial-gradient(circle at 48% 50%, rgba(139, 28, 82, 0.52), rgba(66, 18, 72, 0.35) 62%, transparent 70%);
+  box-shadow: 0 0 18px rgba(255, 45, 74, calc(var(--distress-opacity) * 0.55));
+  filter: blur(0.2px);
+  mix-blend-mode: screen;
+  animation: opacity-pulse var(--lung-pulse-speed) ease-in-out infinite;
+  will-change: opacity;
+}
+
+.effect-lung-consolidation.left {
+  left: 32%;
+  transform: rotate(-12deg);
+}
+
+.effect-lung-consolidation.right {
+  left: 43%;
+  transform: rotate(10deg);
+}
+
+.effect-pressure-compression {
+  top: 52%;
+  left: 27%;
+  width: 31%;
+  height: 31%;
+  border: 2px solid rgba(255, 216, 74, 0.64);
+  border-radius: 42%;
+  opacity: var(--pressure-compression-opacity);
+  box-shadow:
+    inset 0 0 18px rgba(255, 216, 74, 0.1),
+    0 0 16px rgba(255, 69, 69, calc(var(--pressure-compression-opacity) * 0.24));
+  animation: pressure-compression var(--breath-speed) ease-in-out infinite;
+  mix-blend-mode: screen;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.patient-avatar[data-left-chest-reduced='true'] .effect-lung-haze.left,
+.patient-avatar[data-right-chest-reduced='true'] .effect-lung-haze.right {
+  background: rgba(53, 63, 92, 0.55);
+  mix-blend-mode: multiply;
+  opacity: 0.72;
+}
+
+.effect-tube-warning {
+  top: 37%;
+  left: 35%;
+  width: 31%;
+  height: 6%;
+  border-radius: 999px;
+  opacity: calc(var(--tube-warning-opacity) * 0.58);
+  background: linear-gradient(90deg, transparent, var(--clinical-emergency-oklch), transparent);
+  filter: blur(3px);
+  transform: rotate(10deg);
+}
+
+.patient-avatar[data-tube-pressure-warning='true'] .effect-tube-warning {
+  animation: alarm-pulse var(--alarm-speed) infinite;
+  will-change: opacity;
+}
+
+.effect-asynchrony-jolt {
+  border-radius: 999px;
+  opacity: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 72, 72, 0.72), transparent);
+  filter: drop-shadow(0 0 8px rgba(255, 54, 54, 0.56));
+  transform-origin: center;
+}
+
+.effect-asynchrony-jolt.shoulder {
+  --jolt-angle: -14deg;
+  top: 47%;
+  left: 28%;
+  width: 23%;
+  height: 7%;
+  transform: rotate(-14deg);
+}
+
+.effect-asynchrony-jolt.tube {
+  --jolt-angle: 9deg;
+  top: 35%;
+  left: 39%;
+  width: 31%;
+  height: 5%;
+  transform: rotate(9deg);
+}
+
+.patient-avatar[data-tube-pressure-warning='true'] .effect-asynchrony-jolt {
+  opacity: calc(var(--tube-warning-opacity) * 0.8);
+  animation: asynchrony-jolt var(--alarm-speed) steps(2, end) infinite;
+  will-change: opacity, transform;
+}
+
+.effect-alarm-ring {
+  top: 35%;
+  left: 40%;
+  width: 28%;
+  height: 16%;
+  border: 3px solid color-mix(in oklch, var(--clinical-emergency) 90%, transparent);
+  border-radius: 50%;
+  opacity: var(--tube-warning-opacity);
+  filter: drop-shadow(0 0 9px rgba(255, 0, 0, 0.78));
+  transform: rotate(9deg);
+  animation: alarm-ring-pulse var(--alarm-speed) ease-out infinite;
+  will-change: transform, opacity;
+}
+
+.effect-alarm-ring.ring-b {
+  top: 39%;
+  left: 46%;
+  width: 19%;
+  height: 11%;
+  animation-delay: 0.28s;
+}
+
+.effect-sweat {
+  width: 8px;
+  height: 16px;
+  border-radius: 999px 999px 999px 0;
+  opacity: var(--sweat-opacity);
+  background: rgba(162, 222, 255, 0.92);
+  box-shadow: 0 0 8px rgba(122, 205, 255, 0.55);
+  transform: rotate(28deg);
+}
+
+.effect-sweat.drop-a {
+  top: 24%;
+  left: 22%;
+}
+
+.effect-sweat.drop-b {
+  top: 27%;
+  left: 34%;
+  width: 6px;
+  height: 13px;
+}
+
+.effect-sweat.drop-c {
+  top: 35%;
+  left: 20%;
+  width: 5px;
+  height: 11px;
+}
+
+.skin-overlay {
+  fill: var(--patient-cyanosis-overlay);
+  opacity: calc(var(--cyanosis-opacity) * 0.58);
+  mix-blend-mode: multiply;
+  transition:
+    opacity 420ms ease,
+    fill 420ms ease;
+  will-change: opacity;
+}
+
+.patient-avatar[data-skin-tone='cyanotic'] .skin-overlay {
+  filter: saturate(1.18);
+}
+
+.patient-avatar[data-skin-tone='severelyCyanotic'] .skin-overlay {
+  filter: saturate(1.45) contrast(1.08);
+}
+
+.patient-avatar[data-lip-color='deepBlue'] .effect-lip-cyanosis {
+  filter: blur(0.3px) saturate(1.55);
+}
+
+.pallor-wash {
+  mix-blend-mode: screen;
+  transition: opacity 420ms ease;
+  will-change: opacity;
+}
+
+.jaundice-wash {
+  mix-blend-mode: soft-light;
+  transition: opacity 420ms ease;
+  will-change: opacity;
+}
+
+.toe-cyanosis {
+  opacity: var(--cyanosis-opacity);
+}
+
+.finger-cyanosis {
+  opacity: var(--cyanosis-opacity);
+}
+
+.peripheral-cyanosis-caps {
+  mix-blend-mode: multiply;
+  transition: opacity 420ms ease;
+  will-change: opacity;
+}
+
+.peripheral-mottling {
+  filter: drop-shadow(0 0 4px rgba(29, 43, 112, 0.16));
+  mix-blend-mode: multiply;
+}
+
+.mottling-spot {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.edema-markers {
+  filter: drop-shadow(0 0 5px rgba(255, 232, 170, 0.22));
+}
+
+.chest-motion {
+  animation: chest-breathe var(--breath-speed) ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 62%;
+  will-change: transform;
+}
+
+.chest-motion.left-reduced .anatomy-lung.left {
+  transform: scale(0.82);
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0.72;
+}
+
+.chest-motion.right-reduced .anatomy-lung.right {
+  transform: scale(0.82);
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0.72;
+}

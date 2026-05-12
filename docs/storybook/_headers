@@ -1,0 +1,17 @@
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-vent-static'; style-src 'self'; style-src-elem 'self' 'sha256-S0wyiPqZ1oQQT763qf4qEdE0WE9KzKNGDocRnlxcWZE='; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests; report-uri /csp-report; report-to csp-endpoint
+  Report-To: {"group":"csp-endpoint","max_age":10886400,"endpoints":[{"url":"/csp-report"}]}
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), xr-spatial-tracking=(self), fullscreen=(self)
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Resource-Policy: same-origin
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Accept-Ranges: bytes
+  Vary: Accept-Encoding

@@ -1,0 +1,34 @@
+{
+  "verifiedAt": "2026-05-11T13:21:18.450Z",
+  "verifier": "direct CrUX API probe",
+  "url": "https://chromeuxreport.googleapis.com/v1/records:queryRecord",
+  "targetOrigin": "https://komin0707.github.io",
+  "targetUrl": "https://komin0707.github.io/",
+  "hasApiKey": false,
+  "probes": [
+    {
+      "name": "origin",
+      "status": 403,
+      "ok": false,
+      "recordPresent": false,
+      "metrics": [],
+      "errorStatus": "PERMISSION_DENIED",
+      "errorMessage": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API."
+    },
+    {
+      "name": "url",
+      "status": 403,
+      "ok": false,
+      "recordPresent": false,
+      "metrics": [],
+      "errorStatus": "PERMISSION_DENIED",
+      "errorMessage": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API."
+    }
+  ],
+  "apiKeySource": {
+    "name": null,
+    "path": null,
+    "source": "none"
+  },
+  "result": "blocked"
+}

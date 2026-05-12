@@ -1,0 +1,3342 @@
+[
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:49.2264564Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:34.7086952Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\nvda_2026.1.exe",
+    "Length": 62877424,
+    "LastWriteTimeUtc": "2026-05-11T01:21:29.1090676Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\nvda-session.log",
+    "Length": 84552,
+    "LastWriteTimeUtc": "2026-05-11T01:22:49.5354437Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\nvda.log",
+    "Length": 4750,
+    "LastWriteTimeUtc": "2026-05-11T01:21:52.1417517Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\processes.json",
+    "Length": 1363,
+    "LastWriteTimeUtc": "2026-05-11T01:22:52.0393716Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\summary.json",
+    "Length": 909,
+    "LastWriteTimeUtc": "2026-05-11T01:22:52.061499Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\windows-nvda-edge.png",
+    "Length": 162962,
+    "LastWriteTimeUtc": "2026-05-11T01:22:48.7571362Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\addons",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:20.8937864Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\addonStore",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.6630875Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\profiles",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:20.8937864Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\speechDicts",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.2532453Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\updates",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:21.773174Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\nvda.ini",
+    "Length": 730,
+    "LastWriteTimeUtc": "2026-05-11T01:22:49.2259426Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\updateCheckState.pickle",
+    "Length": 248,
+    "LastWriteTimeUtc": "2026-05-11T01:22:23.8499176Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\addonStore\\_dl",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.0158616Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\addonStore\\_cachedCompatibleAddons.json",
+    "Length": 4836336,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.6842898Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\addonStore\\_cachedSettings.json",
+    "Length": 42,
+    "LastWriteTimeUtc": "2026-05-11T01:22:49.252363Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\speechDicts\\voiceDicts.v1",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.2532453Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\speechDicts\\voiceDictsBackup.v0",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.2532453Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\speechDicts\\voiceDicts.v1\\espeak",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.2532453Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\config\\speechDicts\\voiceDicts.v1\\oneCore",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:22.2532453Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Ad Blocking",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7269049Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Autofill",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7139154Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\AutoLaunchProtocolsComponent",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7070606Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\BrowserMetrics",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.5252033Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\CertificateRevocation",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7070606Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\component_crx_cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:03.5987038Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Crashpad",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.5428947Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:33.6559546Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Domain Actions",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7151393Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\EADPData Component",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7179491Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Edge Data Protection Lists",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7199632Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Edge Notifications",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7191748Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Edge Shopping",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7179491Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Edge Wallet",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7179491Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\extensions_crx_cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.6669219Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\FirstPartySetsPreloaded",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3595254Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GraphiteDawnCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.017177Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GrShaderCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0145819Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\hyphen-data",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7070606Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\MEIPreload",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7090843Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Nurturing",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7270098Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\OriginTrials",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7098743Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\PKIMetadata",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7171564Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\RecoveryImproved",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7199632Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Safe Browsing",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7035222Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SafetyTips",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7151393Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\ShaderCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6179101Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.1607864Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Speech Recognition",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7098743Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Subresource Filter",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7098743Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Trust Protection Lists",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7159335Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\TrustTokenKeyCommitments",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7171564Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Typosquatting",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7171564Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Web Notifications Deny List",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7179491Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Well Known Domains",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7151393Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\WidevineCdm",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.1571788Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\WorkspacesNavigationComponent",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7191748Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\ZxcvbnData",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7139154Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\first_party_sets.db",
+    "Length": 49152,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7460816Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\first_party_sets.db-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7460816Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\FirstLaunchAfterInstallation",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7035222Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Last Browser",
+    "Length": 120,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5234438Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Last Version",
+    "Length": 13,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6164134Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Local State",
+    "Length": 16324,
+    "LastWriteTimeUtc": "2026-05-11T01:22:34.7076916Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\lockfile",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.5272296Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Variations",
+    "Length": 86,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.550374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Ad Blocking\\blocklist",
+    "Length": 107893,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7259089Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\BrowserMetrics\\BrowserMetrics-6A012F31-1C58.pma",
+    "Length": 4194304,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.800087Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\component_crx_cache\\metadata.json",
+    "Length": 13,
+    "LastWriteTimeUtc": "2026-05-11T01:22:03.5981894Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Crashpad\\attachments",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.5292443Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Crashpad\\reports",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.5292443Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Crashpad\\metadata",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.5428947Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Crashpad\\settings.dat",
+    "Length": 288,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.6445487Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Crashpad\\throttle_store.dat",
+    "Length": 20,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.5292443Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Asset Store",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.150044Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\AutofillAiModelCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7143245Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\AutofillStrikeDatabase",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7178508Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\blob_storage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3710365Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\BudgetDatabase",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7209085Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6615809Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ClientCertificates",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6656139Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7249934Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\commerce_subscription_db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6954331Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnGraphiteCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4538418Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnWebGPUCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4499952Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\discount_infos_db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\discounts_db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DualEngine",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5254502Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2943997Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeEDrop",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1083637Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeHubAppUsage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2528649Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeJourneys",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1910859Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgePushStorageWithConnectTokenAndKey",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3615308Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeWallet",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2932167Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3695257Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Rules",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6982339Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Scripts",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7022807Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension State",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7743033Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:23.7037923Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Feature Engagement Tracker",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7249053Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\GPUCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4322374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\JumpListIconsRecentWorkspacesV2",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.34265Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Extension Settings",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0801377Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Storage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.1584241Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.799683Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Nurturing",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.8160127Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\optimization_guide_hint_cache_store",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7133245Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\parcel_tracking_db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7111031Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\PersistentOriginTrials",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Safe Browsing Network",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6613428Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7289058Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3398339Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Session Storage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6100873Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sessions",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.711899Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shared Dictionary",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7962511Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6280467Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Site Characteristics Database",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7843622Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6295279Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6476803Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\WebStorage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.1896452Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Workspaces",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3605251Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\arbitration_service_config.json",
+    "Length": 21093,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.3494094Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\BookmarkMergedSurfaceOrdering",
+    "Length": 6,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.6308827Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\BrowsingTopicsSiteData",
+    "Length": 28672,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7168766Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\BrowsingTopicsSiteData-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7168766Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\BrowsingTopicsState",
+    "Length": 414,
+    "LastWriteTimeUtc": "2026-05-11T01:21:59.6889201Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DIPS",
+    "Length": 4096,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.4698776Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DIPS-wal",
+    "Length": 32,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.4712538Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ExtensionActivityComp",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1871438Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ExtensionActivityEdge",
+    "Length": 32768,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1855943Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ExtensionActivityEdge-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1866246Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Favicons",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:22:05.1257241Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Favicons-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:22:05.1262367Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\favorites_diagnostic.log",
+    "Length": 1343,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5295483Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\heavy_ad_intervention_opt_out.db",
+    "Length": 16384,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.4459433Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\heavy_ad_intervention_opt_out.db-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.4459433Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\History",
+    "Length": 208896,
+    "LastWriteTimeUtc": "2026-05-11T01:22:05.1246918Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\History-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:22:05.12521Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\HubApps",
+    "Length": 109027,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2735933Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\HubApps Icons",
+    "Length": 28672,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.2871173Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\HubApps Icons-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.2871173Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\load_statistics.db",
+    "Length": 4096,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4302199Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\load_statistics.db-shm",
+    "Length": 32768,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4322374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\load_statistics.db-wal",
+    "Length": 32,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4322374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7051442Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7051442Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Login Data",
+    "Length": 51200,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.737396Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Login Data For Account",
+    "Length": 51200,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7151393Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Login Data For Account-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7151393Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Login Data-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7685406Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network Action Predictor",
+    "Length": 53248,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5092781Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network Action Predictor-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5092781Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Preferences",
+    "Length": 14716,
+    "LastWriteTimeUtc": "2026-05-11T01:22:33.6559546Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\PreferredApps",
+    "Length": 33,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7143245Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\README",
+    "Length": 182,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6184308Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Secure Preferences",
+    "Length": 40335,
+    "LastWriteTimeUtc": "2026-05-11T01:22:20.0794566Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ServerCertificate",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.737396Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ServerCertificate-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.737396Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\SharedStorage",
+    "Length": 4096,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7924729Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\SharedStorage-wal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8147077Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shortcuts",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3963231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shortcuts-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3963231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Top Sites",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6673993Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Top Sites-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6673993Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Vpn Tokens",
+    "Length": 28672,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.713122Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Vpn Tokens-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7139154Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Web Data",
+    "Length": 235520,
+    "LastWriteTimeUtc": "2026-05-11T01:21:59.6743249Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Web Data-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:59.6743249Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Asset Store\\assets.db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1775953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Asset Store\\assets.db\\000003.log",
+    "Length": 1036571,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5234438Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Asset Store\\assets.db\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1624551Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Asset Store\\assets.db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1523808Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Asset Store\\assets.db\\LOG",
+    "Length": 261,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1765981Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Asset Store\\assets.db\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.159944Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\AutofillAiModelCache\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7143245Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\AutofillAiModelCache\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7143245Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\AutofillStrikeDatabase\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7178508Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\AutofillStrikeDatabase\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7178508Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\blob_storage\\0c5f0048-34d9-49b0-9b37-a298b54e51c1",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3710365Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\BudgetDatabase\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7209085Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\BudgetDatabase\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7209085Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2675712Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\No_Vary_Search",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7962511Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\data_0",
+    "Length": 45056,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6711869Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\data_2",
+    "Length": 1056768,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2421168Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\data_3",
+    "Length": 4202496,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.1022572Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\f_000001",
+    "Length": 681967,
+    "LastWriteTimeUtc": "2026-05-11T01:21:56.3578657Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\f_000002",
+    "Length": 192707,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2680889Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\f_000003",
+    "Length": 22849,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.4469018Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\Cache_Data\\index",
+    "Length": 524656,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6694153Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\No_Vary_Search\\journal.baj",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.798272Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Cache\\No_Vary_Search\\snapshot.baf",
+    "Length": 20,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7962511Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ClientCertificates\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6656139Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\ClientCertificates\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6656139Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\wasm",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7070606Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.0341773Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\2a8a6f695a3ff316_0",
+    "Length": 303,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0095231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\2cca9bc741a6516d_0",
+    "Length": 306,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0095231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\5cce1706364839f1_0",
+    "Length": 307,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\5fbb54f36261c413_0",
+    "Length": 308,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.008518Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\7de0dc67a2b3a69c_0",
+    "Length": 307,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9795073Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\8020acacb3d13763_0",
+    "Length": 321,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\8bb1867be67136eb_0",
+    "Length": 305,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\945cb8fb56d09a8e_0",
+    "Length": 321,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0095231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\b21fb45197b9c728_0",
+    "Length": 303,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0317786Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\ba678a2fbd8c358c_0",
+    "Length": 298,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9800224Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\baded5730168391f_0",
+    "Length": 313,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\e94999eac39dfd99_0",
+    "Length": 317,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\e9a142a21b9ad9ef_0",
+    "Length": 297,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0115185Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\ebce9e52a869b921_0",
+    "Length": 303,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9795073Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7527166Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\js\\index-dir\\the-real-index",
+    "Length": 384,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.033161Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\wasm\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7139154Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\wasm\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7070606Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Code Cache\\wasm\\index-dir\\the-real-index",
+    "Length": 48,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.711899Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\commerce_subscription_db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6954331Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\commerce_subscription_db\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6954331Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnGraphiteCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4522296Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnGraphiteCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4542534Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnGraphiteCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4538418Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnGraphiteCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4542534Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnGraphiteCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4522296Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnWebGPUCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4499952Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnWebGPUCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4518268Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnWebGPUCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4499952Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnWebGPUCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4518268Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DawnWebGPUCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4499952Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\discounts_db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6954331Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\discounts_db\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\discount_infos_db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\discount_infos_db\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DualEngine\\SiteList-Consumer.json",
+    "Length": 2,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5244537Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\DualEngine\\SiteList-Enterprise.json",
+    "Length": 2,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5244537Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons\\coupons_data.db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.6485533Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons\\coupons_data.db\\000004.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.6475515Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons\\coupons_data.db\\000005.ldb",
+    "Length": 682145,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.6505505Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons\\coupons_data.db\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3053943Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons\\coupons_data.db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2943997Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons\\coupons_data.db\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2943997Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeCoupons\\coupons_data.db\\MANIFEST-000001",
+    "Length": 103,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.6515577Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeEDrop\\EdgeEDropSQLite.db",
+    "Length": 32768,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2421168Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeEDrop\\EdgeEDropSQLite.db-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.2431222Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeHubAppUsage\\EdgeHubAppUsageSQLite.db",
+    "Length": 32768,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7199056Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeHubAppUsage\\EdgeHubAppUsageSQLite.db-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7199056Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeJourneys\\EdgeJourneys.db",
+    "Length": 16384,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1900264Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgeJourneys\\EdgeJourneys.db-wal",
+    "Length": 32,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.1920881Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgePushStorageWithConnectTokenAndKey\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7199632Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgePushStorageWithConnectTokenAndKey\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3615308Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EdgePushStorageWithConnectTokenAndKey\\LOG.old",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7191748Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction\\EntityExtractionAssetStore.db",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3993339Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction\\domains_config.json",
+    "Length": 131560,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.4459433Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction\\EntityExtractionAssetStore.db\\000003.log",
+    "Length": 152025,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5082796Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction\\EntityExtractionAssetStore.db\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3831625Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction\\EntityExtractionAssetStore.db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3705224Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction\\EntityExtractionAssetStore.db\\LOG",
+    "Length": 277,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3983265Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\EntityExtraction\\EntityExtractionAssetStore.db\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3771592Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Rules\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6982339Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Rules\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6974562Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Rules\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6962127Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Rules\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6962127Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Rules\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6962127Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Scripts\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7022807Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Scripts\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7002601Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Scripts\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6994866Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Scripts\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6994866Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension Scripts\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7002601Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension State\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7743033Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension State\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7715035Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension State\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7639067Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension State\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7639067Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extension State\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7639067Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.3261258Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.8171694Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2589244Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.270551Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_metadata",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2589244Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\128.png",
+    "Length": 5069,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.9984625Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\dasherSettingSchema.json",
+    "Length": 854,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\manifest.json",
+    "Length": 2526,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.9904243Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\offscreendocument_main.js",
+    "Length": 118522,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\offscreendocument.html",
+    "Length": 97,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\page_embed_script.js",
+    "Length": 339,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\service_worker_bin_prod.js",
+    "Length": 124053,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\af",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2992186Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\am",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2992186Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ar",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2982109Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\as",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2982109Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\az",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2982109Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\be",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.29773Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\bg",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2972217Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\bn",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2972217Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ca",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.296704Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\cs",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.29618Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\cy",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.29618Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\da",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2952104Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\de",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2940855Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\el",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2940855Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2930835Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en_CA",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2930835Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en_GB",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2930835Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en_US",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2920835Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\es",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2920835Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\es_419",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2920835Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\et",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2910836Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\eu",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2910836Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fa",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2910836Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fi",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2900831Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fil",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2900831Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fr",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2900831Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fr_CA",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2890832Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\gl",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2890832Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\gu",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2890832Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hi",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2880841Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hr",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2880841Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hu",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2880841Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hy",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2870843Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\id",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2870843Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\is",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2870843Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\it",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2860838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\iw",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2860838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ja",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2860838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ka",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2850838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\kk",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2850838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\km",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2850838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\kn",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2840838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ko",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2840838Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\lo",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2830834Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\lt",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2830834Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\lv",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2830834Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\mk",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2820844Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ml",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2820844Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\mn",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2820844Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\mr",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2810398Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ms",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2810398Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\my",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2810398Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ne",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2806242Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\nl",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2801076Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\no",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2795876Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\or",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2795876Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pa",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2785498Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pl",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2785498Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pt_BR",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2775497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pt_PT",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2775497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ro",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2775497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ru",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2765489Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\si",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2765489Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sk",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2765489Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sl",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2755496Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sq",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2755496Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sr",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2755496Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sv",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2745491Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sw",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2745491Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ta",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2745491Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\te",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2735492Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\th",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2735492Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\tr",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2735492Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\uk",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2725496Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ur",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2725496Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\uz",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2725496Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\vi",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2715497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zh_CN",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2715497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zh_HK",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2715497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zh_TW",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.270551Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zu",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.270551Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\af\\messages.json",
+    "Length": 908,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.004092Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\am\\messages.json",
+    "Length": 1285,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0101915Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ar\\messages.json",
+    "Length": 1244,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.014276Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\as\\messages.json",
+    "Length": 2847,
+    "LastWriteTimeUtc": "2026-04-07T07:15:06Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\az\\messages.json",
+    "Length": 977,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0178346Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\be\\messages.json",
+    "Length": 3107,
+    "LastWriteTimeUtc": "2026-04-07T07:15:06Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\bg\\messages.json",
+    "Length": 1389,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0219046Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\bn\\messages.json",
+    "Length": 1763,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0273991Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ca\\messages.json",
+    "Length": 930,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0309681Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\cs\\messages.json",
+    "Length": 913,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0350521Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\cy\\messages.json",
+    "Length": 806,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\da\\messages.json",
+    "Length": 883,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0386092Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\de\\messages.json",
+    "Length": 1031,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0426518Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\el\\messages.json",
+    "Length": 1613,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0467392Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en\\messages.json",
+    "Length": 851,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0508025Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en_CA\\messages.json",
+    "Length": 851,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0548019Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en_GB\\messages.json",
+    "Length": 848,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0588024Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\en_US\\messages.json",
+    "Length": 1425,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0629071Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\es\\messages.json",
+    "Length": 961,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0664646Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\es_419\\messages.json",
+    "Length": 959,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0705344Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\et\\messages.json",
+    "Length": 968,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0740277Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\eu\\messages.json",
+    "Length": 838,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fa\\messages.json",
+    "Length": 1305,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0781041Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fi\\messages.json",
+    "Length": 911,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0816644Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fil\\messages.json",
+    "Length": 939,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0851759Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fr\\messages.json",
+    "Length": 977,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0891748Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\fr_CA\\messages.json",
+    "Length": 972,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0942302Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\gl\\messages.json",
+    "Length": 990,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.0977942Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\gu\\messages.json",
+    "Length": 1658,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1018625Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hi\\messages.json",
+    "Length": 1672,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1053565Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hr\\messages.json",
+    "Length": 935,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1094516Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hu\\messages.json",
+    "Length": 1065,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1130141Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\hy\\messages.json",
+    "Length": 2771,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\id\\messages.json",
+    "Length": 858,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1165202Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\is\\messages.json",
+    "Length": 954,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\it\\messages.json",
+    "Length": 899,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1205203Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\iw\\messages.json",
+    "Length": 2230,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ja\\messages.json",
+    "Length": 1160,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1248871Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ka\\messages.json",
+    "Length": 3264,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\kk\\messages.json",
+    "Length": 3235,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\km\\messages.json",
+    "Length": 3122,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\kn\\messages.json",
+    "Length": 1895,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1288886Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ko\\messages.json",
+    "Length": 1042,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1328962Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\lo\\messages.json",
+    "Length": 2535,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\lt\\messages.json",
+    "Length": 1028,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1368877Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\lv\\messages.json",
+    "Length": 994,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1410216Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\mk\\messages.json",
+    "Length": 2875,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ml\\messages.json",
+    "Length": 2091,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1445287Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\mn\\messages.json",
+    "Length": 2778,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\mr\\messages.json",
+    "Length": 1719,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1485289Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ms\\messages.json",
+    "Length": 936,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1525289Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\my\\messages.json",
+    "Length": 3830,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ne\\messages.json",
+    "Length": 1884,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1566757Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\nl\\messages.json",
+    "Length": 914,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1607038Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\no\\messages.json",
+    "Length": 878,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1637043Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\or\\messages.json",
+    "Length": 2902,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pa\\messages.json",
+    "Length": 2766,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pl\\messages.json",
+    "Length": 978,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1702492Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pt_BR\\messages.json",
+    "Length": 889,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1743295Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\pt_PT\\messages.json",
+    "Length": 914,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1778894Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ro\\messages.json",
+    "Length": 937,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1819418Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ru\\messages.json",
+    "Length": 1341,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1854876Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\si\\messages.json",
+    "Length": 2846,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sk\\messages.json",
+    "Length": 934,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1895516Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sl\\messages.json",
+    "Length": 963,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1955678Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sq\\messages.json",
+    "Length": 950,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.1995674Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sr\\messages.json",
+    "Length": 1320,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2036674Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sv\\messages.json",
+    "Length": 884,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2072229Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\sw\\messages.json",
+    "Length": 980,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2127254Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ta\\messages.json",
+    "Length": 1941,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2167257Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\te\\messages.json",
+    "Length": 1969,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2208328Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\th\\messages.json",
+    "Length": 1674,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2248983Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\tr\\messages.json",
+    "Length": 1063,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2284593Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\uk\\messages.json",
+    "Length": 1333,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2325485Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\ur\\messages.json",
+    "Length": 1263,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2361333Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\uz\\messages.json",
+    "Length": 865,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2402015Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\vi\\messages.json",
+    "Length": 1074,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2431988Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zh_CN\\messages.json",
+    "Length": 873,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2471979Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zh_HK\\messages.json",
+    "Length": 1205,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zh_TW\\messages.json",
+    "Length": 843,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.2542771Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_locales\\zu\\messages.json",
+    "Length": 912,
+    "LastWriteTimeUtc": "2026-04-07T07:15:08Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\ghbmnnjooekpmoecnnnilnnbdlolhkhi\\1.104.1_0\\_metadata\\verified_contents.json",
+    "Length": 11914,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.9380741Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha\\1.2.1_0",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.8156528Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha\\1.2.1_0\\_metadata",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.8161633Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha\\1.2.1_0\\content_new.js",
+    "Length": 10388,
+    "LastWriteTimeUtc": "2024-01-22T17:09:02Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha\\1.2.1_0\\content.js",
+    "Length": 9815,
+    "LastWriteTimeUtc": "2024-01-22T17:14:58Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha\\1.2.1_0\\manifest.json",
+    "Length": 962,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.8120798Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha\\1.2.1_0\\_metadata\\computed_hashes.json",
+    "Length": 429,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.836285Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Extensions\\jmjflgjpcpepeafmmgdpfkogkghcpiha\\1.2.1_0\\_metadata\\verified_contents.json",
+    "Length": 1753,
+    "LastWriteTimeUtc": "2024-01-23T21:28:26Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Feature Engagement Tracker\\AvailabilityDB",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7249053Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Feature Engagement Tracker\\EventDB",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7259089Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Feature Engagement Tracker\\AvailabilityDB\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7249053Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Feature Engagement Tracker\\AvailabilityDB\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7249053Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Feature Engagement Tracker\\EventDB\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7259089Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Feature Engagement Tracker\\EventDB\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7259089Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\GPUCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4322374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\GPUCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4322374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\GPUCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4322374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\GPUCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4322374Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\GPUCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4302199Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Extension Settings\\jdiccldimpdaibmpdkjnbmckianbfold",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0845343Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Extension Settings\\jdiccldimpdaibmpdkjnbmckianbfold\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0845343Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Extension Settings\\jdiccldimpdaibmpdkjnbmckianbfold\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0824579Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Extension Settings\\jdiccldimpdaibmpdkjnbmckianbfold\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0809052Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Extension Settings\\jdiccldimpdaibmpdkjnbmckianbfold\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0809052Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Extension Settings\\jdiccldimpdaibmpdkjnbmckianbfold\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0814277Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Storage\\leveldb",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.1702641Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Storage\\leveldb\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.1702641Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Storage\\leveldb\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.1682492Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Storage\\leveldb\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.159191Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Storage\\leveldb\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.1584241Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Local Storage\\leveldb\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.1662275Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Cookies",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.854623Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Cookies-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.854623Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Device Bound Sessions",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9602472Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Device Bound Sessions-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9612394Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Network Persistent State",
+    "Length": 59,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.7981725Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\NetworkDataMigrated",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7139154Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Reporting and NEL",
+    "Length": 36864,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.1002046Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Reporting and NEL-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.1007174Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\SCT Auditing Pending Reports",
+    "Length": 2,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.337115Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Sdch Dictionaries",
+    "Length": 40,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.6659177Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Trust Tokens",
+    "Length": 36864,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8876847Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Network\\Trust Tokens-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9079037Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Nurturing\\campaign_history",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.8338492Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Nurturing\\campaign_history-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.8477768Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\optimization_guide_hint_cache_store\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7133245Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\optimization_guide_hint_cache_store\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7133245Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\parcel_tracking_db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7111031Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\parcel_tracking_db\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7111031Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\PersistentOriginTrials\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\PersistentOriginTrials\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6941872Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Safe Browsing Network\\NetworkDataMigrated",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7051442Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Safe Browsing Network\\Safe Browsing Cookies",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7253053Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Safe Browsing Network\\Safe Browsing Cookies-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.7253053Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SegmentInfoDB",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7289058Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SignalDB",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7289058Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SignalStorageConfigDB",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7299104Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SegmentInfoDB\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7289058Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SegmentInfoDB\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7289058Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SignalDB\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7299104Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SignalDB\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7289058Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SignalStorageConfigDB\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7299104Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Segmentation Platform\\SignalStorageConfigDB\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.7299104Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3670355Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\Database",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3433329Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\ScriptCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3594437Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.4333259Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\a966408e-2f88-40d2-b28d-2e6733d51dc5",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3802409Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\index.txt",
+    "Length": 175,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.4333259Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\a966408e-2f88-40d2-b28d-2e6733d51dc5\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.3841972Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\a966408e-2f88-40d2-b28d-2e6733d51dc5\\08334cc6b4d45802_0",
+    "Length": 1471,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3812418Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\a966408e-2f88-40d2-b28d-2e6733d51dc5\\768dc47a4dbc96f9_0",
+    "Length": 1966,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3802409Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\a966408e-2f88-40d2-b28d-2e6733d51dc5\\e6dbde2d2156b30e_0",
+    "Length": 1331,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3822382Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\a966408e-2f88-40d2-b28d-2e6733d51dc5\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3670355Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\CacheStorage\\18d288e72ef517a92bdf17a7879068e62d9d82c3\\a966408e-2f88-40d2-b28d-2e6733d51dc5\\index-dir\\the-real-index",
+    "Length": 120,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.3831807Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\Database\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3433329Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\Database\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3412298Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\Database\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3398339Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\Database\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3398339Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\Database\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3408306Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\ScriptCache\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.3719768Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\ScriptCache\\2cc80dabc69f58b6_0",
+    "Length": 7153,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3615089Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\ScriptCache\\2cc80dabc69f58b6_1",
+    "Length": 4849,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3690429Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\ScriptCache\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.3398339Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Service Worker\\ScriptCache\\index-dir\\the-real-index",
+    "Length": 72,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.3709628Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Session Storage\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6100873Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Session Storage\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6037606Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Session Storage\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.5997158Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Session Storage\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.5976939Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Session Storage\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6017338Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sessions\\Session_13422936116161015",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:56.1606179Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shared Dictionary\\cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.798272Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shared Dictionary\\db",
+    "Length": 45056,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9350579Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shared Dictionary\\db-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9460645Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shared Dictionary\\cache\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9350579Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shared Dictionary\\cache\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.798272Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Shared Dictionary\\cache\\index-dir\\the-real-index",
+    "Length": 48,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9345761Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\metadata",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6201891Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6280467Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6254735Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6216863Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6216863Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6237489Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\metadata\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6201891Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\metadata\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.618163Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\metadata\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6161457Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\metadata\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6161457Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\shared_proto_db\\metadata\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6161457Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Site Characteristics Database\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7843622Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Site Characteristics Database\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7685406Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Site Characteristics Database\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.737396Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Site Characteristics Database\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6676376Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Site Characteristics Database\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.737396Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6295279Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6295279Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9360652Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6300655Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6320852Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnGraphiteCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9602472Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnWebGPUCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9350579Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\GPUCache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8182381Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Local Storage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6320852Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.8016828Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Session Storage",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0887542Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Shared Dictionary",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8002901Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Cache\\Cache_Data",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6300655Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Cache\\No_Vary_Search",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6300655Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\js",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6341003Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\wasm",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6320852Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\js\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.0069366Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\js\\6f3a0dc5e6916f1e_0",
+    "Length": 309,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0095231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\js\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6320852Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\js\\index-dir\\the-real-index",
+    "Length": 72,
+    "LastWriteTimeUtc": "2026-05-11T01:22:15.0064285Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\wasm\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6413989Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\wasm\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6320852Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Code Cache\\wasm\\index-dir\\the-real-index",
+    "Length": 48,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6335635Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnGraphiteCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9592401Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnGraphiteCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0787497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnGraphiteCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9602472Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnGraphiteCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9612394Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnGraphiteCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9471197Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnWebGPUCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9350579Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnWebGPUCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0787497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnWebGPUCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9360652Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnWebGPUCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9360652Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\DawnWebGPUCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9340582Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\GPUCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8167231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\GPUCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0787497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\GPUCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8187398Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\GPUCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8187398Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\GPUCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8167231Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Local Storage\\leveldb",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6812767Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Local Storage\\leveldb\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6812767Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Local Storage\\leveldb\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6548263Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Local Storage\\leveldb\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6434204Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Local Storage\\leveldb\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6341003Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Local Storage\\leveldb\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6502767Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\Device Bound Sessions",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9744666Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\Device Bound Sessions-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9744666Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\Network Persistent State",
+    "Length": 59,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.8006829Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\NetworkDataMigrated",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.6315428Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\SCT Auditing Pending Reports",
+    "Length": 2,
+    "LastWriteTimeUtc": "2026-05-11T01:21:58.3381247Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\Sdch Dictionaries",
+    "Length": 40,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.6840403Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\Trust Tokens",
+    "Length": 36864,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0145819Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Network\\Trust Tokens-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0150953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Session Storage\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0887542Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Session Storage\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0847582Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Session Storage\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0807489Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Session Storage\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0787497Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Session Storage\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:22:10.0827541Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Shared Dictionary\\cache",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.798272Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Shared Dictionary\\db",
+    "Length": 45056,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8429953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Shared Dictionary\\db-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.8435101Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Shared Dictionary\\cache\\index-dir",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9360652Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Shared Dictionary\\cache\\index",
+    "Length": 24,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.798272Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Storage\\ext\\ihmafllikibpmigkcoadcmckbfhibefp\\def\\Shared Dictionary\\cache\\index-dir\\the-real-index",
+    "Length": 48,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.9350579Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\LevelDB",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6635979Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\Logs",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.25543Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\LevelDB\\000003.log",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6635979Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\LevelDB\\CURRENT",
+    "Length": 16,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6615809Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\LevelDB\\LOCK",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6476803Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\LevelDB\\LOG",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6476803Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\LevelDB\\MANIFEST-000001",
+    "Length": 41,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6517279Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Sync Data\\Logs\\sync_diagnostic.log",
+    "Length": 2763,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.5284418Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\WebStorage\\QuotaManager",
+    "Length": 40960,
+    "LastWriteTimeUtc": "2026-05-11T01:22:25.3683545Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\WebStorage\\QuotaManager-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:22:25.3693562Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Workspaces\\Logs",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.3605251Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Default\\Workspaces\\Logs\\Workspaces Internals Logs",
+    "Length": 912,
+    "LastWriteTimeUtc": "2026-05-11T01:21:57.6638131Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\extensions_crx_cache\\metadata.json",
+    "Length": 13,
+    "LastWriteTimeUtc": "2026-05-11T01:22:04.6659177Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GraphiteDawnCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0166598Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GraphiteDawnCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0176694Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GraphiteDawnCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0176694Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GraphiteDawnCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0176694Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GraphiteDawnCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0161364Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GrShaderCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0140632Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GrShaderCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0150953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GrShaderCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0145819Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GrShaderCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0150953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\GrShaderCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.0135455Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Nurturing\\campaign_history",
+    "Length": 20480,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.8160127Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Nurturing\\campaign_history-journal",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.8160127Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\ShaderCache\\data_0",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6164134Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\ShaderCache\\data_1",
+    "Length": 270336,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6184308Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\ShaderCache\\data_2",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6179101Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\ShaderCache\\data_3",
+    "Length": 8192,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6184308Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\ShaderCache\\index",
+    "Length": 262512,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.6164134Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\local",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6483983Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\RemoteData",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6503953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\local\\downloadCache",
+    "Length": 14,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6514021Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\local\\downloadCache_",
+    "Length": 29,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6503953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\local\\uriCache",
+    "Length": 9,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6514021Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\local\\uriCache_",
+    "Length": 29,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6503953Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\RemoteData\\customSettings",
+    "Length": 47,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4446452Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\RemoteData\\customSettings_F95BA787499AB4FA9EFFF472CE383A14",
+    "Length": 35,
+    "LastWriteTimeUtc": "2026-05-11T01:21:54.4446452Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\RemoteData\\edgeSettings",
+    "Length": 81,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6514021Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\RemoteData\\edgeSettings_2.0-a82cb2897a8bf9445d68dcc2be05af89ad4b2fda1fddb2952693be7cd5353ad3",
+    "Length": 130578,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6514021Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\RemoteData\\topTraffic",
+    "Length": 29,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6494066Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\SmartScreen\\RemoteData\\topTraffic_638004170464094982",
+    "Length": 460992,
+    "LastWriteTimeUtc": "2026-05-11T01:21:55.6494066Z"
+  },
+  {
+    "FullName": "D:\\a\\_temp\\nvda-evidence\\edge-profile\\Subresource Filter\\Unindexed Rules",
+    "Length": null,
+    "LastWriteTimeUtc": "2026-05-11T01:21:53.7098743Z"
+  }
+]

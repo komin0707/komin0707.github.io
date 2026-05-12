@@ -1,0 +1,125 @@
+{
+  "conclusion": "failure",
+  "createdAt": "2026-05-11T05:07:43Z",
+  "databaseId": 25651470769,
+  "headSha": "dd7d21ea154dcd6ff75880eb46611a9e0297b0dd",
+  "jobs": [
+    {
+      "completedAt": "2026-05-11T05:08:43Z",
+      "conclusion": "failure",
+      "databaseId": 75290448928,
+      "name": "check-crux-field-data",
+      "startedAt": "2026-05-11T05:07:48Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-05-11T05:07:50Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-05-11T05:07:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:07:51Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v6",
+          "number": 2,
+          "startedAt": "2026-05-11T05:07:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:07:54Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v6",
+          "number": 3,
+          "startedAt": "2026-05-11T05:07:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:07:54Z",
+          "conclusion": "success",
+          "name": "Check CrUX credential preflight",
+          "number": 4,
+          "startedAt": "2026-05-11T05:07:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:40Z",
+          "conclusion": "success",
+          "name": "Check Chrome UX Report monitoring",
+          "number": 5,
+          "startedAt": "2026-05-11T05:07:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:41Z",
+          "conclusion": "success",
+          "name": "Run actions/upload-artifact@v7",
+          "number": 6,
+          "startedAt": "2026-05-11T05:08:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:41Z",
+          "conclusion": "success",
+          "name": "Summarize CrUX status",
+          "number": 7,
+          "startedAt": "2026-05-11T05:08:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:41Z",
+          "conclusion": "skipped",
+          "name": "Close CrUX blocker issue when field data is available",
+          "number": 8,
+          "startedAt": "2026-05-11T05:08:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:42Z",
+          "conclusion": "success",
+          "name": "Open or update CrUX blocker issue",
+          "number": 9,
+          "startedAt": "2026-05-11T05:08:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:42Z",
+          "conclusion": "failure",
+          "name": "Fail when field data is unavailable",
+          "number": 10,
+          "startedAt": "2026-05-11T05:08:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:42Z",
+          "conclusion": "skipped",
+          "name": "Post Run actions/setup-node@v6",
+          "number": 19,
+          "startedAt": "2026-05-11T05:08:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:42Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v6",
+          "number": 20,
+          "startedAt": "2026-05-11T05:08:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T05:08:42Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 21,
+          "startedAt": "2026-05-11T05:08:42Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/komin0707/komin0707.github.io/actions/runs/25651470769/job/75290448928"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/komin0707/komin0707.github.io/actions/runs/25651470769"
+}

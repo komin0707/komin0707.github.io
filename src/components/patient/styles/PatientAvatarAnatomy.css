@@ -1,0 +1,261 @@
+.lung-fill {
+  fill: rgba(226, 91, 94, 0.65);
+  stroke: rgba(255, 211, 211, 0.55);
+  stroke-width: 2;
+}
+
+.anatomy-lung {
+  fill: url('#lungTissue');
+  opacity: 0.72;
+  stroke: rgba(126, 51, 66, 0.9);
+  stroke-width: 2;
+}
+
+.anatomy-lung.healthy {
+  opacity: 0.28;
+  stroke-opacity: 0.34;
+}
+.anatomy-lung.inflamed {
+  opacity: 0.82;
+}
+.anatomy-lung.stiff,
+.anatomy-lung.collapsed {
+  opacity: 0.94;
+}
+
+.anatomy-lung.stiff {
+  fill: var(--patient-lung-stiff);
+}
+
+.anatomy-lung.collapsed {
+  fill: var(--patient-lung-collapsed);
+  stroke: var(--patient-lung-collapsed-stroke);
+}
+
+.patient-avatar.stable .infiltrate,
+.patient-avatar.stable .secretion,
+.patient-avatar.stable .lung-highlight,
+.patient-avatar.stable .bronchi-main {
+  opacity: 0.08;
+}
+
+.patient-avatar.worsening .anatomy-lung,
+.patient-avatar.critical .anatomy-lung {
+  filter: drop-shadow(0 0 10px rgba(255, 48, 78, calc(var(--distress-opacity) * 0.35)));
+}
+
+.clinical-gown-surface {
+  opacity: calc(0.78 - var(--distress-opacity) * 0.22);
+  pointer-events: none;
+}
+
+.gown-chest-panel,
+.gown-abdomen-panel {
+  mix-blend-mode: screen;
+}
+
+.gown-breath-fold {
+  animation: patient-breathe var(--breath-speed) ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.anatomy-lung.collapsed.left {
+  transform: scale(0.74);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.pleural-air-pocket {
+  filter: drop-shadow(0 0 8px rgba(126, 210, 255, 0.34));
+}
+
+.lung-lobe-line {
+  fill: none;
+  stroke: rgba(255, 215, 215, 0.72);
+  stroke-linecap: round;
+}
+
+.heart-position {
+  opacity: calc(0.28 + var(--distress-opacity) * 0.38);
+}
+
+.trachea-visible {
+  fill: none;
+  stroke: rgba(229, 239, 248, 0.46);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 8;
+}
+
+.lung-detail.healthy .lung-fill {
+  fill: rgba(230, 112, 118, 0.56);
+}
+.lung-detail.inflamed .lung-fill {
+  fill: rgba(201, 76, 79, 0.7);
+}
+.lung-detail.stiff .lung-fill,
+.lung-detail.collapsed .lung-fill {
+  fill: var(--patient-lung-stiff);
+}
+
+.lung-detail.collapsed .lung-fill {
+  fill: var(--patient-lung-collapsed);
+}
+
+.bronchi {
+  fill: none;
+  stroke: rgba(207, 221, 241, 0.35);
+  stroke-width: 2;
+}
+
+.bronchi-main {
+  fill: none;
+  stroke: rgba(203, 218, 237, 0.5);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+}
+
+.sternum-line,
+.clavicle-line,
+.rib-line,
+.diaphragm-line {
+  fill: none;
+  stroke: rgba(116, 57, 50, 0.34);
+  stroke-linecap: round;
+}
+
+.sternum-line {
+  stroke-width: 3;
+}
+
+.adult-supine-silhouette,
+.clinical-decompensation-posture,
+.stable-posture-markers {
+  pointer-events: none;
+}
+
+.adult-supine-silhouette {
+  mix-blend-mode: multiply;
+}
+
+.adult-torso-boundary,
+.shoulder-plane {
+  stroke: var(--patient-outline);
+}
+
+.clinical-decompensation-posture {
+  filter: drop-shadow(0 0 4px rgba(39, 58, 143, 0.2));
+  transform-box: fill-box;
+  transform-origin: 50% 45%;
+  transition: opacity 360ms ease;
+  will-change: opacity, transform;
+}
+
+.patient-avatar[data-tube-pressure-warning='true'] .clinical-decompensation-posture {
+  animation: patient-bucking var(--alarm-speed) steps(2, end) infinite;
+}
+
+.patient-avatar[data-condition='worsening'] .raised-shoulder-line,
+.patient-avatar[data-condition='critical'] .raised-shoulder-line,
+.patient-avatar[data-condition='worsening'] .accessory-muscle,
+.patient-avatar[data-condition='critical'] .accessory-muscle {
+  animation: accessory-effort var(--breath-speed) ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.patient-avatar[data-condition='worsening'] .sternal-tug,
+.patient-avatar[data-condition='critical'] .sternal-tug,
+.patient-avatar[data-condition='worsening'] .intercostal-retraction,
+.patient-avatar[data-condition='critical'] .intercostal-retraction,
+.patient-avatar[data-condition='worsening'] .suprasternal-retraction,
+.patient-avatar[data-condition='critical'] .suprasternal-retraction {
+  animation: retraction-tug var(--breath-speed) ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.abdominal-breathing {
+  animation: abdominal-breathe var(--breath-speed) ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.abdominal-paradox {
+  animation: abdominal-paradox-motion var(--breath-speed) ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.stable-posture-markers {
+  filter: drop-shadow(0 0 5px rgba(120, 217, 255, 0.22));
+  transition: opacity 360ms ease;
+  will-change: opacity;
+}
+
+.clavicle-line,
+.diaphragm-line {
+  stroke-width: 2.2;
+}
+
+.rib-line {
+  stroke-width: 1.4;
+}
+
+.avatar-lead {
+  fill: none;
+  stroke: rgba(36, 48, 58, 0.65);
+  stroke-linecap: round;
+  stroke-width: 2.2;
+  opacity: 0.46;
+}
+
+.electrode {
+  fill: url('#electrodePad');
+  stroke: rgba(238, 250, 255, 0.86);
+  stroke-width: 2;
+  opacity: 0.78;
+}
+
+.electrode.small {
+  opacity: 0.7;
+}
+
+.arterial-line,
+.temperature-probe,
+.cvc-line,
+.foley-catheter {
+  filter: drop-shadow(0 0 4px rgba(180, 235, 255, 0.24));
+}
+
+.arterial-tape,
+.cvc-dressing,
+.temperature-sensor,
+.foley-bag,
+.abg-catheter {
+  filter: drop-shadow(0 1px 3px rgba(0, 8, 20, 0.28));
+}
+
+.abg-label {
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.ecg-lead-code {
+  pointer-events: none;
+}
+
+.ecg-lead-label {
+  font-size: 4px;
+  font-weight: 800;
+  letter-spacing: 0;
+  opacity: 0.82;
+}

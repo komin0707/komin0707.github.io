@@ -7,18 +7,37 @@
       content="Vent Simulator 2D is an educational ventilator training simulator with clinical patient visuals, monitoring waveforms, alarms, and scenario controls."
     />
     <meta name="theme-color" content="#07111f" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="VentSim" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <style id="critical-css">
+      body {
+        margin: 0;
+        background: #07111f;
+        color: #eaf3ff;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          sans-serif;
+      }
+    </style>
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2307111f'/%3E%3Cpath d='M12 36h9l5-14 8 28 7-22 4 8h7' fill='none' stroke='%231689ff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
     />
+    <link rel="preconnect" href="https://komin0707.github.io" crossorigin />
+    <link rel="dns-prefetch" href="//komin0707.github.io" />
+    <link rel="preload" href="/pwa-icon.svg" as="image" type="image/svg+xml" fetchpriority="high" />
+    <link rel="prefetch" href="/manifest.webmanifest" as="fetch" crossorigin />
     <link rel="canonical" href="https://komin0707.github.io/" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <title>Vent Simulator 2D</title>
-    <script type="module" crossorigin src="/assets/index-D3z0uG37.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/style-RbhWpa39.css">
   </head>
   <body>
     <div id="root"></div>
+    <script type="module" nonce="vent-static" src="/src/main.tsx"></script>
   </body>
 </html>

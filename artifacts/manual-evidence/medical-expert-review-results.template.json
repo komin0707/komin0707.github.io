@@ -1,0 +1,176 @@
+{
+  "result": "passed",
+  "reviews": [
+    {
+      "name": "REQUIRED: reviewer 1 name",
+      "role": "Critical care physician or intensivist",
+      "credentials": "REQUIRED: reviewer credentials",
+      "reviewedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "attestation": "REQUIRED: reviewer attestation",
+      "domainReviews": [
+        {
+          "domain": "Ventilator mode behavior and parameter ranges",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Scenario physiology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Alarm severity and terminology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Intervention timing and contraindications",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Educational debriefing accuracy",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        }
+      ]
+    },
+    {
+      "name": "REQUIRED: reviewer 2 name",
+      "role": "Respiratory therapist or ventilation specialist",
+      "credentials": "REQUIRED: reviewer credentials",
+      "reviewedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "attestation": "REQUIRED: reviewer attestation",
+      "domainReviews": [
+        {
+          "domain": "Ventilator mode behavior and parameter ranges",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Scenario physiology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Alarm severity and terminology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Intervention timing and contraindications",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Educational debriefing accuracy",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        }
+      ]
+    },
+    {
+      "name": "REQUIRED: reviewer 3 name",
+      "role": "Emergency medicine or anesthesiology clinician",
+      "credentials": "REQUIRED: reviewer credentials",
+      "reviewedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "attestation": "REQUIRED: reviewer attestation",
+      "domainReviews": [
+        {
+          "domain": "Ventilator mode behavior and parameter ranges",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Scenario physiology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Alarm severity and terminology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Intervention timing and contraindications",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Educational debriefing accuracy",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        }
+      ]
+    },
+    {
+      "name": "REQUIRED: reviewer 4 name",
+      "role": "ICU nurse educator",
+      "credentials": "REQUIRED: reviewer credentials",
+      "reviewedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "attestation": "REQUIRED: reviewer attestation",
+      "domainReviews": [
+        {
+          "domain": "Ventilator mode behavior and parameter ranges",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Scenario physiology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Alarm severity and terminology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Intervention timing and contraindications",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Educational debriefing accuracy",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        }
+      ]
+    },
+    {
+      "name": "REQUIRED: reviewer 5 name",
+      "role": "Medical simulation educator",
+      "credentials": "REQUIRED: reviewer credentials",
+      "reviewedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "attestation": "REQUIRED: reviewer attestation",
+      "domainReviews": [
+        {
+          "domain": "Ventilator mode behavior and parameter ranges",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Scenario physiology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Alarm severity and terminology",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Intervention timing and contraindications",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        },
+        {
+          "domain": "Educational debriefing accuracy",
+          "status": "passed",
+          "notes": "Required: clinical accuracy notes"
+        }
+      ]
+    }
+  ],
+  "unresolvedCriticalIssues": []
+}

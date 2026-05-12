@@ -1,0 +1,133 @@
+{
+  "conclusion": "failure",
+  "createdAt": "2026-05-11T11:21:16Z",
+  "databaseId": 25667041371,
+  "headSha": "7d69152085ed2791fb80569cc486126f632d1849",
+  "jobs": [
+    {
+      "completedAt": "2026-05-11T11:22:34Z",
+      "conclusion": "failure",
+      "databaseId": 75342129773,
+      "name": "check-crux-field-data",
+      "startedAt": "2026-05-11T11:21:21Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-05-11T11:21:24Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-05-11T11:21:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:21:24Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v6",
+          "number": 2,
+          "startedAt": "2026-05-11T11:21:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:21:28Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v6",
+          "number": 3,
+          "startedAt": "2026-05-11T11:21:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:21:29Z",
+          "conclusion": "success",
+          "name": "Check GitHub Pages production domain",
+          "number": 4,
+          "startedAt": "2026-05-11T11:21:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:21:40Z",
+          "conclusion": "success",
+          "name": "Check CrUX credential preflight",
+          "number": 5,
+          "startedAt": "2026-05-11T11:21:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:29Z",
+          "conclusion": "success",
+          "name": "Check Chrome UX Report monitoring",
+          "number": 6,
+          "startedAt": "2026-05-11T11:21:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:30Z",
+          "conclusion": "success",
+          "name": "Run actions/upload-artifact@v7",
+          "number": 7,
+          "startedAt": "2026-05-11T11:22:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:30Z",
+          "conclusion": "success",
+          "name": "Summarize CrUX status",
+          "number": 8,
+          "startedAt": "2026-05-11T11:22:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:30Z",
+          "conclusion": "skipped",
+          "name": "Close CrUX blocker issue when field data is available",
+          "number": 9,
+          "startedAt": "2026-05-11T11:22:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:32Z",
+          "conclusion": "success",
+          "name": "Open or update CrUX blocker issue",
+          "number": 10,
+          "startedAt": "2026-05-11T11:22:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:32Z",
+          "conclusion": "failure",
+          "name": "Fail when field data is unavailable",
+          "number": 11,
+          "startedAt": "2026-05-11T11:22:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:32Z",
+          "conclusion": "skipped",
+          "name": "Post Run actions/setup-node@v6",
+          "number": 21,
+          "startedAt": "2026-05-11T11:22:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:32Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v6",
+          "number": 22,
+          "startedAt": "2026-05-11T11:22:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-05-11T11:22:32Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 23,
+          "startedAt": "2026-05-11T11:22:32Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/komin0707/komin0707.github.io/actions/runs/25667041371/job/75342129773"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/komin0707/komin0707.github.io/actions/runs/25667041371"
+}

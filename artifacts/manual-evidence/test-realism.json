@@ -1,0 +1,58 @@
+{
+  "verifiedAt": "2026-05-12T05:50:44.816Z",
+  "verifier": "Codex test realism verifier",
+  "result": "passed",
+  "evidence": "The test suite combines production-source imports, behavior-oriented component/browser checks, E2E coverage, and constrained test doubles for platform boundaries.",
+  "testFileCount": 67,
+  "vitestCandidateFileCount": 66,
+  "vitestFileCount": 66,
+  "vitestTestCount": 313,
+  "vitestMissingFiles": [],
+  "e2eFileCount": 1,
+  "behaviorFileCount": 23,
+  "productionImportFileCount": 34,
+  "testDoubleFileCount": 11,
+  "testDoubleFilesWithoutAssertions": [],
+  "testDoubleOnlyFiles": [],
+  "representativeFiles": {
+    "behavior": [
+      "src/App.test.tsx",
+      "src/components/components.alarms.test.tsx",
+      "src/components/components.avatar.test.tsx",
+      "src/components/components.controls.test.tsx",
+      "src/components/components.geometry.test.tsx",
+      "src/components/components.monitor.test.tsx",
+      "src/components/components.patient-panels.test.tsx",
+      "src/components/panels/ScenarioInterventionPanel.test.tsx",
+      "src/components/patient/patientAvatarSvgAirway.test.tsx",
+      "src/components/patient/patientAvatarSvgBody.test.tsx"
+    ],
+    "e2e": ["src/e2e/simulator.spec.ts"],
+    "productionImports": [
+      "src/components/panels/ScenarioInterventionPanel.test.tsx",
+      "src/components/patient/patientAvatarSvgAirway.test.tsx",
+      "src/components/patient/patientAvatarSvgBody.test.tsx",
+      "src/components/patient/patientAvatarSvgHead.test.tsx",
+      "src/components/patient/patientAvatarSvgParts.test.tsx",
+      "src/components/ui/BottomBar.test.tsx",
+      "src/components/ui/ErrorBoundary.test.tsx",
+      "src/components/ui/InteractionToolbar.test.tsx",
+      "src/components/ui/ShortcutHelp.test.tsx",
+      "src/config/env.test.tsx"
+    ],
+    "testDoubles": [
+      "src/App.test.tsx",
+      "src/components/components.alarms.test.tsx",
+      "src/components/components.controls.test.tsx",
+      "src/components/components.monitor.test.tsx",
+      "src/components/ui/BottomBar.test.tsx",
+      "src/components/ui/ErrorBoundary.test.tsx",
+      "src/components/ui/ShortcutHelp.test.tsx",
+      "src/hooks/hooks.test.tsx",
+      "src/hooks/useSimulatorInteractions.test.tsx",
+      "src/lib/serviceWorkerRegistration.test.tsx"
+    ]
+  },
+  "requiredToComplete": [],
+  "failures": []
+}

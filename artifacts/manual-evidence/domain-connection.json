@@ -1,0 +1,6 @@
+{
+  "verifiedAt": "2026-05-11T02:16:01Z",
+  "verifier": "Codex local Playwright and GitHub CLI session",
+  "result": "passed",
+  "evidence": "Published sanitized dist-only build to GitHub Pages repository https://github.com/komin0707/komin0707.github.io and verified the connected domain https://komin0707.github.io/. GitHub Pages reports source main:/ with HTTPS enforced. Playwright loaded the deployed URL with HTTP 200, found VENT SIMULATOR 2D in the rendered app, confirmed patient avatar accessibility text '상태 기반 삽관 환자 이미지, worsening, 산소포화도 86%', observed no request failures or page errors, and confirmed service worker registration scope https://komin0707.github.io/. Follow-up Pages commit ff84d3bc80a9096ef5890fb69e22f978f50bc78f added canonical metadata and sitemap.xml; cache-busted live checks verified HTTP 200, canonical href https://komin0707.github.io/, robots Allow: /, robots sitemap entry, and sitemap loc https://komin0707.github.io/. Pages commit 39dfd87dda7a32661a9db2df88d815321e60be8e removed unused Brotli sidecars from the deployed static artifact while preserving gzip sidecars and the CrUX monitoring workflow; GitHub tree inspection reports zero .br files, staticBytesNoGithub 71812, and totalBytes 83944."
+}

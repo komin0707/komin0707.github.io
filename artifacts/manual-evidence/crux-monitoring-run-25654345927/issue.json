@@ -1,0 +1,74 @@
+{
+  "body": "Chrome UX Report monitoring ran, but field data is not available yet.\n\nOrigin: https://komin0707.github.io\nTarget URL: https://komin0707.github.io/\nResult: blocked\nRun: https://github.com/komin0707/komin0707.github.io/actions/runs/25654345927\nLatest public CrUX cache month: 202603\nPublic CrUX cache chunks scanned: 21/21\nOrigin found in public CrUX cache: false\nCrUX API key configured: false\nCrUX API origin status: 403\nCrUX API URL status: 403\nPageSpeed API key configured: false\nPageSpeed API status: 429\nPages domain result: passed\nPages connected origins: https://komin0707.github.io\nPages CNAME: absent\nCredential preflight result: missing\nCredential preflight usable local env names: none\nCredential preflight usable GitHub secret names: none\n\nUnblock conditions:\n- Configure CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY with Chrome UX Report/PageSpeed API quota, and\n- Wait until the production origin has enough real-user Chrome traffic to expose CrUX field data.\n\ncrux-monitoring-field-data-blocker",
+  "comments": [
+    {
+      "id": "IC_kwDOSZzh5M8AAAABB1DgFA",
+      "author": { "login": "komin0707" },
+      "authorAssociation": "OWNER",
+      "body": "Local credential preflight update (2026-05-11): `npm run check:crux-credentials` wrote `artifacts/manual-evidence/chrome-ux-report-credentials.json` with `result: missing`. It found no monitor-usable `CRUX_API_KEY`, `PAGESPEED_API_KEY`, or `GOOGLE_API_KEY` in the local process environment or GitHub repository secrets, and no accepted key names in checked local `.env*` files. No secret values were printed or recorded. Item 874 must stay blocked until a quota-enabled Google API key is exported/configured and the production origin has real CrUX/PageSpeed field data.",
+      "createdAt": "2026-05-11T04:56:48Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/komin0707/komin0707.github.io/issues/1#issuecomment-4417708052",
+      "viewerDidAuthor": true
+    },
+    {
+      "id": "IC_kwDOSZzh5M8AAAABB1Vjdw",
+      "author": { "login": "komin0707" },
+      "authorAssociation": "OWNER",
+      "body": "Local recheck update (2026-05-11T06:09Z): `npm run check:crux-credentials` still reports `result: missing`; `CRUX_CACHE_SCAN=1 npm run check:crux-monitoring` still reports `result: blocked`, `fieldDataAvailable: false`, and did not create `artifacts/manual-evidence/chrome-ux-report.json`. Local completion evidence was refreshed and remains `1149/1150` checked with item 874 blocked. Remote run remains https://github.com/komin0707/komin0707.github.io/actions/runs/25652159860 with conclusion `failure`.",
+      "createdAt": "2026-05-11T06:11:27Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/komin0707/komin0707.github.io/issues/1#issuecomment-4418003831",
+      "viewerDidAuthor": true
+    },
+    {
+      "id": "IC_kwDOSZzh5M8AAAABB1ge4g",
+      "author": { "login": "komin0707" },
+      "authorAssociation": "OWNER",
+      "body": "Local recheck update (2026-05-11T06:47Z): `npm run check:crux-credentials` still reports `result: missing` at 2026-05-11T06:46:46.723Z; `npm run check:pages-domain` reports `result: passed` for connected origin `https://komin0707.github.io` at 2026-05-11T06:46:46.676Z; `CRUX_CACHE_SCAN=1 npm run check:crux-monitoring` still reports `result: blocked`, `fieldDataAvailable: false` at 2026-05-11T06:47:04.739Z, and did not create `artifacts/manual-evidence/chrome-ux-report.json`. Local completion evidence remains `1149/1150` checked with item 874 blocked. Latest remote run remains https://github.com/komin0707/komin0707.github.io/actions/runs/25654345927 with conclusion `failure`.",
+      "createdAt": "2026-05-11T06:48:21Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/komin0707/komin0707.github.io/issues/1#issuecomment-4418182882",
+      "viewerDidAuthor": true
+    },
+    {
+      "id": "IC_kwDOSZzh5M8AAAABB1jv5Q",
+      "author": { "login": "komin0707" },
+      "authorAssociation": "OWNER",
+      "body": "Local recheck at 2026-05-11T06:57:43Z:\n\n- Completion audit remains incomplete: 1149/1150 checked, 1 blocker.\n- Remaining blocker: `874. [ ] Chrome UX Report 모니터링`.\n- Pages domain check: passed at 2026-05-11T06:57:37.864Z; expected origin `https://komin0707.github.io`; connected origins: `https://komin0707.github.io`.\n- Credential preflight: missing at 2026-05-11T06:57:37.992Z.\n- CrUX/PageSpeed monitoring: blocked at 2026-05-11T06:57:43.808Z; field data available: false.\n- Canonical completion artifact remains absent: `artifacts/manual-evidence/chrome-ux-report.json`.\n\nStill blocked until a usable CrUX/PageSpeed API key with quota exists and the production origin exposes CrUX field data.",
+      "createdAt": "2026-05-11T06:58:45Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/komin0707/komin0707.github.io/issues/1#issuecomment-4418236389",
+      "viewerDidAuthor": true
+    },
+    {
+      "id": "IC_kwDOSZzh5M8AAAABB1pxIg",
+      "author": { "login": "komin0707" },
+      "authorAssociation": "OWNER",
+      "body": "Local tooling update for the CrUX blocker:\n\n- Local `npm run check:crux-credentials` and `npm run check:crux-monitoring` now recognize accepted key names from `.env.local`, `.env`, `.env.production.local`, and `.env.production`, without writing secret values to stdout or evidence artifacts.\n- The blocker report now separates exported env keys, env-file keys, GitHub secret names, and the resolved monitor key source.\n- Current local recheck still has no key source: exported env none, env-file keys none, GitHub secrets none.\n- Remote GitHub Actions monitoring still requires one repository secret named `CRUX_API_KEY`, `PAGESPEED_API_KEY`, or `GOOGLE_API_KEY`.\n- This does not complete item 874 by itself; `artifacts/manual-evidence/chrome-ux-report.json` must still be created only from real CrUX/PageSpeed field data for `https://komin0707.github.io`.",
+      "createdAt": "2026-05-11T07:13:34Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/komin0707/komin0707.github.io/issues/1#issuecomment-4418335010",
+      "viewerDidAuthor": true
+    }
+  ],
+  "state": "OPEN",
+  "title": "[blocked] Chrome UX Report field data unavailable",
+  "updatedAt": "2026-05-11T07:13:34Z",
+  "url": "https://github.com/komin0707/komin0707.github.io/issues/1"
+}

@@ -1,0 +1,87 @@
+INFO - __main__ (01:21:41.611) - MainThread (3776):
+Starting NVDA version 2026.1 AMD64
+INFO - core.main (01:21:41.679) - MainThread (3776):
+Config dir: C:\Users\RUNNER~1\AppData\Local\Temp\nsq8DDE.tmp\app\userConfig
+INFO - config.ConfigManager._loadConfig (01:21:41.684) - MainThread (3776):
+Loading config: C:\Users\RUNNER~1\AppData\Local\Temp\nsq8DDE.tmp\app\userConfig\nvda.ini
+INFO - core.main (01:21:43.106) - MainThread (3776):
+Windows version: Windows 11 24H2 (10.0.26100.32690) server AMD64
+INFO - core.main (01:21:43.106) - MainThread (3776):
+Using Python version 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]
+INFO - core.main (01:21:43.106) - MainThread (3776):
+Using comtypes version 1.4.13
+INFO - core.main (01:21:43.111) - MainThread (3776):
+Using configobj version 5.1.0 with validate version 1.0.1
+WARNING - nvwave.WavePlayer.open (01:21:43.241) - MainThread (3776):
+Couldn't open specified or default audio device. There may be no audio devices.
+WARNING - tones.initialize (01:21:43.241) - MainThread (3776):
+Failed to initialize audio for tones
+Traceback (most recent call last):
+  File "tones.pyc", line 24, in initialize
+  File "nvwave.pyc", line 251, in __init__
+  File "nvwave.pyc", line 301, in open
+  File "_ctypes/callproc.c", line 1033, in GetResult
+OSError: [WinError -2147023728] Element not found
+ERROR - audio.soundSplit.initialize (01:21:43.242) - MainThread (3776):
+Could not initialize audio session manager
+Traceback (most recent call last):
+  File "audio\soundSplit.pyc", line 97, in initialize
+  File "pycaw\utils.pyc", line 210, in GetAudioSessionManager
+  File "pycaw\utils.pyc", line 190, in GetSpeakers
+_ctypes.COMError: (-2147023728, 'Element not found.', (None, None, None, 0, None))
+INFO - NVDAHelperLocal (01:21:43.248) - MainThread (3776):
+Thread 3776, build\x86_64\localWin10\oneCoreSpeech.cpp, ocSpeech_initialize, 215:
+ocSpeech_initialize
+
+INFO - NVDAHelperLocal (01:21:43.248) - MainThread (3776):
+Thread 3776, build\x86_64\localWin10\oneCoreSpeech.cpp, OcSpeechState::activate, 89:
+Activating
+
+INFO - NVDAHelperLocal (01:21:44.094) - MainThread (3776):
+Thread 3776, build\x86_64\localWin10\oneCoreSpeech.cpp, preventEndUtteranceSilence_, 443:
+AppendedSilence supported
+
+INFO - synthDriverHandler.setSynth (01:21:44.100) - MainThread (3776):
+Loaded synthDriver oneCore
+INFO - mathPres.MathCAT.MathCAT.MathCAT.__init__ (01:21:44.109) - MainThread (3776):
+MathCAT 0.7.2 installed. Using rules dir: C:\Users\RUNNER~1\AppData\Local\Temp\nsq8DDE.tmp\app\include\nvda-mathcat\assets\Rules
+INFO - core._setUpWxApp (01:21:44.114) - MainThread (3776):
+Using wx version 4.2.4 msw (phoenix) wxWidgets 3.2.8
+INFO - brailleInput.initialize (01:21:44.116) - MainThread (3776):
+Braille input initialized
+INFO - braille.initialize (01:21:44.116) - MainThread (3776):
+Using liblouis version 3.36.0
+INFO - braille.initialize (01:21:44.116) - MainThread (3776):
+Using pySerial version 3.5
+INFO - braille.BrailleHandler._setDisplay (01:21:44.119) - MainThread (3776):
+Loaded braille display driver 'noBraille', current display has 0 cells.
+INFO - core.main (01:21:44.309) - MainThread (3776):
+Java Access Bridge support initialized
+INFO - UIAHandler.UIAHandler.MTAThreadFunc (01:21:44.435) - UIAHandler.UIAHandler.MTAThread (4036):
+UIAutomation: IUIAutomation6
+INFO - core.main (01:21:44.550) - MainThread (3776):
+NVDA initialized
+WARNING - nvwave.WavePlayer.open (01:21:45.505) - Dummy-5 (4452):
+Couldn't open specified or default audio device. There may be no audio devices.
+ERROR - Exception ignored on calling ctypes callback function <bound method OneCoreSynthDriver._callback of OneCoreSynthDriver('oneCore')>: None (01:21:45.505) - Dummy-5 (4452):
+Traceback (most recent call last):
+  File "synthDrivers\oneCore.pyc", line 458, in _callback
+  File "synthDrivers\oneCore.pyc", line 267, in _maybeInitPlayer
+  File "nvwave.pyc", line 251, in __init__
+  File "nvwave.pyc", line 301, in open
+  File "_ctypes/callproc.c", line 1033, in GetResult
+OSError: [WinError -2147023728] Element not found
+INFO - core.main (01:21:51.708) - MainThread (3776):
+Exiting
+INFO - config.ConfigManager.save (01:21:51.709) - MainThread (3776):
+Not writing profile, either --secure or --launcher args present
+INFO - NVDAHelperLocal (01:21:51.727) - MainThread (3776):
+Thread 3776, build\x86_64\localWin10\oneCoreSpeech.cpp, ocSpeech_terminate, 236:
+ocSpeech_terminate, token: 000001EEB95E25F0
+
+INFO - NVDAHelperLocal (01:21:51.728) - MainThread (3776):
+Thread 3776, build\x86_64\localWin10\oneCoreSpeech.cpp, OcSpeechState::terminate, 106:
+Terminating
+
+INFO - __main__ (01:21:52.141) - MainThread (3776):
+NVDA exit

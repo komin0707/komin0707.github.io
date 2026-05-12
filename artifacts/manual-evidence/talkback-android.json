@@ -1,0 +1,52 @@
+{
+  "verifiedAt": "2026-05-11T00:01:10Z",
+  "verifier": "Codex via Android Emulator Pixel_5 AVD and adb",
+  "result": "pass",
+  "evidence": {
+    "targetUrl": "https://komin0707.github.io/",
+    "device": {
+      "avd": "Pixel_5",
+      "model": "sdk_gphone64_arm64",
+      "androidRelease": "13",
+      "sdk": "33"
+    },
+    "software": {
+      "talkBackPackage": "com.google.android.marvin.talkback",
+      "talkBackVersion": "14.2.0.618048417",
+      "chromePackage": "com.android.chrome",
+      "chromeVersion": "109.0.5414.123"
+    },
+    "checks": [
+      "Enabled TalkBack as the Android accessibility service and verified it was bound with FEEDBACK_SPOKEN, FEEDBACK_HAPTIC, and FEEDBACK_AUDIBLE.",
+      "Loaded the deployed simulator URL in Chrome on the Android emulator.",
+      "Verified Chrome was the active accessibility window while TalkBack was enabled.",
+      "Captured UIAutomator hierarchy exposing simulator controls and patient accessibility text.",
+      "Captured logcat entries showing TalkBack binding to Google TTS and issuing speech synthesis requests."
+    ],
+    "observedAccessibleText": [
+      "Vent Simulator 2D",
+      "A/C",
+      "FiO2 (%) controls",
+      "상태 기반 삽관 환자 이미지, worsening, 산소포화도 86%",
+      "환자 시각 상태: 폐렴(Pneumonia)_중증, 악화, 표정 drowsy, 피부 cyanotic, 폐 inflamed, 호흡 움직임 1.2"
+    ],
+    "artifacts": [
+      {
+        "path": "artifacts/manual-evidence/talkback-android-dumpsys.txt",
+        "sha256": "d2d1596e0997f85a349597a9f859d0a979c6bcd29e55ff84f14e0839a8d790b1"
+      },
+      {
+        "path": "artifacts/manual-evidence/talkback-android-window.xml",
+        "sha256": "b5beb7ab15b77a73f4defc2755c4647cbd26e7c3860ff46bcf6a27988b09ac37"
+      },
+      {
+        "path": "artifacts/manual-evidence/talkback-android-logcat.txt",
+        "sha256": "8662b43b56b29214d9c980591960f36cf5633b3a7bb3531f962378e9bb8d0af1"
+      },
+      {
+        "path": "artifacts/manual-evidence/talkback-android-screenshot.png",
+        "sha256": "67c787dfd5c07d34bb84437909cf88ec9f1db286ef25c83558a9d15ab1870276"
+      }
+    ]
+  }
+}

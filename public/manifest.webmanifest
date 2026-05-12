@@ -1,0 +1,36 @@
+{
+  "name": "Vent Simulator 2D",
+  "short_name": "VentSim",
+  "description": "Educational ventilator simulator with clinical patient visuals, monitoring waveforms, alarms, and scenario controls.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "any",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "categories": ["education", "medical", "simulation"],
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start ventilator simulation",
+      "short_name": "Simulate",
+      "url": "/?mode=simulate",
+      "icons": [
+        {
+          "src": "/pwa-icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

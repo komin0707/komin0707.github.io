@@ -1,0 +1,393 @@
+Timestamp               Ty Process[PID:TID]
+2026-05-11 09:37:27.684 Df chronod[11330:2c5e6f] [com.apple.chrono:taskservice] Popped next task: descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7 from backgroundOpportunistic
+2026-05-11 09:37:27.684 Df chronod[11330:2c5e6f] [com.apple.chrono:taskservice] Remove pending task: descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7
+2026-05-11 09:37:27.684 Df chronod[11330:2c5e6f] [com.apple.chrono:taskservice] [EA3F34A7]: starting pended task descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7; pendingTasks.count = 0
+2026-05-11 09:37:27.684 Df chronod[11330:2c65f1] [com.apple.chrono:tasksession] [EA3F34A7]: start() with task descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7
+2026-05-11 09:37:27.685 Df chronod[11330:2c65f1] [com.apple.chrono:tasksession] [EA3F34A7]: _taskQueue_setup() with task descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7
+2026-05-11 09:37:27.687 Df chronod[11330:2c65f1] [com.apple.chrono:session] [com.apple.AccessibilityUIServer.AccessibilityControlsExtension] Creating session...
+2026-05-11 09:37:27.687 Df chronod[11330:2c5d14] [com.apple.extensionkit:launch] Launching process with config: bundleID: com.apple.AccessibilityUIServer.AccessibilityControlsExtension instance ID: Optional([_EXExtensionInstanceIdentifier: B1319BD3-8434-4788-9FA3-E49971E82C16])
+2026-05-11 09:37:27.696 Df extensionkitservice[11576:2c66f9] [com.apple.extensionkit:launch] Configuring RBSLaunchContext for extension: `Optional("com.apple.AccessibilityUIServer.AccessibilityControlsExtension")`
+2026-05-11 09:37:27.698 Df runningboardd[11261:2c4d90] [com.apple.runningboard:ttl] Executing launch request for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16] (Launching extension com.apple.AccessibilityUIServer.AccessibilityControlsExtension(97D95B4D-5B83-404A-AAE0-A1932A43B6BE for host 11330) from requestor: [xpcservice<com.apple.extensionkitservice([osservice<com.apple.chronod>:11330])>{vt hash: 0}:11576:11576]
+2026-05-11 09:37:27.698 Df runningboardd[11261:2c4d90] [com.apple.runningboard:job] Creating and launching job for: xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]
+2026-05-11 09:37:27.699 Df runningboardd[11261:2c562a] [com.apple.runningboard:job_oversize] 'B1319BD3-8434-4788-9FA3-E49971E82C16' Submitting extension overlay (host PID 11330, path /Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/CoreServices/AccessibilityUIServer.app/PlugIns/AccessibilityControlsExtension.appex/AccessibilityControlsExtension):
+<dictionary: 0x600003407d80> { count = 2, transaction: 0, voucher = 0x0, contents =
+	"XPCService" => <dictionary: 0x600003407f00> { count = 11, transaction: 0, voucher = 0x0, contents =
+		"_ManagedBy" => <string: 0x600001e33750> { length = 22, contents = "com.apple.runningboard" }
+		"RunLoopType" => <string: 0x600001e31710> { length = 9, contents = "NSRunLoop" }
+		"_SandboxProfile" => <string: 0x600001e33480> { length = 6, contents = "plugin" }
+		"_LaunchWatchdogTimeOut" => <int64: 0xa4907a252ab17fef>: 0
+		"_AdditionalSubServices" => <dictionary: 0x600003406520> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"apple-extension-service" => <bool: 0x107409d80>: true
+		}
+		"_AdditionalProperties" => <dictionary: 0x600003407600> { count = 1, transaction: 0, voucher = 0x0, contents =
+			"RunningBoard" => <dictionary: 0x600003407f60> { count = 2, transaction: 0, voucher = 0x0, contents =
+				"RunningBoardLaunchedIdentity" => <dictionary: 0x600003404de0> { count = 6, transaction: 0, voucher = 0x0, contents =
+					"TYPE" => <int64: 0xa4907a252ab17fcf>: 4
+					"v" => <data: 0x600000586ec0>: { length = 121 bytes, contents = 0x7b226164646974696f6e616c456e7669726f6e6d656e7456... }
+					"h" => <int64: 0xa4907a252ab01dff>: 11330
+					"i" => <string: 0x600001e536f0> { length = 62, contents = "com.apple.AccessibilityUIServer.AccessibilityControlsExtension" }
+					"r" => <int64: 0xa4907a252ab17fff>: 2
+					"H" => <dictionary: 0x60000341e940> { count = 4, transaction: 0, voucher = 0x0, contents =
+						"l" => <string: 0x600001e51170> { length = 17, contents = "com.apple.chronod" }
+						"t" => <int64: 0xa4907a252ab17fff>: 2
+						"TYPE" => <int64: 0xa4907a252ab17fdf>: 6
+						"p" => <int64: 0xa4907a252ab17fef>: 0
+					}
+				}
+				"RunningBoardLaunched" => <bool: 0x107409d80>: true
+			}
+		}
+		"EnvironmentVariables" => <dictionary: 0x600003407de0> { count = 2, transaction: 0, voucher = 0x0, contents =
+			"EXTENSION_KIT_EXTENSION_TYPE" => <string: 0x600001e32dc0> { length = 1, contents = "1" }
+			"BSServiceDomains" => <string: 0x600001e33810> { length = 46, contents = "{"XPCService":{"Services":{"MainService":{}}}}" }
+		}
+		"_MultipleInstances" => <bool: 0x107409d80>: true
+		"ServiceType" => <string: 0x600001e304e0> { length = 11, contents = "Application" }
+		"_ManagedBy_Services" => <array: 0x600001e336c0> { count = 1, capacity = 8, contents =
+			0: <string: 0x600001e33060> { length = 62, contents = "com.apple.AccessibilityUIServer.AccessibilityControlsExtension" }
+		}
+		"ProgramArguments" => <array: 0x600001e32b20> { count = 1, capacity = 8, contents =
+			0: <string: 0x600001e32100> { length = 282, contents = "/Library/Developer/CoreSimulator/Volumes/iOS_22E238/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 18.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/CoreServices/AccessibilityUIServer.app/PlugIns/AccessibilityControlsExtension.appex/AccessibilityControlsExtension" }
+		}
+	}
+	"CFBundlePackageType" => <string: 0x600001e33c60> { length = 4, contents = "XPC!" }
+}
+2026-05-11 09:37:27.699 Df launchd_sim[11246:2c6940] [pid/11330/com.apple.AccessibilityUIServer.AccessibilityControlsExtension:] draining messages from com.apple.AccessibilityUIServer.AccessibilityControlsExtension.apple-extension-service
+2026-05-11 09:37:28.059 Df launchd_sim[11246:2c693b] [pid/11330/com.apple.AccessibilityUIServer.AccessibilityControlsExtension.B1319BD3-8434-4788-9FA3-E49971E82C16 [11746]:] Successfully spawned AccessibilityControlsExtension[11746] because launch job demand
+2026-05-11 09:37:28.060 Df runningboardd[11261:2c4d90] [com.apple.runningboard:general] Full encoding handle [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746], with data f1df0dbc00002de2, and pid 11746
+2026-05-11 09:37:28.061 Df runningboardd[11261:2c4d90] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Memory Limits: active 0 inactive 0
+ <RBJetsamProperties| tasklimit=0
+(null)>
+2026-05-11 09:37:28.061 Df runningboardd[11261:2c4d90] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] This process will be managed.
+2026-05-11 09:37:28.061 E  runningboardd[11261:2c4d90] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Memorystatus failed with unexpected error: Operation not permitted (1)
+2026-05-11 09:37:28.061 Df runningboardd[11261:2c4d90] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] is not freezer eligible, disabling freezing.
+2026-05-11 09:37:28.061 E  runningboardd[11261:2c4d90] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Memorystatus failed with unexpected error: Invalid argument (22)
+2026-05-11 09:37:28.061 Df runningboardd[11261:2c4d90] [com.apple.runningboard:ttl] Now tracking process: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:37:28.061 Df runningboardd[11261:2c562a] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]: running-suspended (role: None) (endowments: (null))
+2026-05-11 09:37:28.061 Df runningboardd[11261:2c562a] [com.apple.runningboard:general] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] reported to RB as running
+2026-05-11 09:37:28.061 Df SpringBoard[11256:2c670c] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:37:28.061 Df SpringBoard[11256:2c670c] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-suspended-NotVisible
+2026-05-11 09:37:28.062 Df runningboardd[11261:2c68ce] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] from originator [xpcservice<com.apple.extensionkitservice([osservice<com.apple.chronod>:11330])>{vt hash: 0}:11576:11576] with description <RBSAssertionDescriptor| "Taking assertion for pid 11746" ID:11261-11576-483 target:11746 attributes:[
+	<RBSDomainAttribute| domain:"com.apple.extensionkit" name:"BackgroundAppExtension" sourceEnvironment:"(null)">,
+	<RBSDomainAttribute| domain:"com.apple.extensionkit" name:"HandleMessage" sourceEnvironment:"(null)">
+	]>
+2026-05-11 09:37:28.062 Df runningboardd[11261:2c68ce] [com.apple.runningboard:ttl] Assertion 11261-11576-483 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]) will be created as active
+2026-05-11 09:37:28.062 Df mediaremoted[11265:2c519b] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:37:28.062 Df mediaremoted[11265:2c519b] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-suspended-NotVisible
+2026-05-11 09:37:28.063 Df runningboardd[11261:2c646a] [com.apple.runningboard:ttl] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Resuming task.
+2026-05-11 09:37:28.063 Df runningboardd[11261:2c562a] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]: running-active (role: UserInteractiveNonFocal) (endowments: (null))
+2026-05-11 09:37:28.063 Df mediaremoted[11265:2c64bc] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:28.063 Df SpringBoard[11256:2c66b7] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:28.064 Df locationd[11282:2c68de] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:37:28.064 Df locationd[11282:2c68de] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-suspended-NotVisible
+2026-05-11 09:37:28.064 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":11746, "bundleID":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "state":3}
+2026-05-11 09:37:28.064 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11330;
+    SBApplicationStateDisplayIDKey = "com.apple.AccessibilityUIServer.AccessibilityControlsExtension";
+    SBApplicationStateKey = 2;
+    SBApplicationStateProcessIDKey = 11746;
+    SBMostElevatedStateForProcessID = 2;
+}}
+2026-05-11 09:37:28.064 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundTaskSuspended, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:28.064 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundTaskSuspended, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:28.064 Df locationd[11282:2c68de] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.AccessibilityUIServer.AccessibilityControlsExtension:}
+2026-05-11 09:37:28.065 Df locationd[11282:2c5f20] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:28.065 Df locationd[11282:2c68de] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":2, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "ClientKey":icom.apple.AccessibilityUIServer:}
+2026-05-11 09:37:28.065 Df locationd[11282:2c68de] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:28.065 Df locationd[11282:2c68de] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":11746, "bundleID":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "state":4}
+2026-05-11 09:37:28.065 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":BackgroundRunning, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:28.065 Df locationd[11282:2c68de] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11330;
+    SBApplicationStateDisplayIDKey = "com.apple.AccessibilityUIServer.AccessibilityControlsExtension";
+    SBApplicationStateKey = 4;
+    SBApplicationStateProcessIDKey = 11746;
+    SBMostElevatedStateForProcessID = 4;
+}}
+2026-05-11 09:37:28.065 Df locationd[11282:2c5f20] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.AccessibilityUIServer.AccessibilityControlsExtension:}
+2026-05-11 09:37:28.065 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":BackgroundRunning, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:28.066 Df locationd[11282:2c5f20] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":3, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "ClientKey":icom.apple.AccessibilityUIServer:}
+2026-05-11 09:37:28.066 Df locationd[11282:2c5f20] [com.apple.locationd.Core:Core] {"msg":"skip erasing #CLIUA for RunningBoard Process State. Does not exists", "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:28.067 Df runningboardd[11261:2c646a] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Result 45 setting darwin role to UserInteractiveNonFocal: Operation not supported, falling back to setting priority
+2026-05-11 09:37:28.067 Df runningboardd[11261:2c646a] [com.apple.runningboard:ttl] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Set darwin priority to: PRIO_DEFAULT
+2026-05-11 09:37:28.067 E  runningboardd[11261:2c646a] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Error 1 setting Carplay mode to 0: Operation not permitted
+2026-05-11 09:37:28.068 Df runningboardd[11261:2c4e55] [com.apple.runningboard:ttl] Invalidating assertion 11261-11576-483 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]) from originator [xpcservice<com.apple.extensionkitservice([osservice<com.apple.chronod>:11330])>{vt hash: 0}:11576:11576]
+2026-05-11 09:37:28.068 Df chronod[11330:2c5d14] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:37:28.069 Df runningboardd[11261:2c4e55] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] from originator [osservice<com.apple.chronod>:11330] with description <RBSAssertionDescriptor| "Taking assertion for pid 11746" ID:11261-11330-484 target:11746 attributes:[
+	<RBSDomainAttribute| domain:"com.apple.extensionkit" name:"BackgroundAppExtension" sourceEnvironment:"(null)">,
+	<RBSDomainAttribute| domain:"com.apple.extensionkit" name:"HandleMessage" sourceEnvironment:"(null)">
+	]>
+2026-05-11 09:37:28.069 Df runningboardd[11261:2c4e55] [com.apple.runningboard:ttl] Assertion 11261-11330-484 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]) will be created as active
+2026-05-11 09:37:28.069 Df chronod[11330:2c5d14] [com.apple.extensionkit:launch] Created new process ExtensionProcess: bundleID: com.apple.AccessibilityUIServer.AccessibilityControlsExtension instance ID: Optional([_EXExtensionInstanceIdentifier: B1319BD3-8434-4788-9FA3-E49971E82C16]) pid: 11746.
+2026-05-11 09:37:28.070 Df runningboardd[11261:2c646a] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] from originator [osservice<com.apple.chronod>:11330] with description <RBSAssertionDescriptor| "[AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133]" ID:11261-11330-485 target:11746 attributes:[
+	<RBSDomainAttribute| domain:"com.apple.chronod" name:"WidgetExtensionRun" sourceEnvironment:"(null)">
+	]>
+2026-05-11 09:37:28.070 Df runningboardd[11261:2c646a] [com.apple.runningboard:ttl] Assertion 11261-11330-485 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]) will be created as active
+2026-05-11 09:37:28.070 Df chronod[11330:2c5d14] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] acquired WidgetExtensionRun
+2026-05-11 09:37:28.070 Df chronod[11330:2c5d14] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session initialized
+2026-05-11 09:37:28.070 Df chronod[11330:2c61ee] [com.apple.chrono:keepalive] Added: <Task 440136EB-5CBE-411D-B8EF-4901D407FBAD: descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>>
+2026-05-11 09:37:28.070 Df chronod[11330:2c61ee] [com.apple.chrono:tasksession] [EA3F34A7]: _taskQueue_execute() with task descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7
+2026-05-11 09:37:28.070 Df chronod[11330:2c61ee] [com.apple.chrono:descriptor] [com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension] performing query - reason: cache initiated
+2026-05-11 09:37:28.070 Df chronod[11330:2c61ee] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session operation: `getAllDescriptors` request.
+2026-05-11 09:37:28.070 Df chronod[11330:2c61ee] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session operation: `getAllDescriptors` executing.
+2026-05-11 09:37:28.070 Df runningboardd[11261:2c66bf] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]: running-active (role: UserInteractiveNonFocal) (endowments: (null))
+2026-05-11 09:37:28.169 Df SpringBoard[11256:2c670c] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:28.170 Df locationd[11282:2c68de] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:28.170 Df mediaremoted[11265:2c519b] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:38.749 Df chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session operation: `getAllDescriptors` watchdogged.
+2026-05-11 09:37:38.749 Df chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session operation: `getAllDescriptors` error result: Error Domain=CHSErrorDomain Code=1001 "Watchdog provision violated for getAllDescriptors" UserInfo={NSDebugDescription=Watchdog provision violated for getAllDescriptors}
+2026-05-11 09:37:38.749 Df chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session operation: `getAllDescriptors` watchdog fired.
+2026-05-11 09:37:38.749 E  chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session operation: `getAllDescriptors` watchdog fired. Cancelling session.
+2026-05-11 09:37:38.750 Df runningboardd[11261:2c646a] [com.apple.runningboard:ttl] Acquiring assertion targeting [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] from originator [osservice<com.apple.chronod>:11330] with description <RBSAssertionDescriptor| "[AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133]" ID:11261-11330-490 target:11746 attributes:[
+	<RBSDomainAttribute| domain:"com.apple.chronod" name:"WaitForWidgetSuspension" sourceEnvironment:"(null)">
+	]>
+2026-05-11 09:37:38.750 Df runningboardd[11261:2c646a] [com.apple.runningboard:ttl] Assertion 11261-11330-490 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]) will be created as active
+2026-05-11 09:37:38.751 Df runningboardd[11261:2c646a] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]: running-active (role: UserInteractiveNonFocal) (endowments: (null))
+2026-05-11 09:37:38.751 Df runningboardd[11261:2c66bf] [com.apple.runningboard:ttl] Attempting to rename power assertion 65535 for target xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16] to xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16];11261-11330-485:[AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133];11261-11330-490:[AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133]
+2026-05-11 09:37:38.751 Df SpringBoard[11256:2c670c] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:38.751 Df chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] acquired WaitForWidgetSuspension
+2026-05-11 09:37:38.751 Df chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] WidgetExtensionRun invalidated
+2026-05-11 09:37:38.751 Df chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session invalidated
+2026-05-11 09:37:38.751 Df chronod[11330:2c578b] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Extension process termination requested (11746)
+2026-05-11 09:37:38.753 Df runningboardd[11261:2c4d90] [com.apple.runningboard:ttl] Invalidating assertion 11261-11330-485 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]) from originator [osservice<com.apple.chronod>:11330]
+2026-05-11 09:37:38.754 Df chronod[11330:2c578b] [com.apple.runningboard:process] Starting death monitoring for handle [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:37:38.756 Df mediaremoted[11265:2c519b] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:38.756 Df runningboardd[11261:2c4d90] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] Terminating with context: <RBSTerminateContext| domain:20 code:0x000003E9 explanation:ChronodWidgetExtensionWatchdog reportType:None maxTerminationResistance:Interactive>
+2026-05-11 09:37:38.756 Df runningboardd[11261:2c4d90] [com.apple.runningboard:process] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] terminate_with_reason() success
+2026-05-11 09:37:38.756 Df chronod[11330:2c578b] [com.apple.extensionkit:launch] Assertion for extension process 'ExtensionProcess: bundleID: com.apple.AccessibilityUIServer.AccessibilityControlsExtension instance ID: Optional([_EXExtensionInstanceIdentifier: B1319BD3-8434-4788-9FA3-E49971E82C16]) pid: 11746' invalidated
+2026-05-11 09:37:38.756 Df runningboardd[11261:2c646a] [com.apple.runningboard:ttl] Invalidating assertion 11261-11330-484 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]) from originator [osservice<com.apple.chronod>:11330]
+2026-05-11 09:37:38.757 Df chronod[11330:2c578b] [com.apple.chrono:session] Connection to extension process was invalidated: com.apple.AccessibilityUIServer.AccessibilityControlsExtension
+2026-05-11 09:37:38.757 Df locationd[11282:2c68de] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], running-active-NotVisible
+2026-05-11 09:37:38.862 Df runningboardd[11261:2c646a] [com.apple.runningboard:assertion] Removed last relative-start-date-defining assertion for process xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]
+2026-05-11 09:37:38.862 Df runningboardd[11261:2c66bf] [com.apple.runningboard:ttl] Attempting to rename power assertion 65535 for target xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16] to xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]11261-11330-490:[AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133]
+2026-05-11 09:37:38.863 Df runningboardd[11261:2c66bf] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]: none (role: None) (endowments: (null))
+2026-05-11 09:37:38.863 Df SpringBoard[11256:2c66b7] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:37:38.866 Df mediaremoted[11265:2c519b] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:37:38.868 Df locationd[11282:2c68de] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:37:38.868 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor process monitor update handler invoked", "pid":11746, "bundleID":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "state":1}
+2026-05-11 09:37:38.869 Df locationd[11282:2c5f20] [com.apple.locationd.Core:Core] {"msg":"RBS #dic AppMonitor received Termination", "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "isUserKill":0}
+2026-05-11 09:37:38.869 Df locationd[11282:2c5f20] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":Terminated, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:38.869 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"#Warning #ClientResolution the passed keyPath is not registered. Resolving to #nullCKP", "InputCKP":icom.apple.AccessibilityUIServer.AccessibilityControlsExtension:}
+2026-05-11 09:37:38.869 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"#CLIUA AppMonitor notification", "notification":1, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "ClientKey":icom.apple.AccessibilityUIServer:}
+2026-05-11 09:37:38.870 Df locationd[11282:2c5622] [com.apple.locationd.Core:Core] {"msg":"invoking applicationStateChange handler", "StateChangeData":{
+    BKSApplicationStateAppIsFrontmost = 0;
+    BKSApplicationStateExtensionKey = 1;
+    BKSApplicationStateHostPIDKey = 11330;
+    SBApplicationStateDisplayIDKey = "com.apple.AccessibilityUIServer.AccessibilityControlsExtension";
+    SBApplicationStateKey = 1;
+    SBApplicationStateProcessIDKey = 11746;
+    SBMostElevatedStateForProcessID = 1;
+}}
+2026-05-11 09:37:38.870 Df locationd[11282:2c68de] [com.apple.locationd.Core:Core] {"msg":"#dic AppMonitor received Termination", "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension, "isUserKill":0}
+2026-05-11 09:37:38.870 Df locationd[11282:2c68de] [com.apple.locationd.Core:Core] {"msg":"Not Posting Application State Change Notification via legacy path", "notification":Terminated, "pid":11746, "bundleId":com.apple.AccessibilityUIServer.AccessibilityControlsExtension}
+2026-05-11 09:37:43.760 E  chronod[11330:2c5e6f] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Extension process termination watchdogged pid (11746) after 5.000000s
+2026-05-11 09:37:43.760 Df chronod[11330:2c5e6f] [com.apple.chrono:keepalive] Removed: <Task 440136EB-5CBE-411D-B8EF-4901D407FBAD: descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>>
+2026-05-11 09:37:43.760 Df chronod[11330:2c5e6f] [com.apple.chrono:tasksession] [EA3F34A7]: _taskQueue_evaluate() with task descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7
+2026-05-11 09:37:43.760 Df chronod[11330:2c5e6f] [com.apple.chrono:tasksession] [EA3F34A7]: _taskQueue_teardown() with task descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7
+2026-05-11 09:37:43.761 Df chronod[11330:2c5e6f] [com.apple.chrono:tasksession] [EA3F34A7]: _taskQueue_complete() with task descriptor<com.apple.AccessibilityUIServer::com.apple.AccessibilityUIServer.AccessibilityControlsExtension>.EA3F34A7
+2026-05-11 09:37:48.257 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:37:48.274 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:37:48.274 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:37:48.274 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:37:48.274 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:37:48.274 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:37:48.282 Df siriactionsd[11331:2c5c8e] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:48.294 Df siriactionsd[11331:2c5c8e] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:48.294 Df siriactionsd[11331:2c5c8e] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:48.294 Df siriactionsd[11331:2c5c8e] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:48.294 Df siriactionsd[11331:2c5c8e] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:48.294 Df siriactionsd[11331:2c5c8e] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:48.415 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:37:48.415 Df siriactionsd[11331:2c55fb] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:48.416 Df siriactionsd[11331:2c562e] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:37:54.167 Df scrod[11837:2c6e53] [com.apple.xpc:connection] [0x6000026b51d0] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-05-11 09:37:54.190 Df scrod[11837:2c6f4a] [com.apple.Accessibility:AXBrailleHW] Handled lock: <MSCRODBrailleDisplayManager: 0x134406c90> 13
+2026-05-11 09:37:54.197 Df scrod[11837:2c6f4a] (libMobileGestalt.dylib) No persisted cache on this platform.
+2026-05-11 09:37:54.199 Df scrod[11837:2c6f4a] [com.apple.Accessibility:AXIPC] Setting client identifier com.apple.accessibility.AXSystemReplyServer-11837-0
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:AXBrailleHW] System server lock state: 0, passcode state: 0
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:ScreenReaderOutput] Updating system ui lock status: 0, screen blank status: 0, system lock: 0
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:ScreenReaderOutput] Initialized: 0, should disconnected 0, is disconnected: 0
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:ScreenReaderOutput] Braille Device: Waking
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:AXBrailleHW] Registered lock state: <MSCRODBrailleDisplayManager: 0x134406c90> 13
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:AXBrailleHW] Handled screen wake: <MSCRODBrailleDisplayManager: 0x134406c90> 25
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:AXBrailleHW] System server lock state: 0, passcode state: 0
+2026-05-11 09:37:54.210 Df scrod[11837:2c6f4a] [com.apple.Accessibility:ScreenReaderOutput] Updating system ui lock status: 0, screen blank status: 0, system lock: 0
+2026-05-11 09:37:54.211 Df scrod[11837:2c6f4a] [com.apple.Accessibility:AXBrailleHW] Registered blank screen state: <MSCRODBrailleDisplayManager: 0x134406c90> 25
+2026-05-11 09:37:54.211 A  scrod[11837:2c6f50] (CoreFoundation) Updating Key-Value Observers Of Preferences
+2026-05-11 09:37:54.211 Df scrod[11837:2c6f4a] [com.apple.Accessibility:ScreenReaderOutput] Created a virtual display with main size: 1
+2026-05-11 09:37:54.211 Df scrod[11837:2c6f4a] [com.apple.Accessibility:ScreenReaderOutput] Virtual display with 1 main cells loaded. Token: 0
+2026-05-11 09:37:54.211 Df scrod[11837:2c6f52] [com.apple.Accessibility:ScreenReaderOutput] Load driver <SCROBrailleStealthDriver: 0x6000017a8960> with element: (null) : result: 1
+2026-05-11 09:37:54.212 Df scrod[11837:2c6e53] [com.apple.bluetooth:BluetoothManager] Attaching to bluetooth daemon
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f53] [com.apple.Accessibility:ScreenReaderOutput] Load driver <SCROVirtualBrailleDriver: 0x6000017a89f0> with element: <SCROVirtualIOElement: 0x600001bac100> : result: 1
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f52] [com.apple.Accessibility:ScreenReaderOutput] Driver did load: 1 <SCROStealthBrailleDisplay: 0x6000025b8500>
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Display loaded: com.apple.scrod.braille.driver.stealth
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Current display state: 4
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Set state: 1 for display <SCROStealthBrailleDisplay: 0x6000025b8500>
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Braille display loaded: will notify: 0, will save: 0
+2026-05-11 09:37:54.214 E  scrod[11837:2c6e53] [com.apple.bluetooth:BluetoothManager] failed to attach with error 9
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f53] [com.apple.Accessibility:ScreenReaderOutput] Driver did load: 1 <SCROVirtualBrailleDisplay: 0x135605220>
+2026-05-11 09:37:54.214 Df scrod[11837:2c6e53] [com.apple.bluetooth:BluetoothManager] BluetoothManager cleanup called with detach 1
+2026-05-11 09:37:54.214 Df scrod[11837:2c6e53] [com.apple.Accessibility:ScreenReaderOutput] Starting auto detect
+2026-05-11 09:37:54.214 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] active: (
+    "<SCROStealthBrailleDisplay: 0x6000025b8500>"
+) pending (null)
+2026-05-11 09:37:54.216 Df scrod[11837:2c6e53] [com.apple.Accessibility:ScreenReaderOutput] -[SCROBrailleHandler configurationDidChange]: _callbacks.configChanged == 0
+2026-05-11 09:37:54.216 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Display loaded: com.apple.scrod.braille.driver.generic.hid
+2026-05-11 09:37:54.216 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Current display state: 4
+2026-05-11 09:37:54.216 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Set state: 1 for display <SCROVirtualBrailleDisplay: 0x135605220>
+2026-05-11 09:37:54.216 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] Braille display loaded: will notify: 0, will save: 0
+2026-05-11 09:37:54.216 Df scrod[11837:2c6e53] [com.apple.Accessibility:ScreenReaderOutput] -[SCROBrailleHandler configurationDidChange]: _callbacks.configChanged == 0
+2026-05-11 09:37:54.216 Df scrod[11837:2c6f51] [com.apple.Accessibility:ScreenReaderOutput] active: (
+    "<SCROVirtualBrailleDisplay: 0x135605220>"
+) pending (null)
+2026-05-11 09:37:55.310 Df scrod[11837:2c6e53] [com.apple.Accessibility:AXBrailleHW] Processing wake from sleep to auto detect
+2026-05-11 09:37:55.310 Df scrod[11837:2c6e53] [com.apple.Accessibility:ScreenReaderOutput] Starting auto detect
+2026-05-11 09:37:55.310 Df scrod[11837:2c6e53] [com.apple.Accessibility:AXBrailleHW] Handing power change: (null)
+2026-05-11 09:37:55.310 Df scrod[11837:2c6e53] [com.apple.bluetooth:BluetoothManager] Attaching to bluetooth daemon
+2026-05-11 09:37:55.310 E  scrod[11837:2c6e53] [com.apple.bluetooth:BluetoothManager] failed to attach with error 9
+2026-05-11 09:37:55.310 Df scrod[11837:2c6e53] [com.apple.bluetooth:BluetoothManager] BluetoothManager cleanup called with detach 1
+2026-05-11 09:37:57.149 Df scrod[11837:2c6e53] [com.apple.Accessibility:ScreenReaderOutput] Posting server timeout
+2026-05-11 09:37:57.149 Df scrod[11837:2c6e53] [com.apple.Accessibility:AXBrailleHW] Stopping scrod
+2026-05-11 09:38:19.820 Df launchd_sim[11246:2c6c71] [pid/11330 [chronod]:] service inactive: com.apple.AccessibilityUIServer.AccessibilityControlsExtension.B1319BD3-8434-4788-9FA3-E49971E82C16
+2026-05-11 09:38:21.280 Df runningboardd[11261:2c66bf] [com.apple.runningboard:assertion] Assertion did invalidate due to timeout: 11261-11330-490 (target:[xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746])
+2026-05-11 09:38:21.587 Df runningboardd[11261:2c68ce] [com.apple.runningboard:ttl] [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] termination reported by launchd (20, 1001, 9)
+2026-05-11 09:38:21.587 Df runningboardd[11261:2c68ce] [com.apple.runningboard:process] Removing process: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:38:21.587 Df runningboardd[11261:2c68ce] [com.apple.runningboard:process] Removing assertions for terminated process: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:38:21.609 Df runningboardd[11261:2c74ee] [com.apple.runningboard:process] Notifying connection [osservice<com.apple.chronod>:11330] that process [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746] exited with context <RBSProcessExitContext| specific, status:<RBSProcessExitStatus| domain:watchdog(20) code:1001>>
+2026-05-11 09:38:21.618 Df runningboardd[11261:2c74e7] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]: none (role: None) (endowments: (null))
+2026-05-11 09:38:21.618 Df runningboardd[11261:2c74e7] [com.apple.runningboard:monitor] Calculated state for xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]: none (role: None) (endowments: (null))
+2026-05-11 09:38:23.756 Df locationd[11282:2c68de] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:38:25.765 Df locationd[11282:2c68de] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:38:31.907 Df chronod[11330:2c65eb] [com.apple.runningboard:process] Calling process death completion block for handle [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:38:31.916 Df chronod[11330:2c65eb] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Extension process terminated pid (11746)
+2026-05-11 09:38:31.920 Df chronod[11330:2c65eb] [com.apple.chrono:session] [[AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133]] Original request finally completed, but it had already watchdogged.
+2026-05-11 09:38:31.933 Df chronod[11330:2c65eb] [com.apple.chrono:session] [AccessibilityUIServer.AccessibilityControlsExtension-1BE66EA48133] Session deinit
+2026-05-11 09:38:32.011 Df locationd[11282:2c59e7] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:38:32.017 Df locationd[11282:2c59e7] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:38:32.022 Df SpringBoard[11256:2c5746] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:38:32.022 Df SpringBoard[11256:2c5746] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:38:32.026 Df SpringBoard[11256:2c5746] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:38:32.079 Df mediaremoted[11265:2c519b] [com.apple.runningboard:process] Hit the server for a process handle 11df0dbc00002de2 that resolved to: [xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16]:11746]
+2026-05-11 09:38:32.080 Df mediaremoted[11265:2c519b] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:38:32.093 Df mediaremoted[11265:2c519b] [com.apple.runningboard:monitor] Received state update for 11746 (xpcservice<com.apple.AccessibilityUIServer.AccessibilityControlsExtension([osservice<com.apple.chronod>:11330])>{vt hash: 37296793}[uuid:B1319BD3-8434-4788-9FA3-E49971E82C16], none-NotVisible
+2026-05-11 09:38:38.060 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:38.096 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:38.116 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:38.515 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Account change notification received for <CKContainer: 0x6000019ed180>
+2026-05-11 09:38:38.666 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:38.666 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:38.677 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:38.677 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:38.677 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:38.680 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:38.680 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.175 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.346 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.346 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.431 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.431 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.431 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.450 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.450 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.458 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.458 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.458 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.652 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.652 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.657 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.657 Df siriactionsd[11331:2c779c] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.657 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.664 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.664 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.753 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.753 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.753 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:39.924 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:39.924 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:40.316 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:40.316 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:40.316 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:40.449 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:40.449 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:40.515 A  AccessibilityUIServer[11334:2c6052] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:38:40.872 A  AccessibilityUIServer[11334:2c6052] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:38:40.942 Df siriactionsd[11331:2c5eb5] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:41.096 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Account change notification received for all containers
+2026-05-11 09:38:41.096 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Account change notification received for <CKContainer: 0x6000019ed180>
+2026-05-11 09:38:41.105 A  AccessibilityUIServer[11334:2c6052] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:38:41.106 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Account change notification received for all containers
+2026-05-11 09:38:41.107 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Account change notification received for <CKContainer: 0x6000019ed180>
+2026-05-11 09:38:41.362 A  AccessibilityUIServer[11334:2c6052] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:38:41.658 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Account change notification received for all containers
+2026-05-11 09:38:41.658 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Account change notification received for <CKContainer: 0x6000019ed180>
+2026-05-11 09:38:41.740 A  AccessibilityUIServer[11334:2c6052] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:38:41.827 Df AccessibilityUIServer[11334:2c6052] [com.apple.cloudkit.sim:CK] Authorization change notification received for all containers
+2026-05-11 09:38:41.827 A  AccessibilityUIServer[11334:2c6052] (CloudKit) client/refresh-account-access-authorization
+2026-05-11 09:38:41.828 A  AccessibilityUIServer[11334:2c6052] (TCC) TCCAccessRequest() IPC
+2026-05-11 09:38:48.389 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:48.389 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:48.887 Df siriactionsd[11331:2c7787] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:38:59.573 Df siriactionsd[11331:2c792a] [com.apple.shortcuts:XPCEvent] Dispatching XPC event: <darwin notification: com.apple.accessibility.voiceovertouch.status>
+2026-05-11 09:38:59.573 Df siriactionsd[11331:2c792a] [com.apple.shortcuts:BiomeWriting] Got notification: com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:39:00.072 Df siriactionsd[11331:2c792a] [com.apple.shortcuts:BiomeWriting] Updating Biome stream for com.apple.accessibility.voiceovertouch.status
+2026-05-11 09:39:02.224 Df AccessibilityUIServer[11334:2c6068] [com.apple.cloudkit.sim:CK] Authorization change notification received for all containers
+2026-05-11 09:39:02.230 A  AccessibilityUIServer[11334:2c6068] (CloudKit) client/refresh-account-access-authorization
+2026-05-11 09:39:02.230 A  AccessibilityUIServer[11334:2c6068] (TCC) TCCAccessRequest() IPC
+2026-05-11 09:39:09.031 Df AccessibilityUIServer[11334:2c7b48] [com.apple.cloudkit.sim:CK] Account change notification received for all containers
+2026-05-11 09:39:09.033 Df AccessibilityUIServer[11334:2c7b48] [com.apple.cloudkit.sim:CK] Account change notification received for <CKContainer: 0x6000019ed180>
+2026-05-11 09:39:10.206 A  AccessibilityUIServer[11334:2c7b48] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:39:11.682 A  AccessibilityUIServer[11334:2c7c22] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:39:13.537 Df AccessibilityUIServer[11334:2c7c22] [com.apple.cloudkit.sim:CK] Authorization change notification received for all containers
+2026-05-11 09:39:13.537 A  AccessibilityUIServer[11334:2c7c22] (CloudKit) client/refresh-account-access-authorization
+2026-05-11 09:39:13.537 A  AccessibilityUIServer[11334:2c7c22] (TCC) TCCAccessRequest() IPC
+2026-05-11 09:39:17.072 Df AccessibilityUIServer[11334:2c7b48] [com.apple.cloudkit.sim:CK] Account change notification received for all containers
+2026-05-11 09:39:17.166 Df AccessibilityUIServer[11334:2c7b48] [com.apple.cloudkit.sim:CK] Account change notification received for <CKContainer: 0x6000019ed180>
+2026-05-11 09:39:18.120 A  AccessibilityUIServer[11334:2c7b48] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-05-11 09:39:21.283 Df AccessibilityUIServer[11334:2c7c22] [com.apple.cloudkit.sim:CK] Authorization change notification received for all containers
+2026-05-11 09:39:21.283 A  AccessibilityUIServer[11334:2c7c22] (CloudKit) client/refresh-account-access-authorization
+2026-05-11 09:39:21.283 A  AccessibilityUIServer[11334:2c7c22] (TCC) TCCAccessRequest() IPC
+2026-05-11 09:39:21.432 Df SpringBoard[11256:2c4c76] [com.apple.SpringBoard:Common] SceneWorkspaceDelegate[0x6000017e0a20-com.apple.SpringBoard.SceneWorkspace.AccessibilityUIServerUI] client did connect with handshake: <FBSceneClientHandshake:0x6000016e4740; [osservice<com.apple.PosterBoard>:11572] remnants=0>
+2026-05-11 09:39:22.480 Df log[12093:0] [com.apple.log:] log run noninteractively, parent: 11246 (launchd_sim), args: 'log' 'show' '--last' '2m' '--style' 'compact' '--predicate' 'process == "scrod" OR process == "AccessibilityUIServer" OR process == "MobileSafari" OR eventMessage CONTAINS[c] "VoiceOver" OR eve
+2026-05-11 09:39:22.511 Df siriactionsd[11331:2c7ea9] [com.apple.shortcuts:SpotlightSync] -[WFContextualActionSpotlightSyncService queue_fetchWipeAndIndexActionsInDomainWithDescriptiveName:identifiers:batchSize:fetcher:completionBlock:]_block_invoke Deleting 0 contextual actions from domains (
+    "app-shortcut-com.apple.Home.HomeUIService",
+    "app-shortcut-com.apple.TVRemoteUIService",
+    "app-shortcut-com.apple.reminders",
+    "app-shortcut-com.apple.Preferences",
+    "app-shortcut-com.apple.MobileAddressBook",
+    "app-shortcut-com.apple.mobilesms.compose",
+    "app-shortcut-com.apple.AccessibilityUIServer",
+    "app-shortcut-com.apple.Fitness",
+    "app-shortcut-com.apple.PosterBoard",
+    "app-shortcut-com.apple.UIKit.OverlayUI",
+    "app-shortcut-com.apple.ClipViewService",
+    "app-shortcut-com.apple.InputUI",
+    "app-shortcut-com.apple.CarPlaySplashScreen",
+    "app-shortcut-com.apple.SystemPaperViewService",
+    "app-shortcut-com.apple.Health.Sleep",
+    "app-shortcut-com.apple.ContactsUI.Carousel",
+    "app-shortcut-com.apple.ShortcutsActions",
+    "app-shortcut-com.apple.ShortcutsUI",
+    "app-shortc
+2026-05-11 09:39:22.514 Df siriactionsd[11331:2c792a] [com.apple.shortcuts:SpotlightSync] -[WFContextualActionSpotlightSyncService queue_fetchWipeAndIndexActionsInDomainWithDescriptiveName:identifiers:batchSize:fetcher:completionBlock:]_block_invoke Deleted necessary app shortcuts contextual actions from domains (
+    "app-shortcut-com.apple.Home.HomeUIService",
+    "app-shortcut-com.apple.TVRemoteUIService",
+    "app-shortcut-com.apple.reminders",
+    "app-shortcut-com.apple.Preferences",
+    "app-shortcut-com.apple.MobileAddressBook",
+    "app-shortcut-com.apple.mobilesms.compose",
+    "app-shortcut-com.apple.AccessibilityUIServer",
+    "app-shortcut-com.apple.Fitness",
+    "app-shortcut-com.apple.PosterBoard",
+    "app-shortcut-com.apple.UIKit.OverlayUI",
+    "app-shortcut-com.apple.ClipViewService",
+    "app-shortcut-com.apple.InputUI",
+    "app-shortcut-com.apple.CarPlaySplashScreen",
+    "app-shortcut-com.apple.SystemPaperViewService",
+    "app-shortcut-com.apple.Health.Sleep",
+    "app-shortcut-com.apple.ContactsUI.Carousel",
+    "app-shortcut-com.apple.ShortcutsActions",
+    "app-shortcut-com.apple.ShortcutsUI",
+    ", indexing the new ones...

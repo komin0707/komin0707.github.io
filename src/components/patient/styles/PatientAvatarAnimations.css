@@ -1,0 +1,486 @@
+@keyframes chest-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  32% {
+    transform: scale(var(--breath-scale));
+  }
+}
+
+@keyframes patient-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  32% {
+    transform: scale(var(--breath-scale));
+  }
+}
+
+@keyframes gasping-chest-breathe {
+  0%,
+  100% {
+    transform: scale(0.95) translateY(1px);
+  }
+  12% {
+    transform: scale(calc(var(--breath-scale) + 0.045)) translateY(-3px);
+  }
+  24% {
+    transform: scale(0.96) translateY(2px);
+  }
+  42% {
+    transform: scale(calc(var(--breath-scale) + 0.015)) translateY(-1px);
+  }
+}
+
+@keyframes kussmaul-chest-breathe {
+  0%,
+  100% {
+    transform: scale(0.96) translateY(1px);
+  }
+  38% {
+    transform: scale(calc(var(--breath-scale) + 0.075)) translateY(-4px);
+  }
+}
+
+@keyframes cheyne-stokes-breathe {
+  0%,
+  100% {
+    opacity: 0.34;
+    transform: scale(0.96);
+  }
+  35% {
+    opacity: 0.9;
+    transform: scale(calc(var(--breath-scale) + 0.04));
+  }
+  68% {
+    opacity: 0.58;
+    transform: scale(1);
+  }
+}
+
+@keyframes biot-breathe {
+  0%,
+  18%,
+  46%,
+  100% {
+    opacity: 0.38;
+    transform: scale(0.96);
+  }
+  26%,
+  34% {
+    opacity: 0.92;
+    transform: scale(calc(var(--breath-scale) + 0.025));
+  }
+  68% {
+    opacity: 0.12;
+    transform: scale(0.94);
+  }
+}
+
+@keyframes apneustic-breathe {
+  0%,
+  100% {
+    transform: scale(0.97) translateY(1px);
+  }
+  34%,
+  58% {
+    transform: scale(calc(var(--breath-scale) + 0.045)) translateY(-2px);
+  }
+}
+
+@keyframes sigh-breathe {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: scale(0.98);
+  }
+  18% {
+    opacity: 0.66;
+    transform: scale(var(--breath-scale));
+  }
+  48% {
+    opacity: 0.9;
+    transform: scale(calc(var(--breath-scale) + 0.05));
+  }
+}
+
+@keyframes agonal-breathe {
+  0%,
+  100% {
+    opacity: 0.24;
+    transform: scale(0.93) translateY(2px);
+  }
+  16% {
+    opacity: 0.96;
+    transform: scale(calc(var(--breath-scale) + 0.07)) translateY(-5px);
+  }
+  28% {
+    opacity: 0.18;
+    transform: scale(0.92) translateY(3px);
+  }
+}
+
+@keyframes apnea-recovery-flash {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  35% {
+    opacity: var(--recovery-opacity);
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+}
+
+@keyframes spontaneous-trigger-pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.82);
+  }
+  18% {
+    opacity: 0.9;
+    transform: scale(1.15);
+  }
+  42% {
+    opacity: 0.38;
+    transform: scale(1);
+  }
+}
+
+@keyframes pressure-compression {
+  0%,
+  100% {
+    transform: scale(1.04);
+  }
+  32% {
+    transform: scale(0.92);
+  }
+}
+
+@keyframes patient-bucking {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  42% {
+    transform: translate(1.8px, -2px) rotate(-0.8deg);
+  }
+  60% {
+    transform: translate(-1.2px, 1px) rotate(0.5deg);
+  }
+}
+
+@keyframes alarm-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes alarm-ring-pulse {
+  0% {
+    opacity: calc(var(--tube-warning-opacity) * 0.95);
+    transform: rotate(20deg) scale(0.86);
+  }
+  70% {
+    opacity: calc(var(--tube-warning-opacity) * 0.18);
+    transform: rotate(20deg) scale(1.16);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(20deg) scale(1.24);
+  }
+}
+
+@keyframes alarm-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  38% {
+    transform: translateX(-1.4px);
+  }
+  62% {
+    transform: translateX(1.2px);
+  }
+}
+
+@keyframes opacity-pulse {
+  0%,
+  100% {
+    opacity: var(--pulse-min-opacity, 0.72);
+  }
+  50% {
+    opacity: var(--pulse-max-opacity, 1);
+  }
+}
+
+@keyframes flow-dash {
+  0% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(7px);
+  }
+}
+
+@keyframes circuit-vibration {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  42% {
+    transform: translateY(-1.1px);
+  }
+  68% {
+    transform: translateY(0.7px);
+  }
+}
+
+@keyframes asynchrony-jolt {
+  0%,
+  100% {
+    transform: translateX(0) rotate(var(--jolt-angle, 0deg));
+  }
+  35% {
+    transform: translateX(-3px) rotate(var(--jolt-angle, 0deg));
+  }
+  55% {
+    transform: translateX(4px) rotate(var(--jolt-angle, 0deg));
+  }
+}
+
+@keyframes eye-blink {
+  0%,
+  88%,
+  100% {
+    opacity: 0;
+    transform: scaleY(0.18);
+  }
+  92%,
+  95% {
+    opacity: 0.86;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes sweat-drop {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: translateY(-1px) scale(0.82);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(3px) scale(1);
+  }
+}
+
+@keyframes secretion-bubble {
+  0%,
+  100% {
+    opacity: calc(var(--secretion-opacity) * 0.74);
+    transform: scale(0.84);
+  }
+  48% {
+    opacity: var(--secretion-opacity);
+    transform: scale(1.18);
+  }
+}
+
+@keyframes condensate-shimmer {
+  0%,
+  100% {
+    opacity: 0.46;
+    transform: scale(0.86);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes expiratory-fall {
+  0%,
+  34% {
+    opacity: 0;
+    transform: translateY(-3px) scale(0.96);
+  }
+  72% {
+    opacity: 0.66;
+    transform: translateY(4px) scale(1.06);
+  }
+  100% {
+    opacity: 0.08;
+    transform: translateY(6px) scale(1.1);
+  }
+}
+
+@keyframes accessory-effort {
+  0%,
+  100% {
+    opacity: 0.22;
+    transform: translateY(0) scale(0.98);
+  }
+  30% {
+    opacity: 0.9;
+    transform: translateY(-4px) scale(1.08);
+  }
+}
+
+@keyframes retraction-tug {
+  0%,
+  100% {
+    opacity: 0.16;
+    transform: scale(1);
+  }
+  32% {
+    opacity: 0.86;
+    transform: scale(0.84);
+  }
+}
+
+@keyframes abdominal-breathe {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  34% {
+    transform: translateY(3px) scale(1.08);
+  }
+}
+
+@keyframes abdominal-paradox-motion {
+  0%,
+  100% {
+    transform: translateY(2px) scale(1.06);
+  }
+  34% {
+    transform: translateY(-3px) scale(0.92);
+  }
+}
+
+@keyframes trigger-double-pulse {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.78);
+  }
+  14% {
+    opacity: 0.92;
+    transform: scale(1.18);
+  }
+  28% {
+    opacity: 0.22;
+    transform: scale(0.92);
+  }
+  42% {
+    opacity: 0.86;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes wasted-trigger-fade {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(-8px) scale(0.82);
+  }
+  30% {
+    opacity: 0.84;
+    transform: translateX(0) scale(1.08);
+  }
+  56% {
+    opacity: 0.22;
+    transform: translateX(7px) scale(0.96);
+  }
+}
+
+@keyframes auto-trigger-flicker {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: scale(0.86);
+  }
+  18%,
+  34%,
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes cycling-cue {
+  0%,
+  26% {
+    opacity: 0;
+    transform: translateX(-5px) scale(0.9);
+  }
+  40% {
+    opacity: 0.82;
+    transform: translateX(0) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(8px) scale(0.96);
+  }
+}
+
+@keyframes hold-marker {
+  0%,
+  100% {
+    opacity: 0.28;
+    transform: scaleX(0.74);
+  }
+  50% {
+    opacity: 0.94;
+    transform: scaleX(1.12);
+  }
+}
+
+@keyframes circuit-inflation {
+  0%,
+  100% {
+    opacity: 0.14;
+    transform: scaleX(0.88);
+  }
+  32% {
+    opacity: 0.72;
+    transform: scaleX(1.08);
+  }
+}
+
+@keyframes circuit-collapse {
+  0%,
+  34%,
+  100% {
+    opacity: 0.08;
+    transform: scaleY(1);
+  }
+  70% {
+    opacity: 0.62;
+    transform: scaleY(0.72);
+  }
+}
+
+@keyframes pursed-lip-exhale {
+  0%,
+  38%,
+  100% {
+    opacity: 0;
+    transform: translateX(0) scaleX(0.62);
+  }
+  62% {
+    opacity: 0.72;
+    transform: translateX(9px) scaleX(1.45);
+  }
+}

@@ -1,0 +1,333 @@
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (max-width: 1279px) {
+  .simulator-shell {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  .simulator-grid {
+    flex: none;
+    grid-auto-rows: auto;
+  }
+
+  .top-header,
+  .simulator-grid,
+  .bottom-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .mode-tabs {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .center-column,
+  .patient-stage,
+  .lower-grid {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .center-column {
+    grid-template-rows: auto auto;
+  }
+
+  .patient-panel {
+    overflow: visible;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .patient-stage {
+    gap: 8px;
+    overflow: visible;
+    grid-template-rows: auto auto;
+  }
+
+  .patient-avatar {
+    grid-row: 1;
+    order: 1;
+    width: 100%;
+    height: auto;
+    align-self: start;
+  }
+
+  .condition-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    grid-row: 2;
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (pointer: coarse) {
+  .simulator-shell {
+    min-height: 100svh;
+    padding-right: max(10px, env(safe-area-inset-right));
+    padding-left: max(10px, env(safe-area-inset-left));
+  }
+
+  .slider-control {
+    grid-template-columns: 44px minmax(0, 1fr) 44px minmax(76px, 0.28fr);
+    min-height: 116px;
+    touch-action: manipulation;
+  }
+
+  .slider-control input[type='range'] {
+    height: 36px;
+  }
+
+  .slider-control input[type='range']::-webkit-slider-thumb {
+    width: 28px;
+    height: 28px;
+    margin-top: -10.5px;
+  }
+
+  .slider-control input[type='range']::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider-number {
+    min-height: 44px;
+    font-size: 16px;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .simulator-shell {
+    min-height: -webkit-fill-available;
+  }
+
+  .slider-number,
+  .bottom-bar input {
+    font-size: 16px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .simulator-shell {
+    overscroll-behavior-y: contain;
+  }
+
+  .interaction-toolbar button,
+  .context-menu button,
+  .settings-footer-actions button {
+    min-height: 48px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) and (orientation: landscape) {
+  .simulator-grid {
+    grid-template-columns: minmax(250px, 0.8fr) minmax(420px, 1.2fr);
+  }
+
+  .monitor-panel {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) and (orientation: portrait) {
+  .simulator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .monitor-wave-stack {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .simulator-shell {
+    min-width: 320px;
+    padding: 8px max(8px, env(safe-area-inset-right)) 8px max(8px, env(safe-area-inset-left));
+  }
+
+  .interaction-toolbar {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .mode-tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 744px) and (max-width: 1180px) and (pointer: coarse) {
+  .simulator-shell {
+    --tablet-panel-gap: 10px;
+    gap: var(--tablet-panel-gap);
+  }
+}
+
+@media (max-width: 430px) and (pointer: coarse) {
+  .top-header,
+  .bottom-bar,
+  .settings-panel {
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-left: max(8px, env(safe-area-inset-left));
+  }
+}
+
+@media (horizontal-viewport-segments: 2) {
+  .simulator-grid {
+    column-gap: max(14px, calc(env(viewport-segment-right 0 0) - env(viewport-segment-left 1 0)));
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .right-column {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 1400px) {
+  .simulator-grid {
+    grid-template-columns: 280px minmax(620px, 1fr) 390px;
+  }
+
+  .top-header {
+    grid-template-columns: 280px minmax(600px, 1fr) 220px;
+  }
+
+  .center-column {
+    grid-template-rows: minmax(0, 1fr) 150px;
+  }
+
+  .patient-stage {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 14px 12px 8px;
+  }
+
+  .patient-avatar {
+    margin-left: 0;
+  }
+
+  .monitor-panel {
+    grid-template-rows: auto repeat(3, minmax(0, 1fr)) 128px;
+  }
+
+  .wave-body svg {
+    height: 92px;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 1280px) {
+  .simulator-shell {
+    gap: 6px;
+    padding: 6px 10px 5px;
+  }
+
+  .top-header {
+    min-height: 44px;
+  }
+
+  .panel h2 {
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+
+  .settings-panel {
+    gap: 3px;
+  }
+
+  .slider-control {
+    gap: 2px;
+    margin: 0 8px;
+    padding: 4px 14px;
+  }
+
+  .slider-row span {
+    font-size: 13px;
+  }
+
+  .slider-row strong {
+    font-size: 20px;
+  }
+
+  .slider-limits {
+    font-size: 11px;
+  }
+
+  .slider-control input {
+    height: 12px;
+  }
+
+  .settings-footer-actions {
+    gap: 6px;
+    padding-top: 2px;
+  }
+
+  .settings-footer-actions button {
+    min-height: 38px;
+    gap: 6px;
+    font-size: 13px;
+  }
+
+  .center-column {
+    grid-template-rows: minmax(0, 1fr) 210px;
+  }
+
+  .patient-stage {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 8px 12px 5px;
+  }
+
+  .condition-card {
+    padding: 10px 14px;
+  }
+
+  .condition-label {
+    margin: 4px 0 8px;
+    font-size: 27px;
+  }
+
+  .condition-card div {
+    padding: 3px 0;
+  }
+
+  .status-description {
+    margin-bottom: 8px;
+    padding: 9px 14px;
+    font-size: 14px;
+    line-height: 1.42;
+  }
+
+  .wave-card {
+    padding: 8px 10px 6px;
+  }
+
+  .wave-body svg {
+    height: 66px;
+  }
+
+  .vital strong {
+    font-size: 24px;
+  }
+
+  .bottom-bar {
+    min-height: 56px;
+  }
+
+  .bottom-bar > div,
+  .scenario-select {
+    padding: 6px 10px;
+  }
+
+  .bottom-bar div:first-child strong {
+    padding: 5px 12px;
+    font-size: 21px;
+  }
+}

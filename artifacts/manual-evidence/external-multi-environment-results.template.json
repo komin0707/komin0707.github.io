@@ -1,0 +1,95 @@
+{
+  "artifactPath": "artifacts/manual-evidence/external-multi-environment-results.json",
+  "result": "pending",
+  "instructions": [
+    "Copy this template to external-multi-environment-results.json only after real external runs are complete.",
+    "Each screenshot path must point to a real file committed or stored under artifacts/manual-evidence/.",
+    "Do not mark a result passed unless the simulator heading and patient avatar were visible and no console-blocking error occurred."
+  ],
+  "results": [
+    {
+      "label": "Firefox desktop",
+      "result": "passed",
+      "browserName": "Firefox",
+      "browserVersion": "REQUIRED",
+      "platform": "macOS, Windows, or Linux desktop",
+      "checkedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "evidenceMethod": "External manual verification with screenshot and accessibility/DOM check",
+      "observedAccessibility": {
+        "documentTitle": "Vent Simulator 2D",
+        "patientAvatarVisible": true,
+        "simulatorHeadingVisible": true,
+        "url": "REQUIRED"
+      },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/external-firefox-desktop.png",
+        "sha256": "REQUIRED",
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "label": "Edge desktop",
+      "result": "passed",
+      "browserName": "Microsoft Edge",
+      "browserVersion": "REQUIRED",
+      "platform": "macOS, Windows, or Linux desktop",
+      "checkedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "evidenceMethod": "External manual verification with screenshot and accessibility/DOM check",
+      "observedAccessibility": {
+        "documentTitle": "Vent Simulator 2D",
+        "patientAvatarVisible": true,
+        "simulatorHeadingVisible": true,
+        "url": "REQUIRED"
+      },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/external-edge-desktop.png",
+        "sha256": "REQUIRED",
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "label": "Linux Chromium",
+      "result": "passed",
+      "browserName": "Chromium",
+      "browserVersion": "REQUIRED",
+      "platform": "Linux",
+      "checkedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "evidenceMethod": "External Linux verification with screenshot and accessibility/DOM check",
+      "observedAccessibility": {
+        "documentTitle": "Vent Simulator 2D",
+        "patientAvatarVisible": true,
+        "simulatorHeadingVisible": true,
+        "url": "REQUIRED"
+      },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/external-linux-chromium.png",
+        "sha256": "REQUIRED",
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "label": "iOS Safari",
+      "result": "passed",
+      "browserName": "Mobile Safari",
+      "browserVersion": "REQUIRED",
+      "platform": "iOS",
+      "checkedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+      "evidenceMethod": "External iOS Safari verification with screenshot and accessibility/DOM check",
+      "observedAccessibility": {
+        "documentTitle": "Vent Simulator 2D",
+        "patientAvatarVisible": true,
+        "simulatorHeadingVisible": true,
+        "url": "REQUIRED"
+      },
+      "screenshot": {
+        "path": "artifacts/manual-evidence/external-ios-safari.png",
+        "sha256": "REQUIRED",
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

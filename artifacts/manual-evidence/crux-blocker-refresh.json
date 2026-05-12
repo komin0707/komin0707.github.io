@@ -1,0 +1,76 @@
+{
+  "commands": [
+    {
+      "allowedExitCodes": [0, 1],
+      "command": "npm run check:crux-credentials",
+      "exitCode": 1,
+      "finishedAt": "2026-05-11T18:10:42.026Z",
+      "signal": null,
+      "startedAt": "2026-05-11T18:10:39.393Z",
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 check:crux-credentials\n> node scripts/check-crux-credentials.mjs\n\n{\n  \"artifactPath\": \"artifacts/manual-evidence/chrome-ux-report-credentials.json\",\n  \"repo\": \"komin0707/komin0707.github.io\",\n  \"result\": \"missing\"\n}\n"
+    },
+    {
+      "allowedExitCodes": [0, 1],
+      "command": "npm run check:crux-live-probes",
+      "exitCode": 1,
+      "finishedAt": "2026-05-11T18:10:42.591Z",
+      "signal": null,
+      "startedAt": "2026-05-11T18:10:42.027Z",
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 check:crux-live-probes\n> node scripts/check-crux-live-probes.mjs\n\n{\n  \"cruxArtifactPath\": \"artifacts/manual-evidence/crux-live-probe.json\",\n  \"hasFieldData\": false,\n  \"pageSpeedArtifactPath\": \"artifacts/manual-evidence/pagespeed-live-probe.json\",\n  \"result\": \"blocked\"\n}\n"
+    },
+    {
+      "allowedExitCodes": [0],
+      "command": "npm run check:pages-domain",
+      "exitCode": 0,
+      "finishedAt": "2026-05-11T18:10:43.707Z",
+      "signal": null,
+      "startedAt": "2026-05-11T18:10:42.591Z",
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 check:pages-domain\n> node scripts/check-pages-domain.mjs\n\n{\n  \"artifactPath\": \"artifacts/manual-evidence/github-pages-domain.json\",\n  \"connectedOrigins\": [\n    \"https://komin0707.github.io\"\n  ],\n  \"expectedOrigin\": \"https://komin0707.github.io\",\n  \"result\": \"passed\"\n}\n"
+    },
+    {
+      "allowedExitCodes": [0, 1],
+      "command": "CRUX_CACHE_SCAN=1 npm run check:crux-monitoring",
+      "exitCode": 1,
+      "finishedAt": "2026-05-11T18:10:56.767Z",
+      "signal": null,
+      "startedAt": "2026-05-11T18:10:43.707Z",
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 check:crux-monitoring\n> node scripts/check-crux-monitoring.mjs\n\n{\n  \"artifactPath\": \"artifacts/manual-evidence/chrome-ux-report-monitoring.json\",\n  \"canonicalEvidencePath\": null,\n  \"hasFieldData\": false,\n  \"origin\": \"https://komin0707.github.io\",\n  \"result\": \"blocked\"\n}\n"
+    },
+    {
+      "allowedExitCodes": [0],
+      "command": "npm run update:crux-blocker-issue",
+      "exitCode": 0,
+      "finishedAt": "2026-05-11T18:10:59.885Z",
+      "signal": null,
+      "startedAt": "2026-05-11T18:10:56.768Z",
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 update:crux-blocker-issue\n> node scripts/update-crux-blocker-issue.mjs\n\n{\n  \"canonicalEvidenceExists\": false,\n  \"commentPosted\": true,\n  \"issue\": \"https://github.com/komin0707/komin0707.github.io/issues/1\",\n  \"latestLocalMonitoringVerifiedAt\": \"2026-05-11T18:10:56.721Z\",\n  \"result\": \"posted\"\n}\n"
+    },
+    {
+      "allowedExitCodes": [0],
+      "command": "npm run sync:remote-crux-evidence",
+      "exitCode": 0,
+      "finishedAt": "2026-05-11T18:11:08.625Z",
+      "signal": null,
+      "startedAt": "2026-05-11T18:10:59.885Z",
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 sync:remote-crux-evidence\n> node scripts/sync-remote-crux-evidence.mjs\n\n{\n  \"artifactName\": \"chrome-ux-report-monitoring\",\n  \"hasPagesDomainArtifact\": true,\n  \"issueCommentCount\": 37,\n  \"issueUpdatedAt\": \"2026-05-11T18:10:59Z\",\n  \"pagesDomainArtifact\": \"artifacts/manual-evidence/crux-monitoring-run-25682216707/github-pages-domain.json\",\n  \"runDirectory\": \"artifacts/manual-evidence/crux-monitoring-run-25682216707\",\n  \"runId\": 25682216707,\n  \"runConclusion\": \"failure\",\n  \"runStatus\": \"completed\"\n}\n"
+    },
+    {
+      "allowedExitCodes": [0],
+      "command": "npm run test:list",
+      "exitCode": 0,
+      "finishedAt": "2026-05-11T18:11:23.477Z",
+      "signal": null,
+      "startedAt": "2026-05-11T18:11:08.625Z",
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 test:list\n> vitest list --json artifacts/vitest-list.json\n\n"
+    }
+  ],
+  "result": "blocked",
+  "verifiedAt": "2026-05-11T18:11:23.478Z"
+}

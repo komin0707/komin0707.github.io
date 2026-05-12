@@ -1,0 +1,349 @@
+.simulator-shell {
+  display: flex;
+  height: 100vh;
+  min-height: 720px;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  padding: 10px 14px 8px;
+  touch-action: pan-y pinch-zoom;
+  transform: scale(var(--interaction-zoom, 1));
+  transform-origin: center top;
+}
+
+.simulator-grid {
+  display: grid;
+  flex: 0 0 clamp(690px, 76vh, 760px);
+  min-height: 0;
+  contain: layout paint style;
+  content-visibility: auto;
+  gap: 10px;
+  grid-template-columns: 280px minmax(560px, 1fr) 360px;
+}
+
+.interaction-toolbar {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.interaction-toolbar button,
+.context-menu button,
+.color-vision-select select {
+  position: relative;
+  min-height: 44px;
+  border: 1px solid var(--control-border);
+  border-radius: 5px;
+  background: #0a1c30;
+  color: var(--text-main);
+  font-size: 10px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    transform 120ms ease;
+}
+
+.color-vision-select {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.color-vision-select select {
+  width: 100%;
+  min-height: 44px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.interaction-toolbar button:hover,
+.context-menu button:hover {
+  border-color: var(--control-hover-border);
+  box-shadow: 0 8px 18px rgba(0, 8, 20, 0.3);
+  transform: translateY(-1px);
+}
+
+.interaction-toolbar button:active,
+.context-menu button:active {
+  transform: translateY(1px);
+}
+
+.interaction-toolbar button[aria-pressed='true'] {
+  border-color: var(--clinical-warning);
+  color: #fff4c2;
+}
+
+.interaction-toolbar button.scenario-preview {
+  box-shadow: 0 0 0 2px rgba(255, 216, 74, 0.14);
+}
+
+.interaction-toolbar span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.shortcut-help,
+.tutorial-panel,
+.context-menu {
+  z-index: 30;
+  position: fixed;
+  contain: layout paint style;
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--control-border);
+  border-radius: 7px;
+  background: #030d17;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.32);
+  color: var(--text-main);
+}
+
+.shortcut-help {
+  right: 16px;
+  bottom: 74px;
+  width: 210px;
+}
+
+.shortcut-state-panel {
+  contain: layout paint style;
+  display: grid;
+  max-height: 92px;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  gap: 5px;
+  overflow: auto;
+  padding: 7px 10px;
+  border: 1px solid var(--control-border);
+  border-radius: 7px;
+  background: #030d17;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+  color: var(--text-main);
+}
+
+.shortcut-state-panel[data-fullscreen='true'] {
+  box-shadow:
+    0 0 0 2px rgba(86, 184, 255, 0.34),
+    0 18px 42px rgba(0, 0, 0, 0.32);
+}
+
+.shortcut-help span,
+.shortcut-help a,
+.shortcut-help button,
+.shortcut-state-panel span,
+.shortcut-state-panel button,
+.shortcut-state-panel div {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.shortcut-help a {
+  width: fit-content;
+}
+
+.shortcut-help button {
+  justify-self: start;
+  min-height: 30px;
+  padding: 0 10px;
+  color: var(--text-main);
+}
+
+.shortcut-state-panel button {
+  min-height: 34px;
+  border: 1px solid var(--control-border);
+  border-radius: 5px;
+  background: #0a1c30;
+  color: var(--text-main);
+}
+
+.haptic-test-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.haptic-test-row button {
+  min-width: 44px;
+  min-height: 36px;
+  font-size: 9px;
+}
+
+.voice-output-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.voice-output-controls label {
+  display: grid;
+  grid-column: span 3;
+  gap: 3px;
+}
+
+.voice-output-controls input,
+.voice-output-controls select {
+  min-height: 30px;
+  border: 1px solid var(--control-border);
+  border-radius: 5px;
+  background: #000a12;
+  color: var(--text-main);
+}
+
+.voice-output-controls button,
+.voice-output-controls label {
+  background: #000a12;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.spatial-xr-controls {
+  display: grid;
+  max-height: 154px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  overflow: auto;
+}
+
+.spatial-xr-controls button {
+  min-height: 32px;
+  font-size: 8px;
+}
+
+.context-menu {
+  width: 142px;
+}
+
+.context-menu::before,
+.interaction-toolbar button:hover::before {
+  content: attr(title);
+  position: absolute;
+  z-index: 2;
+  padding: 4px 6px;
+  border: 1px solid rgba(95, 127, 157, 0.6);
+  border-radius: 4px;
+  background: rgba(3, 13, 23, 0.96);
+  color: var(--text-muted);
+  font-size: 9px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition:
+    opacity 160ms ease 300ms,
+    transform 160ms ease 300ms;
+}
+
+.interaction-toolbar button:hover::before {
+  bottom: calc(100% + 4px);
+  left: 0;
+  min-width: 150px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.medical-glossary-hover {
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.medical-glossary-hover:hover {
+  background-color: rgba(255, 216, 74, 0.12);
+  color: #fff4c2;
+  box-shadow: inset 0 -1px 0 rgba(255, 216, 74, 0.5);
+}
+
+.tutorial-panel {
+  left: 16px;
+  bottom: 74px;
+  max-height: min(76vh, 680px);
+  width: min(390px, calc(100vw - 32px));
+  overflow: auto;
+}
+
+.tutorial-panel span {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.education-guide-card {
+  display: grid;
+  gap: 5px;
+  padding: 8px;
+  border: 1px solid rgba(95, 127, 157, 0.36);
+  border-radius: 6px;
+  background: rgba(7, 23, 38, 0.68);
+}
+
+.education-guide-card strong {
+  color: #edf6ff;
+  font-size: 12px;
+}
+
+.education-guide-card label {
+  display: grid;
+  gap: 5px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.education-guide-card input {
+  min-height: 30px;
+  padding: 0 8px;
+  border: 1px solid var(--control-border);
+  border-radius: 5px;
+  background: rgba(4, 14, 24, 0.92);
+  color: var(--text-main);
+  font: inherit;
+}
+
+.education-guide-tabs {
+  display: grid;
+  max-height: 92px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  overflow: auto;
+}
+
+.education-guide-tabs button {
+  min-height: 32px;
+  font-size: 10px;
+}
+
+.education-guide-tabs button[aria-pressed='true'] {
+  border-color: var(--clinical-warning);
+  color: #fff4c2;
+}
+
+.education-glossary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.education-glossary span {
+  padding: 3px 6px;
+  border: 1px solid rgba(255, 216, 74, 0.28);
+  border-radius: 4px;
+}
+
+.tutorial-panel div {
+  display: flex;
+  gap: 8px;
+}
+
+.tutorial-panel button {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--control-border);
+  border-radius: 5px;
+  background: rgba(10, 28, 48, 0.92);
+  color: var(--text-main);
+}

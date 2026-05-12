@@ -1,0 +1,431 @@
+.patient-state-effects {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.patient-state-effects span {
+  position: absolute;
+  display: block;
+}
+
+.effect-oxygen-normal {
+  top: 13%;
+  left: 9%;
+  width: 50%;
+  height: 70%;
+  border-radius: 44%;
+  opacity: var(--recovery-opacity);
+  background:
+    radial-gradient(circle at 28% 24%, rgba(136, 255, 219, 0.3), transparent 28%),
+    radial-gradient(circle at 55% 58%, rgba(75, 225, 171, 0.26), transparent 48%);
+  mix-blend-mode: screen;
+}
+
+.effect-breath-chest {
+  top: 50%;
+  left: 28%;
+  width: 27%;
+  height: 33%;
+  border-radius: 44%;
+  opacity: calc(0.14 + var(--distress-opacity) * 0.36);
+  background:
+    radial-gradient(circle, rgba(230, 246, 255, 0.34), transparent 52%),
+    radial-gradient(circle, rgba(255, 66, 66, calc(var(--distress-opacity) * 0.42)), transparent 68%);
+  animation: patient-breathe var(--breath-speed) ease-in-out infinite;
+  mix-blend-mode: screen;
+  transition:
+    transform var(--visual-inspiration-duration) ease-out,
+    opacity var(--visual-expiration-duration) ease-in;
+  transform-origin: 48% 52%;
+  will-change: transform, opacity;
+}
+
+.effect-expiratory-fall {
+  top: 58%;
+  left: 30%;
+  width: 25%;
+  height: 23%;
+  border-radius: 46%;
+  opacity: 0;
+  background: radial-gradient(circle, rgba(86, 184, 255, 0.2), transparent 62%);
+  transform-origin: center;
+}
+
+.effect-shoulder-lift,
+.effect-sternal-tug,
+.effect-intercostal-tug,
+.effect-abdominal-motion {
+  border-radius: 999px;
+  opacity: 0;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.effect-shoulder-lift {
+  top: 44%;
+  left: 24%;
+  width: 35%;
+  height: 7%;
+  background: linear-gradient(90deg, transparent, rgba(120, 217, 255, 0.42), transparent);
+}
+
+.effect-sternal-tug {
+  top: 53%;
+  left: 40%;
+  width: 7%;
+  height: 19%;
+  background: linear-gradient(180deg, transparent, rgba(77, 98, 188, 0.5), transparent);
+}
+
+.effect-intercostal-tug {
+  top: 59%;
+  left: 27%;
+  width: 31%;
+  height: 9%;
+  background: linear-gradient(90deg, transparent, rgba(77, 98, 188, 0.42), transparent);
+}
+
+.effect-abdominal-motion {
+  top: 69%;
+  left: 30%;
+  width: 30%;
+  height: 14%;
+  border-radius: 44%;
+  background: radial-gradient(circle, rgba(77, 98, 188, 0.26), transparent 64%);
+}
+
+.effect-spontaneous-trigger {
+  top: 46%;
+  left: 23%;
+  width: 11%;
+  height: 17%;
+  border: 2px solid rgba(120, 217, 255, 0.68);
+  border-radius: 50%;
+  opacity: 0;
+  filter: drop-shadow(0 0 7px rgba(120, 217, 255, 0.42));
+  transform-origin: center;
+}
+
+.patient-avatar[data-breath-source='spontaneous'] .effect-spontaneous-trigger {
+  opacity: 0.82;
+  animation: spontaneous-trigger-pulse var(--breath-speed) ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+.effect-cycling-cue,
+.effect-sync-indicator,
+.effect-double-trigger,
+.effect-wasted-trigger,
+.effect-auto-trigger,
+.effect-inspiratory-hold,
+.effect-expiratory-hold,
+.effect-circuit-inflation,
+.effect-circuit-collapse {
+  opacity: 0;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.effect-cycling-cue {
+  top: 38%;
+  left: 57%;
+  width: 9%;
+  height: 4%;
+  border-radius: 999px;
+  background: rgba(120, 217, 255, 0.74);
+}
+
+.effect-sync-indicator,
+.effect-double-trigger,
+.effect-wasted-trigger,
+.effect-auto-trigger {
+  top: 42%;
+  left: 20%;
+  width: 13%;
+  height: 13%;
+  border: 2px solid rgba(120, 217, 255, 0.72);
+  border-radius: 50%;
+}
+
+.effect-double-trigger {
+  border-color: rgba(255, 216, 74, 0.82);
+}
+
+.effect-wasted-trigger {
+  border-color: rgba(255, 107, 107, 0.8);
+}
+
+.effect-auto-trigger {
+  border-color: rgba(181, 244, 113, 0.82);
+}
+
+.effect-inspiratory-hold,
+.effect-expiratory-hold {
+  top: 36%;
+  left: 53%;
+  width: 15%;
+  height: 3%;
+  border-radius: 999px;
+  background: rgba(255, 216, 74, 0.72);
+}
+
+.effect-expiratory-hold {
+  top: 44%;
+  background: rgba(86, 184, 255, 0.7);
+}
+
+.effect-circuit-inflation,
+.effect-circuit-collapse {
+  top: 37%;
+  left: 43%;
+  width: 25%;
+  height: 5%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(216, 242, 255, 0.48), transparent);
+}
+
+.effect-circuit-collapse {
+  top: 43%;
+  background: linear-gradient(90deg, transparent, rgba(86, 184, 255, 0.38), transparent);
+}
+
+.patient-avatar[data-trigger-mode='sync'] .effect-sync-indicator {
+  opacity: 0.34;
+  animation: spontaneous-trigger-pulse var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar[data-trigger-mode='double-trigger'] .effect-double-trigger {
+  animation: trigger-double-pulse var(--breath-speed) ease-out infinite;
+}
+
+.patient-avatar[data-trigger-mode='wasted-trigger'] .effect-wasted-trigger {
+  animation: wasted-trigger-fade var(--breath-speed) ease-out infinite;
+}
+
+.patient-avatar[data-trigger-mode='auto-trigger'] .effect-auto-trigger {
+  animation: auto-trigger-flicker calc(var(--breath-speed) * 0.7) ease-in-out infinite;
+}
+
+.patient-avatar[data-trigger-mode='asynchrony'] .effect-cycling-cue {
+  animation: cycling-cue var(--alarm-speed) ease-out infinite;
+}
+
+.patient-avatar[data-inspiratory-hold='true'] .effect-inspiratory-hold,
+.patient-avatar[data-expiratory-hold='true'] .effect-expiratory-hold {
+  opacity: 0.9;
+  animation: hold-marker var(--alarm-speed) ease-in-out infinite;
+}
+
+.patient-avatar:not([data-breath-pattern='apnea']) .effect-cycling-cue {
+  animation: cycling-cue var(--breath-speed) ease-out infinite;
+}
+
+.patient-avatar:not([data-breath-pattern='apnea']) .effect-circuit-inflation {
+  animation: circuit-inflation var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar:not([data-breath-pattern='apnea']) .effect-circuit-collapse {
+  animation: circuit-collapse var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar[data-breath-source='spontaneous'] .flow-arrow {
+  stroke-dasharray: 5 12;
+}
+
+.patient-avatar[data-breath-source='mechanical'] .effect-spontaneous-trigger {
+  opacity: 0;
+}
+
+.airway-mask-shell,
+.ett-mouth-seal {
+  filter: drop-shadow(0 2px 4px rgba(7, 18, 31, 0.28));
+}
+
+.airway-mask-highlight {
+  filter: drop-shadow(0 0 3px rgba(248, 252, 255, 0.24));
+}
+
+.mask-connector-shadow {
+  mix-blend-mode: multiply;
+}
+
+.effect-apnea-hold {
+  top: 50%;
+  left: 27%;
+  width: 29%;
+  height: 32%;
+  border: 2px dashed rgba(255, 216, 74, 0.62);
+  border-radius: 44%;
+  opacity: 0;
+  box-shadow: inset 0 0 20px rgba(255, 216, 74, 0.12);
+}
+
+.effect-apnea-recovery {
+  top: 49%;
+  left: 27%;
+  width: 30%;
+  height: 34%;
+  border: 2px solid rgba(53, 210, 127, 0.58);
+  border-radius: 44%;
+  opacity: 0;
+  box-shadow: 0 0 16px rgba(53, 210, 127, 0.18);
+}
+
+.apnea-time-badge {
+  filter: drop-shadow(0 0 10px rgba(255, 216, 74, 0.34));
+  animation: opacity-pulse 1.6s ease-in-out infinite;
+  will-change: opacity;
+}
+
+.apnea-time-label {
+  font-size: 34px;
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+.patient-avatar[data-breath-pattern='tachypnea'] .effect-breath-chest,
+.patient-avatar[data-breath-pattern='tachypnea'] .chest-motion {
+  animation-timing-function: cubic-bezier(0.2, 0, 0.18, 1);
+}
+
+.patient-avatar[data-breath-pattern='bradypnea'] .effect-breath-chest,
+.patient-avatar[data-breath-pattern='bradypnea'] .chest-motion {
+  animation-timing-function: cubic-bezier(0.42, 0, 0.38, 1);
+}
+
+.patient-avatar[data-breath-pattern='gasping'] .effect-breath-chest {
+  opacity: calc(0.28 + var(--distress-opacity) * 0.5);
+  animation-timing-function: cubic-bezier(0.08, 0, 0.12, 1);
+}
+
+.patient-avatar[data-breath-pattern='gasping'] .chest-motion,
+.patient-avatar[data-breath-pattern='gasping'] .gown-breath-fold {
+  animation-name: gasping-chest-breathe;
+  animation-timing-function: cubic-bezier(0.08, 0, 0.12, 1);
+}
+
+.patient-avatar[data-breath-pattern='kussmaul'] .effect-breath-chest {
+  opacity: calc(0.24 + var(--distress-opacity) * 0.44);
+}
+
+.patient-avatar[data-breath-pattern='kussmaul'] .chest-motion,
+.patient-avatar[data-breath-pattern='kussmaul'] .gown-breath-fold {
+  animation-name: kussmaul-chest-breathe;
+  animation-timing-function: cubic-bezier(0.1, 0, 0.2, 1);
+}
+
+.patient-avatar[data-breath-pattern='cheyne-stokes'] .chest-motion,
+.patient-avatar[data-breath-pattern='cheyne-stokes'] .gown-breath-fold,
+.patient-avatar[data-breath-pattern='cheyne-stokes'] .effect-breath-chest {
+  animation-name: cheyne-stokes-breathe;
+  animation-timing-function: ease-in-out;
+}
+
+.patient-avatar[data-breath-pattern='biot'] .chest-motion,
+.patient-avatar[data-breath-pattern='biot'] .gown-breath-fold,
+.patient-avatar[data-breath-pattern='biot'] .effect-breath-chest {
+  animation-name: biot-breathe;
+  animation-timing-function: steps(4, end);
+}
+
+.patient-avatar[data-breath-pattern='apneustic'] .chest-motion,
+.patient-avatar[data-breath-pattern='apneustic'] .gown-breath-fold,
+.patient-avatar[data-breath-pattern='apneustic'] .effect-breath-chest {
+  animation-name: apneustic-breathe;
+  animation-timing-function: cubic-bezier(0.12, 0, 0.16, 1);
+}
+
+.effect-pursed-lip-breath {
+  top: 28%;
+  left: 38%;
+  width: 11%;
+  height: 4%;
+  border-radius: 999px;
+  opacity: 0;
+  background: radial-gradient(ellipse, rgba(86, 184, 255, 0.34), transparent 68%);
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.patient-avatar[data-scenario='airwayObstruction'] .effect-pursed-lip-breath {
+  animation: pursed-lip-exhale calc(var(--breath-speed) * 1.25) ease-in-out infinite;
+}
+
+.patient-avatar[data-breath-pattern='sighing'] .chest-motion,
+.patient-avatar[data-breath-pattern='sighing'] .gown-breath-fold,
+.patient-avatar[data-breath-pattern='sighing'] .effect-breath-chest {
+  animation-name: sigh-breathe;
+  animation-timing-function: ease-in-out;
+}
+
+.patient-avatar[data-breath-pattern='agonal'] .chest-motion,
+.patient-avatar[data-breath-pattern='agonal'] .gown-breath-fold,
+.patient-avatar[data-breath-pattern='agonal'] .effect-breath-chest {
+  animation-name: agonal-breathe;
+  animation-timing-function: cubic-bezier(0.08, 0, 0.12, 1);
+}
+
+.patient-avatar:not([data-breath-pattern='apnea']) .effect-expiratory-fall {
+  animation: expiratory-fall var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar[data-condition='watch'] .effect-shoulder-lift,
+.patient-avatar[data-condition='worsening'] .effect-shoulder-lift,
+.patient-avatar[data-condition='critical'] .effect-shoulder-lift {
+  animation: accessory-effort var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar[data-condition='worsening'] .effect-sternal-tug,
+.patient-avatar[data-condition='critical'] .effect-sternal-tug,
+.patient-avatar[data-condition='worsening'] .effect-intercostal-tug,
+.patient-avatar[data-condition='critical'] .effect-intercostal-tug {
+  animation: retraction-tug var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar[data-breath-pattern='kussmaul'] .effect-abdominal-motion,
+.patient-avatar[data-breath-pattern='apneustic'] .effect-abdominal-motion {
+  animation: abdominal-breathe var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar[data-breath-pattern='gasping'] .effect-abdominal-motion,
+.patient-avatar[data-breath-pattern='agonal'] .effect-abdominal-motion {
+  animation: abdominal-paradox-motion var(--breath-speed) ease-in-out infinite;
+}
+
+.patient-avatar.critical .effect-cyanosis.face {
+  filter: blur(0.4px) saturate(1.35);
+}
+
+.patient-avatar.critical .effect-lung-consolidation {
+  filter: blur(0.1px) saturate(1.28);
+}
+
+.patient-avatar[data-breath-pattern='apnea'] .chest-motion,
+.patient-avatar[data-breath-pattern='apnea'] .effect-breath-chest,
+.patient-avatar[data-breath-pattern='apnea'] .gown-breath-fold,
+.patient-avatar[data-breath-pattern='apnea'] .vent-circuit,
+.patient-avatar[data-breath-pattern='apnea'] .flow-arrow,
+.patient-avatar[data-breath-pattern='apnea'] .effect-circuit-inflation,
+.patient-avatar[data-breath-pattern='apnea'] .effect-circuit-collapse,
+.patient-avatar[data-breath-pattern='apnea'] .effect-cycling-cue {
+  animation-play-state: paused;
+}
+
+.patient-avatar[data-breath-pattern='apnea'] .effect-breath-chest {
+  opacity: 0.08;
+  transform: scale(0.96);
+}
+
+.patient-avatar[data-breath-pattern='apnea'] .effect-apnea-hold {
+  opacity: 1;
+  animation: opacity-pulse 1.6s ease-in-out infinite;
+  will-change: opacity;
+}
+
+.patient-avatar[data-breath-pattern='regular'] .effect-apnea-recovery {
+  opacity: var(--recovery-opacity);
+  animation: apnea-recovery-flash calc(var(--breath-speed) * 1.1) ease-out 1;
+  will-change: opacity, transform;
+}

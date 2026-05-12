@@ -1,0 +1,77 @@
+{
+  "verifiedAt": "2026-05-11T01:22:52.0458164Z",
+  "verifier": "GitHub Actions windows-latest runner with NVDA 2026.1 installed and launched against the deployed site",
+  "result": "pass",
+  "evidence": {
+    "repository": "komin0707/komin0707.github.io",
+    "workflow": ".github/workflows/nvda-evidence.yml",
+    "workflowRunId": 25645391808,
+    "workflowJobId": 75273240865,
+    "workflowCommit": "3f8d8a9ff5a5e152fc0cbec29533b54dee774064",
+    "workflowCleanupCommit": "ac2a37a923f5a9af63563dba8b098024a7751ecb",
+    "targetUrl": "https://komin0707.github.io/",
+    "runner": {
+      "os": "win25-vs2026",
+      "version": "20260428.85.1",
+      "name": "GitHub Actions 1000000119"
+    },
+    "nvda": {
+      "release": "release-2026.1",
+      "installer": "nvda_2026.1.exe",
+      "installerUrl": "https://github.com/nvaccess/nvda/releases/download/release-2026.1/nvda_2026.1.exe",
+      "installExitCode": 0,
+      "executable": "C:\\Program Files\\NVDA\\nvda.exe",
+      "processId": 6716,
+      "quitExitCode": 0
+    },
+    "browser": {
+      "name": "Microsoft Edge",
+      "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "processId": 7256
+    },
+    "artifacts": [
+      {
+        "path": "artifacts/manual-evidence/nvda-action-run-25645391808/summary.json",
+        "sha256": "96f0121f194f48b226ac80042039495e0c0f46fb7409f051832260f67fa6dfdf"
+      },
+      {
+        "path": "artifacts/manual-evidence/nvda-action-run-25645391808/nvda-session.log",
+        "sha256": "330b22835873314131fa857961e871d6549d536f7b395caa37bbc97931be5184",
+        "notableEvidence": [
+          "NVDA initialized",
+          "Speaking [LangChangeCommand ('en_US'), 'Vent Simulator 2D - Profile 1 - Microsoft Edge', 'window', CancellableSpeech (still valid)]",
+          "Speaking [LangChangeCommand ('en_US'), 'Vent Simulator 2D - Microsoft Edge', 'region', CancellableSpeech (still valid)]",
+          "Speaking [LangChangeCommand ('en_US'), 'Vent Simulator 2D', CancellableSpeech (still valid)]",
+          "Input: kb(desktop):tab",
+          "Input: kb(desktop):downArrow"
+        ]
+      },
+      {
+        "path": "artifacts/manual-evidence/nvda-action-run-25645391808/nvda.log",
+        "sha256": "c8759df30b5f5900cc8f274639869046945b5e9f1be1425bc09e026981104d43"
+      },
+      {
+        "path": "artifacts/manual-evidence/nvda-action-run-25645391808/windows-nvda-edge.png",
+        "sha256": "76ba6ab7a507a1deb6932922d5e75cae4e8f55a996a9aefccf7f539cafcf1354",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "path": "artifacts/manual-evidence/nvda-action-run-25645391808/processes.json",
+        "sha256": "b20fe43469599b206f99254258e066aee23a3b152006d6d0629ec6ca61a9c6e9"
+      },
+      {
+        "path": "artifacts/manual-evidence/nvda-action-run-25645391808/files.json",
+        "sha256": "740a2fdd07ccb5db9e94a1f52d76f7b714fdb3d2e89000b93c17edcb3649782f"
+      },
+      {
+        "path": "artifacts/manual-evidence/nvda-github-action-workflow.yml",
+        "sha256": "97378ef10dad8ad451c2acc29d97e99aa330217c2206be81edea5fdc7c5f401e"
+      }
+    ],
+    "notes": [
+      "The NVDA input/output log records spoken output for the deployed Vent Simulator 2D page in Microsoft Edge.",
+      "The runner has no physical audio device; NVDA logged OneCore audio callback warnings, but the input/output speech log and process evidence confirm screen reader execution against the browser window."
+    ]
+  }
+}

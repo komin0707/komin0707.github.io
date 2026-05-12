@@ -1,0 +1,7 @@
+name = "vent-simulator-2d"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-05-10"
+
+[vars]
+VITE_APP_ENV = "production"
+VITE_ENABLE_DEBUG_PANEL = "false"

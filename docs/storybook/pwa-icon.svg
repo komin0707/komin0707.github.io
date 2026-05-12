@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Vent Simulator 2D icon">
+  <rect width="512" height="512" rx="96" fill="#07111f" />
+  <path
+    d="M76 286h72l42-126 70 252 58-192 38 66h80"
+    fill="none"
+    stroke="#1689ff"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="34"
+  />
+  <circle cx="382" cy="166" r="42" fill="#35d27f" />
+</svg>

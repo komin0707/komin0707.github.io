@@ -1,0 +1,37 @@
+{
+  "result": "passed",
+  "reviewedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "reviewer": {
+    "name": "REQUIRED: human reviewer name",
+    "role": "REQUIRED: clinical simulation reviewer role",
+    "attestation": "REQUIRED: reviewer attestation that all captures were inspected and approved for educational visual realism"
+  },
+  "captureReviews": [
+    {
+      "scenario": "normal",
+      "status": "passed",
+      "notes": "Required: human reviewer notes for normal baseline capture"
+    },
+    {
+      "scenario": "pneumonia",
+      "status": "passed",
+      "notes": "Required: human reviewer notes for pneumonia capture"
+    },
+    {
+      "scenario": "ards",
+      "status": "passed",
+      "notes": "Required: human reviewer notes for ARDS capture"
+    },
+    {
+      "scenario": "airwayObstruction",
+      "status": "passed",
+      "notes": "Required: human reviewer notes for airway obstruction capture"
+    },
+    {
+      "scenario": "pneumothorax",
+      "status": "passed",
+      "notes": "Required: human reviewer notes for pneumothorax capture"
+    }
+  ],
+  "unresolvedCriticalIssues": []
+}

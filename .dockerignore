@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+test-results
+.git
+.DS_Store
+*.tsbuildinfo
+tmp*.png
+ChatGPT Image*.png

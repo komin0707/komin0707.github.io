@@ -1,0 +1,1030 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Instant Test
+</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link id="ShortcutIcon" rel="shortcut icon" type="image/x-icon" href="https://cpprod.catchpoint.com/ui/App_Themes/NewUI/images/icons/favicon.ico"></link>
+<Link rel="stylesheet" type="text/css" href="https://cpprod.catchpoint.com/ui/js/jquery/ui/v1.13.2/css/cupertino/jquery-ui-1.13.2.custom.min.css" media="all" />
+<Link rel="stylesheet" type="text/css" href="https://cpprod.catchpoint.com/ui/App_Themes/NewUI/css/all-min.css" media="all" />
+<Link rel="stylesheet" type="text/css" href="" media="all" />
+<script type="text/javascript">var generateUniqueID = function () {
+    return "v2-" + Date.now() + "-" + (Math.floor(Math.random() * (9e12 - 1)) + 1e12);
+};
+var firstHiddenTime = -1;
+var initHiddenTime = function () {
+    return document.visibilityState === 'hidden' ? 0 : Infinity;
+};
+var trackChanges = function () {
+    onHidden(function (_a) {
+        var timeStamp = _a.timeStamp;
+        firstHiddenTime = timeStamp;
+    }, true);
+};
+var getVisibilityWatcher = function () {
+    if (firstHiddenTime < 0) {
+        if (window.__WEB_VITALS_POLYFILL__) {
+            firstHiddenTime = window.webVitals.firstHiddenTime;
+            if (firstHiddenTime === Infinity) {
+                trackChanges();
+            }
+        }
+        else {
+            firstHiddenTime = initHiddenTime();
+            trackChanges();
+        }
+        onBFCacheRestore(function () {
+            setTimeout(function () {
+                firstHiddenTime = initHiddenTime();
+                trackChanges();
+            }, 0);
+        });
+    }
+    return {
+        get firstHiddenTime() {
+            return firstHiddenTime;
+        }
+    };
+};
+var onBFCacheRestore = function (cb) {
+    addEventListener('pageshow', function (event) {
+        if (event.persisted) {
+            cb(event);
+        }
+    }, true);
+};
+var bindReporter = function (callback, metric, reportAllChanges) {
+    var prevValue;
+    return function (forceReport) {
+        if (metric.value >= 0) {
+            if (forceReport || reportAllChanges) {
+                metric.delta = metric.value - (prevValue || 0);
+                if (metric.delta || prevValue === undefined) {
+                    prevValue = metric.value;
+                    callback(metric);
+                }
+            }
+        }
+    };
+};
+var onHidden = function (cb, once) {
+    var onHiddenOrPageHide = function (event) {
+        if (event.type === 'pagehide' || document.visibilityState === 'hidden') {
+            cb(event);
+            if (once) {
+                removeEventListener('visibilitychange', onHiddenOrPageHide, true);
+                removeEventListener('pagehide', onHiddenOrPageHide, true);
+            }
+        }
+    };
+    addEventListener('visibilitychange', onHiddenOrPageHide, true);
+    addEventListener('pagehide', onHiddenOrPageHide, true);
+};
+var observe = function (type, callback) {
+    try {
+        if (PerformanceObserver.supportedEntryTypes.indexOf(type) > -1) {
+            if (type === 'first-input' && !('PerformanceEventTiming' in self)) {
+                return;
+            }
+            var po = new PerformanceObserver(function (l) { return l.getEntries().map(callback); });
+            po.observe({ type: type, buffered: true });
+            return po;
+        }
+    }
+    catch (e) {
+    }
+    return;
+};
+var getFCP = function (onReport, reportAllChanges) {
+    var visibilityWatcher = getVisibilityWatcher();
+    var metric = initMetric('FCP');
+    var report;
+    var entryHandler = function (entry) {
+        if (entry.name === 'first-contentful-paint') {
+            if (po) {
+                po.disconnect();
+            }
+            if (entry.startTime < visibilityWatcher.firstHiddenTime) {
+                metric.value = entry.startTime;
+                metric.entries.push(entry);
+                report(true);
+            }
+        }
+    };
+    var fcpEntry = window.performance && performance.getEntriesByName &&
+        performance.getEntriesByName('first-contentful-paint')[0];
+    var po = fcpEntry ? null : observe('paint', entryHandler);
+    if (fcpEntry || po) {
+        report = bindReporter(onReport, metric, reportAllChanges);
+        if (fcpEntry) {
+            entryHandler(fcpEntry);
+        }
+        onBFCacheRestore(function (event) {
+            metric = initMetric('FCP');
+            report = bindReporter(onReport, metric, reportAllChanges);
+            requestAnimationFrame(function () {
+                requestAnimationFrame(function () {
+                    metric.value = performance.now() - event.timeStamp;
+                    report(true);
+                });
+            });
+        });
+    }
+};
+var initMetric = function (name, value) {
+    return {
+        name: name,
+        value: typeof value === 'undefined' ? -1 : value,
+        delta: 0,
+        entries: [],
+        id: generateUniqueID()
+    };
+};
+var isMonitoringFCP = false;
+var fcpValue = -1;
+var reportedMetricIDs = {};
+var getLCP = function (onReport, reportAllChanges) {
+    var visibilityWatcher = getVisibilityWatcher();
+    var metric = initMetric('LCP');
+    var report;
+    var entryHandler = function (entry) {
+        var value = entry.startTime;
+        if (value < visibilityWatcher.firstHiddenTime) {
+            metric.value = value;
+            metric.entries.push(entry);
+            report(true);
+        }
+    };
+    var po = observe('largest-contentful-paint', entryHandler);
+    if (po) {
+        report = bindReporter(onReport, metric, reportAllChanges);
+        var stopListening_1 = function () {
+            if (!reportedMetricIDs[metric.id]) {
+                po.takeRecords().map(entryHandler);
+                po.disconnect();
+                reportedMetricIDs[metric.id] = true;
+                report(true);
+            }
+        };
+        ['keydown', 'click'].forEach(function (type) {
+            addEventListener(type, stopListening_1, { once: true, capture: true });
+        });
+        onHidden(stopListening_1, true);
+        onBFCacheRestore(function (event) {
+            metric = initMetric('LCP');
+            report = bindReporter(onReport, metric, reportAllChanges);
+            requestAnimationFrame(function () {
+                requestAnimationFrame(function () {
+                    metric.value = performance.now() - event.timeStamp;
+                    reportedMetricIDs[metric.id] = true;
+                    report(true);
+                });
+            });
+        });
+    }
+};
+var getCLS = function (onReport, reportAllChanges) {
+    if (!isMonitoringFCP) {
+        getFCP(function (metric) {
+            fcpValue = metric.value;
+        });
+        isMonitoringFCP = true;
+    }
+    var onReportWrapped = function (arg) {
+        if (fcpValue > -1) {
+            onReport(arg);
+        }
+    };
+    var metric = initMetric('CLS', 0);
+    var report;
+    var sessionValue = 0;
+    var sessionEntries = [];
+    var entryHandler = function (entry) {
+        if (!entry.hadRecentInput) {
+            var firstSessionEntry = sessionEntries[0];
+            var lastSessionEntry = sessionEntries[sessionEntries.length - 1];
+            if (sessionValue &&
+                entry.startTime - lastSessionEntry.startTime < 1000 &&
+                entry.startTime - firstSessionEntry.startTime < 5000) {
+                sessionValue += entry.value;
+                sessionEntries.push(entry);
+            }
+            else {
+                sessionValue = entry.value;
+                sessionEntries = [entry];
+            }
+            if (sessionValue > metric.value) {
+                metric.value = sessionValue;
+                metric.entries = sessionEntries;
+                report(true);
+            }
+        }
+    };
+    var po = observe('layout-shift', entryHandler);
+    if (po) {
+        report = bindReporter(onReportWrapped, metric, reportAllChanges);
+        onHidden(function () {
+            po.takeRecords().map(entryHandler);
+            report(true);
+        });
+        onBFCacheRestore(function () {
+            sessionValue = 0;
+            fcpValue = -1;
+            metric = initMetric('CLS', 0);
+            report = bindReporter(onReportWrapped, metric, reportAllChanges);
+        });
+    }
+};
+var windowCurrent = parent.window || window;
+var WindowEvent;
+(function (WindowEvent) {
+    WindowEvent["Load"] = "load";
+    WindowEvent["BeforeUnload"] = "beforeunload";
+    WindowEvent["Abort"] = "abort";
+    WindowEvent["Error"] = "error";
+    WindowEvent["Unload"] = "unload";
+})(WindowEvent || (WindowEvent = {}));
+var VisibilityType;
+(function (VisibilityType) {
+    VisibilityType[VisibilityType["Focus"] = 0] = "Focus";
+    VisibilityType[VisibilityType["Blur"] = 1] = "Blur";
+})(VisibilityType || (VisibilityType = {}));
+;
+var AjaxTiming = (function () {
+    function AjaxTiming(url, method, isAsync, open) {
+        var _this = this;
+        this.getPerformanceTimings = function (entry) {
+            _this.connect = entry.connectEnd - entry.connectStart;
+            _this.dns = entry.domainLookupEnd - entry.domainLookupStart;
+            _this.duration = entry.duration;
+            _this.load = entry.responseEnd - entry.responseStart;
+            _this.wait = entry.responseStart - entry.requestStart;
+            _this.start = entry.startTime;
+            _this.redirect = entry.redirectEnd - entry.redirectStart;
+            if (entry["secureConnectionStart"]) {
+                _this.ssl = entry.connectEnd - entry["secureConnectionStart"];
+            }
+        };
+        this.url = url;
+        this.method = method;
+        this.isAsync = isAsync;
+        this.open = open;
+    }
+    return AjaxTiming;
+}());
+var ProfilerJsError = (function () {
+    function ProfilerJsError(message, url, lineNumber) {
+        this.count = 0;
+        this.message = message;
+        this.url = url;
+        this.lineNumber = lineNumber;
+    }
+    ProfilerJsError.createText = function (msg, url, num) {
+        return [msg, url, num].join(":");
+    };
+    ProfilerJsError.prototype.getText = function () {
+        return ProfilerJsError.createText(this.message, this.url, this.lineNumber);
+    };
+    return ProfilerJsError;
+}());
+var ProfilerEventManager = (function () {
+    function ProfilerEventManager() {
+        this.events = [];
+        this.hasAttachEvent = !!window.attachEvent;
+    }
+    ProfilerEventManager.prototype.add = function (type, target, func) {
+        this.events.push({ type: type, target: target, func: func });
+        if (this.hasAttachEvent) {
+            target.attachEvent("on" + type, func);
+        }
+        else {
+            target.addEventListener(type, func, false);
+        }
+    };
+    ProfilerEventManager.prototype.remove = function (type, target, func) {
+        if (this.hasAttachEvent) {
+            target.detachEvent(type, func);
+        }
+        else {
+            target.removeEventListener(type, func, false);
+        }
+        var index = this.events.indexOf({ type: type, target: target, func: func });
+        if (index !== 1) {
+            this.events.splice(index, 1);
+        }
+    };
+    ProfilerEventManager.prototype.clear = function () {
+        var events = this.events;
+        for (var i = 0; i < events.length; i++) {
+            var ev = events[i];
+            this.remove(ev.type, ev.target, ev.func);
+        }
+        this.events = [];
+    };
+    return ProfilerEventManager;
+}());
+var AjaxRequestsHandler = (function () {
+    function AjaxRequestsHandler() {
+        var _this = this;
+        this.fetchRequests = [];
+        this.fetchEntriesIndices = {};
+        this.compareEntriesDelay = 100;
+        this.hasPerformance = typeof window.performance === "object" && typeof window.performance.now === "function" && typeof window.performance.getEntriesByType === "function";
+        this.captureFetchRequests = function () {
+            var tempArray = [];
+            var ajaxHandler = _this;
+            var onRequestError = function (error) {
+                return error;
+            };
+            var onResponseError = function (error) {
+                return Promise.reject(error);
+            };
+            if (!window.fetch) {
+                return;
+            }
+            window.fetch = (function (fetch) {
+                return function () {
+                    var args = [];
+                    for (var _i = 0; _i < arguments.length; _i++) {
+                        args[_i] = arguments[_i];
+                    }
+                    var fetchRequestIndex = 0;
+                    var promise = Promise.resolve(args);
+                    promise = promise.then(function (args) {
+                        var firstArg;
+                        var config = {};
+                        if (args.length && args.length >= 1) {
+                            firstArg = args[0];
+                            if (args.length > 1) {
+                                config = args[1];
+                            }
+                        }
+                        else {
+                            return [];
+                        }
+                        var method = 'GET';
+                        if (config.method) {
+                            method = config.method;
+                        }
+                        fetchRequestIndex = tempArray.length;
+                        var fetchUrl = '';
+                        if (typeof (firstArg) === 'object' && !!firstArg) {
+                            if (Array.isArray(firstArg) && firstArg.length > 0) {
+                                fetchUrl = firstArg[0];
+                            }
+                            else {
+                                fetchUrl = firstArg.url;
+                            }
+                        }
+                        else {
+                            fetchUrl = firstArg;
+                        }
+                        if (fetchUrl) {
+                            tempArray.push(new AjaxTiming(fetchUrl, method, true, ajaxHandler.now()));
+                        }
+                        return [firstArg, config];
+                    }, onRequestError);
+                    promise = promise.then(function (args) { return fetch.apply(void 0, args); });
+                    promise = promise.then(function (response) {
+                        var fetchRequest = tempArray[fetchRequestIndex];
+                        var requestArray = ajaxHandler.fetchRequests;
+                        ajaxHandler.processPerformanceEntries(fetchRequest, requestArray);
+                        return response;
+                    }, onResponseError);
+                    return promise;
+                };
+            })(window.fetch);
+        };
+        this.captureFetchRequests();
+        AjaxRequestsHandler.startAjaxCapture(this);
+    }
+    AjaxRequestsHandler.prototype.getAjaxRequests = function () {
+        return this.fetchRequests;
+    };
+    AjaxRequestsHandler.prototype.clear = function () {
+        this.fetchRequests = [];
+    };
+    AjaxRequestsHandler.prototype.now = function () {
+        if (this.hasPerformance) {
+            return window.performance.now();
+        }
+        return (new Date()).getTime();
+    };
+    AjaxRequestsHandler.prototype.processPerformanceEntries = function (fetchRequest, requestArray) {
+        var ajaxHandler = this;
+        setTimeout(function () {
+            if (!ajaxHandler.hasPerformance) {
+                return;
+            }
+            var url = fetchRequest.url;
+            var matches = [];
+            var entries = performance.getEntriesByType("resource");
+            for (var _i = 0, entries_1 = entries; _i < entries_1.length; _i++) {
+                var entry = entries_1[_i];
+                if (entry.name === url) {
+                    matches.push(entry);
+                }
+            }
+            requestArray.push(fetchRequest);
+            if (matches.length === 0) {
+                return;
+            }
+            if (!ajaxHandler.fetchEntriesIndices[url]) {
+                ajaxHandler.fetchEntriesIndices[url] = [];
+            }
+            if (matches.length === 1) {
+                fetchRequest.getPerformanceTimings(matches[0]);
+                ajaxHandler.fetchEntriesIndices[url].push(0);
+                return;
+            }
+            var u = ajaxHandler.fetchEntriesIndices[url];
+            for (var index in matches) {
+                if (u.indexOf(index) !== -1) {
+                    continue;
+                }
+                fetchRequest.getPerformanceTimings(matches[index]);
+                u.push(index);
+                return;
+            }
+            fetchRequest.getPerformanceTimings(matches[0]);
+        }, ajaxHandler.compareEntriesDelay);
+    };
+    AjaxRequestsHandler.startAjaxCapture = function (ajaxHandler) {
+        var xhr = XMLHttpRequest.prototype;
+        var open = xhr.open;
+        var send = xhr.send;
+        var tempArray = [];
+        if (ajaxHandler.hasPerformance && typeof window.performance.setResourceTimingBufferSize === "function") {
+            window.performance.setResourceTimingBufferSize(300);
+        }
+        xhr.open = function (method, url, async, user, password) {
+            this.rpIndex = tempArray.length;
+            tempArray.push(new AjaxTiming(url, method, async, ajaxHandler.now()));
+            open.call(this, method, url, (async === false) ? false : true, user, password);
+        };
+        xhr.send = function (data) {
+            var _this = this;
+            var changeFunc = this.onreadystatechange;
+            this.onreadystatechange = function (arg) {
+                var request = tempArray[_this.rpIndex];
+                if (!request) {
+                    return;
+                }
+                var state = _this.readyState;
+                var hasResponse = !!(_this.response && _this.response !== null && _this.response !== undefined);
+                switch (state) {
+                    case 0:
+                        break;
+                    case 1:
+                        request.connectionEstablished = ajaxHandler.now();
+                        break;
+                    case 2:
+                        request.requestReceived = ajaxHandler.now();
+                        break;
+                    case 3:
+                        request.processingTime = ajaxHandler.now();
+                        break;
+                    case 4:
+                        request.complete = ajaxHandler.now();
+                        switch (_this.responseType) {
+                            case "text":
+                            case "":
+                                if (typeof _this.responseText === "string") {
+                                    request.responseSize = _this.responseText.length;
+                                }
+                                break;
+                            case "json":
+                                if (hasResponse && typeof _this.response.toString === "function") {
+                                    request.responseSize = _this.response.toString().length;
+                                }
+                                break;
+                            case "arraybuffer":
+                                if (hasResponse && typeof _this.response.byteLength === "number") {
+                                    request.responseSize = _this.response.byteLength;
+                                }
+                                break;
+                            case "blob":
+                                if (hasResponse && typeof _this.response.size === "number") {
+                                    request.responseSize = _this.response.size;
+                                }
+                                break;
+                            case "document":
+                                break;
+                        }
+                        ajaxHandler.processPerformanceEntries(request, ajaxHandler.fetchRequests);
+                        break;
+                }
+                if (typeof changeFunc === "function") {
+                    changeFunc.call(_this, arg);
+                }
+            };
+            var request = tempArray[this.rpIndex];
+            if (!request) {
+                return;
+            }
+            if (data && !isNaN(data.length)) {
+                request.sendSize = data.length;
+            }
+            request.send = ajaxHandler.now();
+            send.call(this, data);
+        };
+    };
+    return AjaxRequestsHandler;
+}());
+var RProfiler = (function () {
+    function RProfiler() {
+        var _this = this;
+        this.restUrl = "g.3gl.net/jp/101/v3.3.4/M";
+        this.startTime = (new Date()).getTime();
+        this.eventsTimingHandler = new EventsTimingHandler();
+        this.inputDelay = new InputDelayHandler();
+        this.version = "v3.3.4";
+        this.info = {};
+        this.hasInsight = false;
+        this.data = {
+            start: this.startTime,
+            jsCount: 0,
+            jsErrors: [],
+            loadTime: -1,
+            loadFired: window.document.readyState == "complete",
+        };
+        this.eventManager = new ProfilerEventManager();
+        this.setCLS = function (_a) {
+            var metricName = _a.name, metricValue = _a.delta;
+            var CLS = metricName === 'CLS' ? metricValue : undefined;
+            _this.cls = CLS;
+        };
+        this.setLCP = function (_a) {
+            var metricName = _a.name, metricValue = _a.delta;
+            var LCP = metricName === 'LCP' ? metricValue : undefined;
+            _this.lcp = LCP;
+        };
+        this.recordPageLoad = function () {
+            _this.data.loadTime = (new Date()).getTime();
+            _this.data.loadFired = true;
+        };
+        this.addError = function (msg, url, lineNum) {
+            _this.data.jsCount++;
+            var currError = ProfilerJsError.createText(msg, url, lineNum);
+            var errorArr = _this.data.jsErrors;
+            for (var _i = 0, errorArr_1 = errorArr; _i < errorArr_1.length; _i++) {
+                var err = errorArr_1[_i];
+                if (err.getText() == currError) {
+                    err.count++;
+                    return;
+                }
+            }
+            errorArr.push(new ProfilerJsError(msg, url, lineNum));
+        };
+        this.getAjaxRequests = function () {
+            return _this.ajaxHandler.getAjaxRequests();
+        };
+        this.clearAjaxRequests = function () {
+            _this.ajaxHandler.clear();
+        };
+        this.addInfo = function (infoType, key, value) {
+            if (_this.isNullOrEmpty(infoType)) {
+                return;
+            }
+            if (_this.isNullOrEmpty(value)) {
+                _this.info[infoType] = key;
+            }
+            else {
+                if (_this.isNullOrEmpty(key)) {
+                    return;
+                }
+                if (_this.isNullOrEmpty(_this.info[infoType])) {
+                    _this.info[infoType] = {};
+                }
+                _this.info[infoType][key] = value;
+            }
+            _this.hasInsight = true;
+        };
+        this.clearInfo = function () {
+            _this.info = {};
+            _this.hasInsight = false;
+        };
+        this.clearErrors = function () {
+            _this.data.jsCount = 0;
+            _this.data.jsErrors = [];
+        };
+        this.getInfo = function () {
+            if (!_this.hasInsight) {
+                return null;
+            }
+            return _this.info;
+        };
+        this.getEventTimingHandler = function () {
+            return _this.eventsTimingHandler;
+        };
+        this.getInputDelay = function () {
+            return _this.inputDelay;
+        };
+        this.getCPWebVitals = function () {
+            getCLS(_this.setCLS, false);
+            getLCP(_this.setLCP, false);
+            return {
+                cls: _this.cls,
+                lcp: _this.lcp
+            };
+        };
+        this.eventManager.add(WindowEvent.Load, window, this.recordPageLoad);
+        var errorFunc = this.addError;
+        this.ajaxHandler = new AjaxRequestsHandler();
+        getCLS(this.setCLS, false);
+        getLCP(this.setLCP, false);
+        function recordJsError(e) {
+            var ev = e.target || e.srcElement;
+            if (ev.nodeType == 3) {
+                ev = ev.parentNode;
+            }
+            errorFunc("N/A", ev.src || ev.URL, -1);
+            return false;
+        }
+        if (!!window["opera"]) {
+            this.eventManager.add(WindowEvent.Error, document, recordJsError);
+        }
+        else if ("onerror" in window) {
+            var origOnError = window.onerror;
+            window.onerror = function (msg, url, lineNum) {
+                errorFunc(msg, url, lineNum);
+                if (!!origOnError) {
+                    return origOnError(msg, url, lineNum);
+                }
+                return false;
+            };
+        }
+        if (!!window["__cpCdnPath"]) {
+            this.restUrl = window["__cpCdnPath"].trim();
+        }
+        var protocol = window.location.protocol;
+        var iframe = document.createElement("iframe");
+        iframe.src = "about:blank";
+        var style = iframe.style;
+        style.position = "absolute";
+        style.top = "-10000px";
+        style.left = "-1000px";
+        iframe.addEventListener('load', function (event) {
+            var frame = event.currentTarget;
+            if (frame && frame.contentDocument) {
+                var iframeDocument = frame.contentDocument;
+                var rumScript = iframeDocument.createElement('script');
+                rumScript.type = 'text/javascript';
+                rumScript.src = protocol + '//' + _this.restUrl;
+                iframeDocument.body.appendChild(rumScript);
+            }
+        });
+        var topScript = document.getElementsByTagName("script")[0];
+        topScript.parentNode.insertBefore(iframe, topScript);
+    }
+    RProfiler.prototype.isNullOrEmpty = function (val) {
+        if (val === undefined || val === null) {
+            return true;
+        }
+        if (typeof val == "string") {
+            var str = val;
+            return str.trim().length == 0;
+        }
+        return false;
+    };
+    RProfiler.prototype.dispatchCustomEvent = function (event) {
+        (function (w) {
+            if (typeof w.CustomEvent === "function") {
+                return false;
+            }
+            function CustomEvent(event, params) {
+                params = params || { bubbles: false, cancelable: false, detail: undefined };
+                var evt = document.createEvent('CustomEvent');
+                evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+                return evt;
+            }
+            CustomEvent.prototype = Event.prototype;
+            w.CustomEvent = CustomEvent;
+        })(window);
+        var e = new CustomEvent(event);
+        window.dispatchEvent(e);
+    };
+    return RProfiler;
+}());
+var InputDelayHandler = (function () {
+    function InputDelayHandler() {
+        var _this = this;
+        this.firstInputDelay = 0;
+        this.firstInputTimeStamp = 0;
+        this.startTime = 0;
+        this.delay = 0;
+        this.profileManager = new ProfilerEventManager();
+        this.eventTypes = [
+            'click',
+            'mousedown',
+            'keydown',
+            'touchstart',
+            'pointerdown',
+        ];
+        this.addEventListeners = function () {
+            _this.eventTypes.forEach(function (event) {
+                _this.profileManager.add(event, document, _this.onInput);
+            });
+        };
+        this.now = function () {
+            return (new Date()).getTime();
+        };
+        this.removeEventListeners = function () {
+            _this.eventTypes.forEach(function (event) {
+                _this.profileManager.remove(event, document, _this.onInput);
+            });
+        };
+        this.onInput = function (evt) {
+            if (!evt.cancelable) {
+                return;
+            }
+            var isEpochTime = evt.timeStamp > 1e12;
+            _this.firstInputTimeStamp = _this.now();
+            var useFirstInputTime = isEpochTime || !window['performance'];
+            var now = useFirstInputTime ? _this.firstInputTimeStamp : window['performance'].now();
+            _this.delay = now - evt.timeStamp;
+            if (evt.type == 'pointerdown') {
+                _this.onPointerDown();
+            }
+            else {
+                _this.removeEventListeners();
+                _this.updateFirstInputDelay();
+            }
+        };
+        this.onPointerUp = function () {
+            _this.removeEventListeners();
+            _this.updateFirstInputDelay();
+        };
+        this.onPointerCancel = function () {
+            _this.removePointerEventListeners();
+        };
+        this.removePointerEventListeners = function () {
+            _this.profileManager.remove('pointerup', document, _this.onPointerUp);
+            _this.profileManager.remove('pointercancel', document, _this.onPointerCancel);
+        };
+        this.updateFirstInputDelay = function () {
+            if (_this.delay >= 0 && _this.delay < (_this.firstInputTimeStamp - _this.startTime)) {
+                _this.firstInputDelay = Math.round(_this.delay);
+            }
+        };
+        this.startSoftNavigationCapture = function () {
+            _this.resetSoftNavigationCapture();
+        };
+        this.resetSoftNavigationCapture = function () {
+            _this.resetFirstInputDelay();
+            _this.addEventListeners();
+        };
+        this.resetFirstInputDelay = function () {
+            _this.delay = 0;
+            _this.firstInputDelay = 0;
+            _this.startTime = 0;
+            _this.firstInputTimeStamp = 0;
+        };
+        this.startTime = this.now();
+        this.addEventListeners();
+    }
+    InputDelayHandler.prototype.onPointerDown = function () {
+        this.profileManager.add('pointerup', document, this.onPointerUp);
+        this.profileManager.add('pointercancel', document, this.onPointerCancel);
+    };
+    InputDelayHandler.prototype.getFirstInputDelay = function () {
+        return this.firstInputDelay;
+    };
+    return InputDelayHandler;
+}());
+var EventsTimingHandler = (function () {
+    function EventsTimingHandler() {
+        var _this = this;
+        this.hiddenStrings = ['hidden', 'msHidden', 'webkitHidden', 'mozHidden'];
+        this.visibilityStrings = [
+            'visibilitychange',
+            'msvisibilitychange',
+            'webkitvisibilitychange',
+            'mozvisibilitychange'
+        ];
+        this.captureSoftNavigation = false;
+        this.hidden = 'hidden';
+        this.visibilityChange = 'visibilitychange';
+        this.visibilityEvents = [];
+        this.eventManager = new ProfilerEventManager();
+        this.engagementTimeIntervalMs = 1000;
+        this.engagementTime = 0;
+        this.firstEngagementTime = 0;
+        this.lastEventTimeStamp = 0;
+        this.timeoutId = undefined;
+        this.startTime = new Date().getTime();
+        this.now = function () {
+            return (new Date()).getTime();
+        };
+        this.startVisibilityCapture = function () {
+            _this.initializeVisibilityProperties();
+            document.addEventListener(_this.visibilityChange, _this.captureFocusEvent, false);
+        };
+        this.initializeVisibilityProperties = function () {
+            var values = _this.hiddenStrings;
+            var propertyIndex = 0;
+            for (var i = 0; i < values.length; i++) {
+                if (typeof (document[values[i]]) !== 'undefined') {
+                    propertyIndex = i;
+                }
+            }
+            _this.visibilityChange = _this.visibilityStrings[propertyIndex];
+            _this.hidden = _this.hiddenStrings[propertyIndex];
+        };
+        this.captureFocusEvent = function () {
+            _this.updateVisibilityChangeTime();
+            if (!document[_this.hidden]) {
+                _this.captureEngagementTime();
+            }
+        };
+        this.updateVisibilityChangeTime = function () {
+            if (document[_this.hidden]) {
+                _this.captureVisibilityEvent(VisibilityType.Blur);
+            }
+            else {
+                _this.captureVisibilityEvent(VisibilityType.Focus);
+            }
+        };
+        this.onBlur = function () {
+            _this.captureVisibilityEvent(VisibilityType.Blur);
+        };
+        this.onFocus = function () {
+            _this.captureVisibilityEvent(VisibilityType.Focus);
+        };
+        this.captureVisibilityEvent = function (type) {
+            _this.visibilityEvents.push({
+                type: type,
+                time: _this.now()
+            });
+        };
+        this.captureEngagementTime = function (isFirstEngagement) {
+            if (isFirstEngagement === void 0) { isFirstEngagement = true; }
+            if (!_this.lastEventTimeStamp) {
+                _this.engagementTime = _this.engagementTimeIntervalMs;
+                _this.lastEventTimeStamp = _this.now();
+                return;
+            }
+            var timeBetweenEvents = _this.now() - _this.lastEventTimeStamp;
+            _this.lastEventTimeStamp = _this.now();
+            if (isFirstEngagement && _this.firstEngagementTime === 0) {
+                _this.firstEngagementTime = _this.now();
+            }
+            if (timeBetweenEvents > 0 && timeBetweenEvents < _this.engagementTimeIntervalMs) {
+                clearTimeout(_this.timeoutId);
+                _this.engagementTime += timeBetweenEvents;
+                return;
+            }
+            _this.startTimer();
+        };
+        this.captureMouseMove = function () {
+            _this.captureEngagementTime(false);
+        };
+        this.startTimer = function () {
+            _this.timeoutId = setTimeout(function () {
+                _this.engagementTime += _this.engagementTimeIntervalMs;
+            }, _this.engagementTimeIntervalMs);
+        };
+        this.getFocusAwayTime = function () {
+            var events = _this.visibilityEvents;
+            var resetIndex = -1;
+            if (events.length === 0) {
+                return 0;
+            }
+            var currentBlurIndex = resetIndex;
+            var index = 0;
+            var currentFocusIndex = resetIndex;
+            var hiddenTimeLapsed = 0;
+            while (index < events.length) {
+                if (events[index].type === VisibilityType.Blur &&
+                    currentBlurIndex === resetIndex) {
+                    currentBlurIndex = index;
+                }
+                var isNewFocusEvent = currentFocusIndex === resetIndex && currentBlurIndex !== resetIndex;
+                if (events[index].type === VisibilityType.Focus && isNewFocusEvent) {
+                    currentFocusIndex = index;
+                }
+                var validFocusChange = currentBlurIndex !== resetIndex && currentFocusIndex !== resetIndex;
+                if (validFocusChange) {
+                    var diff = events[currentFocusIndex].time - events[currentBlurIndex].time;
+                    if (diff > 0) {
+                        hiddenTimeLapsed += diff;
+                    }
+                    currentBlurIndex = resetIndex;
+                    currentFocusIndex = resetIndex;
+                }
+                index = index + 1;
+            }
+            if (currentBlurIndex === (events.length - 1)) {
+                hiddenTimeLapsed += _this.now() - events[currentBlurIndex].time;
+            }
+            return hiddenTimeLapsed;
+        };
+        this.getEngagementTime = function () {
+            return _this.engagementTime;
+        };
+        this.getStartTime = function () {
+            return _this.startTime;
+        };
+        this.getFirstEngagementTime = function () {
+            return _this.firstEngagementTime;
+        };
+        this.startSoftNavigationCapture = function () {
+            _this.captureSoftNavigation = true;
+        };
+        this.resetSoftNavigationCapture = function () {
+            _this.resetEngagementMetrics();
+            _this.visibilityEvents = [];
+        };
+        this.resetEngagementMetrics = function () {
+            _this.engagementTime = 0;
+            _this.lastEventTimeStamp = _this.now();
+            _this.firstEngagementTime = 0;
+        };
+        this.clear = function () {
+            _this.eventManager.clear();
+        };
+        this.captureEngagementTime(false);
+        this.eventManager.add('scroll', document, this.captureEngagementTime);
+        this.eventManager.add('resize', window, this.captureEngagementTime);
+        this.eventManager.add('mouseup', document, this.captureEngagementTime);
+        this.eventManager.add('keyup', document, this.captureEngagementTime);
+        this.eventManager.add('mousemove', document, this.captureMouseMove);
+        this.eventManager.add('focus', window, this.onFocus);
+        this.eventManager.add('blur', window, this.onBlur);
+        this.eventManager.add('focus', document, this.onFocus);
+        this.eventManager.add('blur', document, this.onBlur);
+    }
+    return EventsTimingHandler;
+}());
+var profiler = new RProfiler();
+window["RProfiler"] = profiler;
+window["WindowEvent"] = WindowEvent;
+profiler.dispatchCustomEvent("GlimpseLoaded");
+</script> <script src="https://cpprod.catchpoint.com/ui/js/jquery/v3.7.0/jquery-3.7.0-min.js" type="text/javascript" ></script> 
+ <script src="https://cpprod.catchpoint.com/ui/js/jquery/jquery-migrate/v3.4.1/jquery-migrate-3.4.1.js" type="text/javascript" ></script> 
+ <script src="https://cpprod.catchpoint.com/ui/js/jquery/ui/v1.13.2/jquery-ui-1.13.2.custom.min.js" type="text/javascript" ></script> 
+ <script src="https://cpprod.catchpoint.com/ui/js/3genlabs/framework/core.js" type="text/javascript" ></script> 
+<script type="text/javascript">TGL.server.data = {"validation":{"mMsg":"Please provide a value for the following fields:","hMsg":"Please remove '<', '>' and/or '&#' from the following fields:","pMsg":"Input fields cannot contain '<', '>' or '&#'."},"cdnUrl":"https://cpprod.catchpoint.com","symphonyGraphqlCdnUrl":"https://public.catchpoint.com","publicGraphQLUrlHttpGet":"/m/p/g/gd","publicSonarSymphonyGraphqlCdnUrl":"https://public.catchpoint.com","publicSonarCdnUrl":"https://public.catchpoint.com","mp":{"r":true,"s":true,"d":true,"e":false},"ua":{"auth":"502725D609B54929ABED7D85E79DC6EE316AACA8D1F4EAF5FE679897D761F99B-1","gql":"/m/p/g"},"gql":{"auth":"502725D609B54929ABED7D85E79DC6EE316AACA8D1F4EAF5FE679897D761F99B-1","gql":"/m/p/g"},"ptk":{"token":"ARL-D-E-B2ACSi4jervA.Hq4AA-N","authtoken":""},"loginUrlDefault":"https://ioapp.catchpoint.com/auth/Account/Login","testDriveUrl":"https://www.catchpoint.com/guided-product-tour","cpMainUrl":"https://www.catchpoint.com","PageName":"Instant Test"};</script> <script src="https://cpprod.catchpoint.com/ui/js/libs/googleTagManager/googleTagManager.js" type="text/javascript" ></script> 
+</head>
+<body>
+    <form method="post" action="../PublicMaestro.aspx?key=ARL-D-E-B2ACSi4jervA.Hq4AA-N&amp;publicShareType=13" id="form1">
+<input type="hidden" name="ScriptManager1_HiddenField" id="ScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="https://cpprod.catchpoint.com/ui/js/3genlabs/glimpseInsight.js" type="text/javascript"></script>
+<script src="/ui/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LXL9LnU4cN93LVOwyPnad91o37aq5VtrexaGg5SBleHEOLyMMotxJu69GHwOmfw7NcmP1tSF4WLh9J6Hpeu9LQImQhs90&amp;t=7f16157c" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ED3B6ECC" />
+        <div>
+            
+            
+    <script type="text/javascript">
+        Object.defineProperty(String.prototype, 'startsWith', {
+            value: function (search, rawPos) {
+                var pos = rawPos > 0 ? rawPos | 0 : 0;
+                return this.substring(pos, pos + search.length) === search;
+            }
+        });
+        Object.defineProperty(String.prototype, 'endsWith', {
+            value: function (search, rawPos) {
+                var pos = rawPos > 0 ? rawPos : this.length;
+                return this.substring(pos - search.length, pos) === search;
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(document).tooltip({
+                content: function () {
+                    if ($(this).parents('#react-app').length > 0 || $(this).parents('.ms-Layer').length > 0) {
+                        /* The following line removes the title attribute. But this was done so that even the 
+                         * default browser tooltip doesn't show up */
+                        $(this).removeAttr('title');
+                    } else {
+                        return $(this).attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+    <link href="https://cpprod1.catchpoint.com/m/dist/lib-da39a3ee.017624104475f1cf9b10.css" rel="stylesheet"><link href="https://cpprod1.catchpoint.com/m/dist/12432.47550898a7695fdc3bc3.css" rel="stylesheet"><link href="https://cpprod1.catchpoint.com/m/dist/main.282c457694292c3bc651.css" rel="stylesheet"><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/runtime.1e26695a49650041b370.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/framework.f6dd23376dee6b9c3c86.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-ec23b2e1.f8f58a9ad2e053ce2840.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-bf396d8e.9f0d80a55d3194fa6dcd.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-11d837d1.feb9c57678b02a22c651.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-b555b2d3.1a755c84d94fc4de5970.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-7be65eed.82294de16a788acc9257.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-e971612a.5de657c66bca6c289208.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-c78d26b1.a07e24033b62e44dae6d.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-c158f0e1.fc621c4915dc0817c2f9.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-c2002b25.22b1028a0307a950acbc.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-d4163baa.e64c25905d8e676ccabf.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-904da799.ef1b66231456533518da.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-eb04cb8a.61bb538722f4f31bc836.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/12432.06e32cac85bf2fc0907a.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/main.597777c5fb4d051df5ba.js"></script><div id="react-app"></div><script src="https://js.chargify.com/v/2025-10-08/chargify.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/runtime.1e26695a49650041b370.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/framework.f6dd23376dee6b9c3c86.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-ec23b2e1.f8f58a9ad2e053ce2840.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-bf396d8e.9f0d80a55d3194fa6dcd.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-11d837d1.feb9c57678b02a22c651.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-b555b2d3.1a755c84d94fc4de5970.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-7be65eed.82294de16a788acc9257.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-e971612a.5de657c66bca6c289208.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-c78d26b1.a07e24033b62e44dae6d.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-c158f0e1.fc621c4915dc0817c2f9.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-c2002b25.22b1028a0307a950acbc.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-d4163baa.e64c25905d8e676ccabf.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-904da799.ef1b66231456533518da.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/lib-eb04cb8a.61bb538722f4f31bc836.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/12432.06e32cac85bf2fc0907a.js"></script><script defer="defer" src="https://cpprod1.catchpoint.com/m/dist/main.597777c5fb4d051df5ba.js"></script>
+    
+
+<div class="footer">
+    <p id="Copyright">Confidential and Proprietary &copy; <a href='https://www.catchpoint.com' >Catchpoint Systems, Inc.</a> All rights reserved.</p>    
+</div>
+
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>

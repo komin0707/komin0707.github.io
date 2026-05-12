@@ -1,0 +1,7 @@
+{
+  "body": "Chrome UX Report monitoring ran, but field data is not available yet.\n\nOrigin: https://komin0707.github.io\nTarget URL: https://komin0707.github.io/\nResult: blocked\nRun: https://github.com/komin0707/komin0707.github.io/actions/runs/25649269307\nLatest public CrUX cache month: 202603\nPublic CrUX cache chunks scanned: 21/21\nOrigin found in public CrUX cache: false\nCrUX API key configured: false\nCrUX API origin status: 403\nCrUX API URL status: 403\nPageSpeed API key configured: false\nPageSpeed API status: 429\n\nUnblock conditions:\n- Configure CRUX_API_KEY, PAGESPEED_API_KEY, or GOOGLE_API_KEY with Chrome UX Report/PageSpeed API quota, and\n- Wait until the production origin has enough real-user Chrome traffic to expose CrUX field data.\n\ncrux-monitoring-field-data-blocker",
+  "state": "OPEN",
+  "title": "[blocked] Chrome UX Report field data unavailable",
+  "updatedAt": "2026-05-11T03:49:25Z",
+  "url": "https://github.com/komin0707/komin0707.github.io/issues/1"
+}

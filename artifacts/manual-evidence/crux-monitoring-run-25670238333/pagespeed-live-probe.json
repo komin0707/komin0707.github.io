@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-05-11T12:32:08.326Z",
+  "verifier": "direct PageSpeed Insights API probe",
+  "url": "https://www.googleapis.com/pagespeedonline/v5/runPagespeed",
+  "targetUrl": "https://komin0707.github.io/",
+  "status": 429,
+  "hasApiKey": false,
+  "hasLoadingExperience": false,
+  "loadingExperienceOrigin": null,
+  "loadingExperienceMetrics": [],
+  "hasOriginLoadingExperience": false,
+  "originLoadingExperienceOrigin": null,
+  "originLoadingExperienceMetrics": [],
+  "errorStatus": "RESOURCE_EXHAUSTED",
+  "errorMessage": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+  "apiKeySource": {
+    "name": null,
+    "path": null,
+    "source": "none"
+  },
+  "result": "blocked"
+}

@@ -1,0 +1,355 @@
+{
+  "blockers": [
+    {
+      "detail": "874. Requires Chrome UX Report field data for a connected production domain. Expected artifacts/manual-evidence/chrome-ux-report.json.",
+      "id": "chrome-ux-report",
+      "source": "874. [ ] Chrome UX Report 모니터링"
+    }
+  ],
+  "checkedAt": "2026-05-12T05:50:55.845Z",
+  "checklist": {
+    "checked": 1149,
+    "duplicateItemNumbers": [],
+    "expectedHighestItemNumber": 1150,
+    "malformedChecklistRows": [],
+    "missingItemNumbers": [],
+    "observedTotal": 1150,
+    "sections": [
+      {
+        "checked": 250,
+        "firstItem": 1,
+        "lastItem": 250,
+        "title": "🚨 SECTION A: 환자 아바타 UI 완전 재설계 (250+ 항목)",
+        "total": 250,
+        "unchecked": 0
+      },
+      {
+        "checked": 170,
+        "firstItem": 251,
+        "lastItem": 420,
+        "title": "🚨 SECTION B: 미구현/불완전 기능 (200+ 항목)",
+        "total": 170,
+        "unchecked": 0
+      },
+      {
+        "checked": 200,
+        "firstItem": 421,
+        "lastItem": 620,
+        "title": "🚨 SECTION C: 코드 품질 (200+ 항목)",
+        "total": 200,
+        "unchecked": 0
+      },
+      {
+        "checked": 200,
+        "firstItem": 621,
+        "lastItem": 820,
+        "title": "🚨 SECTION D: 테스트 (200+ 항목)",
+        "total": 200,
+        "unchecked": 0
+      },
+      {
+        "checked": 79,
+        "firstItem": 821,
+        "lastItem": 900,
+        "title": "🚨 SECTION E: 성능 (100+ 항목)",
+        "total": 80,
+        "unchecked": 1
+      },
+      {
+        "checked": 100,
+        "firstItem": 901,
+        "lastItem": 1000,
+        "title": "🚨 SECTION F: 접근성 (WCAG 2.1 AA) (100+ 항목)",
+        "total": 100,
+        "unchecked": 0
+      },
+      {
+        "checked": 50,
+        "firstItem": 1001,
+        "lastItem": 1050,
+        "title": "🚨 SECTION G: 보안 & 모범 사례 (50+ 항목)",
+        "total": 50,
+        "unchecked": 0
+      },
+      {
+        "checked": 50,
+        "firstItem": 1051,
+        "lastItem": 1100,
+        "title": "🚨 SECTION H: 문서화 (50+ 항목)",
+        "total": 50,
+        "unchecked": 0
+      },
+      {
+        "checked": 50,
+        "firstItem": 1101,
+        "lastItem": 1150,
+        "title": "🚨 SECTION I: 배포 & DevOps (50+ 항목)",
+        "total": 50,
+        "unchecked": 0
+      }
+    ],
+    "unchecked": 1
+  },
+  "commands": {
+    "forbiddenPatterns": {
+      "exitCode": 0,
+      "signal": null,
+      "stderr": "",
+      "stdout": "{\n  \"result\": \"passed\",\n  \"roots\": [\n    \"src\",\n    \"scripts\",\n    \"vite.config.ts\"\n  ],\n  \"ruleIds\": [\n    \"ts-ignore\",\n    \"console-log\",\n    \"todo-comment\",\n    \"bypass-marker\",\n    \"explicit-any\"\n  ],\n  \"scannedFileCount\": 159\n}\n"
+    },
+    "git": { "exitCode": 0, "signal": null, "stderr": "", "stdout": "true\n" },
+    "licensePolicy": {
+      "exitCode": 0,
+      "signal": null,
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 check:licenses\n> node scripts/assert-license-policy.mjs\n\n"
+    },
+    "npmAudit": { "exitCode": 0, "signal": null, "stderr": "", "stdout": "found 0 vulnerabilities\n" },
+    "sbom": {
+      "exitCode": 0,
+      "signal": null,
+      "stderr": "",
+      "stdout": "\n> vent-simulator-2d@0.1.0 check:sbom\n> npm sbom --omit=dev --sbom-format cyclonedx --sbom-type application --json > artifacts/sbom.json\n\n"
+    },
+    "snyk": {
+      "exitCode": 0,
+      "signal": null,
+      "stderr": "\nYou have reached your monthly limit of 200 private tests for your komin0707 org.\nTo learn more about our plans and increase your tests limit visit https://snyk.io/plans.\n",
+      "stdout": "\nTesting /Users/komin/vent 2d...\n\nOrganization:      komin0707\nPackage manager:   npm\nTarget file:       package-lock.json\nProject name:      vent-simulator-2d\nOpen source:       no\nProject path:      /Users/komin/vent 2d\nLicenses:          enabled\n\n✔ Tested 1 dependencies for known issues, no vulnerable paths found.\n\nTip: Detected multiple supported manifests (1), use --all-projects to scan all of them at once.\n\nNext steps:\n- Run `snyk monitor` to be notified about new related vulnerabilities.\n- Run `snyk test` as part of your CI/test.\n\n\n"
+    },
+    "testRealism": {
+      "exitCode": 0,
+      "signal": null,
+      "stderr": "",
+      "stdout": "{\n  \"artifactPath\": \"artifacts/manual-evidence/test-realism.json\",\n  \"result\": \"passed\",\n  \"testFileCount\": 67,\n  \"vitestTestCount\": 313,\n  \"e2eFileCount\": 1,\n  \"testDoubleFileCount\": 11\n}\n"
+    }
+  },
+  "dist": {
+    "compressedAssetCount": 14,
+    "exists": true,
+    "fileCount": 26,
+    "hasBuildOutput": true,
+    "maxBytes": 100000,
+    "primaryBytesNoCompressedSidecars": 353920,
+    "primaryJsCssBytes": 345123,
+    "primaryJsCssFiles": [
+      "dist/assets/PatientAvatar2D-D2R1goyr.js",
+      "dist/assets/index-BTgOFmmU.js",
+      "dist/assets/style-CeCETgPm.css",
+      "dist/assets/vendor-KpjrlXuh.js",
+      "dist/assets/waveform.worker-DGRJ2oGP.js"
+    ],
+    "rasterAssets": [],
+    "transferBrotliJsCssBytes": 92273,
+    "totalBytes": 559496,
+    "withinBrotliTransferBudget": true,
+    "withinPrimaryBudget": true,
+    "withinRawBudget": false
+  },
+  "manualEvidence": [
+    {
+      "id": "react-devtools-profiler",
+      "itemNumber": 845,
+      "path": "artifacts/manual-evidence/react-devtools-profiler.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    },
+    {
+      "id": "webpagetest",
+      "itemNumber": 873,
+      "path": "artifacts/manual-evidence/webpagetest.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    },
+    {
+      "id": "chrome-ux-report",
+      "itemNumber": 874,
+      "path": "artifacts/manual-evidence/chrome-ux-report.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": false,
+      "missingFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "supportingEvidence": [
+        {
+          "exists": true,
+          "path": "artifacts/manual-evidence/chrome-ux-report-monitoring.json",
+          "apiKeySource": { "name": null, "path": null, "source": "none" },
+          "fieldDataAvailable": false,
+          "result": "blocked",
+          "verifiedAt": "2026-05-12T04:48:54.907Z"
+        },
+        {
+          "exists": true,
+          "path": "artifacts/manual-evidence/chrome-ux-report-credentials.json",
+          "monitorApiKeySource": { "name": null, "path": null, "source": "none" },
+          "result": "missing",
+          "usableByCurrentMonitor": {
+            "envFileNames": [],
+            "githubEnvironmentSecretNames": [],
+            "localEnvironmentNames": [],
+            "githubSecretNames": []
+          },
+          "verifiedAt": "2026-05-12T04:48:33.465Z"
+        },
+        {
+          "exists": true,
+          "path": "artifacts/manual-evidence/pagespeed-live-probe-current.json",
+          "errorCode": 429,
+          "hasLoadingExperience": false,
+          "hasOriginLoadingExperience": false,
+          "result": "failed",
+          "verifiedAt": "2026-05-12T01:07:57.813Z"
+        },
+        {
+          "exists": true,
+          "path": "artifacts/manual-evidence/crux-live-probe-current.json",
+          "errorCode": 403,
+          "hasRecord": false,
+          "result": "failed",
+          "verifiedAt": "2026-05-12T01:08:08.695Z"
+        }
+      ],
+      "valid": false
+    },
+    {
+      "id": "nvda",
+      "itemNumber": 976,
+      "path": "artifacts/manual-evidence/nvda.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    },
+    {
+      "id": "jaws",
+      "itemNumber": 977,
+      "path": "artifacts/manual-evidence/jaws.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    },
+    {
+      "id": "voiceover-mac",
+      "itemNumber": 978,
+      "path": "artifacts/manual-evidence/voiceover-mac.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    },
+    {
+      "id": "voiceover-ios",
+      "itemNumber": 979,
+      "path": "artifacts/manual-evidence/voiceover-ios.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    },
+    {
+      "id": "talkback-android",
+      "itemNumber": 980,
+      "path": "artifacts/manual-evidence/talkback-android.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    },
+    {
+      "id": "domain-connection",
+      "itemNumber": 1105,
+      "path": "artifacts/manual-evidence/domain-connection.json",
+      "requiredFields": ["verifiedAt", "verifier", "result", "evidence"],
+      "exists": true,
+      "missingFields": [],
+      "semanticError": null,
+      "supportingEvidence": [],
+      "valid": true
+    }
+  ],
+  "objectivePhaseClaim": {
+    "actualChecklistRowsObserved": 1150,
+    "checklistRowDeltaFromPhaseClaims": 0,
+    "enabled": true,
+    "phaseClaimedChecklistRowsTotal": 1150,
+    "phaseClaimsDeltaFromClaimedTotal": 0,
+    "satisfied": true,
+    "status": "matched"
+  },
+  "objectiveRowClaim": {
+    "actualChecklistRowsObserved": 1150,
+    "claimedChecklistRows": 1150,
+    "checklistRowDeltaFromClaim": 0,
+    "enabled": true,
+    "satisfied": true,
+    "status": "matched"
+  },
+  "screenshots": [
+    {
+      "exists": true,
+      "height": 392,
+      "path": "artifacts/patient-avatar-current.png",
+      "sha256": "fe1a8ad31786922212142ccf574774f2b7a721b6d6e38a4eb5809aa9ff665c61",
+      "sizeBytes": 204989,
+      "width": 696
+    },
+    {
+      "exists": true,
+      "height": 900,
+      "path": "artifacts/simulator-current.png",
+      "sha256": "77c2214b4725df5d0b8594cefdfce5816f7d0b2d702e0f24e9161f2dbaa4aa2e",
+      "sizeBytes": 480850,
+      "width": 1440
+    }
+  ],
+  "sbom": {
+    "applicationName": "vent 2d",
+    "componentCount": 1,
+    "detail": "CycloneDX SBOM includes 1 component(s) for vent 2d.",
+    "exists": true,
+    "path": "artifacts/sbom.json",
+    "specVersion": "1.5",
+    "valid": true
+  },
+  "visualReview": {
+    "detail": "Visual screenshot review matches the current screenshot hashes and dimensions.",
+    "exists": true,
+    "path": "artifacts/manual-evidence/visual-screenshot-review.json",
+    "reviewedScreenshotCount": 2,
+    "valid": true,
+    "verifiedAt": "2026-05-11T18:36:34Z"
+  },
+  "status": "incomplete",
+  "uncheckedItems": [
+    {
+      "line": 999,
+      "rawText": "874. [ ] Chrome UX Report 모니터링",
+      "text": "874. [ ] Chrome UX Report 모니터링",
+      "number": 874,
+      "evidence": {
+        "detail": "Requires Chrome UX Report field data for a connected production domain. Expected artifacts/manual-evidence/chrome-ux-report.json.",
+        "id": "chrome-ux-report",
+        "kind": "manual-external",
+        "status": "unverified"
+      }
+    }
+  ]
+}

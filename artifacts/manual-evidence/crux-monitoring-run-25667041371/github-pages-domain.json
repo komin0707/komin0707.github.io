@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-05-11T11:21:29.310Z",
+  "verifier": "Codex GitHub Pages production domain verifier",
+  "result": "passed",
+  "evidence": "Checked the GitHub Pages configured URL and optional CNAME so CrUX monitoring targets the connected production origin.",
+  "repository": "komin0707/komin0707.github.io",
+  "expectedOrigin": "https://komin0707.github.io",
+  "pages": {
+    "htmlUrl": "https://komin0707.github.io/",
+    "htmlOrigin": "https://komin0707.github.io",
+    "status": "built",
+    "httpsEnforced": true,
+    "cname": null
+  },
+  "cnameFile": {
+    "exists": false,
+    "origin": null,
+    "value": null
+  },
+  "connectedOrigins": [
+    "https://komin0707.github.io"
+  ],
+  "expectedOriginConnected": true,
+  "requiredToComplete": []
+}

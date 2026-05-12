@@ -1,0 +1,59 @@
+{
+  "verifiedAt": "2026-05-11T02:37:18.179Z",
+  "verifier": "GitHub Pages CrUX monitoring workflow",
+  "result": "blocked",
+  "evidence": "Chrome UX Report monitoring is configured for https://komin0707.github.io, but no CrUX field-data evidence is currently available to verify the production origin.",
+  "origin": "https://komin0707.github.io",
+  "startedAt": "2026-05-11T02:36:16.215Z",
+  "checks": {
+    "discoverability": {
+      "canonicalPresent": true,
+      "homeStatus": 200,
+      "homeStatusText": "OK",
+      "noIndexPresent": false,
+      "robotsAllowsAll": true,
+      "robotsSitemapPresent": true,
+      "robotsStatus": 200,
+      "sitemapHasOrigin": true,
+      "sitemapStatus": 200
+    },
+    "cruxApi": {
+      "endpoint": "records:queryRecord",
+      "hasApiKey": false,
+      "hasRecord": false,
+      "status": 403,
+      "statusText": "Forbidden",
+      "error": {
+        "code": 403,
+        "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+        "status": "PERMISSION_DENIED"
+      }
+    },
+    "pageSpeed": {
+      "endpoint": "pagespeedonline/v5/runPagespeed",
+      "hasApiKey": false,
+      "hasLoadingExperience": false,
+      "hasOriginLoadingExperience": false,
+      "loadingExperienceCategory": null,
+      "originLoadingExperienceCategory": null,
+      "status": 429,
+      "statusText": "Too Many Requests",
+      "error": {
+        "code": 429,
+        "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+        "status": "RESOURCE_EXHAUSTED"
+      }
+    },
+    "cruxCache": {
+      "dataset": "global",
+      "datasetsStatus": 200,
+      "foundOrigin": false,
+      "latestMonth": "202603",
+      "manifestStatus": 200,
+      "origins": 18257384,
+      "scannedChunks": 21,
+      "scanEnabled": true,
+      "totalChunks": 21
+    }
+  }
+}

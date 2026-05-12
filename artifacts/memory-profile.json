@@ -1,0 +1,44 @@
+{
+  "budgets": {
+    "maxDocumentsGrowth": 0,
+    "maxHeapGrowthBytes": 6000000,
+    "maxJsEventListenersGrowth": 40,
+    "maxNodesGrowth": 80,
+    "maxUsedHeapBytes": 80000000
+  },
+  "profile": {
+    "after": {
+      "domCounters": {
+        "documents": 2,
+        "nodes": 4085,
+        "jsEventListeners": 461
+      },
+      "heap": {
+        "usedSize": 8187844,
+        "totalSize": 9011200,
+        "embedderHeapUsedSize": 11283880,
+        "backingStorageSize": 309091
+      }
+    },
+    "before": {
+      "domCounters": {
+        "documents": 2,
+        "nodes": 4061,
+        "jsEventListeners": 461
+      },
+      "heap": {
+        "usedSize": 8156584,
+        "totalSize": 9535488,
+        "embedderHeapUsedSize": 10456288,
+        "backingStorageSize": 309148
+      }
+    },
+    "domGrowth": {
+      "documents": 0,
+      "jsEventListeners": 0,
+      "nodes": 24
+    },
+    "heapGrowthBytes": 31260,
+    "maxUsedHeapBytes": 8187844
+  }
+}

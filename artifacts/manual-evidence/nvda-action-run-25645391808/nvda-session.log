@@ -1,0 +1,452 @@
+INFO - __main__ (01:22:20.847) - MainThread (8932):
+Starting NVDA version 2026.1 AMD64
+INFO - core.main (01:22:20.894) - MainThread (8932):
+Config dir: D:\a\_temp\nvda-evidence\config
+INFO - config.ConfigManager._loadConfig (01:22:20.898) - MainThread (8932):
+Loading config: D:\a\_temp\nvda-evidence\config\nvda.ini
+DEBUGWARNING - languageHandler._createGettextTranslation (01:22:20.905) - MainThread (8932):
+couldn't set the translation service locale to en_US
+INFO - core.main (01:22:21.989) - MainThread (8932):
+Windows version: Windows 11 24H2 (10.0.26100.32690) server AMD64
+INFO - core.main (01:22:21.989) - MainThread (8932):
+Using Python version 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]
+INFO - core.main (01:22:21.989) - MainThread (8932):
+Using comtypes version 1.4.13
+INFO - core.main (01:22:21.992) - MainThread (8932):
+Using configobj version 5.1.0 with validate version 1.0.1
+INFO - core.main (01:22:22.019) - MainThread (8932):
+Add-ons are disabled. Restart NVDA to enable them.
+WARNING - nvwave.WavePlayer.open (01:22:22.136) - MainThread (8932):
+Couldn't open specified or default audio device. There may be no audio devices.
+WARNING - tones.initialize (01:22:22.136) - MainThread (8932):
+Failed to initialize audio for tones
+Traceback (most recent call last):
+  File "tones.pyc", line 24, in initialize
+  File "nvwave.pyc", line 251, in __init__
+  File "nvwave.pyc", line 301, in open
+  File "_ctypes/callproc.c", line 1033, in GetResult
+OSError: [WinError -2147023728] Element not found
+ERROR - audio.soundSplit.initialize (01:22:22.137) - MainThread (8932):
+Could not initialize audio session manager
+Traceback (most recent call last):
+  File "audio\soundSplit.pyc", line 97, in initialize
+  File "pycaw\utils.pyc", line 210, in GetAudioSessionManager
+  File "pycaw\utils.pyc", line 190, in GetSpeakers
+_ctypes.COMError: (-2147023728, 'Element not found.', (None, None, None, 0, None))
+INFO - NVDAHelperLocal (01:22:22.145) - MainThread (8932):
+Thread 8932, build\x86_64\localWin10\oneCoreSpeech.cpp, ocSpeech_initialize, 215:
+ocSpeech_initialize
+
+INFO - NVDAHelperLocal (01:22:22.145) - MainThread (8932):
+Thread 8932, build\x86_64\localWin10\oneCoreSpeech.cpp, OcSpeechState::activate, 89:
+Activating
+
+INFO - NVDAHelperLocal (01:22:22.244) - MainThread (8932):
+Thread 8932, build\x86_64\localWin10\oneCoreSpeech.cpp, preventEndUtteranceSilence_, 443:
+AppendedSilence supported
+
+INFO - speechDictHandler.dictFormatUpgrade._doSynthVoiceDictBackupAndMove (01:22:22.253) - MainThread (8932):
+Upgrading voice dictionaries for espeak
+INFO - speechDictHandler.dictFormatUpgrade._doSynthVoiceDictBackupAndMove (01:22:22.254) - MainThread (8932):
+Upgrading voice dictionaries for oneCore
+INFO - synthDriverHandler.setSynth (01:22:22.254) - MainThread (8932):
+Loaded synthDriver oneCore
+INFO - mathPres.MathCAT.MathCAT.MathCAT.__init__ (01:22:22.263) - MainThread (8932):
+MathCAT 0.7.2 installed. Using rules dir: C:\Program Files\NVDA\include\nvda-mathcat\assets\Rules
+INFO - core._setUpWxApp (01:22:22.269) - MainThread (8932):
+Using wx version 4.2.4 msw (phoenix) wxWidgets 3.2.8
+INFO - brailleInput.initialize (01:22:22.271) - MainThread (8932):
+Braille input initialized
+INFO - braille.initialize (01:22:22.271) - MainThread (8932):
+Using liblouis version 3.36.0
+INFO - braille.initialize (01:22:22.271) - MainThread (8932):
+Using pySerial version 3.5
+INFO - braille.BrailleHandler._setDisplay (01:22:22.275) - MainThread (8932):
+Loaded braille display driver 'noBraille', current display has 0 cells.
+DEBUGWARNING - appModuleHandler.getProcessHandleFromProcessId (01:22:22.325) - MainThread (8932):
+Unable to open process for processId 6196
+Traceback (most recent call last):
+  File "appModuleHandler.pyc", line 207, in getProcessHandleFromProcessId
+PermissionError: [WinError 5] Access is denied.
+DEBUGWARNING - appModuleHandler.getProcessHandleFromProcessId (01:22:22.326) - MainThread (8932):
+Unable to get process handle for process 6196 using window enumeration and subsequently getting process handle from that window
+Traceback (most recent call last):
+  File "appModuleHandler.pyc", line 220, in getProcessHandleFromProcessId
+RuntimeError: No window handle found for process 6196 to create process handle
+INFO - JABHandler.enableBridge (01:22:22.333) - MainThread (8932):
+Enabled Java Access Bridge for user
+INFO - core.main (01:22:22.460) - MainThread (8932):
+Java Access Bridge support initialized
+INFO - UIAHandler.UIAHandler.MTAThreadFunc (01:22:22.589) - UIAHandler.UIAHandler.MTAThread (9488):
+UIAutomation: IUIAutomation6
+DEBUGWARNING - inputCore.InputManager.loadLocaleGestureMap (01:22:22.683) - MainThread (8932):
+No locale gesture map for language en
+DEBUGWARNING - inputCore.InputManager.loadUserGestureMap (01:22:22.683) - MainThread (8932):
+No user gesture map
+DEBUGWARNING - touchHandler.touchSupported (01:22:22.764) - MainThread (8932):
+No touch devices found
+DEBUGWARNING - updateCheck.initialize (01:22:22.766) - MainThread (8932):
+Couldn't retrieve update state
+Traceback (most recent call last):
+  File "updateCheck.pyc", line 1041, in initialize
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\a\\_temp\\nvda-evidence\\config\\updateCheckState.pickle'
+INFO - core.main (01:22:22.767) - MainThread (8932):
+NVDA initialized
+IO - speech.speech.speak (01:22:22.850) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'Vent Simulator 2D - Profile 1 - Microsoft\u200b Edge', 'window', CancellableSpeech (still valid)]
+DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (01:22:22.853) - MainThread (8932):
+Error loading 'cldr' symbols for locale 'en_US'
+Traceback (most recent call last):
+  File "characterProcessing.pyc", line 425, in _getSpeechSymbolsForLocale
+  File "characterProcessing.pyc", line 829, in getSymbols
+  File "characterProcessing.pyc", line 69, in fetchLocaleData
+  File "characterProcessing.pyc", line 837, in _initSymbols
+FileNotFoundError: No 'cldr' data for locale 'en_US'
+DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (01:22:22.856) - MainThread (8932):
+Error loading 'builtin' symbols for locale 'en_US'
+Traceback (most recent call last):
+  File "characterProcessing.pyc", line 425, in _getSpeechSymbolsForLocale
+  File "characterProcessing.pyc", line 829, in getSymbols
+  File "characterProcessing.pyc", line 69, in fetchLocaleData
+  File "characterProcessing.pyc", line 837, in _initSymbols
+FileNotFoundError: No 'builtin' data for locale 'en_US'
+IO - speech.speech.speak (01:22:22.927) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'Vent Simulator 2D - Microsoft Edge', 'region', CancellableSpeech (still valid)]
+IO - speech.speech.speak (01:22:22.955) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'region', CancellableSpeech (still valid)]
+IO - speech.speech.speak (01:22:22.974) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'Vent Simulator 2D', CancellableSpeech (still valid)]
+WARNING - nvwave.WavePlayer.open (01:22:23.021) - Dummy-9 (6112):
+Couldn't open specified or default audio device. There may be no audio devices.
+ERROR - Exception ignored on calling ctypes callback function <bound method OneCoreSynthDriver._callback of OneCoreSynthDriver('oneCore')>: None (01:22:23.022) - Dummy-9 (6112):
+Traceback (most recent call last):
+  File "synthDrivers\oneCore.pyc", line 458, in _callback
+  File "synthDrivers\oneCore.pyc", line 267, in _maybeInitPlayer
+  File "nvwave.pyc", line 251, in __init__
+  File "nvwave.pyc", line 301, in open
+  File "_ctypes/callproc.c", line 1033, in GetResult
+OSError: [WinError -2147023728] Element not found
+INFO - updateCheck.AutoUpdateChecker._started (01:22:23.183) - MainThread (8932):
+Performing automatic update check
+IO - speech.speech.speak (01:22:23.246) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:12  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:12  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:12  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:12  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:12    ']
+IO - speech.speech.speak (01:22:23.266) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:12  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:12  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:12  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:12  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:12    ']
+IO - speech.speech.speak (01:22:23.282) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:12  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:12  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:12  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:12  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:12    ']
+IO - speech.speech.speak (01:22:23.306) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:12  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:12  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:12  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:12  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:12    ']
+IO - speech.speech.speak (01:22:23.321) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:12  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:12  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:12  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:12  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:12    ']
+IO - speech.speech.speak (01:22:23.596) - MainThread (8932):
+Speaking [CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'VENT SIMULATOR 2D', 'main landmark', 'same page', 'link', 'Korean (not supported)', LangChangeCommand ('ko_KR'), '본문으로 이동', CallbackCommand(name=say-all:lineReached), 'VENT SIMULATOR 2D\n', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'Ventilator mode', 'navigation landmark', 'button', LangChangeCommand ('ko_KR'), 'A/C', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko_KR'), 'V/C', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko_KR'), 'P/C', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko_KR'), 'PSV', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko_KR'), 'CPAP', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko_KR'), 'BiPAP', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko_KR'), 'SIMV', CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko_KR'), 'APRV']
+DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (01:22:23.597) - MainThread (8932):
+Error loading 'cldr' symbols for locale 'ko_KR'
+Traceback (most recent call last):
+  File "characterProcessing.pyc", line 425, in _getSpeechSymbolsForLocale
+  File "characterProcessing.pyc", line 829, in getSymbols
+  File "characterProcessing.pyc", line 69, in fetchLocaleData
+  File "characterProcessing.pyc", line 837, in _initSymbols
+FileNotFoundError: No 'cldr' data for locale 'ko_KR'
+DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (01:22:23.598) - MainThread (8932):
+Error loading 'builtin' symbols for locale 'ko_KR'
+Traceback (most recent call last):
+  File "characterProcessing.pyc", line 425, in _getSpeechSymbolsForLocale
+  File "characterProcessing.pyc", line 829, in getSymbols
+  File "characterProcessing.pyc", line 69, in fetchLocaleData
+  File "characterProcessing.pyc", line 837, in _initSymbols
+FileNotFoundError: No 'builtin' data for locale 'ko_KR'
+WARNING - characterProcessing.SpeechSymbols.load (01:22:23.615) - MainThread (8932):
+Invalid line in file C:\Program Files\NVDA\locale\ko\symbols.dic: ∮	폐곡선 적분	기호 none
+IO - speech.speech.speak (01:22:24.179) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:13  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:13  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:13  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:13  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:13    ']
+IO - speech.speech.speak (01:22:24.184) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:13  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:13  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:13  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:13  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:13    ']
+IO - speech.speech.speak (01:22:24.189) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:13  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:13  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:13  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:13  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:13    ']
+IO - speech.speech.speak (01:22:24.194) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:13  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:13  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:13  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:13  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:13    ']
+IO - speech.speech.speak (01:22:24.198) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:13  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:13  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:13  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:13  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:13    ']
+IO - speech.speech.speak (01:22:25.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:14  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:14  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:14  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:14  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:14    ']
+IO - speech.speech.speak (01:22:25.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:14  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:14  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:14  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:14  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:14    ']
+IO - speech.speech.speak (01:22:25.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:14  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:14  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:14  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:14  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:14    ']
+IO - speech.speech.speak (01:22:25.181) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:14  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:14  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:14  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:14  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:14    ']
+IO - speech.speech.speak (01:22:25.185) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:14  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:14  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:14  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:14  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:14    ']
+IO - speech.speech.speak (01:22:26.166) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:15  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:15  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:15  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:15  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:15    ']
+IO - speech.speech.speak (01:22:26.171) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:15  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:15  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:15  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:15  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:15    ']
+IO - speech.speech.speak (01:22:26.175) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:15  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:15  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:15  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:15  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:15    ']
+IO - speech.speech.speak (01:22:26.180) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:15  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:15  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:15  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:15  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:15    ']
+IO - speech.speech.speak (01:22:26.185) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:15  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:15  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:15  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:15  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:15    ']
+IO - speech.speech.speak (01:22:27.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:16  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:16  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:16  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:16  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:16    ']
+IO - speech.speech.speak (01:22:27.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:16  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:16  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:16  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:16  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:16    ']
+IO - speech.speech.speak (01:22:27.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:16  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:16  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:16  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:16  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:16    ']
+IO - speech.speech.speak (01:22:27.181) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:16  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:16  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:16  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:16  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:16    ']
+IO - speech.speech.speak (01:22:27.185) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:16  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:16  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:16  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:16  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:16    ']
+IO - speech.speech.speak (01:22:28.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:17  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:17  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:17  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:17  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:17    ']
+IO - speech.speech.speak (01:22:28.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:17  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:17  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:17  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:17  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:17    ']
+IO - speech.speech.speak (01:22:28.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:17  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:17  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:17  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:17  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:17    ']
+IO - speech.speech.speak (01:22:28.181) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:17  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:17  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:17  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:17  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:17    ']
+IO - speech.speech.speak (01:22:28.185) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:17  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:17  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:17  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:17  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:17    ']
+IO - speech.speech.speak (01:22:29.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:18  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:18  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:18  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:18  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:18    ']
+IO - speech.speech.speak (01:22:29.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:18  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:18  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:18  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:18  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:18    ']
+IO - speech.speech.speak (01:22:29.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:18  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:18  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:18  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:18  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:18    ']
+IO - speech.speech.speak (01:22:29.182) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:18  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:18  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:18  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:18  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:18    ']
+IO - speech.speech.speak (01:22:29.186) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:18  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:18  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:18  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:18  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:18    ']
+IO - speech.speech.speak (01:22:30.165) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:19  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:19  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:19  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:19  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:19    ']
+IO - speech.speech.speak (01:22:30.170) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:19  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:19  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:19  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:19  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:19    ']
+IO - speech.speech.speak (01:22:30.174) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:19  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:19  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:19  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:19  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:19    ']
+IO - speech.speech.speak (01:22:30.178) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:19  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:19  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:19  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:19  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:19    ']
+IO - speech.speech.speak (01:22:30.183) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:19  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:19  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:19  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:19  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:19    ']
+IO - speech.speech.speak (01:22:31.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:20  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:20  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:20  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:20  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:20    ']
+IO - speech.speech.speak (01:22:31.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:20  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:20  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:20  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:20  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:20    ']
+IO - speech.speech.speak (01:22:31.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:20  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:20  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:20  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:20  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:20    ']
+IO - speech.speech.speak (01:22:31.182) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:20  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:20  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:20  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:20  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:20    ']
+IO - speech.speech.speak (01:22:31.186) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:20  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:20  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:20  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:20  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:20    ']
+IO - speech.speech.speak (01:22:32.167) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:21  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:21  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:21  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:21  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:21    ']
+IO - speech.speech.speak (01:22:32.172) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:21  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:21  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:21  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:21  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:21    ']
+IO - speech.speech.speak (01:22:32.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:21  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:21  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:21  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:21  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:21    ']
+IO - speech.speech.speak (01:22:32.181) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:21  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:21  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:21  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:21  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:21    ']
+IO - speech.speech.speak (01:22:32.185) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:21  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:21  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:21  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:21  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:21    ']
+IO - speech.speech.speak (01:22:33.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:22  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:22  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:22  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:22  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:22    ']
+IO - speech.speech.speak (01:22:33.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:22  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:22  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:22  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:22  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:22    ']
+IO - speech.speech.speak (01:22:33.178) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:22  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:22  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:22  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:22  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:22    ']
+IO - speech.speech.speak (01:22:33.182) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:22  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:22  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:22  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:22  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:22    ']
+IO - speech.speech.speak (01:22:33.186) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:22  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:22  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:22  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:22  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:22    ']
+IO - speech.speech.speak (01:22:34.165) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:23  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:23  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:23  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:23  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:23    ']
+IO - speech.speech.speak (01:22:34.169) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:23  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:23  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:23  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:23  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:23    ']
+IO - speech.speech.speak (01:22:34.174) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:23  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:23  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:23  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:23  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:23    ']
+IO - speech.speech.speak (01:22:34.179) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:23  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:23  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:23  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:23  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:23    ']
+IO - speech.speech.speak (01:22:34.183) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:23  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:23  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:23  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:23  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:23    ']
+IO - inputCore.InputManager.executeGesture (01:22:34.564) - winInputHook (2800):
+Input: kb(desktop):tab
+IO - speech.speech.speak (01:22:34.661) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'Vent Simulator 2D', CancellableSpeech (still valid)]
+IO - speech.speech.speak (01:22:34.676) - MainThread (8932):
+Speaking [CallbackCommand(name=say-all:lineReached), LangChangeCommand ('en_US'), 'main landmark', 'same page', 'link', LangChangeCommand ('ko'), '본문으로 이동', CallbackCommand(name=say-all:lineReached)]
+IO - speech.speech.speak (01:22:34.756) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'VENT SIMULATOR 2D', 'main landmark', 'Ventilator mode', 'navigation landmark', LangChangeCommand ('ko'), 'A/C', LangChangeCommand ('en_US'), 'button', 'current page']
+WARNING - synthDrivers.oneCore._OcSsmlConverter.convertLangChangeCommand (01:22:34.757) - MainThread (8932):
+Language ko not supported ({'en_us'})
+IO - speech.speech.speak (01:22:35.167) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:24  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:24  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:24  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:24  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:24    ']
+IO - speech.speech.speak (01:22:35.172) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:24  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:24  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:24  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:24  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:24    ']
+IO - speech.speech.speak (01:22:35.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:24  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:24  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:24  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:24  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:24    ']
+IO - speech.speech.speak (01:22:35.181) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:24  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:24  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:24  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:24  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:24    ']
+IO - speech.speech.speak (01:22:35.185) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:24  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:24  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:24  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:24  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:24    ']
+IO - speech.speech.speak (01:22:36.160) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:25  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:25  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:25  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:25  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:25    ']
+IO - speech.speech.speak (01:22:36.164) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:25  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:25  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:25  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:25  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:25    ']
+IO - speech.speech.speak (01:22:36.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:25  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:25  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:25  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:25  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:25    ']
+IO - speech.speech.speak (01:22:36.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:25  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:25  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:25  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:25  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:25    ']
+IO - speech.speech.speak (01:22:36.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:25  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:25  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:25  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:25  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:25    ']
+IO - inputCore.InputManager.executeGesture (01:22:36.571) - winInputHook (2800):
+Input: kb(desktop):tab
+IO - speech.speech.speak (01:22:37.167) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:26  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:26  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:26  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:26  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:26    ']
+IO - speech.speech.speak (01:22:37.172) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:26  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:26  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:26  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:26  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:26    ']
+IO - speech.speech.speak (01:22:37.176) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:26  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:26  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:26  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:26  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:26    ']
+IO - speech.speech.speak (01:22:37.180) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:26  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:26  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:26  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:26  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:26    ']
+IO - speech.speech.speak (01:22:37.184) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:26  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:26  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:26  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:26  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:26    ']
+IO - speech.speech.speak (01:22:38.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:27  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:27  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:27  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:27  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:27    ']
+IO - speech.speech.speak (01:22:38.174) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:27  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:27  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:27  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:27  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:27    ']
+IO - speech.speech.speak (01:22:38.178) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:27  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:27  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:27  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:27  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:27    ']
+IO - speech.speech.speak (01:22:38.182) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:27  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:27  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:27  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:27  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:27    ']
+IO - speech.speech.speak (01:22:38.187) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:27  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:27  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:27  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:27  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:27    ']
+IO - inputCore.InputManager.executeGesture (01:22:38.582) - winInputHook (2800):
+Input: kb(desktop):downArrow
+IO - speech.speech.speak (01:22:38.584) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'button', LangChangeCommand ('ko'), 'V/C']
+WARNING - synthDrivers.oneCore._OcSsmlConverter.convertLangChangeCommand (01:22:38.585) - MainThread (8932):
+Language ko not supported ({'en_us'})
+IO - speech.speech.speak (01:22:39.166) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:28  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:28  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:28  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:28  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:28    ']
+IO - speech.speech.speak (01:22:39.171) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:28  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:28  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:28  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:28  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:28    ']
+IO - speech.speech.speak (01:22:39.175) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:28  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:28  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:28  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:28  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:28    ']
+IO - speech.speech.speak (01:22:39.179) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:28  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:28  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:28  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:28  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:28    ']
+IO - speech.speech.speak (01:22:39.183) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:28  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:28  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:28  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:28  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:28    ']
+IO - speech.speech.speak (01:22:40.155) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:29  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:29  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:29  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:29  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:29    ']
+IO - speech.speech.speak (01:22:40.159) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:29  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:29  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:29  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:29  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:29    ']
+IO - speech.speech.speak (01:22:40.163) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:29  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:29  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:29  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:29  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:29    ']
+IO - speech.speech.speak (01:22:40.167) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:29  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:29  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:29  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:29  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:29    ']
+IO - speech.speech.speak (01:22:40.172) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:29  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:29  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:29  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:29  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:29    ']
+IO - speech.speech.speak (01:22:41.166) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:30  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:30  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:30  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:30  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:30    ']
+IO - speech.speech.speak (01:22:41.171) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:30  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:30  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:30  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:30  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:30    ']
+IO - speech.speech.speak (01:22:41.175) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:30  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:30  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:30  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:30  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:30    ']
+IO - speech.speech.speak (01:22:41.180) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:30  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:30  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:30  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:30  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:30    ']
+IO - speech.speech.speak (01:22:41.184) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:30  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:30  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:30  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:30  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:30    ']
+IO - speech.speech.speak (01:22:42.170) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:31  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:31  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:31  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:31  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:31    ']
+IO - speech.speech.speak (01:22:42.175) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:31  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:31  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:31  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:31  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:31    ']
+IO - speech.speech.speak (01:22:42.179) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:31  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:31  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:31  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:31  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:31    ']
+IO - speech.speech.speak (01:22:42.183) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:31  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:31  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:31  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:31  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:31    ']
+IO - speech.speech.speak (01:22:42.187) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:31  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:31  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:31  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:31  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:31    ']
+IO - speech.speech.speak (01:22:43.168) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:32  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:32  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:32  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:32  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:32    ']
+IO - speech.speech.speak (01:22:43.173) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:32  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:32  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:32  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:32  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:32    ']
+IO - speech.speech.speak (01:22:43.177) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:32  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:32  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:32  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:32  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:32    ']
+IO - speech.speech.speak (01:22:43.181) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:32  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:32  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:32  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:32  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:32    ']
+IO - speech.speech.speak (01:22:43.185) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:32  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:32  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:32  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:32  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:32    ']
+IO - speech.speech.speak (01:22:44.167) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:33  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:33  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:33  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:33  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:33    ']
+IO - speech.speech.speak (01:22:44.172) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:33  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:33  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:33  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:33  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:33    ']
+IO - speech.speech.speak (01:22:44.176) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:33  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:33  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:33  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:33  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:33    ']
+IO - speech.speech.speak (01:22:44.180) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:33  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:33  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:33  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:33  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:33    ']
+IO - speech.speech.speak (01:22:44.184) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:33  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:33  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:33  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:33  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:33    ']
+IO - speech.speech.speak (01:22:45.169) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:34  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:34  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:34  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:34  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:34    ']
+IO - speech.speech.speak (01:22:45.174) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:34  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:34  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:34  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:34  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:34    ']
+IO - speech.speech.speak (01:22:45.178) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:34  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:34  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:34  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:34  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:34    ']
+IO - speech.speech.speak (01:22:45.182) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:34  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:34  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:34  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:34  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:34    ']
+IO - speech.speech.speak (01:22:45.187) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:34  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:34  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:34  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:34  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:34    ']
+IO - speech.speech.speak (01:22:46.166) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:35  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:35  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:35  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:35  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:35    ']
+IO - speech.speech.speak (01:22:46.172) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:35  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:35  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:35  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:35  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:35    ']
+IO - speech.speech.speak (01:22:46.176) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:35  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:35  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:35  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:35  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:35    ']
+IO - speech.speech.speak (01:22:46.180) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:35  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:35  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:35  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:35  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:35    ']
+IO - speech.speech.speak (01:22:46.184) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:35  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:35  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:35  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:35  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:35    ']
+IO - speech.speech.speak (01:22:47.166) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:36  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:36  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:36  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:36  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:36    ']
+IO - speech.speech.speak (01:22:47.171) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:36  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:36  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:36  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:36  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:36    ']
+IO - speech.speech.speak (01:22:47.176) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:36  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:36  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:36  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:36  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:36    ']
+IO - speech.speech.speak (01:22:47.180) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:36  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:36  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:36  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:36  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:36    ']
+IO - speech.speech.speak (01:22:47.184) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:36  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:36  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:36  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:36  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:36    ']
+IO - speech.speech.speak (01:22:48.169) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:37  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:37  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:37  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:37  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:37    ']
+IO - speech.speech.speak (01:22:48.174) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:37  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:37  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:37  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:37  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:37    ']
+IO - speech.speech.speak (01:22:48.178) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:37  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:37  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:37  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:37  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:37    ']
+IO - speech.speech.speak (01:22:48.182) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:37  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:37  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:37  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:37  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:37    ']
+IO - speech.speech.speak (01:22:48.186) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:37  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:37  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:37  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:37  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:37    ']
+IO - speech.speech.speak (01:22:49.170) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:38  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:38  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:38  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:38  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:38    ']
+IO - speech.speech.speak (01:22:49.176) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:38  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:38  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:38  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:38  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:38    ']
+IO - speech.speech.speak (01:22:49.182) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:38  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:38  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:38  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:38  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:38    ']
+IO - speech.speech.speak (01:22:49.187) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:38  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:38  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:38  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:38  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:38    ']
+IO - speech.speech.speak (01:22:49.191) - MainThread (8932):
+Speaking [LangChangeCommand ('en_US'), 'High CO2PaCO2 57 mmHg exceeds the 55 mmHg threshold. 57 mmHg 발생 13:38  High Peak PressurePeak pressure 31.8 cmH2O exceeds the 28 cmH2O limit. 31.8 cmH2O 발생 13:38  Low ComplianceCompliance 25 mL/cmH2O is below the 25 mL/cmH2O threshold. 25 mL/cmH2O 발생 13:38  Low SpO2SpO2 86% is below the 90% safety threshold. 86 % 발생 13:38  TachypneaRespiratory rate 28/min exceeds the 28/min threshold. 28 /min 발생 13:38    ']
+INFO - core.main (01:22:49.223) - MainThread (8932):
+Exiting
+INFO - config.ConfigManager.save (01:22:49.226) - MainThread (8932):
+Base configuration saved
+INFO - NVDAHelperLocal (01:22:49.244) - MainThread (8932):
+Thread 8932, build\x86_64\localWin10\oneCoreSpeech.cpp, ocSpeech_terminate, 236:
+ocSpeech_terminate, token: 000001D080CD8BF0
+
+INFO - NVDAHelperLocal (01:22:49.244) - MainThread (8932):
+Thread 8932, build\x86_64\localWin10\oneCoreSpeech.cpp, OcSpeechState::terminate, 106:
+Terminating
+
+INFO - __main__ (01:22:49.535) - MainThread (8932):
+NVDA exit

@@ -1,0 +1,83 @@
+{
+  "verifiedAt": "2026-05-11T01:29:55.4891464Z",
+  "verifier": "GitHub Actions windows-latest runner with JAWS 2026 installed and launched against the deployed site",
+  "result": "pass",
+  "evidence": {
+    "repository": "komin0707/komin0707.github.io",
+    "workflow": ".github/workflows/jaws-evidence.yml",
+    "workflowRunId": 25645531746,
+    "workflowJobId": 75273618088,
+    "workflowCommit": "80b51eb3f8b6c57285e82267cdf6e87119a64761",
+    "workflowCleanupCommit": "bfe9049b91a9fbe6e65588657cb24a5f0061e9d5",
+    "targetUrl": "https://komin0707.github.io/",
+    "runner": {
+      "os": "win25-vs2026",
+      "version": "20260428.85.1",
+      "name": "GitHub Actions 1000000126"
+    },
+    "jaws": {
+      "installer": "J2026.2603.86.400-any.exe",
+      "installerUrl": "https://software.vfo.digital/JAWS/2026/2026.2603.86.400/4C358832-E709-4832-9C4B-47357E07F729/J2026.2603.86.400-any.exe",
+      "installExitCode": 0,
+      "executable": "C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\jfw.exe",
+      "processId": 8160,
+      "modeEvidence": "Screenshot shows the JAWS account dialog stating it will run for 60 minutes, consistent with Freedom Scientific's public 40-minute/limited-use trial-download statement."
+    },
+    "browser": {
+      "name": "Microsoft Edge",
+      "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "processId": 7868
+    },
+    "artifacts": [
+      {
+        "path": "artifacts/manual-evidence/jaws-action-run-25645531746/summary.json",
+        "sha256": "8febf0d154e736bc84d7fb7dd87fb94a85b436040517feb9f5411502c92fd501"
+      },
+      {
+        "path": "artifacts/manual-evidence/jaws-action-run-25645531746/jaws-install.log",
+        "sha256": "81b7320dc5e9fc27fee825aed4d419498727b937e560c9fd102bd2053f99b314",
+        "notableEvidence": [
+          "WixBundleName = Vispero JAWS 2026",
+          "WixBundleVersion = 2026.2603.86.400",
+          "Exit code: 0x0, restarting: No"
+        ]
+      },
+      {
+        "path": "artifacts/manual-evidence/jaws-action-run-25645531746/windows-jaws-edge.png",
+        "sha256": "f56c3df66568da03fd38d9443695aeb1df9bc4a06b1075bb2e3ea1367e47a6e0",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "path": "artifacts/manual-evidence/jaws-action-run-25645531746/processes.json",
+        "sha256": "8318a1feaae59fe6def32b02fd06242fab775c470297bed358fe376647817516",
+        "notableEvidence": [
+          "jfw.exe running from C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\jfw.exe",
+          "fsATProxy.exe running from C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\fsATProxy.exe",
+          "fsSynth32.exe running from C:\\Program Files\\Freedom Scientific\\JAWS\\2026\\x86\\fsSynth32.exe"
+        ]
+      },
+      {
+        "path": "artifacts/manual-evidence/jaws-action-run-25645531746/installed-files.json",
+        "sha256": "24d09af494aab082e47838d7f7edd5a6b03b9e64a6c572289d212472bef30ede"
+      },
+      {
+        "path": "artifacts/manual-evidence/jaws-action-run-25645531746/files.json",
+        "sha256": "100e81a37bc0906996ffa1bec26888823fe0a5eb777f804e110e71f76af90cf8"
+      },
+      {
+        "path": "artifacts/manual-evidence/jaws-github-action-workflow.yml",
+        "sha256": "83f838918521341b3eb46f9ed3397d4b404a05eee3fd15f6f120fff8b5983c5f"
+      }
+    ],
+    "sources": [
+      "https://support.freedomscientific.com/downloads",
+      "https://support.freedomscientific.com/Downloads/JAWS",
+      "https://support.freedomscientific.com/Downloads/Jaws/JAWSInstallationLayoutCommandOptions"
+    ],
+    "notes": [
+      "Freedom Scientific's downloads page states that users who do not own the software can use the same download files to run current products in time-limited mode.",
+      "The JAWS dialog appeared above the deployed simulator while JAWS and its Freedom Scientific helper processes were running."
+    ]
+  }
+}
