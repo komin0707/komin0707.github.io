@@ -10,6 +10,7 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
   {
     ignores: [
+      'assets/**',
       'artifacts/**',
       'coverage/**',
       'dist/**',
@@ -18,6 +19,14 @@ export default tseslint.config(
       'node_modules/**',
       'test-results/**',
     ],
+  },
+  {
+    files: ['scripts/**/*.mjs'],
+    languageOptions: {
+      globals: {
+        Buffer: 'readonly',
+      },
+    },
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
